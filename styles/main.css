@@ -1,0 +1,18 @@
+.grid {
+    display: grid;
+    grid-template-columns: 48% 48%;
+    grid-gap: 4%;
+}
+
+body {
+    padding: 20px;
+    font-family: sans-serif;
+}
+
+code[class*="language-"], pre[class*="language-"] {
+    white-space: pre-wrap!important;
+}
+
+section {
+    margin-top: 40px;
+}
