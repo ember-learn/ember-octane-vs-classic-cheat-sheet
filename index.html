@@ -7,288 +7,383 @@
     <link rel="stylesheet" href="styles/main.css" type="text/css" />
   </head>
   <body>
-		<script src="lib/prism.js"></script>
-		<h1>Ember.js Octane vs Classic Cheat Sheet</h1>
-		<p>
-			This guide is a cheat sheet for using <a href="https://emberjs.com/editions/octane">Ember.js Octane</a>. It doesn't cover everything, but it should get you started!
-			PRs welcome at <a href="https://github.com/jenweber/ember-octane-vs-classic-cheat-sheet">the GitHub repository</a>
-		</p>
+    <script src="lib/prism.js"></script>
+    <h1>Ember.js Octane vs Classic Cheat Sheet</h1>
+    <p>
+      This guide is a cheat sheet for using
+      <a href="https://emberjs.com/editions/octane">Ember.js Octane</a>. It
+      doesn't cover everything, but it should get you started! PRs welcome at
+      <a href="https://github.com/jenweber/ember-octane-vs-classic-cheat-sheet"
+        >the GitHub repository</a
+      >
+    </p>
 
-		<hr>
-		<h2>Component Templates</h2>
-		<hr>
+    <hr />
+    <h2>Component Templates</h2>
+    <hr />
     <section>
       <h3>Angle Brackets Component Invocation</h3>
       <p>
-				Angle brackets are a way to invoke components in a template file. There's no change in behavior.
-				(<a href="https://guides.emberjs.com/release/reference/syntax-conversion-guide/">Learn more</a> | <a href="https://github.com/rajasegar/ember-angle-brackets-codemod">Automation</a>)
-			</p>
+        Angle brackets are a way to invoke components in a template file.
+        There's no change in behavior. (<a
+          href="https://guides.emberjs.com/release/reference/syntax-conversion-guide/"
+          >Learn more</a
+        >
+        |
+        <a href="https://github.com/rajasegar/ember-angle-brackets-codemod"
+          >Automation</a
+        >)
+      </p>
       <div class="grid">
         <div>
           Classic
           <pre data-src="code/angle-brackets/classic.handlebars"></pre>
         </div>
         <div>
-					Octane 
-					<pre data-src="code/angle-brackets/octane.handlebars"></pre>
+          Octane
+          <pre data-src="code/angle-brackets/octane.handlebars"></pre>
         </div>
       </div>
-		</section>
-
-		<section>
-				<h3>Inline vs block components</h3>
-				<p>
-					Angle brackets components can be used as either inline or block components. There's no change in behavior. {{yields}} looks and works the same.
-					(<a href="https://guides.emberjs.com/release/reference/syntax-conversion-guide/">Learn more</a> | <a href="https://github.com/rajasegar/ember-angle-brackets-codemod">Automation</a>)
-				</p>
-				<div class="grid">
-					<div>
-						Classic
-						<pre data-src="code/inline-vs-block/classic.handlebars"></pre>
-					</div>
-					<div>
-						Octane 
-						<pre data-src="code/inline-vs-block/octane.handlebars"></pre>
-					</div>
-				</div>
-			</section>
-		
-		<section>
-			<h3>Nesting components in your file structure</h3>
-			<p>
-				You can nest components in your file structure, and use them in a template with Angle Brackets invocation. There's no change in behavior.
-				(<a href="https://guides.emberjs.com/release/reference/syntax-conversion-guide/">Learn more</a> | <a href="https://github.com/rajasegar/ember-angle-brackets-codemod">Automation</a>)
-			</p>
-			<div class="grid">
-				<div>
-					Classic
-					<pre data-src="code/angle-brackets-nested/classic.handlebars"></pre>
-				</div>
-				<div>
-					Octane 
-					<pre data-src="code/angle-brackets-nested/octane.handlebars"></pre>
-				</div>
-			</div>
-		</section>
-
-		<section>
-				<h3>Using named arguments</h3>
-				<p>
-					If a property was received from a parent component, refer to it with an @.  There's no change in behavior.
-					(<a href="https://guides.emberjs.com/release/upgrading/edition">Learn more</a> | <a href="https://github.com/rajasegar/ember-angle-brackets-codemod">Automation</a>)
-				</p>
-				<div class="grid">
-					<div>
-						Classic
-						<pre data-src="code/template-named/classic.handlebars"></pre>
-					</div>
-					<div>
-						Octane 
-						<pre data-src="code/template-named/octane.handlebars"></pre>
-					</div>
-				</div>
-		</section>
-
-		<section>
-				<h3>Using own properties</h3>
-				<p>
-					If a property is defined in the JavaScript file for this component's template, use a "this" when you refer to it. There's no change in behavior.
-					(<a href="https://guides.emberjs.com/release/upgrading/edition">Learn more</a> | <a href="https://github.com/rajasegar/ember-angle-brackets-codemod">Automation</a>)
-				</p>
-				<div class="grid">
-					<div>
-						Classic
-						<pre data-src="code/template-named/classic.handlebars"></pre>
-					</div>
-					<div>
-						Octane 
-						<pre data-src="code/template-named/octane.handlebars"></pre>
-					</div>
-				</div>
-		</section>
-
-		<section>
-			<h3>Passing named arguments</h3>
-			<p>
-				When you pass an argument to a component, use an `@` symbol on the left hand side. There's no change in behavior.
-				(<a href="https://guides.emberjs.com/release/upgrading/edition">Learn more</a> | <a href="https://github.com/rajasegar/ember-angle-brackets-codemod">Automation</a>)
-			</p>
-			<div class="grid">
-				<div>
-					Classic
-					<pre data-src="code/template-arguments-named/classic.handlebars"></pre>
-				</div>
-				<div>
-					Octane 
-					<pre data-src="code/template-arguments-named/octane.handlebars"></pre>
-				</div>
-			</div>
-		</section>
-
-		<section>
-				<h3>Passing arguments defined on "this" component</h3>
-				<p>
-					If a property is coming from a template's own JavaScript file, remember to put a "this." before it and wrap it in curly braces.
-					(<a href="https://guides.emberjs.com/release/upgrading/edition">Learn more</a> | <a href="https://github.com/rajasegar/ember-angle-brackets-codemod">Automation</a>)
-				</p>
-				<div class="grid">
-					<div>
-						Classic
-						<pre data-src="code/template-arguments-this/classic.handlebars"></pre>
-					</div>
-					<div>
-						Octane 
-						<pre data-src="code/template-arguments-this/octane.handlebars"></pre>
-					</div>
-				</div>
-			</section>
-
-			<section>
-					<h3>All components are tagless</h3>
-					<p>In Octane, components don't have a default wrapper anymore, so you don't need tagName! Just put the tag right in the template.</p>
-					<div class="grid">
-						<div>
-							Classic
-							<pre data-src="code/tag-name/classic.handlebars"></pre>
-							<pre data-src="code/tag-name/classic.html"></pre>
-						</div>
-						<div>
-							Octane
-							<pre data-src="code/tag-name/octane.handlebars"></pre>
-							<pre data-src="code/tag-name/octane.html"></pre>
-						</div>
-					</div>
-			</section>
-
-		<hr>
-		<h2>Component Properties</h2>
-		<hr>
+    </section>
 
     <section>
-				<h3>Boilerplate</h3>
-				<p>An Octane component imports from the @glimmer package namespace, and it uses Native Classes. Glimmer components have different API methods. (<a href="">Learn more</a> | <a href="">Automation</a>)</p>
-				<div class="grid">
-					<div>
-						Classic
-						<pre data-src="code/js-boilerplate/classic.js"></pre>
-					</div>
-					<div>
-						Octane
-						<pre data-src="code/js-boilerplate/octane.js"></pre>
-					</div>
-				</div>
-			</section>
+      <h3>Inline vs block components</h3>
+      <p>
+        Angle brackets components can be used as either inline or block
+        components. There's no change in behavior. {{ yields }} looks and works
+        the same. (<a
+          href="https://guides.emberjs.com/release/reference/syntax-conversion-guide/"
+          >Learn more</a
+        >
+        |
+        <a href="https://github.com/rajasegar/ember-angle-brackets-codemod"
+          >Automation</a
+        >)
+      </p>
+      <div class="grid">
+        <div>
+          Classic
+          <pre data-src="code/inline-vs-block/classic.handlebars"></pre>
+        </div>
+        <div>
+          Octane
+          <pre data-src="code/inline-vs-block/octane.handlebars"></pre>
+        </div>
+      </div>
+    </section>
 
-			<section>
-					<h3>Declaring a property</h3>
-					<p>Properties follow normal Native JavaScript Class syntax. Look ma, no commas! (<a href="">Learn more</a> | <a href="">Automation</a>)</p>
-					<div class="grid">
-						<div>
-							Classic
-							<pre data-src="code/js-properties/classic.js"></pre>
-						</div>
-						<div>
-							Octane
-							<pre data-src="code/js-properties/octane.js"></pre>
-						</div>
-					</div>
-			</section>
+    <section>
+      <h3>Nesting components in your file structure</h3>
+      <p>
+        You can nest components in your file structure, and use them in a
+        template with Angle Brackets invocation. There's no change in behavior.
+        (<a
+          href="https://guides.emberjs.com/release/reference/syntax-conversion-guide/"
+          >Learn more</a
+        >
+        |
+        <a href="https://github.com/rajasegar/ember-angle-brackets-codemod"
+          >Automation</a
+        >)
+      </p>
+      <div class="grid">
+        <div>
+          Classic
+          <pre data-src="code/angle-brackets-nested/classic.handlebars"></pre>
+        </div>
+        <div>
+          Octane
+          <pre data-src="code/angle-brackets-nested/octane.handlebars"></pre>
+        </div>
+      </div>
+    </section>
 
-			<section>
-					<h3>Use @tracked instead of set, get, and computed</h3>
-					<p>Label the properties that should be tracked to compute another property, which is a getter (<a href="">Learn more</a> | <a href="">Automation</a>)</p>
-					<div class="grid">
-						<div>
-							Classic
-							<pre data-src="code/tracked-vs-cp/classic.js"></pre> <!-- Re-used elsewhere -->
-						</div>
-						<div>
-							Octane
-							<pre data-src="code/tracked-vs-cp
-							/octane.js"></pre>
-						</div>
-					</div>
-			</section>
+    <section>
+      <h3>Using named arguments</h3>
+      <p>
+        If a property was received from a parent component, refer to it with an
+        @. There's no change in behavior. (<a
+          href="https://guides.emberjs.com/release/upgrading/edition"
+          >Learn more</a
+        >
+        |
+        <a href="https://github.com/rajasegar/ember-angle-brackets-codemod"
+          >Automation</a
+        >)
+      </p>
+      <div class="grid">
+        <div>
+          Classic
+          <pre data-src="code/template-named/classic.handlebars"></pre>
+        </div>
+        <div>
+          Octane
+          <pre data-src="code/template-named/octane.handlebars"></pre>
+        </div>
+      </div>
+    </section>
 
-			<section>
-					<h3>Computed decorators</h3>
-					<p>Do you love that computed properties have to name their dependent keys? I don't. But you could use the @computed decorator instead of @tracked if you want. (<a href="">Learn more</a> | <a href="">Automation</a>)</p>
-					<div class="grid">
-						<div>
-							Classic
-							<pre data-src="code/computed-decorator/classic.js"></pre>
-						</div>
-						<div>
-							Octane
-							<pre data-src="code/computed-decorator/octane.js"></pre>
-						</div>
-					</div>
-			</section>
+    <section>
+      <h3>Using own properties</h3>
+      <p>
+        If a property is defined in the JavaScript file for this component's
+        template, use a "this" when you refer to it. There's no change in
+        behavior. (<a
+          href="https://guides.emberjs.com/release/upgrading/edition"
+          >Learn more</a
+        >
+        |
+        <a href="https://github.com/rajasegar/ember-angle-brackets-codemod"
+          >Automation</a
+        >)
+      </p>
+      <div class="grid">
+        <div>
+          Classic
+          <pre data-src="code/template-this/classic.handlebars"></pre>
+        </div>
+        <div>
+          Octane
+          <pre data-src="code/template-this/octane.handlebars"></pre>
+        </div>
+      </div>
+    </section>
 
+    <section>
+      <h3>Passing named arguments</h3>
+      <p>
+        When you pass an argument to a component, use an `@` symbol on the left
+        hand side. There's no change in behavior. (<a
+          href="https://guides.emberjs.com/release/upgrading/edition"
+          >Learn more</a
+        >
+        |
+        <a href="https://github.com/rajasegar/ember-angle-brackets-codemod"
+          >Automation</a
+        >)
+      </p>
+      <div class="grid">
+        <div>
+          Classic
+          <pre
+            data-src="code/template-arguments-named/classic.handlebars"
+          ></pre>
+        </div>
+        <div>
+          Octane
+          <pre data-src="code/template-arguments-named/octane.handlebars"></pre>
+        </div>
+      </div>
+    </section>
 
-			<hr>
-			<h2>Actions</h2>
-			<hr>
+    <section>
+      <h3>Passing arguments defined on "this" component</h3>
+      <p>
+        If a property is coming from a template's own JavaScript file, remember
+        to put a "this." before it and wrap it in curly braces. (<a
+          href="https://guides.emberjs.com/release/upgrading/edition"
+          >Learn more</a
+        >
+        |
+        <a href="https://github.com/rajasegar/ember-angle-brackets-codemod"
+          >Automation</a
+        >)
+      </p>
+      <div class="grid">
+        <div>
+          Classic
+          <pre data-src="code/template-arguments-this/classic.handlebars"></pre>
+        </div>
+        <div>
+          Octane
+          <pre data-src="code/template-arguments-this/octane.handlebars"></pre>
+        </div>
+      </div>
+    </section>
 
-			TODO show on, fn, and @action decorator
+    <section>
+      <h3>All components are tagless</h3>
+      <p>
+        In Octane, components don't have a default wrapper anymore, so you don't
+        need tagName! Just put the tag right in the template.
+      </p>
+      <div class="grid">
+        <div>
+          Classic
+          <pre data-src="code/tag-name/classic.handlebars"></pre>
+          <pre data-src="code/tag-name/classic.html"></pre>
+        </div>
+        <div>
+          Octane
+          <pre data-src="code/tag-name/octane.handlebars"></pre>
+          <pre data-src="code/tag-name/octane.html"></pre>
+        </div>
+      </div>
+    </section>
 
-			<hr>
-			<h2>Component Lifecycle</h2>
-			<hr>
+    <hr />
+    <h2>Component Properties</h2>
+    <hr />
 
-			<section>
-					<h3>Using constructor instead of init.</h3>
-					<p>constructor is a feature of JavaScript Native Classes, not something Ember made up. Use it instead of init. No more this.set! (<a href="">Learn more</a> | <a href="">Automation</a>)</p>
-					<div class="grid">
-						<div>
-							Classic
-							<pre data-src="code/constructors/classic.js"></pre>
-						</div>
-						<div>
-							Octane
-							<pre data-src="code/constructors/octane.js"></pre>
-						</div>
-					</div>
-			</section>
+    <section>
+      <h3>Boilerplate</h3>
+      <p>
+        An Octane component imports from the @glimmer package namespace, and it
+        uses Native Classes. Glimmer components have different API methods. (<a
+          href=""
+          >Learn more</a
+        >
+        | <a href="">Automation</a>)
+      </p>
+      <div class="grid">
+        <div>
+          Classic
+          <pre data-src="code/js-boilerplate/classic.js"></pre>
+        </div>
+        <div>
+          Octane
+          <pre data-src="code/js-boilerplate/octane.js"></pre>
+        </div>
+      </div>
+    </section>
 
-			<section>
-					<h3>Use element modifiers instead of didInsertElement</h3>
-					<p>Instead of writing a didInsertElement method in the JavaScript file, put the {{did-insert}} modifier in your template and say which function to call when that element is rendered. Label that function with the @action decorator. (<a href="">Learn more</a> | <a href="">Automation</a>)</p>
-					<div class="grid">
-						<div>
-							Classic
-							<pre data-src="code/did-insert/classic.handlebars"></pre>
-							<pre data-src="code/did-insert/classic.js"></pre>
-						</div>
-						<div>
-							Octane
-							<pre data-src="code/did-insert/octane.handlebars"></pre>
-							<pre data-src="code/did-insert/octane.js"></pre>
-						</div>
-					</div>
-			</section>
+    <section>
+      <h3>Declaring a property</h3>
+      <p>
+        Properties follow normal Native JavaScript Class syntax. Look ma, no
+        commas! (<a href="">Learn more</a> | <a href="">Automation</a>)
+      </p>
+      <div class="grid">
+        <div>
+          Classic
+          <pre data-src="code/js-properties/classic.js"></pre>
+        </div>
+        <div>
+          Octane
+          <pre data-src="code/js-properties/octane.js"></pre>
+        </div>
+      </div>
+    </section>
 
-			<section>
-					<h3>Using willDestroy</h3>
-					<p>willDestroy is called when the entire component's element will be destroyed, similar to willDestroyElement. You can use it as a method like below, or via a modifier similar to {{did-insert}} just above. (<a href="">Learn more</a> | <a href="">Automation</a>)</p>
-					<div class="grid">
-						<div>
-							Classic
-							<pre data-src="code/will-destroy/classic.js"></pre>
-						</div>
-						<div>
-							Octane
-							<pre data-src="code/will-destroy/octane.js"></pre>
-						</div>
-					</div>
-			</section>
+    <section>
+      <h3>Use @tracked instead of set, get, and computed</h3>
+      <p>
+        Label the properties that should be tracked to compute another property,
+        which is a getter (<a href="">Learn more</a> |
+        <a href="">Automation</a>)
+      </p>
+      <div class="grid">
+        <div>
+          Classic
+          <pre data-src="code/tracked-vs-cp/classic.js"></pre>
+          <!-- Re-used elsewhere -->
+        </div>
+        <div>
+          Octane
+          <pre
+            data-src="code/tracked-vs-cp
+							/octane.js"
+          ></pre>
+        </div>
+      </div>
+    </section>
 
+    <section>
+      <h3>Computed decorators</h3>
+      <p>
+        Do you love that computed properties have to name their dependent keys?
+        I don't. But you could use the @computed decorator instead of @tracked
+        if you want. (<a href="">Learn more</a> | <a href="">Automation</a>)
+      </p>
+      <div class="grid">
+        <div>
+          Classic
+          <pre data-src="code/computed-decorator/classic.js"></pre>
+        </div>
+        <div>
+          Octane
+          <pre data-src="code/computed-decorator/octane.js"></pre>
+        </div>
+      </div>
+    </section>
 
+    <hr />
+    <h2>Actions</h2>
+    <hr />
 
+    TODO show on, fn, and @action decorator
+
+    <hr />
+    <h2>Component Lifecycle</h2>
+    <hr />
+
+    <section>
+      <h3>Using constructor instead of init.</h3>
+      <p>
+        constructor is a feature of JavaScript Native Classes, not something
+        Ember made up. Use it instead of init. No more this.set! (<a href=""
+          >Learn more</a
+        >
+        | <a href="">Automation</a>)
+      </p>
+      <div class="grid">
+        <div>
+          Classic
+          <pre data-src="code/constructors/classic.js"></pre>
+        </div>
+        <div>
+          Octane
+          <pre data-src="code/constructors/octane.js"></pre>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h3>Use element modifiers instead of didInsertElement</h3>
+      <p>
+        Instead of writing a didInsertElement method in the JavaScript file, put
+        the {{ did - insert }} modifier in your template and say which function
+        to call when that element is rendered. Label that function with the
+        @action decorator. (<a href="">Learn more</a> |
+        <a href="">Automation</a>)
+      </p>
+      <div class="grid">
+        <div>
+          Classic
+          <pre data-src="code/did-insert/classic.handlebars"></pre>
+          <pre data-src="code/did-insert/classic.js"></pre>
+        </div>
+        <div>
+          Octane
+          <pre data-src="code/did-insert/octane.handlebars"></pre>
+          <pre data-src="code/did-insert/octane.js"></pre>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h3>Using willDestroy</h3>
+      <p>
+        willDestroy is called when the entire component's element will be
+        destroyed, similar to willDestroyElement. You can use it as a method
+        like below, or via a modifier similar to {{ did - insert }} just above.
+        (<a href="">Learn more</a> | <a href="">Automation</a>)
+      </p>
+      <div class="grid">
+        <div>
+          Classic
+          <pre data-src="code/will-destroy/classic.js"></pre>
+        </div>
+        <div>
+          Octane
+          <pre data-src="code/will-destroy/octane.js"></pre>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
 
-<!-- 
+<!--
 	<h2>Topic</h2>
 	<section>
 		<h3>Section</h3>
@@ -299,9 +394,9 @@
 					<pre data-src="code/angle-brackets/classic.handlebars"></pre>
 				</div>
 				<div>
-					Octane 
+					Octane
 					<pre data-src="code/angle-brackets/octane.handlebars"></pre>
 				</div>
 		</div>
-	</section> 
+	</section>
 -->
