@@ -1,8 +1,8 @@
 import Component from '@glimmer/component';
 
-export default class someComponent extends Component {
-    constructor() {
-        super();
-        this.bestActor = "Milo"
-    }
+export default class SomeComponent extends Component {
+  constructor() {
+    super();
+    this.bestActor = 'Milo';
+  }
 }
