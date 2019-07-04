@@ -202,9 +202,27 @@
     </section>
 
     <section>
+      <h3>Specifying a default value for an argument</h3>
+      <p>Because arguments are read only, their values cannot be changed so no default value can be set. To have a default-value-like experience, native getters may be used.</p>
+      <div class="grid">
+        <div>
+          Classic
+          <pre data-src="code/template-arguments-default/classic.handlebars"></pre>
+          <pre data-src="code/template-arguments-default/classic.js"></pre>
+        </div>
+        <div>
+          Octane
+          <pre data-src="code/template-arguments-default/octane.handlebars"></pre>
+          <pre data-src="code/template-arguments-default/octane.js"></pre>
+        </div>
+      </div>
+
+    </section>
+
+    <section>
       <h3>All components are tagless</h3>
       <p>
-        In Octane, components don't have a default wrapper anymore, so you don't
+        In Octane, Glimmer components don't have a default wrapper, so you don't
         need tagName! Just put the tag right in the template.
       </p>
       <div class="grid">
