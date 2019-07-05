@@ -1,6 +1,6 @@
 # Ember Octane vs Classic Cheat Sheet
 
-Check out [the deployed app](https://jenweber.github.io/ember-octane-vs-classic-cheat-sheet/)!
+Check out [the deployed app](https://ember-learn.github.io/ember-octane-vs-classic-cheat-sheet/)!
 
 See side-by-side examples of Classic Ember vs [Octane Edition](https://emberjs.com/editions).
 
