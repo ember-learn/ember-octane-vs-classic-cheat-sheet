@@ -55,3 +55,8 @@ section {
 h2 + section {
     margin-top: 1em;
 }
+.permalink {
+    color: #c1c1c1;
+    text-decoration: none;
+    padding: 0 15px 0 5px;
+}
