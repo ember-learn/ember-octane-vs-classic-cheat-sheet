@@ -63,3 +63,7 @@ h2 + section {
     text-decoration: none;
     padding: 0 15px 0 5px;
 }
+.intro {
+    font-size: 1.1em;
+    line-height: 1.5;
+}
