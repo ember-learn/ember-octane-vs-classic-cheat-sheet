@@ -306,21 +306,6 @@
           </div>
         </div>
       </section>
-
-      <section aria-labelledby="section-action">
-        <h3 id="section-action">Use @action instead of the actions hash</h3>
-        <p>The @action decorator replaces the actions hash on routes, controllers, and components:</p>
-        <div class="grid">
-          <div>
-            Classic
-            <pre data-src="code/action-decorator/classic.js"></pre>
-          </div>
-          <div>
-            Octane
-            <pre data-src="code/action-decorator/octane.js"></pre>
-          </div>
-        </div>
-      </section>
  
       <section aria-labelledby="section-computed-decorators">
         <h3 id="section-computed-decorators">Computed decorators</h3>
@@ -343,10 +328,38 @@
 
       
       <h2 id="actions"><a href="#actions" title="Actions" class="permalink">&sect;</a>Actions</h2>
-      
 
-      <section>
-        <p>TODO show on, fn, and @action decorator</p>
+      <section aria-labelledby="section-constructor-vs-init">
+        <h3 id="section-constructor-vs-init">Use @action, on, and fn instead of action</h3>
+        <p>
+          Use the @action decorator in your JavaScript to indicate functions
+          that you want to be able to use in a template. Use those functions
+          in the template with "on," and if you need to pass an argument to the
+          function, use fn too.
+          (<a href="">Learn more</a
+          >
+          | <a href="">Automation</a>)
+        </p>
+        <div class="grid">
+          <div>
+            <h4>Classic</h4>
+            <pre data-src="code/actions/classic.js"></pre>
+          </div>
+          <div>
+            <h4>Octane</h4>
+            <pre data-src="code/actions/octane.js"></pre>
+          </div>
+        </div>
+        <div class="grid">
+          <div>
+            <h4>Classic</h4>
+            <pre data-src="code/actions/classic.handlebars"></pre>
+          </div>
+          <div>
+            <h4>Octane</h4>
+            <pre data-src="code/actions/octane.handlebars"></pre>
+          </div>
+        </div>
       </section>
 
       
