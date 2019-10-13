@@ -31,7 +31,7 @@
         <p>
           Angle brackets are a way to invoke components in a template file.
           There's no change in behavior. (<a
-            href="https://guides.emberjs.com/release/reference/syntax-conversion-guide/"
+            href="https://octane-guides-preview.emberjs.com/release/components/"
             >Learn more</a
           >
           |
@@ -55,9 +55,9 @@
         <h3 id="section-inline-vs-block-components">Inline vs block components</h3>
         <p>
           Angle brackets components can be used as either inline or block
-          components. There's no change in behavior. {{ yields }} looks and works
+          components. There's no change in behavior. {{yield}} looks and works
           the same. (<a
-            href="https://guides.emberjs.com/release/reference/syntax-conversion-guide/"
+            href="https://octane-guides-preview.emberjs.com/release/components/yields/"
             >Learn more</a
           >
           |
@@ -108,7 +108,7 @@
         <p>
           If a property was received from a parent component, refer to it with an
           @. There's no change in behavior. (<a
-            href="https://guides.emberjs.com/release/upgrading/edition"
+            href="https://octane-guides-preview.emberjs.com/release/components/#toc_component-templates"
             >Learn more</a
           >
           |
@@ -138,7 +138,7 @@
             >Learn more</a
           >
           |
-          <a href="https://github.com/ember-codemods/ember-angle-brackets-codemod"
+          <a href="https://github.com/ember-codemods/ember-no-implicit-this-codemod"
             >Automation</a
           >)
         </p>
@@ -159,7 +159,7 @@
         <p>
           When you pass an argument to a component, use an `@` symbol on the left
           hand side. There's no change in behavior. (<a
-            href="https://guides.emberjs.com/release/upgrading/edition"
+            href="https://octane-guides-preview.emberjs.com/release/components/#toc_component-templates"
             >Learn more</a
           >
           |
@@ -186,7 +186,7 @@
         <p>
           If a property is coming from a template's own JavaScript file, remember
           to put a "this." before it and wrap it in curly braces. (<a
-            href="https://guides.emberjs.com/release/upgrading/edition"
+            href="https://octane-guides-preview.emberjs.com/release/components/#toc_component-templates"
             >Learn more</a
           >
           |
@@ -252,10 +252,10 @@
         <p>
           An Octane component imports from the @glimmer package namespace, and it
           uses Native Classes. Glimmer components have different API methods. (<a
-            href=""
+            href="https://octane-guides-preview.emberjs.com/release/components/#toc_component-classes"
             >Learn more</a
           >
-          | <a href="">Automation</a>)
+          | <a href="https://github.com/ember-codemods/ember-native-class-codemod">Automation</a>)
         </p>
         <div class="grid">
           <div>
@@ -273,7 +273,7 @@
         <h3 id="section-declaring-prop">Declaring a property</h3>
         <p>
           Properties follow normal Native JavaScript Class syntax. Look ma, no
-          commas! (<a href="">Learn more</a> | <a href="">Automation</a>)
+          commas!
         </p>
         <div class="grid">
           <div>
@@ -291,8 +291,7 @@
         <h3 id="section-tracked">Use @tracked instead of set, get, and computed</h3>
         <p>
           Label the properties that should be tracked to compute another property,
-          which is a getter (<a href="">Learn more</a> |
-          <a href="">Automation</a>)
+          which is a getter.
         </p>
         <div class="grid">
           <div>
@@ -312,7 +311,7 @@
         <p>
           Do you love that computed properties have to name their dependent keys?
           I don't. But you could use the @computed decorator instead of @tracked
-          if you want. (<a href="">Learn more</a> | <a href="">Automation</a>)
+          if you want.
         </p>
         <div class="grid">
           <div>
@@ -335,10 +334,9 @@
           Use the @action decorator in your JavaScript to indicate functions
           that you want to be able to use in a template. Use those functions
           in the template with "on," and if you need to pass an argument to the
-          function, use fn too.
-          (<a href="">Learn more</a
-          >
-          | <a href="">Automation</a>)
+          function, use "fn" too.
+          (<a href="https://octane-guides-preview.emberjs.com/release/components/actions-and-events/#toc_actions">Learn more</a
+          >)
         </p>
         <div class="grid">
           <div>
@@ -370,10 +368,10 @@
         <h3 id="section-constructor-vs-init">Using constructor instead of init.</h3>
         <p>
           constructor is a feature of JavaScript Native Classes, not something
-          Ember made up. Use it instead of init. No more this.set! (<a href=""
+          Ember made up. Use it instead of init. No more this.set! (<a href="https://octane-guides-preview.emberjs.com/release/components/#toc_component-hooks-and-properties"
             >Learn more</a
           >
-          | <a href="">Automation</a>)
+          | <a href="https://github.com/ember-codemods/ember-native-class-codemod">Automation</a>)
         </p>
         <div class="grid">
           <div>
@@ -393,8 +391,7 @@
           Instead of writing a didInsertElement method in the JavaScript file, put
           the {{did-insert}} modifier in your template and say which function
           to call when that element is rendered. Label that function with the
-          @action decorator. (<a href="">Learn more</a> |
-          <a href="">Automation</a>)
+          @action decorator. (<a href="https://octane-guides-preview.emberjs.com/release/components/glimmer-components-dom/#toc_calling-methods-on-first-render">Learn more</a>)
         </p>
         <div class="grid">
           <div>
@@ -416,7 +413,7 @@
           willDestroy is called when the entire component's element will be
           destroyed, similar to willDestroyElement. You can use it as a method
           like below, or via a modifier similar to {{did-insert}} just above.
-          (<a href="">Learn more</a> | <a href="">Automation</a>)
+          (<a href="https://octane-guides-preview.emberjs.com/release/components/#toc_component-hooks-and-properties">Learn more</a>)
         </p>
         <div class="grid">
           <div>
