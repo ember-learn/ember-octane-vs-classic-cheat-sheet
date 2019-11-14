@@ -390,23 +390,18 @@
         </p>
         <p>
           In order for these modifiers to work, you need to install the <a href="https://github.com/emberjs/ember-render-modifiers" target="_blank">@ember/render-modifiers package</a>.
-
           <pre data-src="code/render-modifiers/render-modifiers.handlebars"></pre>
         </p>
       </section>
+      
       <section aria-labelledby="section-using-didinsert">
-        <h3 id="section-using-didinsertelement">Use element modifiers instead of didInsertElement</h3>
+        <h3 id="section-using-didinsert">Use element modifiers instead of didInsertElement</h3>
         <p>
-          Instead of writing a didInsertElement method in the JavaScript file, you can use the {{did-insert}} modifier.
-        </p>
-
-
-        <p>
-          Once you have element modifiers installed, you may then put the {{did-insert}} modifier in your template and say which function
+          Instead of writing a didInsertElement method in the JavaScript file, put
+          the {{did-insert}} modifier in your template and say which function
           to call when that element is rendered. Label that function with the
           @action decorator. (<a href="https://octane-guides-preview.emberjs.com/release/components/glimmer-components-dom/#toc_calling-methods-on-first-render">Learn more</a>)
         </p>
-
         <div class="grid">
           <div>
             <h4>Classic</h4>
