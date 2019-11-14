@@ -363,7 +363,6 @@
 
       <h2 id="component-lifecycle"><a href="#component-lifecycle" title="Component Lifecycle" class="permalink">&sect;</a>Component Lifecycle</h2>
 
-
       <section aria-labelledby="section-constructor-vs-init">
         <h3 id="section-constructor-vs-init">Using constructor instead of init.</h3>
         <p>
@@ -386,13 +385,28 @@
       </section>
 
       <section aria-labelledby="section-element-modifiers">
-        <h3 id="section-element-modifiers">Use element modifiers instead of didInsertElement</h3>
+        <h3 id="section-element-modifiers">Element Modifiers</h3>
+        <p>There are three new element modifiers {{did-insert}}, {{did-update}}, and {{will-destroy}} that you may use to replace the lifecycle hooks didInsertElement, willDestroy, and didUpdate.
+        </p>
         <p>
-          Instead of writing a didInsertElement method in the JavaScript file, put
-          the {{did-insert}} modifier in your template and say which function
+          In order for these modifiers to work, you need to install the <a href="https://github.com/emberjs/ember-render-modifiers" target="_blank">@ember/render-modifiers package</a>.
+
+          <pre data-src="code/render-modifiers/render-modifiers.handlebars"></pre>
+        </p>
+      </section>
+      <section aria-labelledby="section-using-didinsert">
+        <h3 id="section-using-didinsertelement">Use element modifiers instead of didInsertElement</h3>
+        <p>
+          Instead of writing a didInsertElement method in the JavaScript file, you can use the {{did-insert}} modifier.
+        </p>
+
+
+        <p>
+          Once you have element modifiers installed, you may then put the {{did-insert}} modifier in your template and say which function
           to call when that element is rendered. Label that function with the
           @action decorator. (<a href="https://octane-guides-preview.emberjs.com/release/components/glimmer-components-dom/#toc_calling-methods-on-first-render">Learn more</a>)
         </p>
+
         <div class="grid">
           <div>
             <h4>Classic</h4>
