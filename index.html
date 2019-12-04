@@ -206,23 +206,6 @@
         </div>
       </section>
 
-    <section aria-labelledby="section-default-args">
-      <h3 id="section-default-args">Specifying a default value for an argument</h3>
-      <p>Because arguments are read only, their values cannot be changed so no default value can be set. To have a default-value-like experience, native getters may be used.</p>
-      <div class="grid">
-        <div>
-          Classic
-          <pre data-src="code/template-arguments-default/classic.handlebars"></pre>
-          <pre data-src="code/template-arguments-default/classic.js"></pre>
-        </div>
-        <div>
-          Octane
-          <pre data-src="code/template-arguments-default/octane.handlebars"></pre>
-          <pre data-src="code/template-arguments-default/octane.js"></pre>
-        </div>
-      </div>
-    </section>
-
       <section aria-labelledby="section-tagless-components">
         <h3 id="section-tagless-components">All components are tagless</h3>
         <p>
@@ -309,9 +292,7 @@
       <section aria-labelledby="section-computed-decorators">
         <h3 id="section-computed-decorators">Computed decorators</h3>
         <p>
-          Do you love that computed properties have to name their dependent keys?
-          I don't. But you could use the @computed decorator instead of @tracked
-          if you want.
+          For Octane, it is recommended to refactor computed properties to use tracked instead. However, there is a @computed decorator available as well.
         </p>
         <div class="grid">
           <div>
@@ -360,6 +341,22 @@
         </div>
       </section>
 
+      <section aria-labelledby="section-default-args">
+        <h3 id="section-default-args">Specifying a default value for an argument</h3>
+        <p>Because arguments are read only, their values cannot be changed so no default value can be set. To have a default-value-like experience, native getters may be used.</p>
+        <div class="grid">
+          <div>
+            Classic
+            <pre data-src="code/template-arguments-default/classic.handlebars"></pre>
+            <pre data-src="code/template-arguments-default/classic.js"></pre>
+          </div>
+          <div>
+            Octane
+            <pre data-src="code/template-arguments-default/octane.handlebars"></pre>
+            <pre data-src="code/template-arguments-default/octane.js"></pre>
+          </div>
+        </div>
+      </section>
 
       <h2 id="component-lifecycle"><a href="#component-lifecycle" title="Component Lifecycle" class="permalink">&sect;</a>Component Lifecycle</h2>
 
