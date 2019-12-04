@@ -26,7 +26,7 @@
       <h2 id="generating-files"><a href="#generating-files" title="Generating Files" class="permalink">&sect;</a>Generating Files</h2>
 
       <section aria-labelledby="section-generating-component-class">
-        <h3 id="section-generating-component-class">Generating a Component's Class</h3>
+        <h3 id="section-generating-component-class">Use an option to generate a component's JavaScript</h3>
         <p>
           In classic Ember, "ember generate component" created three files: the template, a JavaScript file, and a test. In Octane, "ember generate component" creates only a template. If you want the backing JavaScript Class as well, include an option.
         </p>
@@ -38,6 +38,23 @@
           <div>
             <h4>Octane</h4>
             <pre data-src="code/generating-component/octane.handlebars"></pre>
+          </div>
+        </div>
+      </section>
+
+      <section aria-labelledby="section-file-structure">
+        <h3 id="section-file-structure">Component templates and JavaScript are in the same directory</h3>
+        <p>
+          The location of component templates has changed in Octane. This is known as "template co-location."
+        </p>
+        <div class="grid">
+          <div>
+            <h4>Classic</h4>
+            <pre data-src="code/file-structure/classic.text"></pre>
+          </div>
+          <div>
+            <h4>Octane</h4>
+            <pre data-src="code/file-structure/octane.text"></pre>
           </div>
         </div>
       </section>
