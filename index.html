@@ -226,6 +226,25 @@
         </div>
       </section>
 
+      <section aria-labelledby="section-element-id">
+        <h3 id="section-element-id">Make your own elementId</h3>
+        <p>
+          Since components are tagless, there's no elementId, but you can generate your own.
+          This is especially helpful for creating accessible forms.
+        </p>
+        <div class="grid">
+          <div>
+            <h4>Classic</h4>
+            <pre data-src="code/element-id/classic.js"></pre>
+            <pre data-src="code/element-id/classic.handlebars"></pre>
+          </div>
+          <div>
+            <h4>Octane</h4>
+            <pre data-src="code/element-id/octane.handlebars"></pre>
+            <pre data-src="code/element-id/octane.handlebars"></pre>
+          </div>
+        </div>
+      </section>
 
       <h2 id="component-properties"><a href="#component-properties" title="Component Properties" class="permalink">&sect;</a>Component Properties</h2>
 
@@ -354,6 +373,29 @@
             Octane
             <pre data-src="code/template-arguments-default/octane.handlebars"></pre>
             <pre data-src="code/template-arguments-default/octane.js"></pre>
+          </div>
+        </div>
+      </section>
+
+      <section aria-labelledby="section-mixins">
+        <h3 id="section-mixins">Mixins</h3>
+        <p>
+          You cannot use mixins on anything that uses Native Class syntax (such as components that import from @glimmer/component). The replacement strategy depends on your use case. If your app depends on an addon that uses Mixins, it may be best to continue using classic components until an alternative is ready.
+        </p>
+        <div class="grid">
+          <div>
+            Classic
+            <pre data-src="code/mixins/classic.js"></pre>
+          </div>
+          <div>
+            Octane
+            <p>
+              See 
+              <a href="https://www.pzuraq.com/do-you-need-ember-object/">
+                Do you need Ember Object?
+              </a>
+              for Mixin alternatives, such as utility functions, services, delegates, and class decorators.
+            </p>
           </div>
         </div>
       </section>
