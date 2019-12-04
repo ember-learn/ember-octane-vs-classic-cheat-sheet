@@ -1,7 +1,7 @@
 import Component from '@glimmer/component';
 
 export default class MyComponent extends Component {
-  get avatar() {
-    return this.args.avatar || 'default';
+  get answer() {
+    return this.args.answer || 42;
   }
 }

@@ -1,6 +1,6 @@
 import Component from '@glimmer/component';
 
 export default class SomeComponent extends Component {
-  fireNation = 'Zuko';
-  airNation = 'Tenzen';
+  min = 0;
+  max = 100;
 }

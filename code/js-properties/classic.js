@@ -1,6 +1,6 @@
 import Component from '@ember/component';
 
 export default Component.extend({
-  fireNation: 'Zuko',
-  airNation: 'Tenzen',
+  min: 0,
+  max: 100,
 });
