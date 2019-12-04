@@ -23,6 +23,24 @@
         >
       </p>
 
+      <h2 id="generating-files"><a href="#generating-files" title="Generating Files" class="permalink">&sect;</a>Generating Files</h2>
+
+      <section aria-labelledby="section-generating-component-class">
+        <h3 id="section-generating-component-class">Generating a Component's Class</h3>
+        <p>
+          In classic Ember, "ember generate component" created three files: the template, a JavaScript file, and a test. In Octane, "ember generate component" creates only a template. If you want the backing JavaScript Class as well, include an option.
+        </p>
+        <div class="grid">
+          <div>
+            <h4>Classic</h4>
+            <pre data-src="code/generating-component/classic.handlebars"></pre>
+          </div>
+          <div>
+            <h4>Octane</h4>
+            <pre data-src="code/generating-component/octane.handlebars"></pre>
+          </div>
+        </div>
+      </section>
 
       <h2 id="component-templates"><a href="#component-templates" title="Component Templates" class="permalink">&sect;</a>Component Templates</h2>
 
@@ -471,6 +489,25 @@
           <div>
             <h4>Octane</h4>
             <pre data-src="code/will-destroy/octane.js"></pre>
+          </div>
+        </div>
+      </section>
+
+      <h2 id="component-lifecycle"><a href="#component-lifecycle" title="Routes" class="permalink">&sect;</a>Routes</h2>
+
+      <section aria-labelledby="section-model-access">
+        <h3 id="section-model-access">Accessing a route's model</h3>
+        <p>
+          The model used in a route template has always come from an outside context. For this reason, in Octane, refer to it as @model.
+        </p>
+        <div class="grid">
+          <div>
+            <h4>Classic</h4>
+            <pre data-src="code/model-access/classic.handlebars"></pre>
+          </div>
+          <div>
+            <h4>Octane</h4>
+            <pre data-src="code/model-access/octane.handlebars"></pre>
           </div>
         </div>
       </section>
