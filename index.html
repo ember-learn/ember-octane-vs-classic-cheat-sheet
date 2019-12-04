@@ -37,11 +37,11 @@
         <div class="grid">
           <div>
             <h4>Classic</h4>
-            <pre data-src="code/generating-component/classic.handlebars"></pre>
+            <pre data-src="code/generating-component/classic.shell"></pre>
           </div>
           <div>
             <h4>Octane</h4>
-            <pre data-src="code/generating-component/octane.handlebars"></pre>
+            <pre data-src="code/generating-component/octane.shell"></pre>
           </div>
         </div>
       </section>
@@ -282,13 +282,17 @@
 
 
       <section aria-labelledby="section-boilerplate">
-        <h3 id="section-boilerplate">Boilerplate</h3>
+        <h3 id="section-boilerplate">Component JavaScript Syntax</h3>
         <p>
           An Octane component imports from the @glimmer package namespace, and it
-          uses Native Classes. Glimmer components have different API methods. (<a
-            href="https://octane-guides-preview.emberjs.com/release/components/#toc_component-classes"
-            >Learn more</a
-          >)
+          uses Native Class syntax. Glimmer components have different API methods than those on the classic @ember/component. If you aren't familiar with Native Classes, first check out the the 
+          <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes">
+            documentation on MDN
+          </a>.
+          Then, learn more about
+          <a href="https://octane-guides-preview.emberjs.com/release/components/#toc_component-classes">
+            Octane component classes
+          </a>.
         </p>
         <div class="grid">
           <div>
@@ -320,8 +324,48 @@
         </div>
       </section>
 
+      <section aria-labelledby="section-data-down-actions-up">
+        <h3 id="section-data-down-actions-up">Data Down, Actions Up</h3>
+        <p>
+          Octane components enforce "Data Down, Actions Up." That means that when data is passed down to a component, the only way to change that data is by using an action that was passed in as well. Said another way, there is no two-way binding of component arguments.
+        </p>
+        <div class="grid">
+          <div>
+            <h4>Classic</h4>
+            <pre data-src="code/ddau/classic-parent.js"></pre>
+            <pre data-src="code/ddau/classic-parent.handlebars"></pre>
+            <pre data-src="code/ddau/classic-child.js"></pre>
+            <pre data-src="code/ddau/classic-child.handlebars"></pre>
+          </div>
+          <div>
+            <h4>Octane</h4>
+            <pre data-src="code/ddau/octane-parent.js"></pre>
+            <pre data-src="code/ddau/octane-parent.handlebars"></pre>
+            <pre data-src="code/ddau/octane-child.handlebars"></pre>
+          </div>
+        </div>
+      </section>
+
+      <section aria-labelledby="section-data-get-and-set">
+          <h3 id="section-data-down-actions-up">Get and Set</h3>
+          <p>
+            Octane components do not use this.get or this.set.
+            Access and modify properties directly, the same as you would in a regular JavaScript Class.
+          </p>
+          <div class="grid">
+            <div>
+              <h4>Classic</h4>
+              <pre data-src="code/get-and-set/classic.js"></pre>
+            </div>
+            <div>
+              <h4>Octane</h4>
+              <pre data-src="code/get-and-set/octane.js"></pre>
+            </div>
+          </div>
+        </section>
+
       <section aria-labelledby="section-tracked">
-        <h3 id="section-tracked">Use @tracked instead of set, get, and computed</h3>
+        <h3 id="section-tracked">Use @tracked and getters instead of computed properties</h3>
         <p>
           Label the properties that should be tracked to compute another property,
           which is a getter.
