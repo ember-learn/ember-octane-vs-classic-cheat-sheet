@@ -22,7 +22,46 @@
           >the GitHub repository</a
         >
       </p>
+      <p>
+        For in-depth information about the upgrade paths and differences introduced in Octane, see
+        <a href="https://octane-guides-preview.emberjs.com/release/upgrading/">The Octane Upgrading Guide</a>.
+      </p>
 
+      <h2 id="generating-files"><a href="#generating-files" title="Generating Files" class="permalink">&sect;</a>Generating Files</h2>
+
+      <section aria-labelledby="section-generating-component-class">
+        <h3 id="section-generating-component-class">Use an option to generate a component's JavaScript</h3>
+        <p>
+          In classic Ember, "ember generate component" created three files: the template, a JavaScript file, and a test. In Octane, "ember generate component" creates only a template. If you want the backing JavaScript Class as well, include an option.
+        </p>
+        <div class="grid">
+          <div>
+            <h4>Classic</h4>
+            <pre data-src="code/generating-component/classic.shell"></pre>
+          </div>
+          <div>
+            <h4>Octane</h4>
+            <pre data-src="code/generating-component/octane.shell"></pre>
+          </div>
+        </div>
+      </section>
+
+      <section aria-labelledby="section-file-structure">
+        <h3 id="section-file-structure">Component templates and JavaScript are in the same directory</h3>
+        <p>
+          The location of component templates has changed in Octane. This is known as "template co-location."
+        </p>
+        <div class="grid">
+          <div>
+            <h4>Classic</h4>
+            <pre data-src="code/file-structure/classic.text"></pre>
+          </div>
+          <div>
+            <h4>Octane</h4>
+            <pre data-src="code/file-structure/octane.text"></pre>
+          </div>
+        </div>
+      </section>
 
       <h2 id="component-templates"><a href="#component-templates" title="Component Templates" class="permalink">&sect;</a>Component Templates</h2>
 
@@ -30,14 +69,14 @@
         <h3 id="section-anglebracketinvocation">Angle Brackets Component Invocation</h3>
         <p>
           Angle brackets are a way to invoke components in a template file.
-          There's no change in behavior. (<a
+          There's no change in behavior. Learn more about
+          <a
             href="https://octane-guides-preview.emberjs.com/release/components/"
-            >Learn more</a
-          >
-          |
-          <a href="https://github.com/ember-codemods/ember-angle-brackets-codemod"
-            >Automation</a
-          >)
+            >features</a> and 
+          <a href="https://octane-guides-preview.emberjs.com/release/upgrading/#toc_octane-upgrade-strategy">
+            using codemods
+          </a>
+          to update your existing components.
         </p>
         <div class="grid">
           <div>
@@ -56,14 +95,15 @@
         <p>
           Angle brackets components can be used as either inline or block
           components. There's no change in behavior. {{yield}} looks and works
-          the same. (<a
+          the same.
+          Learn more about
+          <a
             href="https://octane-guides-preview.emberjs.com/release/components/yields/"
-            >Learn more</a
-          >
-          |
-          <a href="https://github.com/ember-codemods/ember-angle-brackets-codemod"
-            >Automation</a
-          >)
+            >features</a> and 
+          <a href="https://octane-guides-preview.emberjs.com/release/upgrading/#toc_octane-upgrade-strategy">
+            using codemods
+          </a>
+          to update your existing components.
         </p>
         <div class="grid">
           <div>
@@ -82,14 +122,6 @@
         <p>
           You can nest components in your file structure, and use them in a
           template with Angle Brackets invocation. There's no change in behavior.
-          (<a
-            href="https://guides.emberjs.com/release/reference/syntax-conversion-guide/"
-            >Learn more</a
-          >
-          |
-          <a href="https://github.com/ember-codemods/ember-angle-brackets-codemod"
-            >Automation</a
-          >)
         </p>
         <div class="grid">
           <div>
@@ -107,13 +139,10 @@
         <h3 id="section-named-args">Using named arguments</h3>
         <p>
           If a property was received from a parent component, refer to it with an
-          @. There's no change in behavior. (<a
+          @. There's no change in behavior.
+          (<a
             href="https://octane-guides-preview.emberjs.com/release/components/#toc_component-templates"
             >Learn more</a
-          >
-          |
-          <a href="https://github.com/ember-codemods/ember-angle-brackets-codemod"
-            >Automation</a
           >)
         </p>
         <div class="grid">
@@ -133,14 +162,15 @@
         <p>
           If a property is defined in the JavaScript file for this component's
           template, use a "this" when you refer to it. There's no change in
-          behavior. (<a
-            href="https://guides.emberjs.com/release/upgrading/edition"
-            >Learn more</a
-          >
-          |
-          <a href="https://github.com/ember-codemods/ember-no-implicit-this-codemod"
-            >Automation</a
-          >)
+          behavior.
+          Learn more about
+          <a
+            href="https://octane-guides-preview.emberjs.com/release/upgrading/current-edition/glimmer-components/"
+            >features</a> and 
+          <a href="https://guides.emberjs.com/release/upgrading/">
+            using codemods
+          </a>
+          to update your existing components.
         </p>
         <div class="grid">
           <div>
@@ -158,14 +188,15 @@
         <h3 id="section-passing-named-args">Passing named arguments</h3>
         <p>
           When you pass an argument to a component, use an `@` symbol on the left
-          hand side. There's no change in behavior. (<a
+          hand side. There's no change in behavior.
+          Learn more about
+          <a
             href="https://octane-guides-preview.emberjs.com/release/components/#toc_component-templates"
-            >Learn more</a
-          >
-          |
-          <a href="https://github.com/ember-codemods/ember-angle-brackets-codemod"
-            >Automation</a
-          >)
+            >features</a> and 
+          <a href="https://guides.emberjs.com/release/upgrading/">
+            using codemods
+          </a>
+          to update your existing components.
         </p>
         <div class="grid">
           <div>
@@ -185,14 +216,15 @@
         <h3 id="section-passing-args-this-component">Passing arguments defined on "this" component</h3>
         <p>
           If a property is coming from a template's own JavaScript file, remember
-          to put a "this." before it and wrap it in curly braces. (<a
+          to put a "this." before it and wrap it in curly braces.
+          Learn more about
+          <a
             href="https://octane-guides-preview.emberjs.com/release/components/#toc_component-templates"
-            >Learn more</a
-          >
-          |
-          <a href="https://github.com/ember-codemods/ember-angle-brackets-codemod"
-            >Automation</a
-          >)
+            >features</a> and 
+          <a href="https://guides.emberjs.com/release/upgrading/">
+            using codemods
+          </a>
+          to update your existing components.
         </p>
         <div class="grid">
           <div>
@@ -205,23 +237,6 @@
           </div>
         </div>
       </section>
-
-    <section aria-labelledby="section-default-args">
-      <h3 id="section-default-args">Specifying a default value for an argument</h3>
-      <p>Because arguments are read only, their values cannot be changed so no default value can be set. To have a default-value-like experience, native getters may be used.</p>
-      <div class="grid">
-        <div>
-          Classic
-          <pre data-src="code/template-arguments-default/classic.handlebars"></pre>
-          <pre data-src="code/template-arguments-default/classic.js"></pre>
-        </div>
-        <div>
-          Octane
-          <pre data-src="code/template-arguments-default/octane.handlebars"></pre>
-          <pre data-src="code/template-arguments-default/octane.js"></pre>
-        </div>
-      </div>
-    </section>
 
       <section aria-labelledby="section-tagless-components">
         <h3 id="section-tagless-components">All components are tagless</h3>
@@ -243,19 +258,41 @@
         </div>
       </section>
 
+      <section aria-labelledby="section-element-id">
+        <h3 id="section-element-id">Make your own elementId</h3>
+        <p>
+          Since components are tagless, there's no elementId, but you can generate your own.
+          This is especially helpful for creating accessible forms.
+        </p>
+        <div class="grid">
+          <div>
+            <h4>Classic</h4>
+            <pre data-src="code/element-id/classic.js"></pre>
+            <pre data-src="code/element-id/classic.handlebars"></pre>
+          </div>
+          <div>
+            <h4>Octane</h4>
+            <pre data-src="code/element-id/octane.handlebars"></pre>
+            <pre data-src="code/element-id/octane.handlebars"></pre>
+          </div>
+        </div>
+      </section>
 
       <h2 id="component-properties"><a href="#component-properties" title="Component Properties" class="permalink">&sect;</a>Component Properties</h2>
 
 
       <section aria-labelledby="section-boilerplate">
-        <h3 id="section-boilerplate">Boilerplate</h3>
+        <h3 id="section-boilerplate">Component JavaScript Syntax</h3>
         <p>
           An Octane component imports from the @glimmer package namespace, and it
-          uses Native Classes. Glimmer components have different API methods. (<a
-            href="https://octane-guides-preview.emberjs.com/release/components/#toc_component-classes"
-            >Learn more</a
-          >
-          | <a href="https://github.com/ember-codemods/ember-native-class-codemod">Automation</a>)
+          uses Native Class syntax. Glimmer components have different API methods than those on the classic @ember/component. If you aren't familiar with Native Classes, first check out the the 
+          <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes">
+            documentation on MDN
+          </a>.
+          Then, learn more about
+          <a href="https://octane-guides-preview.emberjs.com/release/components/#toc_component-classes">
+            Octane component classes
+          </a>.
         </p>
         <div class="grid">
           <div>
@@ -287,8 +324,48 @@
         </div>
       </section>
 
+      <section aria-labelledby="section-data-down-actions-up">
+        <h3 id="section-data-down-actions-up">Data Down, Actions Up</h3>
+        <p>
+          Octane components enforce "Data Down, Actions Up." That means that when data is passed down to a component, the only way to change that data is by using an action that was passed in as well. Said another way, there is no two-way binding of component arguments.
+        </p>
+        <div class="grid">
+          <div>
+            <h4>Classic</h4>
+            <pre data-src="code/ddau/classic-parent.js"></pre>
+            <pre data-src="code/ddau/classic-parent.handlebars"></pre>
+            <pre data-src="code/ddau/classic-child.js"></pre>
+            <pre data-src="code/ddau/classic-child.handlebars"></pre>
+          </div>
+          <div>
+            <h4>Octane</h4>
+            <pre data-src="code/ddau/octane-parent.js"></pre>
+            <pre data-src="code/ddau/octane-parent.handlebars"></pre>
+            <pre data-src="code/ddau/octane-child.handlebars"></pre>
+          </div>
+        </div>
+      </section>
+
+      <section aria-labelledby="section-data-get-and-set">
+          <h3 id="section-data-down-actions-up">No more get and set on components</h3>
+          <p>
+            Octane components do not use this.get or this.set.
+            Access and modify properties directly, the same as you would in a regular JavaScript Class.
+          </p>
+          <div class="grid">
+            <div>
+              <h4>Classic</h4>
+              <pre data-src="code/get-and-set/classic.js"></pre>
+            </div>
+            <div>
+              <h4>Octane</h4>
+              <pre data-src="code/get-and-set/octane.js"></pre>
+            </div>
+          </div>
+        </section>
+
       <section aria-labelledby="section-tracked">
-        <h3 id="section-tracked">Use @tracked instead of set, get, and computed</h3>
+        <h3 id="section-tracked">Use @tracked and getters instead of computed properties</h3>
         <p>
           Label the properties that should be tracked to compute another property,
           which is a getter.
@@ -309,9 +386,7 @@
       <section aria-labelledby="section-computed-decorators">
         <h3 id="section-computed-decorators">Computed decorators</h3>
         <p>
-          Do you love that computed properties have to name their dependent keys?
-          I don't. But you could use the @computed decorator instead of @tracked
-          if you want.
+          For Octane, it is recommended to refactor computed properties to use tracked instead. However, there is a @computed decorator available as well.
         </p>
         <div class="grid">
           <div>
@@ -360,6 +435,45 @@
         </div>
       </section>
 
+      <section aria-labelledby="section-default-args">
+        <h3 id="section-default-args">Specifying a default value for an argument</h3>
+        <p>Because arguments are read only, their values cannot be changed so no default value can be set. To have a default-value-like experience, native getters may be used.</p>
+        <div class="grid">
+          <div>
+            Classic
+            <pre data-src="code/template-arguments-default/classic.handlebars"></pre>
+            <pre data-src="code/template-arguments-default/classic.js"></pre>
+          </div>
+          <div>
+            Octane
+            <pre data-src="code/template-arguments-default/octane.handlebars"></pre>
+            <pre data-src="code/template-arguments-default/octane.js"></pre>
+          </div>
+        </div>
+      </section>
+
+      <section aria-labelledby="section-mixins">
+        <h3 id="section-mixins">Mixins</h3>
+        <p>
+          You cannot use mixins on anything that uses Native Class syntax (such as components that import from @glimmer/component). The replacement strategy depends on your use case. If your app depends on an addon that uses Mixins, it may be best to continue using classic components until an alternative is ready.
+        </p>
+        <div class="grid">
+          <div>
+            Classic
+            <pre data-src="code/mixins/classic.js"></pre>
+          </div>
+          <div>
+            Octane
+            <p>
+              See 
+              <a href="https://www.pzuraq.com/do-you-need-ember-object/">
+                Do you need Ember Object?
+              </a>
+              for Mixin alternatives, such as utility functions, services, delegates, and class decorators.
+            </p>
+          </div>
+        </div>
+      </section>
 
       <h2 id="component-lifecycle"><a href="#component-lifecycle" title="Component Lifecycle" class="permalink">&sect;</a>Component Lifecycle</h2>
 
@@ -369,8 +483,7 @@
           constructor is a feature of JavaScript Native Classes, not something
           Ember made up. Use it instead of init. No more this.set! (<a href="https://octane-guides-preview.emberjs.com/release/components/#toc_component-hooks-and-properties"
             >Learn more</a
-          >
-          | <a href="https://github.com/ember-codemods/ember-native-class-codemod">Automation</a>)
+          >)
         </p>
         <div class="grid">
           <div>
@@ -432,6 +545,25 @@
           <div>
             <h4>Octane</h4>
             <pre data-src="code/will-destroy/octane.js"></pre>
+          </div>
+        </div>
+      </section>
+
+      <h2 id="component-lifecycle"><a href="#component-lifecycle" title="Routes" class="permalink">&sect;</a>Routes</h2>
+
+      <section aria-labelledby="section-model-access">
+        <h3 id="section-model-access">Accessing a route's model</h3>
+        <p>
+          The model used in a route template has always come from an outside context. For this reason, in Octane, refer to it as @model.
+        </p>
+        <div class="grid">
+          <div>
+            <h4>Classic</h4>
+            <pre data-src="code/model-access/classic.handlebars"></pre>
+          </div>
+          <div>
+            <h4>Octane</h4>
+            <pre data-src="code/model-access/octane.handlebars"></pre>
           </div>
         </div>
       </section>
