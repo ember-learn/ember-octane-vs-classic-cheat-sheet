@@ -6,7 +6,7 @@ export default Component.extend({
   actions: {
     plusOne() {
       let count = this.get("count");
-      this.set("count", count)
+      this.set("count", count + 1)
     }
   }
 });
