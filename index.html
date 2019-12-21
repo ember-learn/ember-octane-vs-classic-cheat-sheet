@@ -24,7 +24,7 @@
       </p>
       <p>
         For in-depth information about the upgrade paths and differences introduced in Octane, see
-        <a href="https://octane-guides-preview.emberjs.com/release/upgrading/">The Octane Upgrading Guide</a>.
+        <a href="https://guides.emberjs.com/release/upgrading/">The Octane Upgrading Guide</a>.
       </p>
 
       <h2 id="generating-files"><a href="#generating-files" title="Generating Files" class="permalink">&sect;</a>Generating Files</h2>
@@ -71,9 +71,9 @@
           Angle brackets are a way to invoke components in a template file.
           There's no change in behavior. Learn more about
           <a
-            href="https://octane-guides-preview.emberjs.com/release/components/"
+            href="https://guides.emberjs.com/release/components/"
             >features</a> and 
-          <a href="https://octane-guides-preview.emberjs.com/release/upgrading/#toc_octane-upgrade-strategy">
+          <a href="https://guides.emberjs.com/release/upgrading/current-edition/#toc_octane-upgrade-strategy">
             using codemods
           </a>
           to update your existing components.
@@ -98,9 +98,9 @@
           the same.
           Learn more about
           <a
-            href="https://octane-guides-preview.emberjs.com/release/components/yields/"
+            href="https://guides.emberjs.com/release/components/block-content/"
             >features</a> and 
-          <a href="https://octane-guides-preview.emberjs.com/release/upgrading/#toc_octane-upgrade-strategy">
+          <a href="https://guides.emberjs.com/release/upgrading/current-edition/">
             using codemods
           </a>
           to update your existing components.
@@ -141,7 +141,7 @@
           If a property was received from a parent component, refer to it with an
           @. There's no change in behavior.
           (<a
-            href="https://octane-guides-preview.emberjs.com/release/components/#toc_component-templates"
+            href="https://guides.emberjs.com/release/components/component-arguments-and-html-attributes/"
             >Learn more</a
           >)
         </p>
@@ -165,7 +165,7 @@
           behavior.
           Learn more about
           <a
-            href="https://octane-guides-preview.emberjs.com/release/upgrading/current-edition/glimmer-components/"
+            href="https://guides.emberjs.com/release/upgrading/current-edition/glimmer-components/"
             >features</a> and 
           <a href="https://guides.emberjs.com/release/upgrading/">
             using codemods
@@ -191,7 +191,7 @@
           hand side. There's no change in behavior.
           Learn more about
           <a
-            href="https://octane-guides-preview.emberjs.com/release/components/#toc_component-templates"
+            href="https://guides.emberjs.com/release/components/component-arguments-and-html-attributes/"
             >features</a> and 
           <a href="https://guides.emberjs.com/release/upgrading/">
             using codemods
@@ -219,7 +219,7 @@
           to put a "this." before it and wrap it in curly braces.
           Learn more about
           <a
-            href="https://octane-guides-preview.emberjs.com/release/components/#toc_component-templates"
+            href="https://guides.emberjs.com/release/components/component-arguments-and-html-attributes/"
             >features</a> and 
           <a href="https://guides.emberjs.com/release/upgrading/">
             using codemods
@@ -290,9 +290,13 @@
             documentation on MDN
           </a>.
           Then, learn more about
-          <a href="https://octane-guides-preview.emberjs.com/release/components/#toc_component-classes">
+          <a href="https://guides.emberjs.com/release/components/component-state-and-actions/">
             Octane component classes
-          </a>.
+          </a>
+          and the
+          <a href="https://api.emberjs.com/ember/release/modules/@glimmer%2Fcomponent">
+            Component API Documentation.
+          </a>
         </p>
         <div class="grid">
           <div>
@@ -410,7 +414,7 @@
           that you want to be able to use in a template. Use those functions
           in the template with "on," and if you need to pass an argument to the
           function, use "fn" too.
-          (<a href="https://octane-guides-preview.emberjs.com/release/components/component-state-and-actions/#toc_html-modifiers-and-actions">Learn more</a
+          (<a href="https://guides.emberjs.com/release/components/component-state-and-actions/#toc_html-modifiers-and-actions">Learn more</a
           >)
         </p>
         <div class="grid">
@@ -481,7 +485,7 @@
         <h3 id="section-constructor-vs-init">Using constructor instead of init.</h3>
         <p>
           constructor is a feature of JavaScript Native Classes, not something
-          Ember made up. Use it instead of init. No more this.set! (<a href="https://octane-guides-preview.emberjs.com/release/components/#toc_component-hooks-and-properties"
+          Ember made up. Use it instead of init. No more this.set! (<a href="https://guides.emberjs.com/release/components/component-state-and-actions/"
             >Learn more</a
           >)
         </p>
@@ -513,7 +517,7 @@
           Instead of writing a didInsertElement method in the JavaScript file, put
           the {{did-insert}} modifier in your template and say which function
           to call when that element is rendered. Label that function with the
-          @action decorator. (<a href="https://octane-guides-preview.emberjs.com/release/components/glimmer-components-dom/#toc_calling-methods-on-first-render">Learn more</a>)
+          @action decorator. (<a href="https://guides.emberjs.com/release/components/template-lifecycle-dom-and-modifiers/">Learn more</a>)
         </p>
         <div class="grid">
           <div>
@@ -535,7 +539,7 @@
           willDestroy is called when the entire component's element will be
           destroyed, similar to willDestroyElement. You can use it as a method
           like below, or via a modifier similar to {{did-insert}} just above.
-          (<a href="https://octane-guides-preview.emberjs.com/release/components/#toc_component-hooks-and-properties">Learn more</a>)
+          (<a href="https://guides.emberjs.com/release/components/template-lifecycle-dom-and-modifiers/">Learn more</a>)
         </p>
         <div class="grid">
           <div>
