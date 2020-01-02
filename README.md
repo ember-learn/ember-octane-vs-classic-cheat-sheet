@@ -1,37 +1,38 @@
 # Ember Octane vs Classic Cheat Sheet
 
-Check out [the deployed app](https://ember-learn.github.io/ember-octane-vs-classic-cheat-sheet/)!
+Check out [the deployed app](https://ember-learn.github.io/ember-octane-vs-classic-cheat-sheet/). Yep, it uses Ember Octane!
 
-See side-by-side examples of Classic Ember vs [Octane Edition](https://emberjs.com/editions).
+You can see side-by-side examples of [Ember Octane](https://emberjs.com/editions/octane) and Ember Classic.
 
-This uses [Prism](https://prismjs.com/) code hightlighting with the [file highlight](https://prismjs.com/plugins/file-highlight/) plugin.
 
-Inspired by [YouMightNotNeedJQuery](http://youmightnotneedjquery.com/).
+## Running Locally
 
-## Running locally
+This is an Ember app, so the usual steps follow:
 
-This is a vanilla JavaScript application. You must serve the files locally in order for the JavaScript and CSS to load in the browser. For example:
+1. Clone this repo.
+    ```bash
+    git clone git@github.com:ember-learn/ember-octane-vs-classic-cheat-sheet.git
+    ```
+1. Change directory.
+    ```bash
+    cd ember-octane-vs-classic-cheat-sheet
+    ```
+1. Install packages.
+    ```bash
+    npm install
+    ```
+1. Run the app.
+    ```bash
+    ember serve
+    ```
+1. Visit your app at [http://localhost:4200](http://localhost:4200).
 
-```
-npm install http-server -g
-http-server .
-```
 
-Visit http://localhost:8080 to see the results.
-If you make changes, restart the server.
-You might have to clear the cache to see your changes. (In Chrome, open the dev tools, then right click on the browser's main refresh arrow and choose Empty Cache and Hard Reload, or configure your dev tools to not keep a cache in the first place.)
+## How to Contribute
 
-## Contributing
+Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for more information.
 
-Contributions are welcome!
-Simple examples can be added to this cheat sheet.
-Copy and paste a `<section>` block in `index.html`.
-Create the code sample files in the `code` directory, change the `data` tag of the `<pre>`, and you're done!
-Try to follow the same file naming scheme as is used elsewhere, and make sure to name any `.hbs` files `.handlebars` instead or the formatting won't get applied.
 
-Advanced strategies should be PR'd directly to the [Ember.js Guides](https://github.com/ember-learn/guides-source/pulls), since the goal of this project is to keep it as short and sweet as possible.
+## Credits
 
-## Deploying
-
-This site is deployed to [GitHub Pages](https://pages.github.com/) automatically from the `master` branch.
-
+This app was inspired by [You might not need jQuery](http://youmightnotneedjquery.com/).
