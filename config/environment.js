@@ -1,51 +1,51 @@
 'use strict';
 
 module.exports = function(environment) {
-    let ENV = {
-        modulePrefix: 'ember-octane-vs-classic-cheat-sheet',
-        environment,
-        rootURL: '/',
-        locationType: 'auto',
-        EmberENV: {
-            FEATURES: {
-                // Here you can enable experimental features on an ember canary build
-                // e.g. EMBER_NATIVE_DECORATOR_SUPPORT: true
-            },
-            EXTEND_PROTOTYPES: {
-                // Prevent Ember Data from overriding Date.parse.
-                Date: false
-            }
-        },
+  let ENV = {
+    modulePrefix: 'ember-octane-vs-classic-cheat-sheet',
+    environment,
+    rootURL: '/',
+    locationType: 'auto',
+    EmberENV: {
+      FEATURES: {
+        // Here you can enable experimental features on an ember canary build
+        // e.g. EMBER_NATIVE_DECORATOR_SUPPORT: true
+      },
+      EXTEND_PROTOTYPES: {
+        // Prevent Ember Data from overriding Date.parse.
+        Date: false
+      }
+    },
 
-        APP: {
-            // Here you can pass flags/options to your application instance
-            // when it is created
-        }
-    };
-
-    if (environment === 'development') {
-        // ENV.APP.LOG_RESOLVER = true;
-        // ENV.APP.LOG_ACTIVE_GENERATION = true;
-        // ENV.APP.LOG_TRANSITIONS = true;
-        // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
-        // ENV.APP.LOG_VIEW_LOOKUPS = true;
+    APP: {
+      // Here you can pass flags/options to your application instance
+      // when it is created
     }
+  };
 
-    if (environment === 'test') {
-        // Testem prefers this...
-        ENV.locationType = 'none';
+  if (environment === 'development') {
+    // ENV.APP.LOG_RESOLVER = true;
+    // ENV.APP.LOG_ACTIVE_GENERATION = true;
+    // ENV.APP.LOG_TRANSITIONS = true;
+    // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
+    // ENV.APP.LOG_VIEW_LOOKUPS = true;
+  }
 
-        // keep test console output quieter
-        ENV.APP.LOG_ACTIVE_GENERATION = false;
-        ENV.APP.LOG_VIEW_LOOKUPS = false;
+  if (environment === 'test') {
+    // Testem prefers this...
+    ENV.locationType = 'none';
 
-        ENV.APP.rootElement = '#ember-testing';
-        ENV.APP.autoboot = false;
-    }
+    // keep test console output quieter
+    ENV.APP.LOG_ACTIVE_GENERATION = false;
+    ENV.APP.LOG_VIEW_LOOKUPS = false;
 
-    if (environment === 'production') {
-        // here you can enable a production-specific feature
-    }
+    ENV.APP.rootElement = '#ember-testing';
+    ENV.APP.autoboot = false;
+  }
 
-    return ENV;
+  if (environment === 'production') {
+    // here you can enable a production-specific feature
+  }
+
+  return ENV;
 };

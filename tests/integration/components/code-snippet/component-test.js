@@ -4,41 +4,41 @@ import { setupRenderingTest } from 'ember-qunit';
 import { module, test } from 'qunit';
 
 module('Integration | Component | code-snippet', function(hooks) {
-    setupRenderingTest(hooks);
+  setupRenderingTest(hooks);
 
 
-    test('should render a Handlebars file', async function(assert) {
-        await render(hbs`
-            <CodeSnippet
-                @fileName="ddau/octane-parent.handlebars"
-            />
-        `);
+  test('should render a Handlebars file', async function(assert) {
+    await render(hbs`
+      <CodeSnippet
+        @fileName="ddau/octane-parent.handlebars"
+      />
+    `);
 
-        assert.dom('[data-test-code-snippet]')
-            .hasText('{{!-- parent-component.hbs --}} <ChildComponent @plusOne={{this.plusOne}} /> Count: {{this.count}}');
-    });
-
-
-    test('should render a JavaScript file', async function(assert) {
-        await render(hbs`
-            <CodeSnippet
-                @fileName="ddau/classic-parent.js"
-            />
-        `);
-
-        assert.dom('[data-test-code-snippet]')
-            .hasText('// parent-component.js import Component from \'@ember/component\'; export default Component.extend({ count: 0 });');
-    });
+    assert.dom('[data-test-code-snippet]')
+      .hasText('{{!-- parent-component.hbs --}} <ChildComponent @plusOne={{this.plusOne}} /> Count: {{this.count}}');
+  });
 
 
-    test('should render a shell file', async function(assert) {
-        await render(hbs`
-            <CodeSnippet
-                @fileName="generating-component/classic.shell"
-            />
-        `);
+  test('should render a JavaScript file', async function(assert) {
+    await render(hbs`
+      <CodeSnippet
+        @fileName="ddau/classic-parent.js"
+      />
+    `);
 
-        assert.dom('[data-test-code-snippet]')
-            .hasText('ember generate component');
-    });
+    assert.dom('[data-test-code-snippet]')
+      .hasText('// parent-component.js import Component from \'@ember/component\'; export default Component.extend({ count: 0 });');
+  });
+
+
+  test('should render a shell file', async function(assert) {
+    await render(hbs`
+      <CodeSnippet
+        @fileName="generating-component/classic.shell"
+      />
+    `);
+
+    assert.dom('[data-test-code-snippet]')
+      .hasText('ember generate component');
+  });
 });
