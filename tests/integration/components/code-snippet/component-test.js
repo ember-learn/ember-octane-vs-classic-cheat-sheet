@@ -10,7 +10,7 @@ module('Integration | Component | code-snippet', function(hooks) {
   test('should render a Handlebars file', async function(assert) {
     await render(hbs`
       <CodeSnippet
-        @fileName="ddau/octane-parent.handlebars"
+        @fileName="ddau/octane-parent.hbs"
       />
     `);
 

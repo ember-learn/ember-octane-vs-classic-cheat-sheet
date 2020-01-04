@@ -82,14 +82,14 @@ module('Integration | Component | guide-section/subsection', function(hooks) {
       id: 'ddau',
       classicFiles: [
         'classic-parent.js',
-        'classic-parent.handlebars',
+        'classic-parent.hbs',
         'classic-child.js',
-        'classic-child.handlebars'
+        'classic-child.hbs'
       ],
       octaneFiles: [
         'octane-parent.js',
-        'octane-parent.handlebars',
-        'octane-child.handlebars',
+        'octane-parent.hbs',
+        'octane-child.hbs',
       ]
     };
 

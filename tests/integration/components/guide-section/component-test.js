@@ -33,21 +33,21 @@ module('Integration | Component | guide-section', function(hooks) {
           id: 'actions',
           classicFiles: [
             'classic.js',
-            'classic.handlebars'
+            'classic.hbs'
           ],
           octaneFiles: [
             'octane.js',
-            'octane.handlebars'
+            'octane.hbs'
           ]
         },
         {
           id: 'template-arguments-default',
           classicFiles: [
-            'classic.handlebars',
+            'classic.hbs',
             'classic.js'
           ],
           octaneFiles: [
-            'octane.handlebars',
+            'octane.hbs',
             'octane.js'
           ]
         },

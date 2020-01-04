@@ -32,74 +32,74 @@ export default class ApplicationRoute extends Route {
           {
             id: 'angle-brackets',
             classicFiles: [
-              'classic.handlebars'
+              'classic.hbs'
             ],
             octaneFiles: [
-              'octane.handlebars'
+              'octane.hbs'
             ]
           },
           {
             id: 'inline-vs-block',
             classicFiles: [
-              'classic.handlebars'
+              'classic.hbs'
             ],
             octaneFiles: [
-              'octane.handlebars'
+              'octane.hbs'
             ]
           },
           {
             id: 'angle-brackets-nested',
             classicFiles: [
-              'classic.handlebars'
+              'classic.hbs'
             ],
             octaneFiles: [
-              'octane.handlebars'
+              'octane.hbs'
             ]
           },
           {
             id: 'template-named',
             classicFiles: [
-              'classic.handlebars'
+              'classic.hbs'
             ],
             octaneFiles: [
-              'octane.handlebars'
+              'octane.hbs'
             ]
           },
           {
             id: 'template-this',
             classicFiles: [
-              'classic.handlebars'
+              'classic.hbs'
             ],
             octaneFiles: [
-              'octane.handlebars'
+              'octane.hbs'
             ]
           },
           {
             id: 'template-arguments-named',
             classicFiles: [
-              'classic.handlebars'
+              'classic.hbs'
             ],
             octaneFiles: [
-              'octane.handlebars'
+              'octane.hbs'
             ]
           },
           {
             id: 'template-arguments-this',
             classicFiles: [
-              'classic.handlebars'
+              'classic.hbs'
             ],
             octaneFiles: [
-              'octane.handlebars'
+              'octane.hbs'
             ]
           },
           {
             id: 'tag-name',
             classicFiles: [
-              'classic.handlebars',
+              'classic.hbs',
               'classic.html'
             ],
             octaneFiles: [
-              'octane.handlebars',
+              'octane.hbs',
               'octane.html'
             ]
           },
@@ -107,11 +107,11 @@ export default class ApplicationRoute extends Route {
             id: 'element-id',
             classicFiles: [
               'classic.js',
-              'classic.handlebars'
+              'classic.hbs'
             ],
             octaneFiles: [
               'octane.js',
-              'octane.handlebars'
+              'octane.hbs'
             ]
           }
         ]
@@ -141,14 +141,14 @@ export default class ApplicationRoute extends Route {
             id: 'ddau',
             classicFiles: [
               'classic-parent.js',
-              'classic-parent.handlebars',
+              'classic-parent.hbs',
               'classic-child.js',
-              'classic-child.handlebars'
+              'classic-child.hbs'
             ],
             octaneFiles: [
               'octane-parent.js',
-              'octane-parent.handlebars',
-              'octane-child.handlebars',
+              'octane-parent.hbs',
+              'octane-child.hbs',
             ]
           },
           {
@@ -187,21 +187,21 @@ export default class ApplicationRoute extends Route {
             id: 'actions',
             classicFiles: [
               'classic.js',
-              'classic.handlebars'
+              'classic.hbs'
             ],
             octaneFiles: [
               'octane.js',
-              'octane.handlebars'
+              'octane.hbs'
             ]
           },
           {
             id: 'template-arguments-default',
             classicFiles: [
-              'classic.handlebars',
+              'classic.hbs',
               'classic.js'
             ],
             octaneFiles: [
-              'octane.handlebars',
+              'octane.hbs',
               'octane.js'
             ]
           },
@@ -237,11 +237,11 @@ export default class ApplicationRoute extends Route {
           {
             id: 'did-insert',
             classicFiles: [
-              'classic.handlebars',
+              'classic.hbs',
               'classic.js'
             ],
             octaneFiles: [
-              'octane.handlebars',
+              'octane.hbs',
               'octane.js'
             ]
           },
@@ -262,10 +262,10 @@ export default class ApplicationRoute extends Route {
           {
             id: 'model-access',
             classicFiles: [
-              'classic.handlebars'
+              'classic.hbs'
             ],
             octaneFiles: [
-              'octane.handlebars'
+              'octane.hbs'
             ]
           }
         ]
