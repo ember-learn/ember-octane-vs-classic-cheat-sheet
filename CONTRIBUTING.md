@@ -11,9 +11,9 @@ Advanced strategies should be PR'ed directly to the [Ember.js Guides](https://gi
 
 This is an Ember app, so the usual steps follow:
 
-1. Clone this repo.
+1. Fork and clone this repo.
     ```bash
-    git clone git@github.com:ember-learn/ember-octane-vs-classic-cheat-sheet.git
+    git clone git@github.com:<your GitHub handle>/ember-octane-vs-classic-cheat-sheet.git
     ```
 1. Change directory.
     ```bash
@@ -39,7 +39,7 @@ This site is deployed to [GitHub Pages](https://pages.github.com/) automatically
 
 ### 1. Model hook
 
-First, Have a look at `app/routes/application.js`.
+First, have a look at `app/routes/application.js`.
 
 The `model` hook returns an array of `section` objects. Each section can further define an array of `subsection` objects.
 
@@ -47,7 +47,7 @@ The `model` hook returns an array of `section` objects. Each section can further
 
 ### 2. Ember Intl
 
-Next, We want to explain to the reader what a section or subsection is about.
+Next, we want to explain to the reader what a section or subsection is about.
 
 We store titles and descriptions in `translations/en-us.yaml`. A description can contain HTML elements like hyperlinks.
 
