@@ -33,5 +33,5 @@ Advanced strategies should be PR'd directly to the [Ember.js Guides](https://git
 
 ## Deploying
 
-This site is deployed to [GitHub Pages](https://pages.github.com/) automatically from the `master` branch.
+This site is deployed to [GitHub Pages](https://pages.github.com/) automatically from the `gh-pages` branch.
 
