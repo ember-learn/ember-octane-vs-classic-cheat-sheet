@@ -8,6 +8,6 @@ export default class ChildComponent extends Component {
   addOne() {
     console.log('1+1=2');
     // call the function passed in by the parent component
-    this.args.plusOne()
+    this.args.plusOne();
   }
 }
