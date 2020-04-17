@@ -331,7 +331,18 @@
       <section aria-labelledby="section-data-down-actions-up">
         <h3 id="section-data-down-actions-up">Data Down, Actions Up</h3>
         <p>
-          Octane components enforce "Data Down, Actions Up." That means that when data is passed down to a component, the only way to change that data is by using an action that was passed in as well. Said another way, there is no two-way binding of component arguments.
+          Octane components enforce "Data Down, Actions Up." 
+          That means that when data is passed down to a component, the only way to change that data
+          is by using an action that was passed in as well. 
+          Said another way, there is no two-way binding of component arguments.
+        </p>
+        <p>
+          Call an action
+          <ul>
+            <li>in a template with {{on "event name" @myAction}}</li> 
+            <li>in a child component with <ChildComponent @onDidSomething={{@myAction}}/> </li>
+            <li>or in the component JavaScript with this.args.myAction</li>
+          </ul>
         </p>
         <div class="grid">
           <div>
@@ -346,6 +357,7 @@
             <pre data-src="code/ddau/octane-parent.js"></pre>
             <pre data-src="code/ddau/octane-parent.handlebars"></pre>
             <pre data-src="code/ddau/octane-child.handlebars"></pre>
+            <pre data-src="code/ddau/octane-child.js"></pre>
           </div>
         </div>
       </section>
