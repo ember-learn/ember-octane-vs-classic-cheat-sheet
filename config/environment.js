@@ -44,7 +44,10 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-    // here you can enable a production-specific feature
+    if (environment === 'production') {
+      ENV.rootURL = '/deploy-testing-ember-octane-vs-classic-cheat-sheet';
+      ENV.locationType = 'hash';
+    }
   }
 
   return ENV;
