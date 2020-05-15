@@ -45,7 +45,7 @@ module.exports = function(environment) {
 
   if (environment === 'production') {
     if (environment === 'production') {
-      ENV.rootURL = '/ember-octane-vs-classic-cheat-sheet';
+      ENV.rootURL = '/deploy-testing-ember-octane-vs-classic-cheat-sheet';
       ENV.locationType = 'hash';
     }
   }
