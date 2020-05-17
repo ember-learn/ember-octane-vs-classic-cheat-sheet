@@ -1,8 +1,0 @@
-# -gc stands for glimmer component
-ember generate component my-component -gc
-
-# -cc stands for classic component
-ember generate component my-component -cc
-
-# See the full set of options with this:
-ember generate component --help

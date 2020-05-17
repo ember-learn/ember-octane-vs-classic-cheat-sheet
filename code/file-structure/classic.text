@@ -1,6 +1,0 @@
-app/
-  components/
-    my-component.js
-  templates/
-    components/
-      my-component.hbs
