@@ -4,6 +4,11 @@ Check out [the deployed app](https://ember-learn.github.io/ember-octane-vs-class
 
 You can see side-by-side examples of [Ember Octane](https://emberjs.com/editions/octane) and Ember Classic.
 
+## Testing
+
+```sh
+npx ember test
+```
 
 ## How to Contribute
 
