@@ -1,0 +1,56 @@
+{{#let
+  @subsection.id
+  (t (concat @sectionId "." @subsection.id ".title"))
+  (t (concat @sectionId "." @subsection.id ".description") htmlSafe=true)
+  as |subsectionId subsectionTitle subsectionDescription|
+}}
+  <section
+    data-test-subsection={{subsectionTitle}}
+    aria-labelledby="{{@sectionId}}__{{subsectionId}}"
+  >
+    <h3
+      data-test-field="Subsection Title"
+      id="{{@sectionId}}__{{subsectionId}}"
+    >
+      {{subsectionTitle}}
+    </h3>
+
+    <p data-test-field="Subsection Description">
+      {{subsectionDescription}}
+    </p>
+
+    <div class="grid">
+      <div data-test-ember-classic>
+        <h4>{{t "component.guide-section.subsection.classic"}}</h4>
+
+        {{#each @subsection.classicFiles as |file|}}
+          <CodeSnippet
+            @fileName="{{subsectionId}}/{{file}}"
+          />
+        {{/each}}
+
+        {{#if @subsection.classicDescriptionKey}}
+          <p data-test-general-text>
+            {{t @subsection.classicDescriptionKey htmlSafe=true}}
+          </p>
+        {{/if}}
+      </div>
+
+      <div data-test-ember-octane>
+        <h4>{{t "component.guide-section.subsection.octane"}}</h4>
+
+        {{#each @subsection.octaneFiles as |file|}}
+          <CodeSnippet
+            @fileName="{{subsectionId}}/{{file}}"
+          />
+        {{/each}}
+
+        {{#if @subsection.octaneDescriptionKey}}
+          <p data-test-general-text>
+            {{t @subsection.octaneDescriptionKey htmlSafe=true}}
+          </p>
+        {{/if}}
+      </div>
+    </div>
+  </section>
+{{/let}}

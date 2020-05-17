@@ -1,0 +1,15 @@
+<header>
+  <img src="assets/ember-octane_text-treatment.png" alt={{t "layout.application.logo-alt-text"}} class="header-logo">
+</header>
+
+<main>
+  <h1>{{t "layout.application.title"}}</h1>
+
+  <p>{{t "layout.application.description" htmlSafe=true}}</p>
+
+  {{#each @model as |section|}}
+    <GuideSection
+      @section={{section}}
+    />
+  {{/each}}
+</main>
