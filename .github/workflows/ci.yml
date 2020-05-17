@@ -4,6 +4,7 @@ on:
     push:
         branches:
             - master
+            - emberify
     pull_request:
 
 env:
