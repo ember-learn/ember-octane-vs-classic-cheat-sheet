@@ -10,11 +10,11 @@ on:
 env:
     NODE_VERSION: 12.16
     # PERCY_PARALLEL_NONCE: ${{ github.run_id }}-${{ github.run_number }}
-    # PERCY_PARALLEL_TOTAL: 6
+    # PERCY_PARALLEL_TOTAL: 1
 
 jobs:
     lint:
-        name: Lint files and dependencies
+        name: Lint files
         runs-on: ubuntu-latest
         timeout-minutes: 10
         steps:
