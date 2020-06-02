@@ -45,10 +45,13 @@ h3 {
 h4 {
   margin-bottom: 0;
 }
-.grid {
-  display: grid;
-  grid-gap: 4%;
-  grid-template-columns: 48% 48%;
+
+@media (min-width: 700px) {
+  .grid {
+    display: grid;
+    grid-gap: 4%;
+    grid-template-columns: 48% 48%;
+  }
 }
 code[class*="language-"], pre[class*="language-"] {
   white-space: pre-wrap!important;
