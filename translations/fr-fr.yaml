@@ -20,11 +20,11 @@ component:
 
 
 generating-files:
-  title: Generating Files
+  title: Génération de fichiers
 
   generating-component:
-    title: Use an option to generate a component's JavaScript
-    description: "In classic Ember, \"ember generate component\" created three files: the template, a JavaScript file, and a test. In Octane, \"ember generate component\" creates only a template. If you want the backing JavaScript Class as well, include an option."
+    title: Utiliser une option pour générer le fichier JavaScript d'un composant
+    description: "Avec Ember classic, \"ember generate component\" générait trois fichiers: le template, un fichier JavaScript et un test. Sous Octane, \"ember generate component\" crée uniquement un template. Si vous souhaitez également générer le fichier JavaScript définissant la Class, vous devez préciser une option."
 
   file-structure:
     title: Component templates and JavaScript are in the same directory
