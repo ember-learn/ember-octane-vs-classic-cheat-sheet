@@ -27,16 +27,16 @@ generating-files:
     description: "Avec Ember classic, \"ember generate component\" générait trois fichiers: le template, un fichier JavaScript et un test. Sous Octane, \"ember generate component\" crée uniquement un template. Si vous souhaitez également générer le fichier JavaScript définissant la Class, vous devez préciser une option."
 
   file-structure:
-    title: Component templates and JavaScript are in the same directory
-    description: "The location of component templates has changed in Octane. This is known as \"template co-location.\""
+    title: Les fichiers .hbs et .js d'un composant sont placés dans le même dossier
+    description: "Avec Octane, l'emplacement du template d'un composant a changé. Nous parlons maintenant de \"template co-location.\""
 
 
 component-templates:
-  title: Component Templates
+  title: Templates des composants
 
   angle-brackets:
-    title: Angle brackets component invocation
-    description: "Angle brackets are a way to invoke components in a template file. There's no change in behavior. Learn more about <a href=\"https://guides.emberjs.com/release/components/\" target=\"_blank\" rel=\"noopener noreferrer\">features</a> and <a href=\"https://guides.emberjs.com/release/upgrading/current-edition/#toc_octane-upgrade-strategy\" target=\"_blank\" rel=\"noopener noreferrer\">using codemods</a> to update your existing components."
+    title: Invocation «Angle brackets» des composants
+    description: "«Angle brackets» est une manière d'invoquer un/des composants dans un fichier de templates. Fonctionnellement, cela n'a aucun impact. Pour en savoir plus : <a href=\"https://guides.emberjs.com/release/components/\" target=\"_blank\" rel=\"noopener noreferrer\">features</a> et <a href=\"https://guides.emberjs.com/release/upgrading/current-edition/#toc_octane-upgrade-strategy\" target=\"_blank\" rel=\"noopener noreferrer\">les codemods</a> pour migrer vos composants."
 
   inline-vs-block:
     title: Inline vs block components
