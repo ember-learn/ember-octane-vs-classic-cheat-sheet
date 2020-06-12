@@ -43,8 +43,8 @@ component-templates:
     description: "Vous pouvez invoquer un composant «Angle brackets» inline ou bien sous forme de block. Le fonctionnement ne sera pas affecté. \\{\\{yield\\}\\} se comporte de la même manière. Pour en savoir plus : <a href=\"https://guides.emberjs.com/release/components/block-content/\" target=\"_blank\" rel=\"noopener noreferrer\">features</a> et <a href=\"https://guides.emberjs.com/release/upgrading/current-edition/\" target=\"_blank\" rel=\"noopener noreferrer\">les codemods</a> pour migrer vos composants."
 
   angle-brackets-nested:
-    title: Nesting components in your file structure
-    description: You can nest components in your file structure, and use them in a template with Angle Brackets invocation. There's no change in behavior.
+    title: «Nester» les composants dans le système de fichiers
+    description: Vous pouvez «nester» les composants dans votre codebase et les utiliser dans un template via l'invocation «Angle brackets». Les fonctionnalités seront identiques.
 
   template-named:
     title: Using named argument
