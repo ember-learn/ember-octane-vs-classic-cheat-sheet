@@ -39,8 +39,8 @@ component-templates:
     description: "«Angle brackets» est une manière d'invoquer un/des composants dans un fichier de templates. Fonctionnellement, cela n'a aucun impact. Pour en savoir plus : <a href=\"https://guides.emberjs.com/release/components/\" target=\"_blank\" rel=\"noopener noreferrer\">features</a> et <a href=\"https://guides.emberjs.com/release/upgrading/current-edition/#toc_octane-upgrade-strategy\" target=\"_blank\" rel=\"noopener noreferrer\">les codemods</a> pour migrer vos composants."
 
   inline-vs-block:
-    title: Inline vs block components
-    description: "Angle brackets components can be used as either inline or block components. There's no change in behavior. \\{\\{yield\\}\\} looks and works the same. Learn more about <a href=\"https://guides.emberjs.com/release/components/block-content/\" target=\"_blank\" rel=\"noopener noreferrer\">features</a> and <a href=\"https://guides.emberjs.com/release/upgrading/current-edition/\" target=\"_blank\" rel=\"noopener noreferrer\">using codemods</a> to update your existing components."
+    title: Composants inline vs composants block
+    description: "Vous pouvez invoquer un composant «Angle brackets» inline ou bien sous forme de block. Le fonctionnement ne sera pas affecté. \\{\\{yield\\}\\} se comporte de la même manière. Pour en savoir plus : <a href=\"https://guides.emberjs.com/release/components/block-content/\" target=\"_blank\" rel=\"noopener noreferrer\">features</a> et <a href=\"https://guides.emberjs.com/release/upgrading/current-edition/\" target=\"_blank\" rel=\"noopener noreferrer\">les codemods</a> pour migrer vos composants."
 
   angle-brackets-nested:
     title: Nesting components in your file structure
