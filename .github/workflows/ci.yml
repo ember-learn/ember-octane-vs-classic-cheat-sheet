@@ -55,7 +55,7 @@ jobs:
               #   steps.cache-node-modules.outputs.cache-hit != 'true'
 
             - name: Lint
-              run: yarn lint:hbs && yarn lint:js
+              run: yarn lint
 
 
     run-tests:
