@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     
-<meta name="ember-octane-vs-classic-cheat-sheet/config/environment" content="%7B%22modulePrefix%22%3A%22ember-octane-vs-classic-cheat-sheet%22%2C%22environment%22%3A%22production%22%2C%22rootURL%22%3A%22%2Fember-octane-vs-classic-cheat-sheet%2F%22%2C%22locationType%22%3A%22hash%22%2C%22EmberENV%22%3A%7B%22FEATURES%22%3A%7B%7D%2C%22EXTEND_PROTOTYPES%22%3A%7B%22Date%22%3Afalse%7D%2C%22_APPLICATION_TEMPLATE_WRAPPER%22%3Afalse%2C%22_DEFAULT_ASYNC_OBSERVERS%22%3Atrue%2C%22_JQUERY_INTEGRATION%22%3Afalse%2C%22_TEMPLATE_ONLY_GLIMMER_COMPONENTS%22%3Atrue%7D%2C%22APP%22%3A%7B%22name%22%3A%22ember-octane-vs-classic-cheat-sheet%22%2C%22version%22%3A%220.0.0%2B43a08b55%22%7D%2C%22exportApplicationGlobal%22%3Afalse%7D" />
+<meta name="ember-octane-vs-classic-cheat-sheet/config/environment" content="%7B%22modulePrefix%22%3A%22ember-octane-vs-classic-cheat-sheet%22%2C%22environment%22%3A%22production%22%2C%22rootURL%22%3A%22%2Fember-octane-vs-classic-cheat-sheet%2F%22%2C%22locationType%22%3A%22hash%22%2C%22EmberENV%22%3A%7B%22FEATURES%22%3A%7B%7D%2C%22EXTEND_PROTOTYPES%22%3A%7B%22Date%22%3Afalse%7D%2C%22_APPLICATION_TEMPLATE_WRAPPER%22%3Afalse%2C%22_DEFAULT_ASYNC_OBSERVERS%22%3Atrue%2C%22_JQUERY_INTEGRATION%22%3Afalse%2C%22_TEMPLATE_ONLY_GLIMMER_COMPONENTS%22%3Atrue%7D%2C%22APP%22%3A%7B%22name%22%3A%22ember-octane-vs-classic-cheat-sheet%22%2C%22version%22%3A%221.0.0%2B3c005498%22%7D%2C%22exportApplicationGlobal%22%3Afalse%7D" />
 <!-- EMBER_CLI_FASTBOOT_TITLE -->
 
     <link integrity="" rel="stylesheet" href="/ember-octane-vs-classic-cheat-sheet/assets/vendor-93bb1f846906ab54d3e4d1131e0887ff.css">
@@ -47,7 +47,7 @@
       <div>
         <h4>Classic</h4>
 
-            <pre id="ember5" class="code-block language-bash ember-view"><!----><code class="language-bash">ember generate component</code></pre>
+            <pre id="ember3" class="code-block language-bash ember-view"><!----><code class="language-bash">ember generate component</code></pre>
 
 
 <!---->      </div>
@@ -55,7 +55,7 @@
       <div>
         <h4>Octane</h4>
 
-            <pre id="ember6" class="code-block language-bash ember-view"><!----><code class="language-bash"><span class="token comment"># -gc stands for glimmer component</span>
+            <pre id="ember4" class="code-block language-bash ember-view"><!----><code class="language-bash"><span class="token comment"># -gc stands for glimmer component</span>
 ember generate component my-component -gc
 
 <span class="token comment"># -cc stands for classic component</span>
@@ -82,7 +82,7 @@ ember generate component --help</code></pre>
       <div>
         <h4>Classic</h4>
 
-            <pre id="ember8" class="code-block language-markup ember-view"><!----><code class="language-markup">app/
+            <pre id="ember5" class="code-block language-markup ember-view"><!----><code class="language-markup">app/
   components/
     my-component.js
   templates/
@@ -95,7 +95,7 @@ ember generate component --help</code></pre>
       <div>
         <h4>Octane</h4>
 
-            <pre id="ember9" class="code-block language-markup ember-view"><!----><code class="language-markup">app/
+            <pre id="ember6" class="code-block language-markup ember-view"><!----><code class="language-markup">app/
   components/
     my-component.js
     my-component.hbs</code></pre>
@@ -128,7 +128,7 @@ ember generate component --help</code></pre>
       <div>
         <h4>Classic</h4>
 
-            <pre id="ember12" class="code-block language-handlebars ember-view"><!----><code class="language-handlebars"><span class="token handlebars language-handlebars"><span class="token delimiter punctuation">{{</span><span class="token variable">my-component</span><span class="token delimiter punctuation">}}</span></span></code></pre>
+            <pre id="ember7" class="code-block language-handlebars ember-view"><!----><code class="language-handlebars"><span class="token handlebars language-handlebars"><span class="token delimiter punctuation">{{</span><span class="token variable">my-component</span><span class="token delimiter punctuation">}}</span></span></code></pre>
 
 
 <!---->      </div>
@@ -136,7 +136,7 @@ ember generate component --help</code></pre>
       <div>
         <h4>Octane</h4>
 
-            <pre id="ember13" class="code-block language-handlebars ember-view"><!----><code class="language-handlebars"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>MyComponent</span> <span class="token punctuation">/></span></span></code></pre>
+            <pre id="ember8" class="code-block language-handlebars ember-view"><!----><code class="language-handlebars"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>MyComponent</span> <span class="token punctuation">/></span></span></code></pre>
 
 
 <!---->      </div>
@@ -156,7 +156,7 @@ ember generate component --help</code></pre>
       <div>
         <h4>Classic</h4>
 
-            <pre id="ember15" class="code-block language-handlebars ember-view"><!----><code class="language-handlebars"><span class="token comment">&lt;!-- inline --></span>
+            <pre id="ember9" class="code-block language-handlebars ember-view"><!----><code class="language-handlebars"><span class="token comment">&lt;!-- inline --></span>
 <span class="token handlebars language-handlebars"><span class="token delimiter punctuation">{{</span><span class="token variable">my-component</span><span class="token delimiter punctuation">}}</span></span>
 
 <span class="token comment">&lt;!-- block --></span>
@@ -170,7 +170,7 @@ some markup or <span class="token handlebars language-handlebars"><span class="t
       <div>
         <h4>Octane</h4>
 
-            <pre id="ember16" class="code-block language-handlebars ember-view"><!----><code class="language-handlebars"><span class="token comment">&lt;!-- inline --></span>
+            <pre id="ember10" class="code-block language-handlebars ember-view"><!----><code class="language-handlebars"><span class="token comment">&lt;!-- inline --></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>MyComponent</span> <span class="token punctuation">/></span></span>
 
 <span class="token comment">&lt;!-- block --></span>
@@ -196,7 +196,7 @@ some markup or <span class="token handlebars language-handlebars"><span class="t
       <div>
         <h4>Classic</h4>
 
-            <pre id="ember18" class="code-block language-handlebars ember-view"><!----><code class="language-handlebars"><span class="token handlebars language-handlebars"><span class="token delimiter punctuation">{{</span><span class="token variable">ui-files</span><span class="token punctuation">/</span><span class="token variable">my-component</span><span class="token delimiter punctuation">}}</span></span></code></pre>
+            <pre id="ember11" class="code-block language-handlebars ember-view"><!----><code class="language-handlebars"><span class="token handlebars language-handlebars"><span class="token delimiter punctuation">{{</span><span class="token variable">ui-files</span><span class="token punctuation">/</span><span class="token variable">my-component</span><span class="token delimiter punctuation">}}</span></span></code></pre>
 
 
 <!---->      </div>
@@ -204,7 +204,7 @@ some markup or <span class="token handlebars language-handlebars"><span class="t
       <div>
         <h4>Octane</h4>
 
-            <pre id="ember19" class="code-block language-handlebars ember-view"><!----><code class="language-handlebars"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token namespace">UiFiles:</span>:MyComponent</span> <span class="token punctuation">/></span></span></code></pre>
+            <pre id="ember12" class="code-block language-handlebars ember-view"><!----><code class="language-handlebars"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token namespace">UiFiles:</span>:MyComponent</span> <span class="token punctuation">/></span></span></code></pre>
 
 
 <!---->      </div>
@@ -224,7 +224,7 @@ some markup or <span class="token handlebars language-handlebars"><span class="t
       <div>
         <h4>Classic</h4>
 
-            <pre id="ember21" class="code-block language-handlebars ember-view"><!----><code class="language-handlebars"><span class="token handlebars language-handlebars"><span class="token delimiter punctuation">{{</span><span class="token variable">answer</span><span class="token delimiter punctuation">}}</span></span> is the answer.</code></pre>
+            <pre id="ember13" class="code-block language-handlebars ember-view"><!----><code class="language-handlebars"><span class="token handlebars language-handlebars"><span class="token delimiter punctuation">{{</span><span class="token variable">answer</span><span class="token delimiter punctuation">}}</span></span> is the answer.</code></pre>
 
 
 <!---->      </div>
@@ -232,7 +232,7 @@ some markup or <span class="token handlebars language-handlebars"><span class="t
       <div>
         <h4>Octane</h4>
 
-            <pre id="ember22" class="code-block language-handlebars ember-view"><!----><code class="language-handlebars"><span class="token handlebars language-handlebars"><span class="token delimiter punctuation">{{</span><span class="token punctuation">@</span><span class="token variable">answer</span><span class="token delimiter punctuation">}}</span></span> is the answer.</code></pre>
+            <pre id="ember14" class="code-block language-handlebars ember-view"><!----><code class="language-handlebars"><span class="token handlebars language-handlebars"><span class="token delimiter punctuation">{{</span><span class="token punctuation">@</span><span class="token variable">answer</span><span class="token delimiter punctuation">}}</span></span> is the answer.</code></pre>
 
 
 <!---->      </div>
@@ -252,7 +252,7 @@ some markup or <span class="token handlebars language-handlebars"><span class="t
       <div>
         <h4>Classic</h4>
 
-            <pre id="ember24" class="code-block language-handlebars ember-view"><!----><code class="language-handlebars"><span class="token handlebars language-handlebars"><span class="token delimiter punctuation">{{</span><span class="token variable">answer</span><span class="token delimiter punctuation">}}</span></span> is the answer.</code></pre>
+            <pre id="ember15" class="code-block language-handlebars ember-view"><!----><code class="language-handlebars"><span class="token handlebars language-handlebars"><span class="token delimiter punctuation">{{</span><span class="token variable">answer</span><span class="token delimiter punctuation">}}</span></span> is the answer.</code></pre>
 
 
 <!---->      </div>
@@ -260,7 +260,7 @@ some markup or <span class="token handlebars language-handlebars"><span class="t
       <div>
         <h4>Octane</h4>
 
-            <pre id="ember25" class="code-block language-handlebars ember-view"><!----><code class="language-handlebars"><span class="token handlebars language-handlebars"><span class="token delimiter punctuation">{{</span><span class="token variable">this</span><span class="token punctuation">.</span><span class="token variable">answer</span><span class="token delimiter punctuation">}}</span></span> is the answer.</code></pre>
+            <pre id="ember16" class="code-block language-handlebars ember-view"><!----><code class="language-handlebars"><span class="token handlebars language-handlebars"><span class="token delimiter punctuation">{{</span><span class="token variable">this</span><span class="token punctuation">.</span><span class="token variable">answer</span><span class="token delimiter punctuation">}}</span></span> is the answer.</code></pre>
 
 
 <!---->      </div>
@@ -280,7 +280,7 @@ some markup or <span class="token handlebars language-handlebars"><span class="t
       <div>
         <h4>Classic</h4>
 
-            <pre id="ember27" class="code-block language-handlebars ember-view"><!----><code class="language-handlebars"><span class="token handlebars language-handlebars"><span class="token delimiter punctuation">{{</span><span class="token variable">my-component</span> <span class="token variable">answer</span><span class="token punctuation">=</span><span class="token number">42</span><span class="token delimiter punctuation">}}</span></span></code></pre>
+            <pre id="ember17" class="code-block language-handlebars ember-view"><!----><code class="language-handlebars"><span class="token handlebars language-handlebars"><span class="token delimiter punctuation">{{</span><span class="token variable">my-component</span> <span class="token variable">answer</span><span class="token punctuation">=</span><span class="token number">42</span><span class="token delimiter punctuation">}}</span></span></code></pre>
 
 
 <!---->      </div>
@@ -288,7 +288,7 @@ some markup or <span class="token handlebars language-handlebars"><span class="t
       <div>
         <h4>Octane</h4>
 
-            <pre id="ember28" class="code-block language-handlebars ember-view"><!----><code class="language-handlebars"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>MyComponent</span> <span class="token attr-name">@answer</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token handlebars language-handlebars"><span class="token delimiter punctuation">{{</span><span class="token number">42</span><span class="token delimiter punctuation">}}</span></span></span> <span class="token punctuation">/></span></span></code></pre>
+            <pre id="ember18" class="code-block language-handlebars ember-view"><!----><code class="language-handlebars"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>MyComponent</span> <span class="token attr-name">@answer</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token handlebars language-handlebars"><span class="token delimiter punctuation">{{</span><span class="token number">42</span><span class="token delimiter punctuation">}}</span></span></span> <span class="token punctuation">/></span></span></code></pre>
 
 
 <!---->      </div>
@@ -308,7 +308,7 @@ some markup or <span class="token handlebars language-handlebars"><span class="t
       <div>
         <h4>Classic</h4>
 
-            <pre id="ember30" class="code-block language-handlebars ember-view"><!----><code class="language-handlebars"><span class="token handlebars language-handlebars"><span class="token delimiter punctuation">{{</span><span class="token variable">my-component</span> <span class="token variable">answer</span><span class="token punctuation">=</span><span class="token variable">answer</span><span class="token delimiter punctuation">}}</span></span></code></pre>
+            <pre id="ember19" class="code-block language-handlebars ember-view"><!----><code class="language-handlebars"><span class="token handlebars language-handlebars"><span class="token delimiter punctuation">{{</span><span class="token variable">my-component</span> <span class="token variable">answer</span><span class="token punctuation">=</span><span class="token variable">answer</span><span class="token delimiter punctuation">}}</span></span></code></pre>
 
 
 <!---->      </div>
@@ -316,7 +316,7 @@ some markup or <span class="token handlebars language-handlebars"><span class="t
       <div>
         <h4>Octane</h4>
 
-            <pre id="ember31" class="code-block language-handlebars ember-view"><!----><code class="language-handlebars"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>MyComponent</span> <span class="token attr-name">@answer</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token handlebars language-handlebars"><span class="token delimiter punctuation">{{</span><span class="token variable">this</span><span class="token punctuation">.</span><span class="token variable">answer</span><span class="token delimiter punctuation">}}</span></span></span> <span class="token punctuation">/></span></span></code></pre>
+            <pre id="ember20" class="code-block language-handlebars ember-view"><!----><code class="language-handlebars"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>MyComponent</span> <span class="token attr-name">@answer</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token handlebars language-handlebars"><span class="token delimiter punctuation">{{</span><span class="token variable">this</span><span class="token punctuation">.</span><span class="token variable">answer</span><span class="token delimiter punctuation">}}</span></span></span> <span class="token punctuation">/></span></span></code></pre>
 
 
 <!---->      </div>
@@ -336,7 +336,7 @@ some markup or <span class="token handlebars language-handlebars"><span class="t
       <div>
         <h4>Classic</h4>
 
-            <pre id="ember33" class="code-block language-handlebars ember-view"><!----><code class="language-handlebars"><span class="token comment">&lt;!-- parent-component.hbs --></span>
+            <pre id="ember21" class="code-block language-handlebars ember-view"><!----><code class="language-handlebars"><span class="token comment">&lt;!-- parent-component.hbs --></span>
 
 <span class="token handlebars language-handlebars"><span class="token delimiter punctuation">{{</span><span class="token variable">child-component</span> <span class="token variable">tagName</span><span class="token punctuation">=</span><span class="token string">"ul"</span><span class="token delimiter punctuation">}}</span></span>
 
@@ -345,7 +345,7 @@ some markup or <span class="token handlebars language-handlebars"><span class="t
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">></span></span>item<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">></span></span>item<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">></span></span></code></pre>
 
-            <pre id="ember34" class="code-block language-html ember-view"><!----><code class="language-html"><span class="token comment">&lt;!-- rendered output --></span>
+            <pre id="ember22" class="code-block language-html ember-view"><!----><code class="language-html"><span class="token comment">&lt;!-- rendered output --></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>ember209<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>ember-view<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">></span></span>item<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">></span></span>
     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">></span></span>item<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">></span></span>
@@ -357,7 +357,7 @@ some markup or <span class="token handlebars language-handlebars"><span class="t
       <div>
         <h4>Octane</h4>
 
-            <pre id="ember35" class="code-block language-handlebars ember-view"><!----><code class="language-handlebars"><span class="token comment">&lt;!-- parent component --></span>
+            <pre id="ember23" class="code-block language-handlebars ember-view"><!----><code class="language-handlebars"><span class="token comment">&lt;!-- parent component --></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span><span class="token punctuation">></span></span>
     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ChildComponent</span> <span class="token punctuation">/></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">></span></span>
@@ -367,7 +367,7 @@ some markup or <span class="token handlebars language-handlebars"><span class="t
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">></span></span>item<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">></span></span>item<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">></span></span></code></pre>
 
-            <pre id="ember36" class="code-block language-html ember-view"><!----><code class="language-html"><span class="token comment">&lt;!-- rendered output --></span>
+            <pre id="ember24" class="code-block language-html ember-view"><!----><code class="language-html"><span class="token comment">&lt;!-- rendered output --></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span><span class="token punctuation">></span></span>
     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">></span></span>item<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">></span></span>
     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">></span></span>item<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">></span></span>
@@ -391,7 +391,7 @@ some markup or <span class="token handlebars language-handlebars"><span class="t
       <div>
         <h4>Classic</h4>
 
-            <pre id="ember38" class="code-block language-javascript ember-view"><!----><code class="language-javascript"><span class="token keyword">import</span> Component <span class="token keyword">from</span> <span class="token string">'@ember/component'</span><span class="token punctuation">;</span>
+            <pre id="ember25" class="code-block language-javascript ember-view"><!----><code class="language-javascript"><span class="token keyword">import</span> Component <span class="token keyword">from</span> <span class="token string">'@ember/component'</span><span class="token punctuation">;</span>
 
 <span class="token keyword">export</span> <span class="token keyword">default</span> Component<span class="token punctuation">.</span><span class="token function">extend</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
   <span class="token function">didInsertElement</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
@@ -399,12 +399,12 @@ some markup or <span class="token handlebars language-handlebars"><span class="t
   <span class="token punctuation">}</span>
 <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
 
-            <pre id="ember39" class="code-block language-handlebars ember-view"><!----><code class="language-handlebars"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>form-group<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+            <pre id="ember26" class="code-block language-handlebars ember-view"><!----><code class="language-handlebars"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>form-group<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>textInput-<span class="token handlebars language-handlebars"><span class="token delimiter punctuation">{{</span><span class="token variable">elementId</span><span class="token delimiter punctuation">}}</span></span><span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token handlebars language-handlebars"><span class="token delimiter punctuation">{{</span><span class="token variable">inputLabelText</span><span class="token delimiter punctuation">}}</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">></span></span>
-  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> 
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span>
     <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>textInput-<span class="token handlebars language-handlebars"><span class="token delimiter punctuation">{{</span><span class="token variable">elementId</span><span class="token delimiter punctuation">}}</span></span><span class="token punctuation">"</span></span>
-    <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token handlebars language-handlebars"><span class="token delimiter punctuation">{{</span><span class="token variable">inputName</span><span class="token delimiter punctuation">}}</span></span></span> 
-    <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span> 
+    <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token handlebars language-handlebars"><span class="token delimiter punctuation">{{</span><span class="token variable">inputName</span><span class="token delimiter punctuation">}}</span></span></span>
+    <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span>
   <span class="token punctuation">/></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code></pre>
 
@@ -414,19 +414,19 @@ some markup or <span class="token handlebars language-handlebars"><span class="t
       <div>
         <h4>Octane</h4>
 
-            <pre id="ember40" class="code-block language-javascript ember-view"><!----><code class="language-javascript"><span class="token keyword">import</span> Component <span class="token keyword">from</span> <span class="token string">'@glimmer/component'</span><span class="token punctuation">;</span>
+            <pre id="ember27" class="code-block language-javascript ember-view"><!----><code class="language-javascript"><span class="token keyword">import</span> Component <span class="token keyword">from</span> <span class="token string">'@glimmer/component'</span><span class="token punctuation">;</span>
 <span class="token keyword">import</span> <span class="token punctuation">{</span> guidFor <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@ember/object/internals'</span><span class="token punctuation">;</span>
 
 <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">class</span> <span class="token class-name">InputTextComponent</span> <span class="token keyword">extends</span> <span class="token class-name">Component</span> <span class="token punctuation">{</span>
-  inputId <span class="token operator">=</span> <span class="token string">'textInput-'</span> <span class="token operator">+</span> <span class="token function">guidFor</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
+  inputId <span class="token operator">=</span> <span class="token string">'textInput-'</span> <span class="token operator">+</span> <span class="token function">guidFor</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span></code></pre>
 
-            <pre id="ember41" class="code-block language-handlebars ember-view"><!----><code class="language-handlebars"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>form-group<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+            <pre id="ember28" class="code-block language-handlebars ember-view"><!----><code class="language-handlebars"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>form-group<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token handlebars language-handlebars"><span class="token delimiter punctuation">{{</span><span class="token variable">this</span><span class="token punctuation">.</span><span class="token variable">inputId</span><span class="token delimiter punctuation">}}</span></span></span><span class="token punctuation">></span></span><span class="token handlebars language-handlebars"><span class="token delimiter punctuation">{{</span><span class="token punctuation">@</span><span class="token variable">inputLabelText</span><span class="token delimiter punctuation">}}</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">></span></span>
-  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> 
-    <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token handlebars language-handlebars"><span class="token delimiter punctuation">{{</span><span class="token variable">this</span><span class="token punctuation">.</span><span class="token variable">inputId</span><span class="token delimiter punctuation">}}</span></span></span> 
-    <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token handlebars language-handlebars"><span class="token delimiter punctuation">{{</span><span class="token punctuation">@</span><span class="token variable">inputName</span><span class="token delimiter punctuation">}}</span></span></span> 
-    <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span> 
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span>
+    <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token handlebars language-handlebars"><span class="token delimiter punctuation">{{</span><span class="token variable">this</span><span class="token punctuation">.</span><span class="token variable">inputId</span><span class="token delimiter punctuation">}}</span></span></span>
+    <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token handlebars language-handlebars"><span class="token delimiter punctuation">{{</span><span class="token punctuation">@</span><span class="token variable">inputName</span><span class="token delimiter punctuation">}}</span></span></span>
+    <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span>
   <span class="token punctuation">/></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code></pre>
 
@@ -458,7 +458,7 @@ some markup or <span class="token handlebars language-handlebars"><span class="t
       <div>
         <h4>Classic</h4>
 
-            <pre id="ember44" class="code-block language-javascript ember-view"><!----><code class="language-javascript"><span class="token keyword">import</span> Component <span class="token keyword">from</span> <span class="token string">'@ember/component'</span><span class="token punctuation">;</span>
+            <pre id="ember29" class="code-block language-javascript ember-view"><!----><code class="language-javascript"><span class="token keyword">import</span> Component <span class="token keyword">from</span> <span class="token string">'@ember/component'</span><span class="token punctuation">;</span>
 
 <span class="token keyword">export</span> <span class="token keyword">default</span> Component<span class="token punctuation">.</span><span class="token function">extend</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
   <span class="token function">init</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
@@ -472,7 +472,7 @@ some markup or <span class="token handlebars language-handlebars"><span class="t
       <div>
         <h4>Octane</h4>
 
-            <pre id="ember45" class="code-block language-javascript ember-view"><!----><code class="language-javascript"><span class="token keyword">import</span> Component <span class="token keyword">from</span> <span class="token string">'@glimmer/component'</span><span class="token punctuation">;</span>
+            <pre id="ember30" class="code-block language-javascript ember-view"><!----><code class="language-javascript"><span class="token keyword">import</span> Component <span class="token keyword">from</span> <span class="token string">'@glimmer/component'</span><span class="token punctuation">;</span>
 
 <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">class</span> <span class="token class-name">SomeComponent</span> <span class="token keyword">extends</span> <span class="token class-name">Component</span> <span class="token punctuation">{</span>
   <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
@@ -498,11 +498,11 @@ some markup or <span class="token handlebars language-handlebars"><span class="t
       <div>
         <h4>Classic</h4>
 
-            <pre id="ember47" class="code-block language-javascript ember-view"><!----><code class="language-javascript"><span class="token keyword">import</span> Component <span class="token keyword">from</span> <span class="token string">'@ember/component'</span><span class="token punctuation">;</span>
+            <pre id="ember31" class="code-block language-javascript ember-view"><!----><code class="language-javascript"><span class="token keyword">import</span> Component <span class="token keyword">from</span> <span class="token string">'@ember/component'</span><span class="token punctuation">;</span>
 
 <span class="token keyword">export</span> <span class="token keyword">default</span> Component<span class="token punctuation">.</span><span class="token function">extend</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
-  min<span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
-  max<span class="token punctuation">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
+  min<span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+  max<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
 <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
 
 
@@ -511,7 +511,7 @@ some markup or <span class="token handlebars language-handlebars"><span class="t
       <div>
         <h4>Octane</h4>
 
-            <pre id="ember48" class="code-block language-javascript ember-view"><!----><code class="language-javascript"><span class="token keyword">import</span> Component <span class="token keyword">from</span> <span class="token string">'@glimmer/component'</span><span class="token punctuation">;</span>
+            <pre id="ember32" class="code-block language-javascript ember-view"><!----><code class="language-javascript"><span class="token keyword">import</span> Component <span class="token keyword">from</span> <span class="token string">'@glimmer/component'</span><span class="token punctuation">;</span>
 
 <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">class</span> <span class="token class-name">SomeComponent</span> <span class="token keyword">extends</span> <span class="token class-name">Component</span> <span class="token punctuation">{</span>
   min <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
@@ -536,23 +536,23 @@ some markup or <span class="token handlebars language-handlebars"><span class="t
       <div>
         <h4>Classic</h4>
 
-            <pre id="ember50" class="code-block language-javascript ember-view"><!----><code class="language-javascript"><span class="token comment">// parent-component.js</span>
+            <pre id="ember33" class="code-block language-javascript ember-view"><!----><code class="language-javascript"><span class="token comment">// parent-component.js</span>
 <span class="token keyword">import</span> Component <span class="token keyword">from</span> <span class="token string">'@ember/component'</span><span class="token punctuation">;</span>
 
 <span class="token keyword">export</span> <span class="token keyword">default</span> Component<span class="token punctuation">.</span><span class="token function">extend</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
-  count<span class="token punctuation">:</span> <span class="token number">0</span>
+  count<span class="token operator">:</span> <span class="token number">0</span>
 <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
 
-            <pre id="ember51" class="code-block language-handlebars ember-view"><!----><code class="language-handlebars"><span class="token handlebars language-handlebars"><span class="token comment">{{!-- parent-component.hbs --}}</span></span>
+            <pre id="ember34" class="code-block language-handlebars ember-view"><!----><code class="language-handlebars"><span class="token handlebars language-handlebars"><span class="token comment">{{!-- parent-component.hbs --}}</span></span>
 <span class="token handlebars language-handlebars"><span class="token delimiter punctuation">{{</span><span class="token variable">child-component</span> <span class="token variable">count</span><span class="token punctuation">=</span><span class="token variable">count</span><span class="token delimiter punctuation">}}</span></span>
 Count: <span class="token handlebars language-handlebars"><span class="token delimiter punctuation">{{</span><span class="token variable">this</span><span class="token punctuation">.</span><span class="token variable">count</span><span class="token delimiter punctuation">}}</span></span></code></pre>
 
-            <pre id="ember52" class="code-block language-javascript ember-view"><!----><code class="language-javascript"><span class="token comment">// child-component.js</span>
+            <pre id="ember35" class="code-block language-javascript ember-view"><!----><code class="language-javascript"><span class="token comment">// child-component.js</span>
 
 <span class="token keyword">import</span> Component <span class="token keyword">from</span> <span class="token string">'@ember/component'</span><span class="token punctuation">;</span>
 
 <span class="token keyword">export</span> <span class="token keyword">default</span> Component<span class="token punctuation">.</span><span class="token function">extend</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
-  actions<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+  actions<span class="token operator">:</span> <span class="token punctuation">{</span>
     <span class="token function">plusOne</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
       <span class="token keyword">let</span> count <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">"count"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
       <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span><span class="token string">"count"</span><span class="token punctuation">,</span> count <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span>
@@ -560,7 +560,7 @@ Count: <span class="token handlebars language-handlebars"><span class="token del
   <span class="token punctuation">}</span>
 <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
 
-            <pre id="ember53" class="code-block language-handlebars ember-view"><!----><code class="language-handlebars"><span class="token handlebars language-handlebars"><span class="token comment">{{!-- child-component.hbs --}}</span></span>
+            <pre id="ember36" class="code-block language-handlebars ember-view"><!----><code class="language-handlebars"><span class="token handlebars language-handlebars"><span class="token comment">{{!-- child-component.hbs --}}</span></span>
 
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name"><span class="token handlebars language-handlebars"><span class="token delimiter punctuation">{{</span><span class="token variable">action</span> <span class="token string">"plusOne"</span><span class="token delimiter punctuation">}}</span></span></span><span class="token punctuation">></span></span>
   Click Me
@@ -572,7 +572,7 @@ Count: <span class="token handlebars language-handlebars"><span class="token del
       <div>
         <h4>Octane</h4>
 
-            <pre id="ember54" class="code-block language-javascript ember-view"><!----><code class="language-javascript"><span class="token comment">// parent-component.js</span>
+            <pre id="ember37" class="code-block language-javascript ember-view"><!----><code class="language-javascript"><span class="token comment">// parent-component.js</span>
 <span class="token keyword">import</span> Component <span class="token keyword">from</span> <span class="token string">'@glimmer/component'</span><span class="token punctuation">;</span>
 <span class="token keyword">import</span> <span class="token punctuation">{</span> tracked <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@glimmer/tracking'</span><span class="token punctuation">;</span>
 <span class="token keyword">import</span> <span class="token punctuation">{</span> action <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@ember/object'</span><span class="token punctuation">;</span>
@@ -586,12 +586,12 @@ Count: <span class="token handlebars language-handlebars"><span class="token del
   <span class="token punctuation">}</span>
 <span class="token punctuation">}</span></code></pre>
 
-            <pre id="ember55" class="code-block language-handlebars ember-view"><!----><code class="language-handlebars"><span class="token handlebars language-handlebars"><span class="token comment">{{!-- parent-component.hbs --}}</span></span>
+            <pre id="ember38" class="code-block language-handlebars ember-view"><!----><code class="language-handlebars"><span class="token handlebars language-handlebars"><span class="token comment">{{!-- parent-component.hbs --}}</span></span>
 
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ChildComponent</span> <span class="token attr-name">@plusOne</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token handlebars language-handlebars"><span class="token delimiter punctuation">{{</span><span class="token variable">this</span><span class="token punctuation">.</span><span class="token variable">plusOne</span><span class="token delimiter punctuation">}}</span></span></span> <span class="token punctuation">/></span></span>
 Count: <span class="token handlebars language-handlebars"><span class="token delimiter punctuation">{{</span><span class="token variable">this</span><span class="token punctuation">.</span><span class="token variable">count</span><span class="token delimiter punctuation">}}</span></span></code></pre>
 
-            <pre id="ember56" class="code-block language-handlebars ember-view"><!----><code class="language-handlebars"><span class="token handlebars language-handlebars"><span class="token comment">{{!-- child-component.hbs --}}</span></span>
+            <pre id="ember39" class="code-block language-handlebars ember-view"><!----><code class="language-handlebars"><span class="token handlebars language-handlebars"><span class="token comment">{{!-- child-component.hbs --}}</span></span>
 
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name"><span class="token handlebars language-handlebars"><span class="token delimiter punctuation">{{</span><span class="token variable">on</span> <span class="token string">"click"</span> <span class="token punctuation">@</span><span class="token variable">plusOne</span><span class="token delimiter punctuation">}}</span></span></span><span class="token punctuation">></span></span>
   Click Me
@@ -615,13 +615,13 @@ Count: <span class="token handlebars language-handlebars"><span class="token del
       <div>
         <h4>Classic</h4>
 
-            <pre id="ember58" class="code-block language-javascript ember-view"><!----><code class="language-javascript"><span class="token comment">// child-component.js</span>
+            <pre id="ember40" class="code-block language-javascript ember-view"><!----><code class="language-javascript"><span class="token comment">// child-component.js</span>
 
 <span class="token keyword">import</span> Component <span class="token keyword">from</span> <span class="token string">'@ember/component'</span><span class="token punctuation">;</span>
 
 <span class="token keyword">export</span> <span class="token keyword">default</span> Component<span class="token punctuation">.</span><span class="token function">extend</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
-  count<span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
-  actions<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+  count<span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+  actions<span class="token operator">:</span> <span class="token punctuation">{</span>
     <span class="token function">minusOne</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
       <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span><span class="token string">"count"</span><span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">.</span>count <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span>
     <span class="token punctuation">}</span>
@@ -634,7 +634,7 @@ Count: <span class="token handlebars language-handlebars"><span class="token del
       <div>
         <h4>Octane</h4>
 
-            <pre id="ember59" class="code-block language-javascript ember-view"><!----><code class="language-javascript"><span class="token keyword">import</span> Component <span class="token keyword">from</span> <span class="token string">'@glimmer/component'</span><span class="token punctuation">;</span>
+            <pre id="ember41" class="code-block language-javascript ember-view"><!----><code class="language-javascript"><span class="token keyword">import</span> Component <span class="token keyword">from</span> <span class="token string">'@glimmer/component'</span><span class="token punctuation">;</span>
 <span class="token keyword">import</span> <span class="token punctuation">{</span> tracked <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@glimmer/tracking'</span><span class="token punctuation">;</span>
 <span class="token keyword">import</span> <span class="token punctuation">{</span> action <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@ember/object'</span><span class="token punctuation">;</span>
 
@@ -665,12 +665,12 @@ Count: <span class="token handlebars language-handlebars"><span class="token del
       <div>
         <h4>Classic</h4>
 
-            <pre id="ember61" class="code-block language-javascript ember-view"><!----><code class="language-javascript"><span class="token keyword">import</span> Component <span class="token keyword">from</span> <span class="token string">'@ember/component'</span><span class="token punctuation">;</span>
+            <pre id="ember42" class="code-block language-javascript ember-view"><!----><code class="language-javascript"><span class="token keyword">import</span> Component <span class="token keyword">from</span> <span class="token string">'@ember/component'</span><span class="token punctuation">;</span>
 <span class="token keyword">import</span> <span class="token punctuation">{</span> computed <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@ember/object'</span><span class="token punctuation">;</span>
 
 <span class="token keyword">export</span> <span class="token keyword">default</span> Component<span class="token punctuation">.</span><span class="token function">extend</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
-    item<span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
-    plusOne<span class="token punctuation">:</span> <span class="token function">computed</span><span class="token punctuation">(</span><span class="token string">'item'</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    item<span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+    plusOne<span class="token operator">:</span> <span class="token function">computed</span><span class="token punctuation">(</span><span class="token string">'item'</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
         <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>item <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span>
     <span class="token punctuation">}</span><span class="token punctuation">)</span>
 <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
@@ -681,7 +681,7 @@ Count: <span class="token handlebars language-handlebars"><span class="token del
       <div>
         <h4>Octane</h4>
 
-            <pre id="ember62" class="code-block language-javascript ember-view"><!----><code class="language-javascript"><span class="token keyword">import</span> Component <span class="token keyword">from</span> <span class="token string">'@glimmer/component'</span><span class="token punctuation">;</span>
+            <pre id="ember43" class="code-block language-javascript ember-view"><!----><code class="language-javascript"><span class="token keyword">import</span> Component <span class="token keyword">from</span> <span class="token string">'@glimmer/component'</span><span class="token punctuation">;</span>
 <span class="token keyword">import</span> <span class="token punctuation">{</span> tracked <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@glimmer/tracking'</span><span class="token punctuation">;</span>
 
 <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">class</span> <span class="token class-name">SomeComponent</span> <span class="token keyword">extends</span> <span class="token class-name">Component</span> <span class="token punctuation">{</span>
@@ -709,12 +709,12 @@ Count: <span class="token handlebars language-handlebars"><span class="token del
       <div>
         <h4>Classic</h4>
 
-            <pre id="ember64" class="code-block language-javascript ember-view"><!----><code class="language-javascript"><span class="token keyword">import</span> Component <span class="token keyword">from</span> <span class="token string">'@ember/component'</span><span class="token punctuation">;</span>
+            <pre id="ember44" class="code-block language-javascript ember-view"><!----><code class="language-javascript"><span class="token keyword">import</span> Component <span class="token keyword">from</span> <span class="token string">'@ember/component'</span><span class="token punctuation">;</span>
 <span class="token keyword">import</span> <span class="token punctuation">{</span> computed <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@ember/object'</span><span class="token punctuation">;</span>
 
 <span class="token keyword">export</span> <span class="token keyword">default</span> Component<span class="token punctuation">.</span><span class="token function">extend</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
-    item<span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
-    plusOne<span class="token punctuation">:</span> <span class="token function">computed</span><span class="token punctuation">(</span><span class="token string">'item'</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    item<span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+    plusOne<span class="token operator">:</span> <span class="token function">computed</span><span class="token punctuation">(</span><span class="token string">'item'</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
         <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>item <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span>
     <span class="token punctuation">}</span><span class="token punctuation">)</span>
 <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
@@ -725,7 +725,7 @@ Count: <span class="token handlebars language-handlebars"><span class="token del
       <div>
         <h4>Octane</h4>
 
-            <pre id="ember65" class="code-block language-javascript ember-view"><!----><code class="language-javascript"><span class="token keyword">import</span> Component <span class="token keyword">from</span> <span class="token string">'@glimmer/component'</span><span class="token punctuation">;</span>
+            <pre id="ember45" class="code-block language-javascript ember-view"><!----><code class="language-javascript"><span class="token keyword">import</span> Component <span class="token keyword">from</span> <span class="token string">'@glimmer/component'</span><span class="token punctuation">;</span>
 <span class="token keyword">import</span> <span class="token punctuation">{</span> computed <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@ember/object'</span><span class="token punctuation">;</span>
 
 <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">class</span> <span class="token class-name">SomeComponent</span> <span class="token keyword">extends</span> <span class="token class-name">Component</span> <span class="token punctuation">{</span>
@@ -765,11 +765,11 @@ Count: <span class="token handlebars language-handlebars"><span class="token del
       <div>
         <h4>Classic</h4>
 
-            <pre id="ember68" class="code-block language-javascript ember-view"><!----><code class="language-javascript"><span class="token comment">// Before</span>
+            <pre id="ember46" class="code-block language-javascript ember-view"><!----><code class="language-javascript"><span class="token comment">// Before</span>
 <span class="token keyword">import</span> Component <span class="token keyword">from</span> <span class="token string">'@ember/component'</span><span class="token punctuation">;</span>
 
 <span class="token keyword">export</span> <span class="token keyword">default</span> Component<span class="token punctuation">.</span><span class="token function">extend</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
-  actions<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+  actions<span class="token operator">:</span> <span class="token punctuation">{</span>
     <span class="token function">helloWorld</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
       console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Hello, world!'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token punctuation">}</span><span class="token punctuation">,</span>
@@ -779,7 +779,7 @@ Count: <span class="token handlebars language-handlebars"><span class="token del
   <span class="token punctuation">}</span><span class="token punctuation">,</span>
 <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
 
-            <pre id="ember69" class="code-block language-handlebars ember-view"><!----><code class="language-handlebars"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">onclick</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token handlebars language-handlebars"><span class="token delimiter punctuation">{{</span><span class="token variable">action</span> <span class="token string">"helloWorld"</span><span class="token delimiter punctuation">}}</span></span></span><span class="token punctuation">></span></span>
+            <pre id="ember47" class="code-block language-handlebars ember-view"><!----><code class="language-handlebars"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">onclick</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token handlebars language-handlebars"><span class="token delimiter punctuation">{{</span><span class="token variable">action</span> <span class="token string">"helloWorld"</span><span class="token delimiter punctuation">}}</span></span></span><span class="token punctuation">></span></span>
     Hello World!
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
 
@@ -793,7 +793,7 @@ Count: <span class="token handlebars language-handlebars"><span class="token del
       <div>
         <h4>Octane</h4>
 
-            <pre id="ember70" class="code-block language-javascript ember-view"><!----><code class="language-javascript"><span class="token keyword">import</span> Component <span class="token keyword">from</span> <span class="token string">'@glimmer/component'</span><span class="token punctuation">;</span>
+            <pre id="ember48" class="code-block language-javascript ember-view"><!----><code class="language-javascript"><span class="token keyword">import</span> Component <span class="token keyword">from</span> <span class="token string">'@glimmer/component'</span><span class="token punctuation">;</span>
 <span class="token keyword">import</span> <span class="token punctuation">{</span> action <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@ember/object'</span><span class="token punctuation">;</span>
 
 <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">class</span> <span class="token class-name">SomeComponent</span> <span class="token keyword">extends</span> <span class="token class-name">Component</span> <span class="token punctuation">{</span>
@@ -808,7 +808,7 @@ Count: <span class="token handlebars language-handlebars"><span class="token del
   <span class="token punctuation">}</span>
 <span class="token punctuation">}</span></code></pre>
 
-            <pre id="ember71" class="code-block language-handlebars ember-view"><!----><code class="language-handlebars"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name"><span class="token handlebars language-handlebars"><span class="token delimiter punctuation">{{</span><span class="token variable">on</span> <span class="token string">"click"</span> <span class="token variable">this</span><span class="token punctuation">.</span><span class="token variable">helloWorld</span><span class="token delimiter punctuation">}}</span></span></span><span class="token punctuation">></span></span>
+            <pre id="ember49" class="code-block language-handlebars ember-view"><!----><code class="language-handlebars"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name"><span class="token handlebars language-handlebars"><span class="token delimiter punctuation">{{</span><span class="token variable">on</span> <span class="token string">"click"</span> <span class="token variable">this</span><span class="token punctuation">.</span><span class="token variable">helloWorld</span><span class="token delimiter punctuation">}}</span></span></span><span class="token punctuation">></span></span>
     Hello World!
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
 
@@ -834,15 +834,15 @@ Count: <span class="token handlebars language-handlebars"><span class="token del
       <div>
         <h4>Classic</h4>
 
-            <pre id="ember73" class="code-block language-handlebars ember-view"><!----><code class="language-handlebars"><span class="token handlebars language-handlebars"><span class="token delimiter punctuation">{{</span><span class="token variable">my-component</span> <span class="token variable">answer</span><span class="token punctuation">=</span><span class="token variable">answer</span><span class="token delimiter punctuation">}}</span></span>
+            <pre id="ember50" class="code-block language-handlebars ember-view"><!----><code class="language-handlebars"><span class="token handlebars language-handlebars"><span class="token delimiter punctuation">{{</span><span class="token variable">my-component</span> <span class="token variable">answer</span><span class="token punctuation">=</span><span class="token variable">answer</span><span class="token delimiter punctuation">}}</span></span>
 
 <span class="token comment">&lt;!-- my-component's template --></span>
 <span class="token handlebars language-handlebars"><span class="token delimiter punctuation">{{</span><span class="token variable">answer</span><span class="token delimiter punctuation">}}</span></span></code></pre>
 
-            <pre id="ember74" class="code-block language-javascript ember-view"><!----><code class="language-javascript"><span class="token keyword">import</span> Component <span class="token keyword">from</span> <span class="token string">'@ember/component'</span><span class="token punctuation">;</span>
+            <pre id="ember51" class="code-block language-javascript ember-view"><!----><code class="language-javascript"><span class="token keyword">import</span> Component <span class="token keyword">from</span> <span class="token string">'@ember/component'</span><span class="token punctuation">;</span>
 
 <span class="token keyword">export</span> <span class="token keyword">default</span> Component<span class="token punctuation">.</span><span class="token function">extend</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
-  answer<span class="token punctuation">:</span> <span class="token number">42</span><span class="token punctuation">,</span>
+  answer<span class="token operator">:</span> <span class="token number">42</span><span class="token punctuation">,</span>
 <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
 
 
@@ -851,12 +851,12 @@ Count: <span class="token handlebars language-handlebars"><span class="token del
       <div>
         <h4>Octane</h4>
 
-            <pre id="ember75" class="code-block language-handlebars ember-view"><!----><code class="language-handlebars"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>MyComponent</span> <span class="token attr-name">@answer</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token handlebars language-handlebars"><span class="token delimiter punctuation">{{</span><span class="token variable">this</span><span class="token punctuation">.</span><span class="token variable">answer</span><span class="token delimiter punctuation">}}</span></span></span> <span class="token punctuation">/></span></span>
+            <pre id="ember52" class="code-block language-handlebars ember-view"><!----><code class="language-handlebars"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>MyComponent</span> <span class="token attr-name">@answer</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token handlebars language-handlebars"><span class="token delimiter punctuation">{{</span><span class="token variable">this</span><span class="token punctuation">.</span><span class="token variable">answer</span><span class="token delimiter punctuation">}}</span></span></span> <span class="token punctuation">/></span></span>
 
 <span class="token comment">&lt;!-- my-component's template --></span>
 <span class="token handlebars language-handlebars"><span class="token delimiter punctuation">{{</span><span class="token variable">this</span><span class="token punctuation">.</span><span class="token variable">answer</span><span class="token delimiter punctuation">}}</span></span></code></pre>
 
-            <pre id="ember76" class="code-block language-javascript ember-view"><!----><code class="language-javascript"><span class="token keyword">import</span> Component <span class="token keyword">from</span> <span class="token string">'@glimmer/component'</span><span class="token punctuation">;</span>
+            <pre id="ember53" class="code-block language-javascript ember-view"><!----><code class="language-javascript"><span class="token keyword">import</span> Component <span class="token keyword">from</span> <span class="token string">'@glimmer/component'</span><span class="token punctuation">;</span>
 
 <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">class</span> <span class="token class-name">MyComponent</span> <span class="token keyword">extends</span> <span class="token class-name">Component</span> <span class="token punctuation">{</span>
   <span class="token keyword">get</span> <span class="token function">answer</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
@@ -882,7 +882,7 @@ Count: <span class="token handlebars language-handlebars"><span class="token del
       <div>
         <h4>Classic</h4>
 
-            <pre id="ember78" class="code-block language-javascript ember-view"><!----><code class="language-javascript"><span class="token keyword">import</span> Component <span class="token keyword">from</span> <span class="token string">'@ember/component'</span><span class="token punctuation">;</span>
+            <pre id="ember54" class="code-block language-javascript ember-view"><!----><code class="language-javascript"><span class="token keyword">import</span> Component <span class="token keyword">from</span> <span class="token string">'@ember/component'</span><span class="token punctuation">;</span>
 <span class="token keyword">import</span> SomeMixin <span class="token keyword">from</span> <span class="token string">'some-addon'</span><span class="token punctuation">;</span>
 
 <span class="token keyword">export</span> <span class="token keyword">default</span> Component<span class="token punctuation">.</span><span class="token function">extend</span><span class="token punctuation">(</span>SomeMixin<span class="token punctuation">,</span> <span class="token punctuation">{</span>
@@ -926,7 +926,7 @@ Count: <span class="token handlebars language-handlebars"><span class="token del
       <div>
         <h4>Classic</h4>
 
-            <pre id="ember81" class="code-block language-javascript ember-view"><!----><code class="language-javascript"><span class="token keyword">import</span> Component <span class="token keyword">from</span> <span class="token string">'@ember/component'</span><span class="token punctuation">;</span>
+            <pre id="ember55" class="code-block language-javascript ember-view"><!----><code class="language-javascript"><span class="token keyword">import</span> Component <span class="token keyword">from</span> <span class="token string">'@ember/component'</span><span class="token punctuation">;</span>
 
 <span class="token keyword">export</span> <span class="token keyword">default</span> Component<span class="token punctuation">.</span><span class="token function">extend</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
     <span class="token function">init</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
@@ -941,7 +941,7 @@ Count: <span class="token handlebars language-handlebars"><span class="token del
       <div>
         <h4>Octane</h4>
 
-            <pre id="ember82" class="code-block language-javascript ember-view"><!----><code class="language-javascript"><span class="token keyword">import</span> Component <span class="token keyword">from</span> <span class="token string">'@glimmer/component'</span><span class="token punctuation">;</span>
+            <pre id="ember56" class="code-block language-javascript ember-view"><!----><code class="language-javascript"><span class="token keyword">import</span> Component <span class="token keyword">from</span> <span class="token string">'@glimmer/component'</span><span class="token punctuation">;</span>
 
 <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">class</span> <span class="token class-name">SomeComponent</span> <span class="token keyword">extends</span> <span class="token class-name">Component</span> <span class="token punctuation">{</span>
   <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token parameter">owner<span class="token punctuation">,</span> args</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
@@ -974,7 +974,7 @@ Count: <span class="token handlebars language-handlebars"><span class="token del
       <div>
         <h4>Octane</h4>
 
-            <pre id="ember84" class="code-block language-bash ember-view"><!----><code class="language-bash">ember <span class="token function">install</span> @ember/render-modifiers</code></pre>
+            <pre id="ember57" class="code-block language-bash ember-view"><!----><code class="language-bash">ember <span class="token function">install</span> @ember/render-modifiers</code></pre>
 
 
 <!---->      </div>
@@ -994,9 +994,9 @@ Count: <span class="token handlebars language-handlebars"><span class="token del
       <div>
         <h4>Classic</h4>
 
-            <pre id="ember86" class="code-block language-handlebars ember-view"><!----><code class="language-handlebars"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>canvas</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>my-canvas<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>canvas</span><span class="token punctuation">></span></span></code></pre>
+            <pre id="ember58" class="code-block language-handlebars ember-view"><!----><code class="language-handlebars"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>canvas</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>my-canvas<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>canvas</span><span class="token punctuation">></span></span></code></pre>
 
-            <pre id="ember87" class="code-block language-javascript ember-view"><!----><code class="language-javascript"><span class="token keyword">import</span> Component <span class="token keyword">from</span> <span class="token string">'@ember/component'</span><span class="token punctuation">;</span>
+            <pre id="ember59" class="code-block language-javascript ember-view"><!----><code class="language-javascript"><span class="token keyword">import</span> Component <span class="token keyword">from</span> <span class="token string">'@ember/component'</span><span class="token punctuation">;</span>
 
 <span class="token keyword">export</span> <span class="token keyword">default</span> Component<span class="token punctuation">.</span><span class="token function">extend</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
     <span class="token function">didInsertElement</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
@@ -1010,9 +1010,9 @@ Count: <span class="token handlebars language-handlebars"><span class="token del
       <div>
         <h4>Octane</h4>
 
-            <pre id="ember88" class="code-block language-handlebars ember-view"><!----><code class="language-handlebars"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>canvas</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>my-canvas<span class="token punctuation">"</span></span> <span class="token attr-name"><span class="token handlebars language-handlebars"><span class="token delimiter punctuation">{{</span><span class="token variable">did-insert</span> <span class="token variable">this</span><span class="token punctuation">.</span><span class="token variable">createGraph</span><span class="token delimiter punctuation">}}</span></span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>canvas</span><span class="token punctuation">></span></span></code></pre>
+            <pre id="ember60" class="code-block language-handlebars ember-view"><!----><code class="language-handlebars"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>canvas</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>my-canvas<span class="token punctuation">"</span></span> <span class="token attr-name"><span class="token handlebars language-handlebars"><span class="token delimiter punctuation">{{</span><span class="token variable">did-insert</span> <span class="token variable">this</span><span class="token punctuation">.</span><span class="token variable">createGraph</span><span class="token delimiter punctuation">}}</span></span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>canvas</span><span class="token punctuation">></span></span></code></pre>
 
-            <pre id="ember89" class="code-block language-javascript ember-view"><!----><code class="language-javascript"><span class="token keyword">import</span> Component <span class="token keyword">from</span> <span class="token string">'@glimmer/component'</span><span class="token punctuation">;</span>
+            <pre id="ember61" class="code-block language-javascript ember-view"><!----><code class="language-javascript"><span class="token keyword">import</span> Component <span class="token keyword">from</span> <span class="token string">'@glimmer/component'</span><span class="token punctuation">;</span>
 <span class="token keyword">import</span> <span class="token punctuation">{</span> action <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@ember/object'</span><span class="token punctuation">;</span>
 
 <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">class</span> <span class="token class-name">SomeComponent</span> <span class="token keyword">extends</span> <span class="token class-name">Component</span> <span class="token punctuation">{</span>
@@ -1041,7 +1041,7 @@ Count: <span class="token handlebars language-handlebars"><span class="token del
       <div>
         <h4>Classic</h4>
 
-            <pre id="ember91" class="code-block language-javascript ember-view"><!----><code class="language-javascript"><span class="token keyword">import</span> Component <span class="token keyword">from</span> <span class="token string">'@ember/component'</span><span class="token punctuation">;</span>
+            <pre id="ember62" class="code-block language-javascript ember-view"><!----><code class="language-javascript"><span class="token keyword">import</span> Component <span class="token keyword">from</span> <span class="token string">'@ember/component'</span><span class="token punctuation">;</span>
 
 <span class="token keyword">export</span> <span class="token keyword">default</span> Component<span class="token punctuation">.</span><span class="token function">extend</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
     <span class="token function">willDestroyElement</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
@@ -1055,7 +1055,7 @@ Count: <span class="token handlebars language-handlebars"><span class="token del
       <div>
         <h4>Octane</h4>
 
-            <pre id="ember92" class="code-block language-javascript ember-view"><!----><code class="language-javascript"><span class="token keyword">import</span> Component <span class="token keyword">from</span> <span class="token string">'@glimmer/component'</span><span class="token punctuation">;</span>
+            <pre id="ember63" class="code-block language-javascript ember-view"><!----><code class="language-javascript"><span class="token keyword">import</span> Component <span class="token keyword">from</span> <span class="token string">'@glimmer/component'</span><span class="token punctuation">;</span>
 
 <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">class</span> <span class="token class-name">SomeComponent</span> <span class="token keyword">extends</span> <span class="token class-name">Component</span> <span class="token punctuation">{</span>
   <span class="token function">willDestroy</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
@@ -1091,7 +1091,7 @@ Count: <span class="token handlebars language-handlebars"><span class="token del
       <div>
         <h4>Classic</h4>
 
-            <pre id="ember95" class="code-block language-handlebars ember-view"><!----><code class="language-handlebars">First name: <span class="token handlebars language-handlebars"><span class="token delimiter punctuation">{{</span><span class="token variable">model</span><span class="token punctuation">.</span><span class="token variable">firstName</span><span class="token delimiter punctuation">}}</span></span></code></pre>
+            <pre id="ember64" class="code-block language-handlebars ember-view"><!----><code class="language-handlebars">First name: <span class="token handlebars language-handlebars"><span class="token delimiter punctuation">{{</span><span class="token variable">model</span><span class="token punctuation">.</span><span class="token variable">firstName</span><span class="token delimiter punctuation">}}</span></span></code></pre>
 
 
 <!---->      </div>
@@ -1099,7 +1099,7 @@ Count: <span class="token handlebars language-handlebars"><span class="token del
       <div>
         <h4>Octane</h4>
 
-            <pre id="ember96" class="code-block language-handlebars ember-view"><!----><code class="language-handlebars">First name: <span class="token handlebars language-handlebars"><span class="token delimiter punctuation">{{</span><span class="token punctuation">@</span><span class="token variable">model</span><span class="token punctuation">.</span><span class="token variable">firstName</span><span class="token delimiter punctuation">}}</span></span></code></pre>
+            <pre id="ember65" class="code-block language-handlebars ember-view"><!----><code class="language-handlebars">First name: <span class="token handlebars language-handlebars"><span class="token delimiter punctuation">{{</span><span class="token punctuation">@</span><span class="token variable">model</span><span class="token punctuation">.</span><span class="token variable">firstName</span><span class="token delimiter punctuation">}}</span></span></code></pre>
 
 
 <!---->      </div>
@@ -1110,8 +1110,8 @@ Count: <span class="token handlebars language-handlebars"><span class="token del
 
 </main><script type="x/boundary" id="fastboot-body-end"></script>
 
-    <script src="/ember-octane-vs-classic-cheat-sheet/assets/vendor-a50b375a671daf926ca8050e08cc13e7.js"></script>
-    <script src="/ember-octane-vs-classic-cheat-sheet/assets/ember-octane-vs-classic-cheat-sheet-808178572da0822df9eaadfff91c36c4.js"></script>
+    <script src="/ember-octane-vs-classic-cheat-sheet/assets/vendor-7ba66c2a6ca349e0b46b432e21f236eb.js"></script>
+    <script src="/ember-octane-vs-classic-cheat-sheet/assets/ember-octane-vs-classic-cheat-sheet-74721f1cc3a2068c39bfb74a644a69d5.js"></script>
 
     
   </body>
