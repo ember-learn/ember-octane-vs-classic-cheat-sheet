@@ -1,3 +1,6 @@
+[![This project uses GitHub Actions for continuous integration.](https://github.com/ember-learn/ember-octane-vs-classic-cheat-sheet/workflows/CI/badge.svg)](https://github.com/ember-learn/ember-octane-vs-classic-cheat-sheet/actions?query=workflow%3ACI)
+[![This project uses Percy.io for visual regression testing.](https://percy.io/static/images/percy-badge.svg)](https://percy.io/Ember/ember-octane-vs-classic-cheat-sheet)
+
 # Ember Octane vs Classic Cheat Sheet
 
 Check out [the deployed app](https://ember-learn.github.io/ember-octane-vs-classic-cheat-sheet/). Yep, it uses Ember Octane!
