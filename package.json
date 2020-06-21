@@ -12,6 +12,7 @@
   },
   "scripts": {
     "build": "ember build --environment=production",
+    "deploy": "ember deploy production",
     "lint": "npm-run-all --aggregate-output --continue-on-error --parallel lint:*",
     "lint:hbs": "ember-template-lint ./*.hbs app",
     "lint:js": "eslint ./*.js app config tests",
