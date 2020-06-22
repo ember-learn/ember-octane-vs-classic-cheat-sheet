@@ -51,8 +51,8 @@ component-templates:
     description: "Quand vous faites référence à une propriété précisée lors de l'invocation, elle doit être préfixée d'un «@». Fonctionnellement, cela n'a aucun impact. (<a href=\"https://guides.emberjs.com/release/components/component-arguments-and-html-attributes/\" target=\"_blank\" rel=\"noopener noreferrer\">Consultez les «Ember Guides» pour en savoir plus</a>.)"
 
   template-this:
-    title: Using own properties
-    description: "If a property is defined in the JavaScript file for this component's template, use a \"this\" when you refer to it. There's no change in behavior. Learn more about <a href=\"https://guides.emberjs.com/release/upgrading/current-edition/glimmer-components/\" target=\"_blank\" rel=\"noopener noreferrer\">features</a> and <a href=\"https://guides.emberjs.com/release/upgrading/\" target=\"_blank\" rel=\"noopener noreferrer\">using codemods</a> to update your existing components."
+    title: Utiliser les propriétés d'un composant
+    description: "Lorsqu'une propriété est définie dans le fichier JavaScript d'un composant, elle doit être préfixée par «this.» lorsque vous y faites référence dans le template du composant. Fonctionnellement, cela n'a aucun impact. Pour en savoir plus <a href=\"https://guides.emberjs.com/release/upgrading/current-edition/glimmer-components/\" target=\"_blank\" rel=\"noopener noreferrer\">features</a> and <a href=\"https://guides.emberjs.com/release/upgrading/\" target=\"_blank\" rel=\"noopener noreferrer\">les codemods</a> pour migrer vos composants."
 
   template-arguments-named:
     title: Passing named arguments
