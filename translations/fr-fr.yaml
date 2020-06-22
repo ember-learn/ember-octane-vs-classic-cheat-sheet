@@ -47,8 +47,8 @@ component-templates:
     description: Vous pouvez «nester» les composants dans votre codebase et les utiliser dans un template via l'invocation «Angle brackets». Les fonctionnalités seront identiques.
 
   template-named:
-    title: Using named argument
-    description: "If a property was received from a parent component, refer to it with an @. There's no change in behavior. (<a href=\"https://guides.emberjs.com/release/components/component-arguments-and-html-attributes/\" target=\"_blank\" rel=\"noopener noreferrer\">Visit the Ember Guides to learn more</a>.)"
+    title: Utiliser les arguments nommés
+    description: "Quand vous faites référence à une propriété précisée lors de l'invocation, elle doit être préfixée d'un «@». Fonctionnellement, cela n'a aucun impact. (<a href=\"https://guides.emberjs.com/release/components/component-arguments-and-html-attributes/\" target=\"_blank\" rel=\"noopener noreferrer\">Consultez les «Ember Guides» pour en savoir plus</a>.)"
 
   template-this:
     title: Using own properties
