@@ -1,22 +1,21 @@
-# layout:
-#   application:
-#     logo-alt-text: "Ember Octane: the latest edition from Ember.js"
-#     title: Ember.js Octane vs Classic Cheat Sheet
-#     description:
-#       "<p class=\"intro\">
-#         Ce guide est un aide-mémoire (eng: cheat sheet) afin d'utiliser <a href=\"https://emberjs.com/editions/octane\" target=\"_blank\" rel=\"noopener noreferrer\">Ember.js Octane</a>. Tout n'y est pas abordé, mais il devrait permettre de bien démarrer avec Octane! Toutes les PRs sont les bienvenues sur <a href=\"https://github.com/jenweber/ember-octane-vs-classic-cheat-sheet\" target=\"_blank\" rel=\"noopener noreferrer\">le repository GitHub</a>.
-#       </p>
-#       <p>
-#         Pour plus d'information sur la manière de migrer vers Octane et les nouveautés qui y sont introduites, consultez <a href=\"https://guides.emberjs.com/release/upgrading/\" target=\"_blank\" rel=\"noopener noreferrer\">Le guide de migration vers Octane</a>.
-#       </p>"
+layout:
+  application:
+    logo-alt-text: 'Ember Octane: the latest edition from Ember.js'
+    title: Ember.js Octane vs Classic Cheat Sheet
+    description-1: >
+      Ce guide est un aide-mémoire (eng: cheat sheet) afin d'utiliser '<a href="https://emberjs.com/editions/octane" target="_blank" rel="noopener noreferrer">'Ember.js Octane'</a>'.
+      Tout n'y est pas abordé, mais il devrait permettre de bien démarrer avec Octane!
+      Toutes les PRs sont les bienvenues sur '<a href="https://github.com/ember-learn/ember-octane-vs-classic-cheat-sheet" target="_blank" rel="noopener noreferrer">'le repository GitHub'</a>'.
+    description-2: >
+      Pour plus d'information sur la manière de migrer vers Octane et les nouveautés qui y sont introduites, consultez '<a href="https://guides.emberjs.com/release/upgrading/" target="_blank" rel="noopener noreferrer">'Le guide de migration vers Octane'</a>'.
 
 
-# component:
-#   guide-section:
-#     section: §
-#     subsection:
-#       classic: Classic
-#       octane: Octane
+component:
+  guide-section:
+    section: §
+    subsection:
+      classic: Classic
+      octane: Octane
 
 
 # generating-files:

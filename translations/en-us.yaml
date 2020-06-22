@@ -1,22 +1,21 @@
-# layout:
-#   application:
-#     logo-alt-text: "Ember Octane: the latest edition from Ember.js"
-#     title: Ember.js Octane vs Classic Cheat Sheet
-#     description: 
-#       "<p class=\"intro\">
-#         This guide is a cheat sheet for using <a href=\"https://emberjs.com/editions/octane\" target=\"_blank\" rel=\"noopener noreferrer\">Ember.js Octane</a>. It doesn't cover everything, but it should get you started! PRs welcome at <a href=\"https://github.com/jenweber/ember-octane-vs-classic-cheat-sheet\" target=\"_blank\" rel=\"noopener noreferrer\">the GitHub repository</a>.
-#       </p>
-#       <p>
-#         For in-depth information about the upgrade paths and differences introduced in Octane, see <a href=\"https://guides.emberjs.com/release/upgrading/\" target=\"_blank\" rel=\"noopener noreferrer\">The Octane Upgrading Guide</a>.
-#       </p>"
+layout:
+  application:
+    logo-alt-text: 'Ember Octane: the latest edition from Ember.js'
+    title: Ember.js Octane vs Classic Cheat Sheet
+    description-1: >
+      This guide is a cheat sheet for using '<a href="https://emberjs.com/editions/octane" target="_blank" rel="noopener noreferrer">'Ember.js Octane'</a>'.
+      It doesn't cover everything, but it should get you started!
+      PRs welcome at '<a href="https://github.com/ember-learn/ember-octane-vs-classic-cheat-sheet" target="_blank" rel="noopener noreferrer">'the GitHub repository'</a>'.
+    description-2: >
+      For in-depth information about the upgrade paths and differences introduced in Octane, see '<a href="https://guides.emberjs.com/release/upgrading/" target="_blank" rel="noopener noreferrer">'The Octane Upgrading Guide'</a>'.
 
 
-# component:
-#   guide-section:
-#     section: §
-#     subsection:
-#       classic: Classic
-#       octane: Octane
+component:
+  guide-section:
+    section: §
+    subsection:
+      classic: Classic
+      octane: Octane
 
 
 # generating-files:
