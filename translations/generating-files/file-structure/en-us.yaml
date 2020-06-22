@@ -1,0 +1,4 @@
+title: Component templates and JavaScript are in the same directory
+description: >
+  The location of component templates has changed in Octane.
+  This is known as "template co-location."

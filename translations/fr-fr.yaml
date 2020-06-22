@@ -18,18 +18,6 @@ component:
       octane: Octane
 
 
-# generating-files:
-#   title: Génération de fichiers
-
-#   generating-component:
-#     title: Utiliser une option pour générer le fichier JavaScript d'un composant
-#     description: "Avec Ember classic, \"ember generate component\" générait trois fichiers: le template, un fichier JavaScript et un test. Sous Octane, \"ember generate component\" crée uniquement un template. Si vous souhaitez également générer le fichier JavaScript définissant la Class, vous devez préciser une option."
-
-#   file-structure:
-#     title: Les fichiers .hbs et .js d'un composant sont placés dans le même dossier
-#     description: "Avec Octane, l'emplacement du template d'un composant a changé. Nous parlons maintenant de \"template co-location.\""
-
-
 # component-templates:
 #   title: Templates des composants
 

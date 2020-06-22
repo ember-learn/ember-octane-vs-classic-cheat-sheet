@@ -18,18 +18,6 @@ component:
       octane: Octane
 
 
-# generating-files:
-#   title: Generating Files
-
-#   generating-component:
-#     title: Use an option to generate a component's JavaScript
-#     description: "In classic Ember, \"ember generate component\" created three files: the template, a JavaScript file, and a test. In Octane, \"ember generate component\" creates only a template. If you want the backing JavaScript Class as well, include an option."
-
-#   file-structure:
-#     title: Component templates and JavaScript are in the same directory
-#     description: "The location of component templates has changed in Octane. This is known as \"template co-location.\""
-
-
 # component-templates:
 #   title: Component Templates
 

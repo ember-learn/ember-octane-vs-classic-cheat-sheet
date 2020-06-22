@@ -1,0 +1,4 @@
+title: Les fichiers .hbs et .js d'un composant sont placés dans le même dossier
+description: >
+  Avec Octane, l'emplacement du template d'un composant a changé.
+  Nous parlons maintenant de "template co-location."
