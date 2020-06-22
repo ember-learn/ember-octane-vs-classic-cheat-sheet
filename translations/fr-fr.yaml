@@ -55,8 +55,8 @@ component-templates:
     description: "Lorsqu'une propriété est définie dans le fichier JavaScript d'un composant, elle doit être préfixée par «this.» lorsque vous y faites référence dans le template du composant. Fonctionnellement, cela n'a aucun impact. Pour en savoir plus <a href=\"https://guides.emberjs.com/release/upgrading/current-edition/glimmer-components/\" target=\"_blank\" rel=\"noopener noreferrer\">features</a> and <a href=\"https://guides.emberjs.com/release/upgrading/\" target=\"_blank\" rel=\"noopener noreferrer\">les codemods</a> pour migrer vos composants."
 
   template-arguments-named:
-    title: Passing named arguments
-    description: "When you pass an argument to a component, use an @ symbol on the left hand side. There's no change in behavior. Learn more about <a href=\"https://guides.emberjs.com/release/components/component-arguments-and-html-attributes/\" target=\"_blank\" rel=\"noopener noreferrer\">features</a> and <a href=\"https://guides.emberjs.com/release/upgrading/\" target=\"_blank\" rel=\"noopener noreferrer\">using codemods</a> to update your existing components."
+    title: Les arguments nommés lors de l'invocation
+    description: "Lorsque vous fournissez un argument à un composant lors de l'invocation, préfixez le nom de cet argument par un «@». Fonctionnellement, cela n'a aucun impact. Pour en savoir plus <a href=\"https://guides.emberjs.com/release/components/component-arguments-and-html-attributes/\" target=\"_blank\" rel=\"noopener noreferrer\">features</a> and <a href=\"https://guides.emberjs.com/release/upgrading/\" target=\"_blank\" rel=\"noopener noreferrer\">les codemods</a> pour migrer vos composants."
 
   template-arguments-this:
     title: "Passing arguments defined on \"this\" component"
