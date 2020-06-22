@@ -1,0 +1,5 @@
+title: Using named argument
+description: >
+  If a property was received from a parent component, refer to it with an '<code>'@'</code>'.
+  There's no change in behavior.
+  ('<a href="https://guides.emberjs.com/release/components/component-arguments-and-html-attributes/" target="_blank" rel="noopener noreferrer">'Visit the Ember Guides to learn more'</a>'.)

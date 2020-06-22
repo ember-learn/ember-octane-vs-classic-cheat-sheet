@@ -1,0 +1,5 @@
+title: Utiliser les propriétés d'un composant
+description: >
+  Lorsqu'une propriété est définie dans le fichier JavaScript d'un composant, elle doit être préfixée par '<code>'this'</code>' lorsque vous y faites référence dans le template du composant.
+  Fonctionnellement, cela n'a aucun impact.
+  Pour en savoir plus '<a href="https://guides.emberjs.com/release/upgrading/current-edition/glimmer-components/" target="_blank" rel="noopener noreferrer">'features'</a>' et '<a href="https://guides.emberjs.com/release/upgrading/" target="_blank" rel="noopener noreferrer">'les codemods'</a>' pour migrer vos composants.

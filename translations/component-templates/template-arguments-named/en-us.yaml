@@ -1,0 +1,5 @@
+title: Passing named arguments
+description: >
+  When you pass an argument to a component, use an '<code>'@'</code>' symbol on the left hand side.
+  There's no change in behavior.
+  Learn more about '<a href="https://guides.emberjs.com/release/components/component-arguments-and-html-attributes/" target="_blank" rel="noopener noreferrer">'features'</a>' and '<a href="https://guides.emberjs.com/release/upgrading/" target="_blank" rel="noopener noreferrer">'using codemods'</a>' to update your existing components.

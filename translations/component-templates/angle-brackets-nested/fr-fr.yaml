@@ -1,0 +1,4 @@
+title: «Nester» les composants dans le système de fichiers
+description: >
+  Vous pouvez «nester» les composants dans votre codebase et les utiliser dans un template via l'invocation «angle brackets».
+  Les fonctionnalités seront identiques.

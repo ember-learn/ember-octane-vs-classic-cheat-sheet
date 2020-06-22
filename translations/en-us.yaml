@@ -18,46 +18,6 @@ component:
       octane: Octane
 
 
-# component-templates:
-#   title: Component Templates
-
-#   angle-brackets:
-#     title: Angle brackets component invocation
-#     description: "Angle brackets are a way to invoke components in a template file. There's no change in behavior. Learn more about <a href=\"https://guides.emberjs.com/release/components/\" target=\"_blank\" rel=\"noopener noreferrer\">features</a> and <a href=\"https://guides.emberjs.com/release/upgrading/current-edition/#toc_octane-upgrade-strategy\" target=\"_blank\" rel=\"noopener noreferrer\">using codemods</a> to update your existing components."
-
-#   inline-vs-block:
-#     title: Inline vs block components
-#     description: "Angle brackets components can be used as either inline or block components. There's no change in behavior. \\{\\{yield\\}\\} looks and works the same. Learn more about <a href=\"https://guides.emberjs.com/release/components/block-content/\" target=\"_blank\" rel=\"noopener noreferrer\">features</a> and <a href=\"https://guides.emberjs.com/release/upgrading/current-edition/\" target=\"_blank\" rel=\"noopener noreferrer\">using codemods</a> to update your existing components."
-
-#   angle-brackets-nested:
-#     title: Nesting components in your file structure
-#     description: You can nest components in your file structure, and use them in a template with Angle Brackets invocation. There's no change in behavior.
-
-#   template-named:
-#     title: Using named argument
-#     description: "If a property was received from a parent component, refer to it with an @. There's no change in behavior. (<a href=\"https://guides.emberjs.com/release/components/component-arguments-and-html-attributes/\" target=\"_blank\" rel=\"noopener noreferrer\">Visit the Ember Guides to learn more</a>.)"
-
-#   template-this:
-#     title: Using own properties
-#     description: "If a property is defined in the JavaScript file for this component's template, use a \"this\" when you refer to it. There's no change in behavior. Learn more about <a href=\"https://guides.emberjs.com/release/upgrading/current-edition/glimmer-components/\" target=\"_blank\" rel=\"noopener noreferrer\">features</a> and <a href=\"https://guides.emberjs.com/release/upgrading/\" target=\"_blank\" rel=\"noopener noreferrer\">using codemods</a> to update your existing components."
-
-#   template-arguments-named:
-#     title: Passing named arguments
-#     description: "When you pass an argument to a component, use an @ symbol on the left hand side. There's no change in behavior. Learn more about <a href=\"https://guides.emberjs.com/release/components/component-arguments-and-html-attributes/\" target=\"_blank\" rel=\"noopener noreferrer\">features</a> and <a href=\"https://guides.emberjs.com/release/upgrading/\" target=\"_blank\" rel=\"noopener noreferrer\">using codemods</a> to update your existing components."
-
-#   template-arguments-this:
-#     title: "Passing arguments defined on \"this\" component"
-#     description: "If a property is coming from a template's own JavaScript file, remember to put a \"this.\" before it and wrap it in curly braces. Learn more about <a href=\"https://guides.emberjs.com/release/components/component-arguments-and-html-attributes/\" target=\"_blank\" rel=\"noopener noreferrer\">features</a> and <a href=\"https://guides.emberjs.com/release/upgrading/\" target=\"_blank\" rel=\"noopener noreferrer\">using codemods</a> to update your existing components."
-
-#   tag-name:
-#     title: All components are tagless
-#     description: In Octane, components don't have a default wrapper anymore, so you don't need tagName! Just put the tag right in the template.
-
-#   element-id:
-#     title: Make your own elementId
-#     description: Since components are tagless, there's no elementId, but you can generate your own. This is especially helpful for creating accessible forms.
-
-
 # component-properties:
 #   title: Component Properties
 

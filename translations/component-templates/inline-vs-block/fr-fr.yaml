@@ -1,0 +1,6 @@
+title: Composants inline vs composants block
+description: >
+  Vous pouvez invoquer un composant «Angle brackets» inline ou bien sous forme de block.
+  Le fonctionnement ne sera pas affecté.
+  '<code>{{yield}}</code>' se comporte de la même manière.
+  Pour en savoir plus: '<a href="https://guides.emberjs.com/release/components/block-content/" target="_blank" rel="noopener noreferrer">'features'</a>' et '<a href="https://guides.emberjs.com/release/upgrading/current-edition/" target="_blank" rel="noopener noreferrer">'les codemods'</a>' pour migrer vos composants.

@@ -18,46 +18,6 @@ component:
       octane: Octane
 
 
-# component-templates:
-#   title: Templates des composants
-
-#   angle-brackets:
-#     title: Invocation «Angle brackets» des composants
-#     description: "«Angle brackets» est une manière d'invoquer un/des composants dans un fichier de templates. Fonctionnellement, cela n'a aucun impact. Pour en savoir plus : <a href=\"https://guides.emberjs.com/release/components/\" target=\"_blank\" rel=\"noopener noreferrer\">features</a> et <a href=\"https://guides.emberjs.com/release/upgrading/current-edition/#toc_octane-upgrade-strategy\" target=\"_blank\" rel=\"noopener noreferrer\">les codemods</a> pour migrer vos composants."
-
-#   inline-vs-block:
-#     title: Composants inline vs composants block
-#     description: "Vous pouvez invoquer un composant «Angle brackets» inline ou bien sous forme de block. Le fonctionnement ne sera pas affecté. \\{\\{yield\\}\\} se comporte de la même manière. Pour en savoir plus : <a href=\"https://guides.emberjs.com/release/components/block-content/\" target=\"_blank\" rel=\"noopener noreferrer\">features</a> et <a href=\"https://guides.emberjs.com/release/upgrading/current-edition/\" target=\"_blank\" rel=\"noopener noreferrer\">les codemods</a> pour migrer vos composants."
-
-#   angle-brackets-nested:
-#     title: «Nester» les composants dans le système de fichiers
-#     description: Vous pouvez «nester» les composants dans votre codebase et les utiliser dans un template via l'invocation «Angle brackets». Les fonctionnalités seront identiques.
-
-#   template-named:
-#     title: Utiliser les arguments nommés
-#     description: "Quand vous faites référence à une propriété précisée lors de l'invocation, elle doit être préfixée d'un «@». Fonctionnellement, cela n'a aucun impact. (<a href=\"https://guides.emberjs.com/release/components/component-arguments-and-html-attributes/\" target=\"_blank\" rel=\"noopener noreferrer\">Consultez les «Ember Guides» pour en savoir plus</a>.)"
-
-#   template-this:
-#     title: Utiliser les propriétés d'un composant
-#     description: "Lorsqu'une propriété est définie dans le fichier JavaScript d'un composant, elle doit être préfixée par «this.» lorsque vous y faites référence dans le template du composant. Fonctionnellement, cela n'a aucun impact. Pour en savoir plus <a href=\"https://guides.emberjs.com/release/upgrading/current-edition/glimmer-components/\" target=\"_blank\" rel=\"noopener noreferrer\">features</a> and <a href=\"https://guides.emberjs.com/release/upgrading/\" target=\"_blank\" rel=\"noopener noreferrer\">les codemods</a> pour migrer vos composants."
-
-#   template-arguments-named:
-#     title: Les arguments nommés lors de l'invocation
-#     description: "Lorsque vous fournissez un argument à un composant lors de l'invocation, préfixez le nom de cet argument par un «@». Fonctionnellement, cela n'a aucun impact. Pour en savoir plus <a href=\"https://guides.emberjs.com/release/components/component-arguments-and-html-attributes/\" target=\"_blank\" rel=\"noopener noreferrer\">features</a> and <a href=\"https://guides.emberjs.com/release/upgrading/\" target=\"_blank\" rel=\"noopener noreferrer\">les codemods</a> pour migrer vos composants."
-
-#   template-arguments-this:
-#     title: "Passing arguments defined on \"this\" component"
-#     description: "If a property is coming from a template's own JavaScript file, remember to put a \"this.\" before it and wrap it in curly braces. Learn more about <a href=\"https://guides.emberjs.com/release/components/component-arguments-and-html-attributes/\" target=\"_blank\" rel=\"noopener noreferrer\">features</a> and <a href=\"https://guides.emberjs.com/release/upgrading/\" target=\"_blank\" rel=\"noopener noreferrer\">using codemods</a> to update your existing components."
-
-#   tag-name:
-#     title: All components are tagless
-#     description: In Octane, components don't have a default wrapper anymore, so you don't need tagName! Just put the tag right in the template.
-
-#   element-id:
-#     title: Make your own elementId
-#     description: Since components are tagless, there's no elementId, but you can generate your own. This is especially helpful for creating accessible forms.
-
-
 # component-properties:
 #   title: Component Properties
 

@@ -1,0 +1,5 @@
+title: Utiliser les arguments nommés
+description: >
+  Quand vous faites référence à une propriété précisée lors de l'invocation, elle doit être préfixée d'un '<code>'@'</code>'.
+  Fonctionnellement, cela n'a aucun impact.
+  ('<a href="https://guides.emberjs.com/release/components/component-arguments-and-html-attributes/" target="_blank" rel="noopener noreferrer">'Consultez les «Ember Guides» pour en savoir plus'</a>'.)

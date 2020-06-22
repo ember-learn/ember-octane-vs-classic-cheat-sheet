@@ -1,0 +1,6 @@
+title: Inline vs block components
+description: >
+  Angle brackets components can be used as either inline or block components.
+  There's no change in behavior.
+  '<code>{{yield}}</code>' looks and works the same.
+  Learn more about '<a href="https://guides.emberjs.com/release/components/block-content/" target="_blank" rel="noopener noreferrer">'features'</a>' and '<a href="https://guides.emberjs.com/release/upgrading/current-edition/" target="_blank" rel="noopener noreferrer">'using codemods'</a>' to update your existing components.

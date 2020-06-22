@@ -1,0 +1,4 @@
+title: All components are tagless
+description: >
+  In Octane, components don't have a default wrapper anymore, so you don't need '<code>'tagName'</code>'!
+  Just put the tag right in the template.
