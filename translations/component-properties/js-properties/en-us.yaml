@@ -1,0 +1,4 @@
+title: Declaring a property
+description: >
+  Properties follow native JavaScript class syntax.
+  No commas!

@@ -1,0 +1,4 @@
+title: Use @tracked and getters instead of computed properties
+description: >
+  Label the properties that should be tracked.
+  Getters will be updated automatically.

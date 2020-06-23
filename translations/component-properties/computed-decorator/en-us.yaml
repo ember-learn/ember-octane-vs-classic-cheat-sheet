@@ -1,0 +1,4 @@
+title: '@computed decorator'
+description: >
+  In Octane, it is recommended to rewrite a computed property as tracked property.
+  In case that isn't possible (maybe you need caching), the '<code>'@computed'</code>' decorator is available.

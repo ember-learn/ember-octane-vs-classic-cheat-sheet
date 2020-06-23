@@ -18,35 +18,6 @@ component:
       octane: Octane
 
 
-# component-properties:
-#   title: Component Properties
-
-#   js-boilerplate:
-#     title: Component JavaScript Syntax
-#     description: "An Octane component imports from the @glimmer package namespace, and it uses Native Class syntax. Glimmer components have different API methods than those on the classic @ember/component. If you aren't familiar with Native Classes, first check out the <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes\" target=\"_blank\" rel=\"noopener noreferrer\">documentation on MDN</a>. Then, learn more about <a href=\"https://guides.emberjs.com/release/components/component-state-and-actions/\" target=\"_blank\" rel=\"noopener noreferrer\">Octane component classes</a> and the <a href=\"https://api.emberjs.com/ember/release/modules/@glimmer%2Fcomponent\" target=\"_blank\" rel=\"noopener noreferrer\">Component API Documentation</a>."
-
-#   js-properties:
-#     title: Declaring a property
-#     description: Properties follow normal Native JavaScript Class syntax. Look ma, no commas!
-
-#   ddau:
-#     title: Data Down, Actions Up
-#     description: "Octane components enforce \"Data Down, Actions Up.\" That means that when data is passed down to a component, the only way to change that data is by using an action that was passed in as well. Said another way, there is no two-way binding of component arguments."
-
-#   get-and-set:
-#     title: No more get and set on components
-#     description: Octane components do not use this.get or this.set. Access and modify properties directly, the same as you would in a regular JavaScript Class.
-
-#   tracked-vs-cp:
-#     title: Use @tracked and getters instead of computed properties
-#     description: Label the properties that should be tracked to compute another property,
-#       which is a getter.
-
-#   computed-decorator:
-#     title: Computed decorators
-#     description: For Octane, it is recommended to refactor computed properties to use tracked instead. However, there is a @computed decorator available as well.
-
-
 # actions:
 #   title: Actions
 
