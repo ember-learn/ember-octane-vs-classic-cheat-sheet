@@ -1,5 +1,4 @@
 app/
   components/
-    my-component.js
     my-component.hbs
-      
+    my-component.js
