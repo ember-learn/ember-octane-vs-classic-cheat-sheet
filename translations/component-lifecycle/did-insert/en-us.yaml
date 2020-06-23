@@ -1,0 +1,6 @@
+title: Use '{{did-insert}}' instead of didInsertElement
+description: >
+  If you used the '<code>'didInsertElement'</code>' hook, consider making an action.
+  You can call the action with the '<code>{{did-insert}}</code>' modifier.
+  Use the '<code>'@action'</code>' decorator to bind the correct context ('<code>'this'</code>').
+  (Visit the Ember Guides to learn more about '<a href="https://guides.emberjs.com/release/upgrading/current-edition/glimmer-components/#toc_lifecycle-and-properties" target="_blank" rel="noopener noreferrer">'lifecycle of Glimmer components'</a>'.)

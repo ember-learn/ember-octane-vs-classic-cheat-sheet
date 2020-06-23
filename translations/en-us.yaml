@@ -18,30 +18,6 @@ component:
       octane: Octane
 
 
-# component-lifecycle:
-#   title: Component Lifecycle
-
-#   constructors:
-#     title: Using constructor instead of init
-#     description: "constructor is a feature of JavaScript Native Classes, not something Ember made up. Use it instead of init. No more this.set! (<a href=\"https://guides.emberjs.com/release/components/component-state-and-actions/\" target=\"_blank\" rel=\"noopener noreferrer\">Visit the Ember Guides to learn more</a>.)"
-
-#   render-modifiers:
-#     title: Element Modifiers
-#     description:
-#       "<p>There are three new element modifiers, \\{\\{did-insert\\}\\}, \\{\\{did-update\\}\\}, and \\{\\{will-destroy\\}\\}, that you may use to replace the classic component lifecycle hooks didInsertElement, willDestroy, and didUpdate.
-#       </p>
-#       <p>
-#         In order for these modifiers to work, you need to install the <a href=\"https://github.com/emberjs/ember-render-modifiers\" target=\"_blank\" rel=\"noopener noreferrer\">@ember/render-modifiers package</a>.
-#       </p>"
-
-#   did-insert:
-#     title: Use element modifiers instead of didInsertElement
-#     description: "Instead of writing a didInsertElement method in the JavaScript file, put the \\{\\{did-insert\\}\\} modifier in your template and say which function to call when that element is rendered. Label that function with the @action decorator. (<a href=\"https://guides.emberjs.com/release/components/template-lifecycle-dom-and-modifiers/\" target=\"_blank\" rel=\"noopener noreferrer\">Visit the Ember Guides to learn more</a>.)"
-
-#   will-destroy:
-#     title: Using willDestroy
-#     description: "willDestroy is called when the entire component's element will be destroyed, similar to willDestroyElement. You can use it as a method like below, or via a modifier similar to \\{\\{did-insert\\}\\} just above. (<a href=\"https://guides.emberjs.com/release/components/template-lifecycle-dom-and-modifiers/\" target=\"_blank\" rel=\"noopener noreferrer\">Visit the Ember Guides to learn more</a>.)"
-
 # routes:
 #   title: Routes
 

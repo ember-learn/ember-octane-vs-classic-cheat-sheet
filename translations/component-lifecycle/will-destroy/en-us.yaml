@@ -1,0 +1,5 @@
+title: Use willDestroy instead of willDestroyElement
+description: >
+  '<code>'willDestroy'</code>' is the only other lifecycle hook (besides '<code>'constructor'</code>') that Glimmer components have.
+  You can use this hook to tear down the component class, similarly to what you might have done in '<code>'willDestroyElement'</code>'.
+  (Visit the Ember Guides to learn more about '<a href="https://guides.emberjs.com/release/upgrading/current-edition/glimmer-components/#toc_lifecycle-and-properties" target="_blank" rel="noopener noreferrer">'lifecycle of Glimmer components'</a>'.)
