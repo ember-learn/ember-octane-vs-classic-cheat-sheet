@@ -1,11 +1,11 @@
 import Component from '@glimmer/component';
 import { computed } from '@ember/object';
 
-export default class SomeComponent extends Component {
-  item = 1;
+export default class MyComponent extends Component {
+  index = 0;
 
-  @computed('item')
-  get plusOne() {
-    return this.item + 1;
+  @computed('index')
+  get nextIndex() {
+    return this.index + 1;
   }
 }
