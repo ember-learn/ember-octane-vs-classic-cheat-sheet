@@ -16,11 +16,3 @@ component:
     subsection:
       classic: Classic
       octane: Octane
-
-
-# routes:
-#   title: Routes
-
-#   model-access:
-#     title: Accessing a route's model
-#     description: The model used in a route template has always come from an outside context. For this reason, in Octane, refer to it as @model.
