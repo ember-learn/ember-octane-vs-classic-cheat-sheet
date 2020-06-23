@@ -1,13 +1,13 @@
-// Before
 import Component from '@ember/component';
 
 export default Component.extend({
   actions: {
-    helloWorld() {
+    sayHello() {
       console.log('Hello, world!');
     },
+
     saySomethingElse(message) {
       console.log(message)
     }
-  },
+  }
 });

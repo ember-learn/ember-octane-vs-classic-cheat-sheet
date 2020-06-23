@@ -1,7 +1,13 @@
-<button {{on "click" this.helloWorld}}>
-    Hello World!
+<button
+  type="button"
+  {{on "click" this.sayHello}}
+>
+  Say hello!
 </button>
 
-<button {{on "click" (fn this.saySomethingElse "cheese!")}}>
+<button
+  type="button"
+  {{on "click" (fn this.saySomethingElse "Cheese!")}}
+>
   Say cheese!
 </button>

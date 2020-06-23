@@ -1,14 +1,12 @@
 import Component from '@glimmer/component';
 import { action } from '@ember/object';
 
-export default class SomeComponent extends Component {
-  @action
-  helloWorld() {
+export default class MyComponent extends Component {
+  @action sayHello() {
     console.log('Hello, world!');
   }
 
-  @action
-  saySomethingElse(message) {
+  @action saySomethingElse(message) {
     console.log(message);
   }
 }
