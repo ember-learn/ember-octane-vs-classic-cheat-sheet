@@ -1,0 +1,4 @@
+title: Setting the default value of an argument
+description: >
+  Because an argument is read-only, you cannot set its default value in the consuming class.
+  Instead, you can create a getter to wrap the argument and '<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing_operator/" target="_blank" rel="noopener noreferrer">'provide the default value'</a>'.

@@ -1,0 +1,7 @@
+title: Mixins
+description: >
+  You cannot use mixins on anything that uses native class syntax (e.g. components that import from '<code>'@glimmer/component'</code>').
+  The migration strategy depends on your use case.
+  If your app depends on an addon that uses mixins, it may be best to continue using classic components until the addon is Octane-ready.
+octaneDescription: >
+  See '<a href="https://www.pzuraq.com/do-you-need-ember-object/" target="_blank" rel="noopener noreferrer">'Do you need Ember Object?'</a>' for alternatives to mixins, which include utility functions, services, delegates, and class decorators.

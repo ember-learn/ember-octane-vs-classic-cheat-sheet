@@ -18,23 +18,6 @@ component:
       octane: Octane
 
 
-# actions:
-#   title: Actions
-
-#   actions:
-#     title: Use @action, on, and fn instead of action
-#     description: "Use the @action decorator in your JavaScript to indicate functions that you want to be able to use in a template. Use those functions in the template with \"on,\" and if you need to pass an argument to the function, use \"fn\" too. (<a href=\"https://guides.emberjs.com/release/components/component-state-and-actions/#toc_html-modifiers-and-actions\" target=\"_blank\" rel=\"noopener noreferrer\">Visit the Ember Guides to learn more</a>.)"
-
-#   template-arguments-default:
-#     title: Specifying a default value for an argument
-#     description: Because arguments are read only, their values cannot be changed so no default value can be set. To have a default-value-like experience, native getters may be used.
-
-#   mixins:
-#     title: Mixins
-#     description: You cannot use mixins on anything that uses Native Class syntax (such as components that import from @glimmer/component). The replacement strategy depends on your use case. If your app depends on an addon that uses Mixins, it may be best to continue using classic components until an alternative is ready.
-#     octaneDescription: "See <a href=\"https://www.pzuraq.com/do-you-need-ember-object/\" target=\"_blank\" rel=\"noopener noreferrer\">Do you need Ember Object?</a> for Mixin alternatives, such as utility functions, services, delegates, and class decorators."
-
-
 # component-lifecycle:
 #   title: Component Lifecycle
 
