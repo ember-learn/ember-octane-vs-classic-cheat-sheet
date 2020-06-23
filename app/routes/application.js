@@ -227,6 +227,15 @@ export default class ApplicationRoute extends Route {
             ]
           },
           {
+            id: 'will-destroy',
+            classicFiles: [
+              'classic.js'
+            ],
+            octaneFiles: [
+              'octane.js'
+            ]
+          },
+          {
             id: 'render-modifiers',
             classicFiles: [
             ],
@@ -242,15 +251,6 @@ export default class ApplicationRoute extends Route {
             ],
             octaneFiles: [
               'octane.hbs',
-              'octane.js'
-            ]
-          },
-          {
-            id: 'will-destroy',
-            classicFiles: [
-              'classic.js'
-            ],
-            octaneFiles: [
               'octane.js'
             ]
           }
