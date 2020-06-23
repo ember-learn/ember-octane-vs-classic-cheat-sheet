@@ -25,7 +25,7 @@
 
         {{#each @subsection.classicFiles as |file|}}
           <CodeSnippet
-            @fileName="{{subsectionId}}/{{file}}"
+            @fileName="{{@sectionId}}/{{subsectionId}}/{{file}}"
           />
         {{/each}}
 
@@ -41,7 +41,7 @@
 
         {{#each @subsection.octaneFiles as |file|}}
           <CodeSnippet
-            @fileName="{{subsectionId}}/{{file}}"
+            @fileName="{{@sectionId}}/{{subsectionId}}/{{file}}"
           />
         {{/each}}
 
