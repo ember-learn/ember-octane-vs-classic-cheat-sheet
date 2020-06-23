@@ -1,7 +1,7 @@
 import Component from '@glimmer/component';
 
-export default class SomeComponent extends Component {
+export default class MyComponent extends Component {
   willDestroy() {
-    // teardown work
+    // Remove event listener
   }
 }

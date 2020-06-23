@@ -1,7 +1,7 @@
 import Component from '@ember/component';
 
 export default Component.extend({
-    didInsertElement() {
-        // query for the canvas by id and create a graph
-    }
+  didInsertElement() {
+    // Find the canvas element by id. Then, create a graph.
+  }
 });
