@@ -72,7 +72,7 @@ module('Integration | Component | guide-section/subsection', function(hooks) {
       .hasText('Use an option to generate a component\'s JavaScript');
 
     assert.dom('[data-test-field="Subsection Description"]')
-      .includesText('In classic Ember, "ember generate component" created three files');
+      .includesText('In classic Ember, ember generate component created three files');
 
     const emberClassic = this.element.querySelector('[data-test-ember-classic]');
 
@@ -149,7 +149,7 @@ module('Integration | Component | guide-section/subsection', function(hooks) {
       .hasText('Mixins');
 
     assert.dom('[data-test-field="Subsection Description"]')
-      .includesText('You cannot use mixins on anything that uses Native Class syntax');
+      .includesText('You cannot use mixins on anything that uses native class syntax');
 
     const emberClassic = this.element.querySelector('[data-test-ember-classic]');
 
@@ -161,6 +161,6 @@ module('Integration | Component | guide-section/subsection', function(hooks) {
     assert.dom('[data-test-code-snippet]', emberOctane).exists({ count: 0 * numDuplicates });
     assert.dom('[data-test-general-text]', emberOctane).exists({ count: 1 });
     assert.dom('[data-test-general-text]', emberOctane)
-      .includesText('See Do you need Ember Object? for Mixin alternatives,');
+      .includesText('See Do you need Ember Object? for alternatives to mixins');
   });
 });

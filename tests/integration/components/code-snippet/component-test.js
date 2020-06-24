@@ -10,7 +10,7 @@ module('Integration | Component | code-snippet', function(hooks) {
   test('should render a Handlebars file', async function(assert) {
     await render(hbs`
       <CodeSnippet
-        @fileName="ddau/octane-parent.hbs"
+        @fileName="component-properties/ddau/octane-parent.hbs"
       />
     `);
 
@@ -22,7 +22,7 @@ module('Integration | Component | code-snippet', function(hooks) {
   test('should render a JavaScript file', async function(assert) {
     await render(hbs`
       <CodeSnippet
-        @fileName="ddau/classic-parent.js"
+        @fileName="component-properties/ddau/classic-parent.js"
       />
     `);
 
@@ -34,11 +34,11 @@ module('Integration | Component | code-snippet', function(hooks) {
   test('should render a shell file', async function(assert) {
     await render(hbs`
       <CodeSnippet
-        @fileName="generating-component/classic.shell"
+        @fileName="generating-files/generating-component/classic.shell"
       />
     `);
 
     assert.dom('[data-test-code-snippet]')
-      .hasText('ember generate component');
+      .hasText('ember generate component my-component');
   });
 });
