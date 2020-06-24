@@ -4,9 +4,9 @@ import { setupIntl } from 'ember-intl/test-support';
 import { setupApplicationTest } from 'ember-qunit';
 import { module, test } from 'qunit';
 
-module('Acceptance | Homepage | en-US', function(hooks) {
+module('Acceptance | Homepage | fr-FR', function(hooks) {
   setupApplicationTest(hooks);
-  setupIntl(hooks, 'en-us');
+  setupIntl(hooks, 'fr-fr');
 
 
   test('Percy snapshot', async function(assert) {
@@ -21,6 +21,6 @@ module('Acceptance | Homepage | en-US', function(hooks) {
     await visit('/');
 
     assert.dom(document.querySelector('html'))
-      .hasAttribute('lang', 'en-us', 'We set the correct lang attribute.');
+      .hasAttribute('lang', 'fr-fr', 'We set the correct lang attribute.');
   });
 });
