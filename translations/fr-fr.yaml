@@ -1,149 +1,149 @@
-layout:
-  application:
-    logo-alt-text: "Ember Octane: the latest edition from Ember.js"
-    title: Ember.js Octane vs Classic Cheat Sheet
-    description:
-      "<p class=\"intro\">
-        Ce guide est un aide-mémoire (eng: cheat sheet) afin d'utiliser <a href=\"https://emberjs.com/editions/octane\" target=\"_blank\" rel=\"noopener noreferrer\">Ember.js Octane</a>. Tout n'y est pas abordé, mais il devrait permettre de bien démarrer avec Octane! Toutes les PRs sont les bienvenues sur <a href=\"https://github.com/jenweber/ember-octane-vs-classic-cheat-sheet\" target=\"_blank\" rel=\"noopener noreferrer\">le repository GitHub</a>.
-      </p>
-      <p>
-        Pour plus d'information sur la manière de migrer vers Octane et les nouveautés qui y sont introduites, consultez <a href=\"https://guides.emberjs.com/release/upgrading/\" target=\"_blank\" rel=\"noopener noreferrer\">Le guide de migration vers Octane</a>.
-      </p>"
+# layout:
+#   application:
+#     logo-alt-text: "Ember Octane: the latest edition from Ember.js"
+#     title: Ember.js Octane vs Classic Cheat Sheet
+#     description:
+#       "<p class=\"intro\">
+#         Ce guide est un aide-mémoire (eng: cheat sheet) afin d'utiliser <a href=\"https://emberjs.com/editions/octane\" target=\"_blank\" rel=\"noopener noreferrer\">Ember.js Octane</a>. Tout n'y est pas abordé, mais il devrait permettre de bien démarrer avec Octane! Toutes les PRs sont les bienvenues sur <a href=\"https://github.com/jenweber/ember-octane-vs-classic-cheat-sheet\" target=\"_blank\" rel=\"noopener noreferrer\">le repository GitHub</a>.
+#       </p>
+#       <p>
+#         Pour plus d'information sur la manière de migrer vers Octane et les nouveautés qui y sont introduites, consultez <a href=\"https://guides.emberjs.com/release/upgrading/\" target=\"_blank\" rel=\"noopener noreferrer\">Le guide de migration vers Octane</a>.
+#       </p>"
 
 
-component:
-  guide-section:
-    section: §
-    subsection:
-      classic: Classic
-      octane: Octane
+# component:
+#   guide-section:
+#     section: §
+#     subsection:
+#       classic: Classic
+#       octane: Octane
 
 
-generating-files:
-  title: Génération de fichiers
+# generating-files:
+#   title: Génération de fichiers
 
-  generating-component:
-    title: Utiliser une option pour générer le fichier JavaScript d'un composant
-    description: "Avec Ember classic, \"ember generate component\" générait trois fichiers: le template, un fichier JavaScript et un test. Sous Octane, \"ember generate component\" crée uniquement un template. Si vous souhaitez également générer le fichier JavaScript définissant la Class, vous devez préciser une option."
+#   generating-component:
+#     title: Utiliser une option pour générer le fichier JavaScript d'un composant
+#     description: "Avec Ember classic, \"ember generate component\" générait trois fichiers: le template, un fichier JavaScript et un test. Sous Octane, \"ember generate component\" crée uniquement un template. Si vous souhaitez également générer le fichier JavaScript définissant la Class, vous devez préciser une option."
 
-  file-structure:
-    title: Les fichiers .hbs et .js d'un composant sont placés dans le même dossier
-    description: "Avec Octane, l'emplacement du template d'un composant a changé. Nous parlons maintenant de \"template co-location.\""
-
-
-component-templates:
-  title: Templates des composants
-
-  angle-brackets:
-    title: Invocation «Angle brackets» des composants
-    description: "«Angle brackets» est une manière d'invoquer un/des composants dans un fichier de templates. Fonctionnellement, cela n'a aucun impact. Pour en savoir plus : <a href=\"https://guides.emberjs.com/release/components/\" target=\"_blank\" rel=\"noopener noreferrer\">features</a> et <a href=\"https://guides.emberjs.com/release/upgrading/current-edition/#toc_octane-upgrade-strategy\" target=\"_blank\" rel=\"noopener noreferrer\">les codemods</a> pour migrer vos composants."
-
-  inline-vs-block:
-    title: Composants inline vs composants block
-    description: "Vous pouvez invoquer un composant «Angle brackets» inline ou bien sous forme de block. Le fonctionnement ne sera pas affecté. \\{\\{yield\\}\\} se comporte de la même manière. Pour en savoir plus : <a href=\"https://guides.emberjs.com/release/components/block-content/\" target=\"_blank\" rel=\"noopener noreferrer\">features</a> et <a href=\"https://guides.emberjs.com/release/upgrading/current-edition/\" target=\"_blank\" rel=\"noopener noreferrer\">les codemods</a> pour migrer vos composants."
-
-  angle-brackets-nested:
-    title: «Nester» les composants dans le système de fichiers
-    description: Vous pouvez «nester» les composants dans votre codebase et les utiliser dans un template via l'invocation «Angle brackets». Les fonctionnalités seront identiques.
-
-  template-named:
-    title: Utiliser les arguments nommés
-    description: "Quand vous faites référence à une propriété précisée lors de l'invocation, elle doit être préfixée d'un «@». Fonctionnellement, cela n'a aucun impact. (<a href=\"https://guides.emberjs.com/release/components/component-arguments-and-html-attributes/\" target=\"_blank\" rel=\"noopener noreferrer\">Consultez les «Ember Guides» pour en savoir plus</a>.)"
-
-  template-this:
-    title: Utiliser les propriétés d'un composant
-    description: "Lorsqu'une propriété est définie dans le fichier JavaScript d'un composant, elle doit être préfixée par «this.» lorsque vous y faites référence dans le template du composant. Fonctionnellement, cela n'a aucun impact. Pour en savoir plus <a href=\"https://guides.emberjs.com/release/upgrading/current-edition/glimmer-components/\" target=\"_blank\" rel=\"noopener noreferrer\">features</a> and <a href=\"https://guides.emberjs.com/release/upgrading/\" target=\"_blank\" rel=\"noopener noreferrer\">les codemods</a> pour migrer vos composants."
-
-  template-arguments-named:
-    title: Les arguments nommés lors de l'invocation
-    description: "Lorsque vous fournissez un argument à un composant lors de l'invocation, préfixez le nom de cet argument par un «@». Fonctionnellement, cela n'a aucun impact. Pour en savoir plus <a href=\"https://guides.emberjs.com/release/components/component-arguments-and-html-attributes/\" target=\"_blank\" rel=\"noopener noreferrer\">features</a> and <a href=\"https://guides.emberjs.com/release/upgrading/\" target=\"_blank\" rel=\"noopener noreferrer\">les codemods</a> pour migrer vos composants."
-
-  template-arguments-this:
-    title: "Passing arguments defined on \"this\" component"
-    description: "If a property is coming from a template's own JavaScript file, remember to put a \"this.\" before it and wrap it in curly braces. Learn more about <a href=\"https://guides.emberjs.com/release/components/component-arguments-and-html-attributes/\" target=\"_blank\" rel=\"noopener noreferrer\">features</a> and <a href=\"https://guides.emberjs.com/release/upgrading/\" target=\"_blank\" rel=\"noopener noreferrer\">using codemods</a> to update your existing components."
-
-  tag-name:
-    title: All components are tagless
-    description: In Octane, components don't have a default wrapper anymore, so you don't need tagName! Just put the tag right in the template.
-
-  element-id:
-    title: Make your own elementId
-    description: Since components are tagless, there's no elementId, but you can generate your own. This is especially helpful for creating accessible forms.
+#   file-structure:
+#     title: Les fichiers .hbs et .js d'un composant sont placés dans le même dossier
+#     description: "Avec Octane, l'emplacement du template d'un composant a changé. Nous parlons maintenant de \"template co-location.\""
 
 
-component-properties:
-  title: Component Properties
+# component-templates:
+#   title: Templates des composants
 
-  js-boilerplate:
-    title: Component JavaScript Syntax
-    description: "An Octane component imports from the @glimmer package namespace, and it uses Native Class syntax. Glimmer components have different API methods than those on the classic @ember/component. If you aren't familiar with Native Classes, first check out the <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes\" target=\"_blank\" rel=\"noopener noreferrer\">documentation on MDN</a>. Then, learn more about <a href=\"https://guides.emberjs.com/release/components/component-state-and-actions/\" target=\"_blank\" rel=\"noopener noreferrer\">Octane component classes</a> and the <a href=\"https://api.emberjs.com/ember/release/modules/@glimmer%2Fcomponent\" target=\"_blank\" rel=\"noopener noreferrer\">Component API Documentation</a>."
+#   angle-brackets:
+#     title: Invocation «Angle brackets» des composants
+#     description: "«Angle brackets» est une manière d'invoquer un/des composants dans un fichier de templates. Fonctionnellement, cela n'a aucun impact. Pour en savoir plus : <a href=\"https://guides.emberjs.com/release/components/\" target=\"_blank\" rel=\"noopener noreferrer\">features</a> et <a href=\"https://guides.emberjs.com/release/upgrading/current-edition/#toc_octane-upgrade-strategy\" target=\"_blank\" rel=\"noopener noreferrer\">les codemods</a> pour migrer vos composants."
 
-  js-properties:
-    title: Declaring a property
-    description: Properties follow normal Native JavaScript Class syntax. Look ma, no commas!
+#   inline-vs-block:
+#     title: Composants inline vs composants block
+#     description: "Vous pouvez invoquer un composant «Angle brackets» inline ou bien sous forme de block. Le fonctionnement ne sera pas affecté. \\{\\{yield\\}\\} se comporte de la même manière. Pour en savoir plus : <a href=\"https://guides.emberjs.com/release/components/block-content/\" target=\"_blank\" rel=\"noopener noreferrer\">features</a> et <a href=\"https://guides.emberjs.com/release/upgrading/current-edition/\" target=\"_blank\" rel=\"noopener noreferrer\">les codemods</a> pour migrer vos composants."
 
-  ddau:
-    title: Data Down, Actions Up
-    description: "Octane components enforce \"Data Down, Actions Up.\" That means that when data is passed down to a component, the only way to change that data is by using an action that was passed in as well. Said another way, there is no two-way binding of component arguments."
+#   angle-brackets-nested:
+#     title: «Nester» les composants dans le système de fichiers
+#     description: Vous pouvez «nester» les composants dans votre codebase et les utiliser dans un template via l'invocation «Angle brackets». Les fonctionnalités seront identiques.
 
-  get-and-set:
-    title: No more get and set on components
-    description: Octane components do not use this.get or this.set. Access and modify properties directly, the same as you would in a regular JavaScript Class.
+#   template-named:
+#     title: Utiliser les arguments nommés
+#     description: "Quand vous faites référence à une propriété précisée lors de l'invocation, elle doit être préfixée d'un «@». Fonctionnellement, cela n'a aucun impact. (<a href=\"https://guides.emberjs.com/release/components/component-arguments-and-html-attributes/\" target=\"_blank\" rel=\"noopener noreferrer\">Consultez les «Ember Guides» pour en savoir plus</a>.)"
 
-  tracked-vs-cp:
-    title: Use @tracked and getters instead of computed properties
-    description: Label the properties that should be tracked to compute another property,
-      which is a getter.
+#   template-this:
+#     title: Utiliser les propriétés d'un composant
+#     description: "Lorsqu'une propriété est définie dans le fichier JavaScript d'un composant, elle doit être préfixée par «this.» lorsque vous y faites référence dans le template du composant. Fonctionnellement, cela n'a aucun impact. Pour en savoir plus <a href=\"https://guides.emberjs.com/release/upgrading/current-edition/glimmer-components/\" target=\"_blank\" rel=\"noopener noreferrer\">features</a> and <a href=\"https://guides.emberjs.com/release/upgrading/\" target=\"_blank\" rel=\"noopener noreferrer\">les codemods</a> pour migrer vos composants."
 
-  computed-decorator:
-    title: Computed decorators
-    description: For Octane, it is recommended to refactor computed properties to use tracked instead. However, there is a @computed decorator available as well.
+#   template-arguments-named:
+#     title: Les arguments nommés lors de l'invocation
+#     description: "Lorsque vous fournissez un argument à un composant lors de l'invocation, préfixez le nom de cet argument par un «@». Fonctionnellement, cela n'a aucun impact. Pour en savoir plus <a href=\"https://guides.emberjs.com/release/components/component-arguments-and-html-attributes/\" target=\"_blank\" rel=\"noopener noreferrer\">features</a> and <a href=\"https://guides.emberjs.com/release/upgrading/\" target=\"_blank\" rel=\"noopener noreferrer\">les codemods</a> pour migrer vos composants."
 
+#   template-arguments-this:
+#     title: "Passing arguments defined on \"this\" component"
+#     description: "If a property is coming from a template's own JavaScript file, remember to put a \"this.\" before it and wrap it in curly braces. Learn more about <a href=\"https://guides.emberjs.com/release/components/component-arguments-and-html-attributes/\" target=\"_blank\" rel=\"noopener noreferrer\">features</a> and <a href=\"https://guides.emberjs.com/release/upgrading/\" target=\"_blank\" rel=\"noopener noreferrer\">using codemods</a> to update your existing components."
 
-actions:
-  title: Actions
+#   tag-name:
+#     title: All components are tagless
+#     description: In Octane, components don't have a default wrapper anymore, so you don't need tagName! Just put the tag right in the template.
 
-  actions:
-    title: Use @action, on, and fn instead of action
-    description: "Use the @action decorator in your JavaScript to indicate functions that you want to be able to use in a template. Use those functions in the template with \"on,\" and if you need to pass an argument to the function, use \"fn\" too. (<a href=\"https://guides.emberjs.com/release/components/component-state-and-actions/#toc_html-modifiers-and-actions\" target=\"_blank\" rel=\"noopener noreferrer\">Visit the Ember Guides to learn more</a>.)"
-
-  template-arguments-default:
-    title: Specifying a default value for an argument
-    description: Because arguments are read only, their values cannot be changed so no default value can be set. To have a default-value-like experience, native getters may be used.
-
-  mixins:
-    title: Mixins
-    description: You cannot use mixins on anything that uses Native Class syntax (such as components that import from @glimmer/component). The replacement strategy depends on your use case. If your app depends on an addon that uses Mixins, it may be best to continue using classic components until an alternative is ready.
-    octaneDescription: "See <a href=\"https://www.pzuraq.com/do-you-need-ember-object/\" target=\"_blank\" rel=\"noopener noreferrer\">Do you need Ember Object?</a> for Mixin alternatives, such as utility functions, services, delegates, and class decorators."
+#   element-id:
+#     title: Make your own elementId
+#     description: Since components are tagless, there's no elementId, but you can generate your own. This is especially helpful for creating accessible forms.
 
 
-component-lifecycle:
-  title: Component Lifecycle
+# component-properties:
+#   title: Component Properties
 
-  constructors:
-    title: Using constructor instead of init
-    description: "constructor is a feature of JavaScript Native Classes, not something Ember made up. Use it instead of init. No more this.set! (<a href=\"https://guides.emberjs.com/release/components/component-state-and-actions/\" target=\"_blank\" rel=\"noopener noreferrer\">Visit the Ember Guides to learn more</a>.)"
+#   js-boilerplate:
+#     title: Component JavaScript Syntax
+#     description: "An Octane component imports from the @glimmer package namespace, and it uses Native Class syntax. Glimmer components have different API methods than those on the classic @ember/component. If you aren't familiar with Native Classes, first check out the <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes\" target=\"_blank\" rel=\"noopener noreferrer\">documentation on MDN</a>. Then, learn more about <a href=\"https://guides.emberjs.com/release/components/component-state-and-actions/\" target=\"_blank\" rel=\"noopener noreferrer\">Octane component classes</a> and the <a href=\"https://api.emberjs.com/ember/release/modules/@glimmer%2Fcomponent\" target=\"_blank\" rel=\"noopener noreferrer\">Component API Documentation</a>."
 
-  render-modifiers:
-    title: Element Modifiers
-    description:
-      "<p>There are three new element modifiers, \\{\\{did-insert\\}\\}, \\{\\{did-update\\}\\}, and \\{\\{will-destroy\\}\\}, that you may use to replace the classic component lifecycle hooks didInsertElement, willDestroy, and didUpdate.
-      </p>
-      <p>
-        In order for these modifiers to work, you need to install the <a href=\"https://github.com/emberjs/ember-render-modifiers\" target=\"_blank\" rel=\"noopener noreferrer\">@ember/render-modifiers package</a>.
-      </p>"
+#   js-properties:
+#     title: Declaring a property
+#     description: Properties follow normal Native JavaScript Class syntax. Look ma, no commas!
 
-  did-insert:
-    title: Use element modifiers instead of didInsertElement
-    description: "Instead of writing a didInsertElement method in the JavaScript file, put the \\{\\{did-insert\\}\\} modifier in your template and say which function to call when that element is rendered. Label that function with the @action decorator. (<a href=\"https://guides.emberjs.com/release/components/template-lifecycle-dom-and-modifiers/\" target=\"_blank\" rel=\"noopener noreferrer\">Visit the Ember Guides to learn more</a>.)"
+#   ddau:
+#     title: Data Down, Actions Up
+#     description: "Octane components enforce \"Data Down, Actions Up.\" That means that when data is passed down to a component, the only way to change that data is by using an action that was passed in as well. Said another way, there is no two-way binding of component arguments."
 
-  will-destroy:
-    title: Using willDestroy
-    description: "willDestroy is called when the entire component's element will be destroyed, similar to willDestroyElement. You can use it as a method like below, or via a modifier similar to \\{\\{did-insert\\}\\} just above. (<a href=\"https://guides.emberjs.com/release/components/template-lifecycle-dom-and-modifiers/\" target=\"_blank\" rel=\"noopener noreferrer\">Visit the Ember Guides to learn more</a>.)"
+#   get-and-set:
+#     title: No more get and set on components
+#     description: Octane components do not use this.get or this.set. Access and modify properties directly, the same as you would in a regular JavaScript Class.
 
-routes:
-  title: Routes
+#   tracked-vs-cp:
+#     title: Use @tracked and getters instead of computed properties
+#     description: Label the properties that should be tracked to compute another property,
+#       which is a getter.
 
-  model-access:
-    title: Accessing a route's model
-    description: The model used in a route template has always come from an outside context. For this reason, in Octane, refer to it as @model.
+#   computed-decorator:
+#     title: Computed decorators
+#     description: For Octane, it is recommended to refactor computed properties to use tracked instead. However, there is a @computed decorator available as well.
+
+
+# actions:
+#   title: Actions
+
+#   actions:
+#     title: Use @action, on, and fn instead of action
+#     description: "Use the @action decorator in your JavaScript to indicate functions that you want to be able to use in a template. Use those functions in the template with \"on,\" and if you need to pass an argument to the function, use \"fn\" too. (<a href=\"https://guides.emberjs.com/release/components/component-state-and-actions/#toc_html-modifiers-and-actions\" target=\"_blank\" rel=\"noopener noreferrer\">Visit the Ember Guides to learn more</a>.)"
+
+#   template-arguments-default:
+#     title: Specifying a default value for an argument
+#     description: Because arguments are read only, their values cannot be changed so no default value can be set. To have a default-value-like experience, native getters may be used.
+
+#   mixins:
+#     title: Mixins
+#     description: You cannot use mixins on anything that uses Native Class syntax (such as components that import from @glimmer/component). The replacement strategy depends on your use case. If your app depends on an addon that uses Mixins, it may be best to continue using classic components until an alternative is ready.
+#     octaneDescription: "See <a href=\"https://www.pzuraq.com/do-you-need-ember-object/\" target=\"_blank\" rel=\"noopener noreferrer\">Do you need Ember Object?</a> for Mixin alternatives, such as utility functions, services, delegates, and class decorators."
+
+
+# component-lifecycle:
+#   title: Component Lifecycle
+
+#   constructors:
+#     title: Using constructor instead of init
+#     description: "constructor is a feature of JavaScript Native Classes, not something Ember made up. Use it instead of init. No more this.set! (<a href=\"https://guides.emberjs.com/release/components/component-state-and-actions/\" target=\"_blank\" rel=\"noopener noreferrer\">Visit the Ember Guides to learn more</a>.)"
+
+#   render-modifiers:
+#     title: Element Modifiers
+#     description:
+#       "<p>There are three new element modifiers, \\{\\{did-insert\\}\\}, \\{\\{did-update\\}\\}, and \\{\\{will-destroy\\}\\}, that you may use to replace the classic component lifecycle hooks didInsertElement, willDestroy, and didUpdate.
+#       </p>
+#       <p>
+#         In order for these modifiers to work, you need to install the <a href=\"https://github.com/emberjs/ember-render-modifiers\" target=\"_blank\" rel=\"noopener noreferrer\">@ember/render-modifiers package</a>.
+#       </p>"
+
+#   did-insert:
+#     title: Use element modifiers instead of didInsertElement
+#     description: "Instead of writing a didInsertElement method in the JavaScript file, put the \\{\\{did-insert\\}\\} modifier in your template and say which function to call when that element is rendered. Label that function with the @action decorator. (<a href=\"https://guides.emberjs.com/release/components/template-lifecycle-dom-and-modifiers/\" target=\"_blank\" rel=\"noopener noreferrer\">Visit the Ember Guides to learn more</a>.)"
+
+#   will-destroy:
+#     title: Using willDestroy
+#     description: "willDestroy is called when the entire component's element will be destroyed, similar to willDestroyElement. You can use it as a method like below, or via a modifier similar to \\{\\{did-insert\\}\\} just above. (<a href=\"https://guides.emberjs.com/release/components/template-lifecycle-dom-and-modifiers/\" target=\"_blank\" rel=\"noopener noreferrer\">Visit the Ember Guides to learn more</a>.)"
+
+# routes:
+#   title: Routes
+
+#   model-access:
+#     title: Accessing a route's model
+#     description: The model used in a route template has always come from an outside context. For this reason, in Octane, refer to it as @model.
