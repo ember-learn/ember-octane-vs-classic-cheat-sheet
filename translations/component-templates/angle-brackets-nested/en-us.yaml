@@ -1,0 +1,4 @@
+title: Nesting components in your file structure
+description: >
+  You can nest components in your file structure, and use them in a template with angle brackets invocation.
+  There's no change in behavior.

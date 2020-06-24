@@ -1,0 +1,4 @@
+title: Element Modifiers
+description: >
+  If you install '<a href="https://github.com/emberjs/ember-render-modifiers" target="_blank" rel="noopener noreferrer">'@ember/render-modifiers'</a>', you get '<code>{{did-insert}}</code>' and '<code>{{did-update}}</code>' modifiers.
+  You may use them to replace a classic component's lifecycle hooks '<code>didInsertElement</code>', '<code>didRender</code>', and '<code>didUpdate</code>'.

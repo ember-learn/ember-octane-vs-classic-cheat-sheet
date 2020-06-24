@@ -1,0 +1,4 @@
+title: Passing arguments defined on "this" component
+description: >
+  If a property is coming from a template's own JavaScript file, remember to put a '<code>'this'</code>' before it and wrap it in curly braces.
+  Learn more about '<a href="https://guides.emberjs.com/release/components/component-arguments-and-html-attributes/" target="_blank" rel="noopener noreferrer">'features'</a>' and '<a href="https://guides.emberjs.com/release/upgrading/" target="_blank" rel="noopener noreferrer">'using codemods'</a>' to update your existing components.

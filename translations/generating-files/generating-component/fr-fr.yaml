@@ -1,0 +1,5 @@
+title: Utiliser une option pour générer le fichier JavaScript d'un composant
+description: >
+  Avec Ember classic, '<code>'ember generate component'</code>' générait trois fichiers: le template, un fichier JavaScript et un test.
+  Sous Octane, '<code>'ember generate component'</code>' crée uniquement un template.
+  Si vous souhaitez également générer le fichier JavaScript définissant la class, vous devez préciser une option.

@@ -1,0 +1,7 @@
+title: Component JavaScript Syntax
+description: >
+  An Octane component imports from the '<code>'@glimmer'</code>' package namespace.
+  It also uses native class syntax.
+  Glimmer components have different API methods than classic components.
+  If you aren't familiar with native classes, first check out the '<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Classes" target="_blank" rel="noopener noreferrer">'documentation on MDN'</a>'.
+  Then, learn more about Glimmer components from the '<a href="https://guides.emberjs.com/release/components/component-state-and-actions/" target="_blank" rel="noopener noreferrer">'Ember.js Guides'</a>' and the '<a href="https://api.emberjs.com/ember/release/modules/@glimmer%2Fcomponent" target="_blank" rel="noopener noreferrer">'API Reference'</a>'.

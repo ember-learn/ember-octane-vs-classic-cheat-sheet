@@ -1,0 +1,5 @@
+title: Data Down, Actions Up
+description: >
+  Octane components enforce "Data Down, Actions Up."
+  When data is passed down to a component, the only way to change that data is to call an action that was passed in too.
+  In another words, there is no two-way binding for component arguments.

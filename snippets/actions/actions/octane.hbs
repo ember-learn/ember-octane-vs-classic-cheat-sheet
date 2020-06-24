@@ -1,0 +1,13 @@
+<button
+  type="button"
+  {{on "click" this.sayHello}}
+>
+  Say hello!
+</button>
+
+<button
+  type="button"
+  {{on "click" (fn this.saySomethingElse "Cheese!")}}
+>
+  Say cheese!
+</button>

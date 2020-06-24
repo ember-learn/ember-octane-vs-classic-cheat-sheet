@@ -1,0 +1,5 @@
+title: Les arguments nommés lors de l'invocation
+description: >
+  Lorsque vous fournissez un argument à un composant lors de l'invocation, préfixez le nom de cet argument par un '<code>'@'</code>'.
+  Fonctionnellement, cela n'a aucun impact.
+  Pour en savoir plus '<a href="https://guides.emberjs.com/release/components/component-arguments-and-html-attributes/" target="_blank" rel="noopener noreferrer">'features'</a>' et '<a href="https://guides.emberjs.com/release/upgrading/" target="_blank" rel="noopener noreferrer">'les codemods'</a>' pour migrer vos composants.

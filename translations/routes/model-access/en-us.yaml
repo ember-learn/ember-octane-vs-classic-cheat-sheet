@@ -1,0 +1,4 @@
+title: Accessing a route's model
+description: >
+  In a route template, the '<code>'model'</code>' comes from an outside context.
+  Use '<code>'@model'</code>' to access the result from the route's '<code>'model'</code>' hook.

@@ -1,0 +1,5 @@
+title: Angle brackets component invocation
+description: >
+  Angle brackets are a way to invoke components in a template file.
+  There's no change in behavior.
+  Learn more about '<a href="https://guides.emberjs.com/release/components/" target="_blank" rel="noopener noreferrer">'features'</a>' and '<a href="https://guides.emberjs.com/release/upgrading/current-edition/#toc_octane-upgrade-strategy" target="_blank" rel="noopener noreferrer">'using codemods'</a>' to update your existing components.
