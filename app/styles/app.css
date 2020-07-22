@@ -63,8 +63,11 @@ h2 + section {
   margin-top: 1em;
 }
 .permalink {
-  color: #c1c1c1;
+  color: #1c304a33;
   text-decoration: none;
+}
+h2 .permalink {
+  color: #c1c1c1;
   padding: 0 15px 0 5px;
 }
 .intro {

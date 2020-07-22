@@ -5,7 +5,7 @@ import { setupRenderingTest } from 'ember-qunit';
 import { module, test } from 'qunit';
 
 // TODO: There may be a bug in ember-prism v0.7.0.
-// 
+//
 // Possibly due to its use of classic component and splattributes, I noticed that
 // the test selector for <CodeSnippet> appears twice in development and testing
 // environments. One on the <pre> tag and another on the <code> tag inside.
@@ -32,7 +32,7 @@ module('Integration | Component | guide-section/subsection', function(hooks) {
     `);
 
     assert.dom('[data-test-field="Subsection Title"]')
-      .hasText('Warning: Subsection title not found');
+      .hasText('§ Warning: Subsection title not found');
 
     assert.dom('[data-test-field="Subsection Description"]')
       .hasText('Warning: Subsection description not found');
@@ -69,7 +69,7 @@ module('Integration | Component | guide-section/subsection', function(hooks) {
     `);
 
     assert.dom('[data-test-field="Subsection Title"]')
-      .hasText('Use an option to generate a component\'s JavaScript');
+      .hasText('§ Use an option to generate a component\'s JavaScript');
 
     assert.dom('[data-test-field="Subsection Description"]')
       .includesText('In classic Ember, ember generate component created three files');
@@ -111,7 +111,7 @@ module('Integration | Component | guide-section/subsection', function(hooks) {
     `);
 
     assert.dom('[data-test-field="Subsection Title"]')
-      .hasText('Data Down, Actions Up');
+      .hasText('§ Data Down, Actions Up');
 
     assert.dom('[data-test-field="Subsection Description"]')
       .includesText('Octane components enforce "Data Down, Actions Up."');
@@ -146,7 +146,7 @@ module('Integration | Component | guide-section/subsection', function(hooks) {
     `);
 
     assert.dom('[data-test-field="Subsection Title"]')
-      .hasText('Mixins');
+      .hasText('§ Mixins');
 
     assert.dom('[data-test-field="Subsection Description"]')
       .includesText('You cannot use mixins on anything that uses native class syntax');
