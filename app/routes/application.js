@@ -237,8 +237,7 @@ export default class ApplicationRoute extends Route {
           },
           {
             id: 'render-modifiers',
-            classicFiles: [
-            ],
+            classicDescriptionKey: 'component-lifecycle.render-modifiers.classicDescription',
             octaneFiles: [
               'octane.shell'
             ]
