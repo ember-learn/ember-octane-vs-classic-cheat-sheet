@@ -12,6 +12,9 @@ module.exports = function(defaults) {
         'handlebars', 'markup-templating', // handlebars
         'bash' // shell
       ],
+      plugins: [
+        'line-numbers'
+      ]
     },
 
     prember: {

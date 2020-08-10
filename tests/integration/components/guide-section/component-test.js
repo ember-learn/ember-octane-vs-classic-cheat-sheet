@@ -4,16 +4,6 @@ import { setupIntl } from 'ember-intl/test-support';
 import { setupRenderingTest } from 'ember-qunit';
 import { module, test } from 'qunit';
 
-// TODO: There may be a bug in ember-prism v0.7.0.
-// 
-// Possibly due to its use of classic component and splattributes, I noticed that
-// the test selector for <CodeSnippet> appears twice in development and testing
-// environments. One on the <pre> tag and another on the <code> tag inside.
-//
-// Once the bug is fixed and the addon is updated for this app, remove the use of
-// `numDuplicates`.
-const numDuplicates = 2;
-
 module('Integration | Component | guide-section', function(hooks) {
   setupRenderingTest(hooks);
   setupIntl(hooks, 'en-us', {
@@ -81,7 +71,7 @@ module('Integration | Component | guide-section', function(hooks) {
       .includesText('Actions');
 
     assert.dom('[data-test-subsection]').exists({ count: 3 });
-    assert.dom('[data-test-code-snippet]').exists({ count: 9 * numDuplicates });
+    assert.dom('[data-test-code-snippet]').exists({ count: 9 });
     assert.dom('[data-test-general-text]').exists({ count: 1 });
   });
 });
