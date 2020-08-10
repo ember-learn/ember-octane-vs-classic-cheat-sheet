@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "private": true,
   "description": "See side-by-side examples of Ember Octane and Ember Classic",
-  "repository": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ember-learn/ember-octane-vs-classic-cheat-sheet.git"
+  },
   "license": "MIT",
   "author": "",
   "directories": {
