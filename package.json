@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "private": true,
   "description": "See side-by-side examples of Ember Octane and Ember Classic",
-  "repository": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ember-learn/ember-octane-vs-classic-cheat-sheet.git"
+  },
   "license": "MIT",
   "author": "",
   "directories": {
@@ -42,23 +45,23 @@
     "ember-cli-uglify": "^3.0.0",
     "ember-code-snippet": "^3.0.0",
     "ember-export-application-global": "^2.0.1",
-    "ember-fetch": "^8.0.1",
-    "ember-intl": "^5.3.1",
+    "ember-fetch": "^8.0.2",
+    "ember-intl": "^5.4.2",
     "ember-load-initializers": "^2.1.1",
     "ember-maybe-import-regenerator": "^0.1.6",
     "ember-prism": "^0.8.0",
     "ember-qunit": "^4.6.0",
-    "ember-resolver": "^8.0.0",
+    "ember-resolver": "^8.0.2",
     "ember-source": "~3.20.2",
-    "ember-template-lint": "^2.9.1",
+    "ember-template-lint": "^2.10.0",
     "ember-test-selectors": "^4.1.0",
     "eslint": "^7.6.0",
-    "eslint-plugin-ember": "^8.9.2",
+    "eslint-plugin-ember": "^8.10.1",
     "eslint-plugin-node": "^11.1.0",
     "loader.js": "^4.7.0",
     "npm-run-all": "^4.1.5",
     "prember": "^1.0.5",
-    "qunit-dom": "^1.3.0"
+    "qunit-dom": "^1.4.0"
   },
   "engines": {
     "node": "10.* || >= 12"
