@@ -7,15 +7,15 @@ on:
   pull_request:
 
 env:
-  NODE_VERSION: 12.16
+  NODE_VERSION: 14
   PERCY_PARALLEL_NONCE: ${{ github.run_id }}-${{ github.run_number }}
   PERCY_PARALLEL_TOTAL: 1
 
 jobs:
   lint:
-    name: Lint files
+    name: Lint files and dependencies
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 5
     steps:
       - name: Check out a copy of the repo
         uses: actions/checkout@v2
@@ -47,10 +47,10 @@ jobs:
         run: yarn lint
 
 
-  run-tests:
-    name: Test Ember app
+  test-app:
+    name: Test app
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 5
     steps:
       - name: Check out a copy of the repo
         uses: actions/checkout@v2
