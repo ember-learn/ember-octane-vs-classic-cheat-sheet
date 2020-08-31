@@ -1,4 +1,4 @@
-name: CI
+name: CI/CD
 
 on: 
   push:
@@ -7,15 +7,15 @@ on:
   pull_request:
 
 env:
-  NODE_VERSION: 12.16
+  NODE_VERSION: 14
   PERCY_PARALLEL_NONCE: ${{ github.run_id }}-${{ github.run_number }}
   PERCY_PARALLEL_TOTAL: 1
 
 jobs:
   lint:
-    name: Lint files
+    name: Lint files and dependencies
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 5
     steps:
       - name: Check out a copy of the repo
         uses: actions/checkout@v2
@@ -47,10 +47,10 @@ jobs:
         run: yarn lint
 
 
-  run-tests:
-    name: Test Ember app
+  test-app:
+    name: Test app
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 5
     steps:
       - name: Check out a copy of the repo
         uses: actions/checkout@v2
@@ -86,3 +86,52 @@ jobs:
           PERCY_PARALLEL_NONCE: ${{ env.PERCY_PARALLEL_NONCE }}
           PERCY_PARALLEL_TOTAL: ${{ env.PERCY_PARALLEL_TOTAL }}
           PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
+
+
+  deploy-app:
+    name: Deploy app
+    needs: [lint, test-app]
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    if: success() && github.ref == 'refs/heads/master' && github.event_name == 'push'
+    steps:
+      - name: Check out a copy of the repo
+        uses: actions/checkout@v2
+
+      - name: Setup Git
+        run: |
+          # Setup a Git user for committing
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@users.noreply.github.com"
+
+          # Copy the Git Auth from the local repository
+          # https://github.com/actions/checkout/blob/61b9e3751b92087fd0b06925ba6dd6314e06f089/src/git-auth-helper.ts#L69-L76
+          # https://github.com/actions/checkout/blob/61b9e3751b92087fd0b06925ba6dd6314e06f089/src/git-auth-helper.ts#L252-L278
+          git config --global "http.https://github.com/.extraheader" \
+            "$(git config --local --get http.https://github.com/.extraheader)"
+
+      - name: Use Node.js ${{ env.NODE_VERSION }}
+        uses: actions/setup-node@v2-beta
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+
+      - name: Get Yarn cache path
+        id: yarn-cache-dir-path
+        run: echo "::set-output name=dir::$(yarn cache dir)"
+
+      - name: Cache Yarn cache and node_modules
+        id: cache-dependencies
+        uses: actions/cache@v2
+        with:
+          path: |
+            ${{ steps.yarn-cache-dir-path.outputs.dir }}
+            node_modules
+          key: ${{ runner.os }}-${{ env.NODE_VERSION }}-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: ${{ runner.os }}-${{ env.NODE_VERSION }}-
+
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+        if: steps.cache-dependencies.outputs.cache-hit != 'true'
+
+      - name: Deploy
+        run: yarn deploy

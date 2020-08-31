@@ -3,8 +3,12 @@
 
 module.exports = function(deployTarget) {
   let ENV = {
-    build: {}
+    build: {},
+
     // include other plugin configuration that applies to all deploy targets here
+    git: {
+      repo: 'https://github.com/ember-learn/ember-octane-vs-classic-cheat-sheet.git',
+    },
   };
 
   if (deployTarget === 'development') {
