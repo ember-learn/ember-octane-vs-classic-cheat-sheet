@@ -1,0 +1,4 @@
+tle: Acessando o model de uma rota
+description: >
+  No template de uma rota, o '<code>'model'</code>' vem de um contexto externo.
+  Use '<code>'@model'</code>' para acessar o resultado do hook '<code>'model'</code>' da rota.

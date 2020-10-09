@@ -1,0 +1,4 @@
+title: Use @tracked e getters ao invés de computed properties
+description: >
+  Marque as properties que devem ser "trackeadas".
+  Getters serão atualizados automaticamente.

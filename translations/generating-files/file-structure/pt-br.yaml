@@ -1,0 +1,4 @@
+title: Templates e arquivos JavaScript dos componentes ficam no mesmo diretório
+description: >
+  A localização dos templates dos componentes mudou no Octane.
+  Chamamos esse formato de "template co-location."

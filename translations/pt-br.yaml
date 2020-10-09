@@ -1,0 +1,17 @@
+layout:
+  application:
+    logo-alt-text: 'Ember Octane: a mais recente edição do Ember.js'
+    title: Ember.js Octane vs Classic Cheat Sheet
+    description-1: >
+      Esse guia é uma cola para usar o '<a href="https://emberjs.com/editions/octane" target="_blank" rel="noopener noreferrer">'Ember.js Octane'</a>'.
+      Ele não cobre tudo, mas é o suficiente para você começar!
+      Pull requests são bem-vindos no '<a href="https://github.com/ember-learn/ember-octane-vs-classic-cheat-sheet" target="_blank" rel="noopener noreferrer">'repositório do GitHub'</a>'.
+    description-2: >
+      Para uma visão mais aprofundada sobre as formas de atualizar e as diferenças introduzidas na Octane, veja '<a href="https://guides.emberjs.com/release/upgrading/" target="_blank" rel="noopener noreferrer">'The Octane Upgrading Guide'</a>'.
+
+component:
+  guide-section:
+    section: §
+    subsection:
+      classic: Classic
+      octane: Octane

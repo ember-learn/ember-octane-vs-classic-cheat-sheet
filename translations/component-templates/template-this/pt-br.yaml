@@ -1,0 +1,6 @@
+title: Usando properties próprias
+description: >
+  Se uma property é definida no arquivo JavaScript desse componente, use 
+  If a property is defined in the JavaScript file for this component's template, use '<code>'this'</code>' quando estiver fazendo uma referência.
+  Não há mudança no comportamento.
+  Saiba mais sobre '<a href="https://guides.emberjs.com/release/upgrading/current-edition/glimmer-components/" target="_blank" rel="noopener noreferrer">'funcionalidades'</a>' e o '<a href="https://guides.emberjs.com/release/upgrading/" target="_blank" rel="noopener noreferrer">'uso de codemods'</a>' para atualizar os seus componentes atuais.

@@ -1,0 +1,4 @@
+title: Todos os componentes são "tagless"
+description: >
+  Na Octane, componentes não são automaticamente envolvidos em uma tag HTML, então '<code>'tagName'</code>' não é necessário!
+  Apenas use a tag no próprio template.

@@ -1,0 +1,5 @@
+title: Use willDestroy ao invés de willDestroyElement
+description: >
+  '<code>'willDestroy'</code>' é o único "lifecycle hook" (além do '<code>'constructor'</code>') que componentes Glimmer possuem.
+  Você pode usar esse hook para desfazer ("tear down") a classe do componente, de forma similar ao que você já deve ter feito no '<code>'willDestroyElement'</code>'.
+  (Veja o Ember Guides para saber mais sobre '<a href="https://guides.emberjs.com/release/upgrading/current-edition/glimmer-components/#toc_lifecycle-and-properties" target="_blank" rel="noopener noreferrer">'lifecycle de componentes Glimmer'</a>'.)

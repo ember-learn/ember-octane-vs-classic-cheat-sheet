@@ -1,0 +1,4 @@
+title: '@computed decorator'
+description: >
+  Na Octane, é recomendável reescrever uma computed property como uma tracked property.
+  No caso de não ser possível (talvez você precise do caching), o decorator '<code>'@computed'</code>' está disponível.
