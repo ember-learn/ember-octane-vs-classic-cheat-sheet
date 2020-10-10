@@ -1,0 +1,7 @@
+title: Modifiers de elementos
+description: >
+  Se você instalar '<a href="https://github.com/emberjs/ember-render-modifiers" target="_blank" rel="noopener noreferrer">'@ember/render-modifiers'</a>', você poderá usar os modifiers '<code>{{did-insert}}</code>' e '<code>{{did-update}}</code>'.
+  Você pode usá-los para substituir os "lifecycle hooks" '<code>didInsertElement</code>', '<code>didRender</code>', e '<code>didUpdate</code>' dos componentes clássicos.
+classicDescription: >
+  Possui apps Ember na versão 2.18 ou superior?
+  Você pode usar esses modifiers para já iniciar a conversão de componentes clássicos em componentes Glimmer.

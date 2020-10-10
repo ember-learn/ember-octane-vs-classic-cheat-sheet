@@ -1,0 +1,5 @@
+title: Data Down, Actions Up
+description: >
+  Componentes Octane enfatizam "Data Down, Actions Up."
+  Quando dados são passados para um componente, a única forma de modificar esses dados é chamando uma action que foi passada junto.
+  Em outras palavras, não existe "two-way binding" para os argumentos dos componentes.

@@ -1,0 +1,5 @@
+title: Use o construtor ao invés do método init
+description: >
+  '<code>'constructor'</code>' vem da classe nativa do JavaScript.
+  Você pode usá-lo para configurar a classe do componente, de forma similar ao que você já deve ter feito no método '<code>'init'</code>'.
+  (Veja o Ember Guides para saber mais sobre '<a href="https://guides.emberjs.com/release/in-depth-topics/native-classes-in-depth/#toc_constructor" target="_blank" rel="noopener noreferrer">'construtor'</a>' e '<a href="https://guides.emberjs.com/release/in-depth-topics/native-classes-in-depth/#toc_constructor-in-extends" target="_blank" rel="noopener noreferrer">'super'</a>'.)

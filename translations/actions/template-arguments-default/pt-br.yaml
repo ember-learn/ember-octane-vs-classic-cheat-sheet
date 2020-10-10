@@ -1,0 +1,4 @@
+title: Definindo o valor padrão de um argumento
+description: >
+  Pelo fato de um argumento ser apenas leitura ("read-only"), não é possível definir o seu valor padrão na classe consumidora.
+  Ao invés disso, você pode criar um getter para encapsular o argumento e '<a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Operators/operador_de_coalescencia_nula" target="_blank" rel="noopener noreferrer">'fornecer o valor padrão'</a>'.

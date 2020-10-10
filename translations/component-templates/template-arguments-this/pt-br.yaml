@@ -1,0 +1,4 @@
+title: Passando argumentos definidos no próprio componente
+description: >
+  Se uma property vem do JavaScript do próprio componente, lembre de colocar '<code>'this'</code>' antes da variável e entre chaves. 
+  Saiba mais sobre '<a href="https://guides.emberjs.com/release/components/component-arguments-and-html-attributes/" target="_blank" rel="noopener noreferrer">'funcionalidades'</a>' e o '<a href="https://guides.emberjs.com/release/upgrading/" target="_blank" rel="noopener noreferrer">'uso de codemods'</a>' para atualizar seus componentes atuais.

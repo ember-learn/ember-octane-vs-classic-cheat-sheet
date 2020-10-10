@@ -1,0 +1,5 @@
+title: Usando argumentos nomeados
+description: >
+  Se uma property foi recebida de um componente pai, faça a referência usando '<code>'@'</code>'.
+  Não há mudança no comportamento.
+  ('<a href="https://guides.emberjs.com/release/components/component-arguments-and-html-attributes/" target="_blank" rel="noopener noreferrer">'Veja o Ember Guides para saber mais'</a>'.)

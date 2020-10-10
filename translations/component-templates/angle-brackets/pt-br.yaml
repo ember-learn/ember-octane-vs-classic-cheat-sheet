@@ -1,0 +1,5 @@
+title: Chamada de componente com angle brackets
+description: >
+  Angle brackets é uma forma de chamar os componentes dentro de um template.
+  Não houve alteração no comportamento.
+  Saiba mais sobre '<a href="https://guides.emberjs.com/release/components/" target="_blank" rel="noopener noreferrer">'funcionalidades'</a>' e o '<a href="https://guides.emberjs.com/release/upgrading/current-edition/#toc_octane-upgrade-strategy" target="_blank" rel="noopener noreferrer">'uso de codemods'</a>' para atualizar os seus componentes atuais.

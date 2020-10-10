@@ -1,0 +1,4 @@
+title: Sem mais get e set nos componentes
+description: >
+  Componentes Octane não usam '<code>'this.get'</code>' ou '<code>'this.set'</code>'.
+  Acesse e modifique as properties diretamente, da mesma forma que você faria com qualquer classe JavaScript.

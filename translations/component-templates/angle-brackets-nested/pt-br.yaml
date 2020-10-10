@@ -1,0 +1,4 @@
+title: Componentes aninhados na estrutura de arquivos
+description: >
+  Você pode aninhar componentes na sua estrutura de arquivos, e usá-los em um template com a chamada do tipo angle brackets.
+  Não há mudança no comportamento.
