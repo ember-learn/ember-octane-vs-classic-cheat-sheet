@@ -26,19 +26,19 @@ module('Acceptance | Homepage | en-US', function(hooks) {
 
   test('We can change the site language', async function(assert) {
     await visit('/');
-    assert.dom(find('#generating-files'))
+    assert.dom('#generating-files')
       .hasText('§ Generating Files', 'We see the site in English.');
 
     await fillIn('[data-test-field="Locale"], 'pt-BR');
-    assert.dom(find('#generating-files'))
+    assert.dom('#generating-files')
       .hasText('§ Geração de arquivos', 'We see the site in Portugese (Brazil).');
 
     await fillIn('[data-test-field="Locale"]', '');
-    assert.dom(find('#generating-files'))
+    assert.dom('#generating-files')
       .hasText('§ Geração de arquivos', 'We still see the site in Portugese (Brazil).');
 
     await fillIn('[data-test-field="Locale"]', 'fr-FR');
-    assert.dom(find('#generating-files'))
+    assert.dom('#generating-files')
       .hasText('§ Génération de fichiers', 'We see the site in French.');
   });
 });
