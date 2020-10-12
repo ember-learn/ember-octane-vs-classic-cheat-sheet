@@ -9,10 +9,11 @@ layout:
     description-2: >
       For in-depth information about the upgrade paths and differences introduced in Octane, see '<a href="https://guides.emberjs.com/release/upgrading/" target="_blank" rel="noopener noreferrer">'The Octane Upgrading Guide'</a>'.
 
-
 component:
   guide-section:
     section: §
     subsection:
       classic: Classic
       octane: Octane
+  locale-menu:
+    select-your-preferred-language: Select your preferred language
