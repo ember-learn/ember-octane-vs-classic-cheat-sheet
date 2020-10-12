@@ -24,21 +24,21 @@ module('Acceptance | Homepage | en-US', function(hooks) {
       .hasAttribute('lang', 'en-us', 'We set the correct lang attribute.');
   });
 
-  test('We can change the display language', async function(assert) {
+  test('We can change the site language', async function(assert) {
     await visit('/');
-    assert.dom(document.querySelector('#generating-files'))
-      .hasText('§ Generating Files');
+    assert.dom(find('#generating-files'))
+      .hasText('§ Generating Files', 'We see the site in English.');
 
-    await fillIn(document.querySelector('select[data-test-field="Locale"]'), 'pt-BR');
-    assert.dom(document.querySelector('#generating-files'))
-      .hasText('§ Geração de arquivos');
+    await fillIn('[data-test-field="Locale"], 'pt-BR');
+    assert.dom(find('#generating-files'))
+      .hasText('§ Geração de arquivos', 'We see the site in Portugese (Brazil).');
 
-    await fillIn(document.querySelector('select[data-test-field="Locale"]'), '');
-    assert.dom(document.querySelector('#generating-files'))
-      .hasText('§ Geração de arquivos');
+    await fillIn('[data-test-field="Locale"]', '');
+    assert.dom(find('#generating-files'))
+      .hasText('§ Geração de arquivos', 'We still see the site in Portugese (Brazil).');
 
-    await fillIn(document.querySelector('select[data-test-field="Locale"]'), 'fr-FR');
-    assert.dom(document.querySelector('#generating-files'))
-      .hasText('§ Génération de fichiers');
+    await fillIn('[data-test-field="Locale"]', 'fr-FR');
+    assert.dom(find('#generating-files'))
+      .hasText('§ Génération de fichiers', 'We see the site in French.');
   });
 });
