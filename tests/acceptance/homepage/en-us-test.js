@@ -29,7 +29,7 @@ module('Acceptance | Homepage | en-US', function(hooks) {
     assert.dom('#generating-files')
       .hasText('§ Generating Files', 'We see the site in English.');
 
-    await fillIn('[data-test-field="Locale"], 'pt-BR');
+    await fillIn('[data-test-field="Locale"]', 'pt-BR');
     assert.dom('#generating-files')
       .hasText('§ Geração de arquivos', 'We see the site in Portugese (Brazil).');
 
