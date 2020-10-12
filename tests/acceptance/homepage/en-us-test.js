@@ -1,4 +1,4 @@
-import { visit, fillIn, settled } from '@ember/test-helpers';
+import { visit, fillIn } from '@ember/test-helpers';
 import percySnapshot from '@percy/ember';
 import { setupIntl } from 'ember-intl/test-support';
 import { setupApplicationTest } from 'ember-qunit';
