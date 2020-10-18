@@ -22,7 +22,7 @@ module('Integration | Component | guide-section/subsection', function(hooks) {
     `);
 
     assert.dom('[data-test-field="Subsection Title"]')
-      .hasText('§ Warning: Subsection title not found');
+      .hasText('§ Warning: Subsection title not found Edit Translation');
 
     assert.dom('[data-test-field="Subsection Description"]')
       .hasText('Warning: Subsection description not found');
@@ -59,7 +59,7 @@ module('Integration | Component | guide-section/subsection', function(hooks) {
     `);
 
     assert.dom('[data-test-field="Subsection Title"]')
-      .hasText('§ Use an option to generate a component\'s JavaScript');
+      .hasText('§ Use an option to generate a component\'s JavaScript Edit Translation');
 
     assert.dom('[data-test-field="Subsection Description"]')
       .includesText('In classic Ember, ember generate component created three files');
@@ -101,7 +101,7 @@ module('Integration | Component | guide-section/subsection', function(hooks) {
     `);
 
     assert.dom('[data-test-field="Subsection Title"]')
-      .hasText('§ Data Down, Actions Up');
+      .hasText('§ Data Down, Actions Up Edit Translation');
 
     assert.dom('[data-test-field="Subsection Description"]')
       .includesText('Octane components enforce "Data Down, Actions Up."');
@@ -136,7 +136,7 @@ module('Integration | Component | guide-section/subsection', function(hooks) {
     `);
 
     assert.dom('[data-test-field="Subsection Title"]')
-      .hasText('§ Mixins');
+      .hasText('§ Mixins Edit Translation');
 
     assert.dom('[data-test-field="Subsection Description"]')
       .includesText('You cannot use mixins on anything that uses native class syntax');
@@ -152,5 +152,53 @@ module('Integration | Component | guide-section/subsection', function(hooks) {
     assert.dom('[data-test-general-text]', emberOctane).exists({ count: 1 });
     assert.dom('[data-test-general-text]', emberOctane)
       .includesText('See Do you need Ember Object? for alternatives to mixins');
+  });
+
+  test('should render (4)', async function(assert) {
+    this.sectionId = 'generating-files';
+    this.subsection = {
+      id: 'generating-component',
+      classicFiles: [
+        'classic.shell'
+      ],
+      octaneFiles: [
+        'octane.shell'
+      ]
+    };
+
+    await render(hbs`
+      <GuideSection::Subsection
+        @sectionId={{this.sectionId}}
+        @subsection={{this.subsection}}
+      />
+    `);
+
+    assert.dom('[data-test-field="Subsection Title"] a:last-of-type')
+      .hasAttribute('href', 'https://github.com/ember-learn/ember-octane-vs-classic-cheat-sheet/edit/master/translations/generating-files/generating-component/en-us.yaml')
+  });
+
+  test('should render (5)', async function(assert) {
+    this.set('intl.locale', 'pt-BR');
+
+    this.sectionId = 'generating-files';
+    this.subsection = {
+      id: 'generating-component',
+      classicFiles: [
+        'classic.shell'
+      ],
+      octaneFiles: [
+        'octane.shell'
+      ]
+    };
+
+    await render(hbs`
+      <GuideSection::Subsection
+        @sectionId={{this.sectionId}}
+        @subsection={{this.subsection}}
+      />
+    `);
+
+    assert.dom('[data-test-field="Subsection Title"] a:last-of-type')
+      .hasAttribute('href', 'https://github.com/ember-learn/ember-octane-vs-classic-cheat-sheet/edit/master/translations/generating-files/generating-component/pt-br.yaml')
   });
 });
