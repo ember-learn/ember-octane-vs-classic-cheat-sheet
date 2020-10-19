@@ -15,5 +15,6 @@ component:
     subsection:
       classic: Classic
       octane: Octane
+    edit-translation-text: Edit Translation
   locale-menu:
     select-your-preferred-language: Select your preferred language
