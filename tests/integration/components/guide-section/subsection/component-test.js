@@ -173,7 +173,7 @@ module('Integration | Component | guide-section/subsection', function(hooks) {
       />
     `);
 
-    assert.dom('[data-test-link="Edit Translations"]')
+    assert.dom('[data-test-link="Edit Translation"]')
       .hasAttribute('href', 'https://github.com/ember-learn/ember-octane-vs-classic-cheat-sheet/edit/master/translations/generating-files/generating-component/en-us.yaml')
   });
 
