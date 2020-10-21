@@ -1,0 +1,4 @@
+title: Component Arguments
+description: > 
+  In Octane, arguments passed to a component are set on a new `args` property, `this.args`, instead of being set directly on the class instance, `this`.
+  This avoids the possibility of overwriting methods and actions, and makes the distinction between internal class values and arguments much more clear. 

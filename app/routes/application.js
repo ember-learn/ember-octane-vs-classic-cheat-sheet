@@ -152,6 +152,15 @@ export default class ApplicationRoute extends Route {
             ]
           },
           {
+            id: 'args',
+            classicFiles: [
+              'classic.js',
+            ],
+            octaneFiles:[
+              'octane.js',
+            ]
+          },
+          {
             id: 'get-and-set',
             classicFiles: [
               'classic.js'
