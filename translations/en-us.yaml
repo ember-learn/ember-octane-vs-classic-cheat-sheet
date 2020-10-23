@@ -18,3 +18,6 @@ component:
     edit-translation-text: Edit Translation
   locale-menu:
     select-your-preferred-language: Select your preferred language
+    locale-en-US: English (US) 
+    locale-fr-FR: Français
+    locale-pt-BR: Português (do Brasil)
