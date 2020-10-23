@@ -8,7 +8,7 @@
 
    {{#each this.supportedLocales as |locale|}}
      <option value={{locale}}>
-       {{locale}}
+       {{t (concat "component.locale-menu.locale-" locale)}}
      </option>
    {{/each}}
  </select>
