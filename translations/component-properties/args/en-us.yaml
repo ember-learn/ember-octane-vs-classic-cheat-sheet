@@ -1,0 +1,6 @@
+title: Component Arguments
+description: >
+  In Octane, arguments are set on the '<code>'args'</code>' property, '<code>'this.args'</code>'.
+  They are '<em>'not'</em>' set on the class instance, '<code>'this'</code>'.
+  As a result, you can distinguish internal class values from external arguments.
+  (Visit the Ember Guides to learn more about '<a href="https://guides.emberjs.com/release/upgrading/current-edition/glimmer-components/#toc_arguments" target="_blank" rel="noopener noreferrer">'arguments'</a>'.)
