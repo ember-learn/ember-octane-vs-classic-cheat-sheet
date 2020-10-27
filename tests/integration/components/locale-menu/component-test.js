@@ -11,6 +11,6 @@ module('Integration | Component | locale-menu', function(hooks) {
     // Handle any actions with this.set('myAction', function(val) { ... });
 
     await render(hbs`<LocaleMenu />`);
-    assert.dom('select option').exists({ count: 4 });
+    assert.dom('select option').exists({ count: 5 });
   });
 });
