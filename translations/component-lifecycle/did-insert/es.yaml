@@ -1,0 +1,6 @@
+title: Utilice '{{did-insert}}' en lugar de didInsertElement
+description: >
+  Si usa el hook '<code>'didInsertElement'</code>', considere usar una acción.
+  Puede llamar la acción con el modificador '<code>{{did-insert}}</code>'.
+  Utilice el decorador '<code>'@action'</code>' para unir el contexto correcto ('<code>'this'</code>').
+  (Visite las guías de Ember para obtener más información sobre '<a href="https://guides.emberjs.com/release/upgrading/current-edition/glimmer-components/#toc_lifecycle-and-properties" target="_blank" rel="noopener noreferrer">'ciclo de vida de los componentes de Glimmer'</a>'.)

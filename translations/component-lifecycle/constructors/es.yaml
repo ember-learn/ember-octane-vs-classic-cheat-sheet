@@ -1,0 +1,5 @@
+title: Utilice constructor en lugar de init
+description: >
+  '<code>'constructor'</code>' proviene de la clase JavaScript nativa.
+  Puede utilizar este hook para configurar la clase de componente, de manera similar a lo que podría haber hecho en '<code>'init'</code>'.
+  (Visite las guías de Ember para obtener más información sobre '<a href="https://guides.emberjs.com/release/in-depth-topics/native-classes-in-depth/#toc_constructor" target="_blank" rel="noopener noreferrer">'constructor'</a>' y '<a href="https://guides.emberjs.com/release/in-depth-topics/native-classes-in-depth/#toc_constructor-in-extends" target="_blank" rel="noopener noreferrer">'super'</a>'.)
