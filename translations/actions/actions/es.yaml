@@ -1,0 +1,6 @@
+title: Use @action, '{{on}}', y '{{fn}}' en lugar de acciones
+description: >
+  En la clase de JavaScript, use el decorador '<code>'@action'</code>' para marcar la función que desea llamar desde el template.
+  En el template, use el modificador '<code>{{on}}</code>' para decidir cuándo llamar a la función.
+  Si necesita pasar un argumento a la función, use el '<code>{{fn}}</code>' helper.
+  ('<a href="https://guides.emberjs.com/release/components/component-state-and-actions/#toc_html-modifiers-and-actions" target="_blank" rel="noopener noreferrer">'Visite las guías de Ember para obtener más información'</a>'.)

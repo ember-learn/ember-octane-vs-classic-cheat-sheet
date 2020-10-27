@@ -1,0 +1,4 @@
+title: Establecer el valor predeterminado de un argumento
+description: >
+  Como un argumento es de solo lectura, no puede establecer su valor predeterminado en la clase que lo consume.
+  En su lugar, puede crear un getter para envolver el argumento y '<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing_operator/" target="_blank" rel="noopener noreferrer">'proporcionar el valor predeterminado'</a>'.
