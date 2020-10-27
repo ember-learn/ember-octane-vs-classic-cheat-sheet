@@ -1,0 +1,4 @@
+title: Todos los componentes no tienen etiquetas
+description: >
+  En Octane, los componentes ya no tienen un contenedor predeterminado, ¡por lo que no es necesario '<code>'tagName'</code>'!
+  Simplemente coloque la etiqueta en la plantilla.

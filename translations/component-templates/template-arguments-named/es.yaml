@@ -1,0 +1,5 @@
+title: Pasar argumentos con nombre
+description: >
+  Cuando pase un argumento a un componente, utilice un símbolo '<code>'@'</code>' en el lado izquierdo.
+  No hay cambios de comportamiento.
+  Aprender más acerca de '<a href="https://guides.emberjs.com/release/components/component-arguments-and-html-attributes/" target="_blank" rel="noopener noreferrer">'caracteristicas'</a>' y '<a href="https://guides.emberjs.com/release/upgrading/" target="_blank" rel="noopener noreferrer">'uso de codemods'</a>' para actualizar sus componentes existentes.

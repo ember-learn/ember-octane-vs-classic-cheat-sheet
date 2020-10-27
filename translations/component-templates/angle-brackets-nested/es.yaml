@@ -1,0 +1,4 @@
+title: Anidar componentes en su estructura de archivos
+description: >
+  Puede anidar componentes en su estructura de archivos y usarlos en un tempalte con invocación de Angle Brackets.
+  No hay cambios de comportamiento.

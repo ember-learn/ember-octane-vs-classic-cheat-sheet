@@ -1,0 +1,6 @@
+title: Componentes en línea vs en bloque
+description: >
+  Los componentes Angle brackets se puede utilizar como componentes en línea o en bloque.
+  No hay cambios de comportamiento.
+  '<code>{{yield}}</code>' se ve y funciona igual.
+  Aprender más acerca de '<a href="https://guides.emberjs.com/release/components/block-content/" target="_blank" rel="noopener noreferrer">'caracteristicas'</a>' y '<a href="https://guides.emberjs.com/release/upgrading/current-edition/" target="_blank" rel="noopener noreferrer">'uso de codemods'</a>' para actualizar sus componentes existentes.
