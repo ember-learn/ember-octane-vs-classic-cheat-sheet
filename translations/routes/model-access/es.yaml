@@ -1,0 +1,4 @@
+title: Acceder al modelo de una ruta
+description: >
+  En un template de ruta, el '<code>'model'</code>' proviene de un contexto externo.
+  Utilice '<code>'@model'</code>' para acceder al resultado del '<code>'model'</code>' hook de la ruta.
