@@ -1,0 +1,7 @@
+title: Sintaxis de JavaScript de componentes
+description: >
+  Un componente Octane es importado desde el espacio de nombre del paquete '<code>'@glimmer'</code>'.
+  Este también usa sintaxis de clase nativa.
+  Los componentes de Glimmer tienen diferentes métodos de API que los componentes clásicos.
+  Si no está familiarizado con las clases nativas, consulte '<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Classes" target="_blank" rel="noopener noreferrer">'la documentación en MDN'</a>'.
+  Luego, obtenga más información sobre los componentes de Glimmer en las '<a href="https://guides.emberjs.com/release/components/component-state-and-actions/" target="_blank" rel="noopener noreferrer">'guías de Ember.js'</a>' y en la '<a href="https://api.emberjs.com/ember/release/modules/@glimmer%2Fcomponent" target="_blank" rel="noopener noreferrer">'Referencia de API'</a>'.

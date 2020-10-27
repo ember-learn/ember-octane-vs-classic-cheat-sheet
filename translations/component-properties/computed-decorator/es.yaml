@@ -1,0 +1,4 @@
+title: '@computed decorator'
+description: >
+  En Octane, se recomienda reescribir una propiedad computada como propiedad rastreada.
+  En caso de que eso no sea posible (tal vez necesite de caché), el decorador '<code>'@computed'</code>' está disponible.
