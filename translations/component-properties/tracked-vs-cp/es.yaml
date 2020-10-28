@@ -1,4 +1,4 @@
 title: Utilice @tracked y Getters en lugar de propiedades computadas
 description: >
   Etiquete las propiedades que se deben rastrear.
-  Los Getters se actualizará automáticamente.
+  Los Getters se actualizarán automáticamente.
