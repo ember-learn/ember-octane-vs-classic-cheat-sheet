@@ -1,0 +1,5 @@
+title: Data Down, Actions Up
+description: >
+  Los componentes Octane refuerzan el concepto de "Data Down, Actions Up."
+  Cuando los datos se pasan a un componente, la única forma de cambiar esos datos es llamar a una acción que también se pasó.
+  En otras palabras, no existe un enlace bidireccional para los argumentos de los componentes.

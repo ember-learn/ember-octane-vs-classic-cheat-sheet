@@ -1,0 +1,4 @@
+title: Haga su propio elementId
+description: >
+  Dado que los componentes no tienen etiquetas, no hay '<code>'elementId'</code>', pero puede generar la suyo.
+  Esto es especialmente útil para crear formularios accesibles.

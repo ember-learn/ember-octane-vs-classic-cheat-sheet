@@ -18,6 +18,7 @@ component:
     edit-translation-text: Editar tradução
   locale-menu:
     select-your-preferred-language: Selecionar idioma
-    locale-en-US: English (US) 
+    locale-en-US: English (US)
     locale-fr-FR: Français
     locale-pt-BR: Português (do Brasil)
+    locale-es: Espanhol

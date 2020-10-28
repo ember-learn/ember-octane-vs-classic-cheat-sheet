@@ -1,0 +1,7 @@
+title: Mixins
+description: >
+  No puede usar mixins en nada que use sintaxis de clase nativa (por ejemplo, componentes que se importen desde '<code>'@glimmer/component'</code>').
+  La estrategia de migración depende de su caso de uso.
+  Si su aplicación depende de un addon que usa mixins, puede ser mejor continuar usando componentes clásicos hasta que el addon esté listo para Octane.
+octaneDescription: >
+  Vea '<a href="https://www.pzuraq.com/do-you-need-ember-object/" target="_blank" rel="noopener noreferrer">'Do you need Ember Object?'</a>' para alternativas a mixins, que incluyen funciones de utilidad, servicios, delegates y decoradores de clases.

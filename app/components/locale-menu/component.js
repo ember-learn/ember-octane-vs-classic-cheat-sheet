@@ -6,7 +6,7 @@ import { action } from '@ember/object';
 export default class LocaleMenuComponent extends Component {
   @service intl;
 
-  supportedLocales = ['en-US', 'fr-FR', 'pt-BR'];
+  supportedLocales = ['en-US', 'fr-FR', 'pt-BR', 'es'];
 
   @action
   updateLocale(evt) {
