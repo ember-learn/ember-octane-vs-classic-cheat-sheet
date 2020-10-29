@@ -1,0 +1,7 @@
+title: ミックスイン
+description: >
+  ネイティブのクラス構文（たとえば'<code>'@glimmer/component'</code>'をimportするコンポーネント）を使用するものについて、ミックスインを使用することは出来ません。
+  ユースケースによって、どうマイグレーションするかは変わります。
+  もし依存しているアドオンがミックインを使っている場合、そのアドオンがOctanceに対応するまでClassicコンポーネントを継続して使用することが最善の場合があります。
+octaneDescription: >
+  ミックスインの代替案について知りたい場合、'<a href="https://www.pzuraq.com/do-you-need-ember-object/" target="_blank" rel="noopener noreferrer">'Do you need Ember Object?'</a>'を参照してください。代替案には、ユーティリティ関数、サービス、デリゲート、そしてクラスデコレーターが含まれています。

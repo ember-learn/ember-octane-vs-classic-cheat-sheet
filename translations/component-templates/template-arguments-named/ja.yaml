@@ -1,0 +1,5 @@
+title: 名前付き引数を渡す
+description: >
+  '<code>'@'</code>'を左辺の接頭詞としてつけることで、コンポーネントに引数を渡すことが出来ます。
+  動作に変更はありません。
+  既存のコンポーネントを更新するために、'<a href="https://guides.emberjs.com/release/components/component-arguments-and-html-attributes/" target="_blank" rel="noopener noreferrer">'features'</a>'や'<a href="https://guides.emberjs.com/release/upgrading/" target="_blank" rel="noopener noreferrer">'using codemods'</a>'を参照してください。

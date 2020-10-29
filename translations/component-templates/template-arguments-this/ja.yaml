@@ -1,0 +1,4 @@
+title: 自身のコンポーネントに定義された引数を渡す
+description: >
+  テンプレート自身のJavaScriptファイルにあるプロパティの場合、'<code>'this'</code>'をプロパティに接頭詞として付与し、中括弧（'{}'）で囲います。
+  既存のコンポーネントを更新するために、'<a href="https://guides.emberjs.com/release/components/component-arguments-and-html-attributes/" target="_blank" rel="noopener noreferrer">'features'</a>'や'<a href="https://guides.emberjs.com/release/upgrading/" target="_blank" rel="noopener noreferrer">'using codemods'</a>'を参照してください。

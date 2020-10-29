@@ -1,0 +1,7 @@
+title: コンポーネントのJavaScript構文
+description: >
+  Octaneコンポーネントは、'<code>'@glimmer'</code>'パッケージからimportします。
+  また、ネイティブのクラス構文を使用します。
+  GlimmerコンポーネントはClassicコンポーネントとは違うAPIを持っています。
+  もしネイティブのクラスについて詳しくないのであれば、'<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Classes" target="_blank" rel="noopener noreferrer">'MDNドキュメント'</a>'をまず見ましょう。
+  そして、Glimmerコンポーネントについてさらに知りたい場合は、'<a href="https://guides.emberjs.com/release/components/component-state-and-actions/" target="_blank" rel="noopener noreferrer">'Ember.js Guides'</a>'や'<a href="https://api.emberjs.com/ember/release/modules/@glimmer%2Fcomponent" target="_blank" rel="noopener noreferrer">'API Reference'</a>'を参照してください。

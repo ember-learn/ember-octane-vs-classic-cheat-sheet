@@ -1,0 +1,5 @@
+title: 引数にデフォルト値を設定する
+description: >
+  引数は読み出し専用なので、デフォルト値を引数を渡される側のクラスで設定することは出来ません。
+  代わりに、引数をラップして'<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing_operator/" target="_blank" rel="noopener noreferrer">'デフォルト値を提供するゲッターを作成することが出来ます'</a>'。
+

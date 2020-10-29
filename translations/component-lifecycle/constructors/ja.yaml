@@ -1,0 +1,5 @@
+title: initの代わりにconstructorを使う
+description: >
+  ネイティブのJavaScriptクラスには'<code>'constructor'</code>'があります。
+  '<code>'init'</code>'でやっていたのと同様に、このフックを使うことでコンポーネントクラスを設定できます。
+  （さらに詳細について学びたい場合は、Emberガイドの'<a href="https://guides.emberjs.com/release/in-depth-topics/native-classes-in-depth/#toc_constructor" target="_blank" rel="noopener noreferrer">'constructor'</a>'や'<a href="https://guides.emberjs.com/release/in-depth-topics/native-classes-in-depth/#toc_constructor-in-extends" target="_blank" rel="noopener noreferrer">'super'</a>'を参照してください。）
