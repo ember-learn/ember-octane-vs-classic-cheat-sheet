@@ -1,5 +1,5 @@
 title: オプションを使用してコンポーネントのJavaScriptを生成する
 description: >
   Classic Emberでは、'<code>'ember generate component'</code>'を実行することで3つのファイルが生成されました。テンプレート、JavaScript、そしてテストです。
-  Octanceは、'<code>'ember generate component'</code>'を実行してもJavaScriptファイルは生成されません。
+  Octaneは、'<code>'ember generate component'</code>'を実行してもJavaScriptファイルは生成されません。
   もしテンプレートを補佐するJavaScriptファイルが欲しいのであれば、'<code>'-gc'</code>'オプションもコマンド実行時に含める必要があります。
