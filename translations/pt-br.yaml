@@ -18,8 +18,15 @@ component:
     edit-translation-text: Editar tradução
   locale-menu:
     select-your-preferred-language: Selecionar idioma
+    #
+    # For convenience, the translations of locale menu options
+    # will be the same across all locales.
+    #
+    # To help with maintenance, please list keys in alphabetical
+    # order.
+    #
     locale-en-US: English (US)
+    locale-es: Spanish
     locale-fr-FR: Français
-    locale-pt-BR: Português (do Brasil)
-    locale-es: Espanhol
     locale-ja: 日本語
+    locale-pt-BR: Português (do Brasil)
