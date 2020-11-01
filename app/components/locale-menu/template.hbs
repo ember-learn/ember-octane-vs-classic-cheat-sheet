@@ -8,7 +8,7 @@
   </option>
 
   {{#each this.locale.menuOptions as |menuOption|}}
-    <option value={{menuOption.value}}>
+    <option data-test-option value={{menuOption.value}}>
       {{menuOption.label}}
     </option>
   {{/each}}
