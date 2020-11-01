@@ -1,4 +1,4 @@
 title: コンポーネントのテンプレートとJavaScriptは同じディレクトリに生成される
 description: >
-  Octanceでは、コンポーネントのテンプレートの場所が変更されました。
+  Octaneでは、コンポーネントのテンプレートの場所が変更されました。
   これは"template co-location"と呼ばれています。
