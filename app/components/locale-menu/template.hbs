@@ -1,14 +1,15 @@
- <select
-   data-test-field="Locale"
-   {{on "input" this.updateLocale}}
- >
-   <option value="">
-     {{t "component.locale-menu.select-your-preferred-language"}}
-   </option>
+<select
+  class="locale-menu"
+  data-test-field="Locale"
+  {{on "input" this.updateLocale}}
+>
+  <option value="" disabled selected>
+   {{t "component.locale-menu.select-your-preferred-language"}}
+  </option>
 
-   {{#each this.supportedLocales as |locale|}}
-     <option value={{locale}}>
-       {{t (concat "component.locale-menu.locale-" locale)}}
-     </option>
-   {{/each}}
+  {{#each this.locale.menuOptions as |menuOption|}}
+    <option value={{menuOption.value}}>
+      {{menuOption.label}}
+    </option>
+  {{/each}}
  </select>
