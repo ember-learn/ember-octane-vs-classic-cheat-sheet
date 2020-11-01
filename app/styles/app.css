@@ -70,6 +70,11 @@ h2 .permalink {
   color: #c1c1c1;
   padding: 0 15px 0 5px;
 }
+
+.locale-menu {
+  padding: 0.25em 0.5em;
+}
+
 .intro {
   font-size: 1.1em;
   line-height: 1.5;

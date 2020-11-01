@@ -1,17 +1,13 @@
-import Component from '@glimmer/component';
-import { inject as service } from '@ember/service';
 import { action } from '@ember/object';
-
+import { inject as service } from '@ember/service';
+import Component from '@glimmer/component';
 
 export default class LocaleMenuComponent extends Component {
-  @service intl;
+  @service locale;
 
-  supportedLocales = ['en-US', 'fr-FR', 'pt-BR', 'es', 'ja'];
+  @action updateLocale(event) {
+    const locale = event.target.value;
 
-  @action
-  updateLocale(evt) {
-    if (evt.target.value) {
-      this.intl.setLocale(evt.target.value);
-    }
+    this.locale.updateSiteLocale(locale);
   }
 }
