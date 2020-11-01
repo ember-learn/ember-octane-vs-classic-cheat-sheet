@@ -1,0 +1,4 @@
+title: ルートモデルへのアクセス
+description: >
+  ルートテンプレートにおいて、'<code>'model'</code>'は外部コンテキストからやってきます。
+  ルートの'<code>'model'</code>'フックの結果にアクセスするために、'<code>'@model'</code>'を使います。

@@ -1,0 +1,5 @@
+title: 山括弧（'<>'）はコンポーネントを呼び出す
+description: >
+  山括弧（'<>'）を使えばテンプレートでコンポーネントを呼び出すことができます。
+  動作に変更はありません。
+  既存のコンポーネントを更新するために、'<a href="https://guides.emberjs.com/release/components/" target="_blank" rel="noopener noreferrer">'features'</a>'や'<a href="https://guides.emberjs.com/release/upgrading/current-edition/#toc_octane-upgrade-strategy" target="_blank" rel="noopener noreferrer">'using codemods'</a>'を参照してください。

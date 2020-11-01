@@ -1,0 +1,7 @@
+title: Element修飾子
+description: >
+  '<a href="https://github.com/emberjs/ember-render-modifiers" target="_blank" rel="noopener noreferrer">'@ember/render-modifiers'</a>'をインストールすれば、'<code>{{did-insert}}</code>'や'<code>{{did-update}}</code>'修飾子を使えるようになります。
+  Classicコンポーネントのライフサイクルフックである、'<code>didInsertElement</code>'、'<code>didRender</code>'、そして'<code>didUpdate</code>'を置き換えることが出来ます。
+classicDescription: >
+  バージョン2.18以上のEmberアプリですか？
+  これらの修飾子を使うことで、ClassicコンポーネントからGlimmerコンポーネントへの書き換えをやり始めることが出来ます。

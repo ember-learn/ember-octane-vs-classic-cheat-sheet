@@ -1,0 +1,4 @@
+title: '@computedデコレーター'
+description: >
+  Octaneにおいて、computedプロパティはtrackedプロパティとして書き直すのがオススメです。
+  それが難しい場合（キャッシュしたい場合とか）、'<code>'@computed'</code>'デコレーターがが使用可能です。

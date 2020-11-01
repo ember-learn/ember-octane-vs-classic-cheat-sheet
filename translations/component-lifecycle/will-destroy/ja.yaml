@@ -1,0 +1,5 @@
+title: willDestroyElementの代わりにwillDestroyを使う
+description: >
+  '<code>'willDestroy'</code>'はGlimmerコンポーネントが持っている唯一のライフサイクルフックです（'<code>'constructor'</code>'を除く。）
+  '<code>'willDestroyElement'</code>'で行っていたのと同様に、このフックを使ってコンポーネントを破棄することが出来ます。
+  （さらに学ぶためには、Emberガイドの'<a href="https://guides.emberjs.com/release/upgrading/current-edition/glimmer-components/#toc_lifecycle-and-properties" target="_blank" rel="noopener noreferrer">'lifecycle of Glimmer components'</a>'を参照してください。）

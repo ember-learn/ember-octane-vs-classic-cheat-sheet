@@ -1,0 +1,6 @@
+title: didInsertElementの代わりに'{{did-insert}}'を使う
+description: >
+  もし'<code>'didInsertElement'</code>'を使っていたら、アクションを作ることを考えてみてください。
+  '<code>{{did-insert}}</code>'修飾子と一緒にアクションを呼び出すことが出来ます。
+  '<code>'@action'</code>'デコレーターを使うことで、正しいコンテキスト（要は'<code>'this'</code>'）に束縛します。
+  （さらに学ぶためには、Emberガイドの'<a href="https://guides.emberjs.com/release/upgrading/current-edition/glimmer-components/#toc_lifecycle-and-properties" target="_blank" rel="noopener noreferrer">'lifecycle of Glimmer components'</a>'を参照してください。）

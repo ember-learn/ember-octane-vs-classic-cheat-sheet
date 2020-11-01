@@ -1,0 +1,25 @@
+layout:
+  application:
+    logo-alt-text: 'Ember Octane: Ember.jsの最新版'
+    title: Ember.js OctaneとClassicの比較用チートシート
+    description-1: >
+      このガイドは、'<a href="https://emberjs.com/editions/octane" target="_blank" rel="noopener noreferrer">'Ember.js Octane'</a>'を使うためのチートシートです。
+      すべてを網羅しているわけではありませんが、始めるには十分です！
+      プルリクエストを'<a href="https://github.com/ember-learn/ember-octane-vs-classic-cheat-sheet" target="_blank" rel="noopener noreferrer">'GitHubリポジトリ'</a>'でお待ちしてます。
+    description-2: >
+      より詳細なアップグレードパスや、Octaneで導入された違いについての情報は、'<a href="https://guides.emberjs.com/release/upgrading/" target="_blank" rel="noopener noreferrer">'The Octane Upgrading Guide'</a>'を参照してください。
+
+component:
+  guide-section:
+    section: §
+    subsection:
+      classic: Classic
+      octane: Octane
+    edit-translation-text: 翻訳を修正する
+  locale-menu:
+    select-your-preferred-language: 言語を選択してください
+    locale-en-US: English (US)
+    locale-fr-FR: Français
+    locale-pt-BR: Português (do Brasil)
+    locale-es: Spanish
+    locale-ja: 日本語

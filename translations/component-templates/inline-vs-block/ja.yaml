@@ -1,0 +1,6 @@
+title: インラインコンポーネント vs ブロックコンポーネント
+description: >
+  山括弧（'<>'）コンポーネントはインラインコンポーネントとしても、ブロックコンポーネントとしても使うことが出来ます。
+  動作に変更はありません。
+  '<code>{{yield}}</code>'の見た目も動作も同じです。
+  既存のコンポーネントを更新するために、'<a href="https://guides.emberjs.com/release/components/block-content/" target="_blank" rel="noopener noreferrer">'features'</a>'や'<a href="https://guides.emberjs.com/release/upgrading/current-edition/" target="_blank" rel="noopener noreferrer">'using codemods'</a>'を参照してください。

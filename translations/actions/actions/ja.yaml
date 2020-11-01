@@ -1,0 +1,6 @@
+title: actionsの代わりに、@action、'{{on}}'、そして'{{fn}}'を使う
+description: >
+  JavaScriptのクラスで、テンプレートから呼び出したい関数には'<code>'@action'</code>'デコレーターで関数をマークする必要があります。
+  テンプレートでは、'<code>{{on}}</code>'修飾子を使うことでいつ関数を呼ぶかを決めることが出来ます。
+  関数に引数を渡す必要がある場合、'<code>{{fn}}</code>'ヘルパーも使用してください。
+  （'<a href="https://guides.emberjs.com/release/components/component-state-and-actions/#toc_html-modifiers-and-actions" target="_blank" rel="noopener noreferrer">'詳細については、Emberガイドを参照してください'</a>'。）

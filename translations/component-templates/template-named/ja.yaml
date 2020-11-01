@@ -1,0 +1,5 @@
+title: 名前付き引数を使う
+description: >
+  親コンポーネントからプロパティを受け取った場合、'<code>'@'</code>'を接頭詞として付けることで参照出来ます。
+  動作に変更はありません。
+  （'<a href="https://guides.emberjs.com/release/components/component-arguments-and-html-attributes/" target="_blank" rel="noopener noreferrer">'Emberガイドにより多くの情報があります。'</a>'）

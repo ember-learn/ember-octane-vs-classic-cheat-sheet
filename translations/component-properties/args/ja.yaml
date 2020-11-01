@@ -1,0 +1,6 @@
+title: コンポーネントの引数
+description: >
+  Octaneにおいて、引数は'<code>'args'</code>'プロパティに設定され、'<code>'this.args'</code>'で参照することが出来ます。
+  引数はクラスのインスタンス（つまり'<code>'this'</code>'）に設定されることは'<em>'ありません。'</em>'
+  結果として、クラス内部の値と外部からの引数を区別することが出来ます。
+  （さらに学ぶために、Emberガイドの'<a href="https://guides.emberjs.com/release/upgrading/current-edition/glimmer-components/#toc_arguments" target="_blank" rel="noopener noreferrer">'arguments'</a>'を参照してください。）
