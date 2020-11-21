@@ -1,6 +1,6 @@
 name: CI/CD
 
-on: 
+on:
   push:
     branches:
       - master
@@ -93,20 +93,19 @@ jobs:
     needs: [lint, test-app]
     runs-on: ubuntu-latest
     timeout-minutes: 5
-    if: success() && github.ref == 'refs/heads/master' && github.event_name == 'push'
+    # Only run on pushes to main branch that aren't from the cron workflow
+    if: github.event_name == 'push' && github.ref == 'refs/heads/master'
     steps:
       - name: Check out a copy of the repo
         uses: actions/checkout@v2
 
-      - name: Setup Git
+      - name: Set up Git user
         run: |
-          # Setup a Git user for committing
+          # Set up a Git user for committing
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@users.noreply.github.com"
 
-          # Copy the Git Auth from the local repository
-          # https://github.com/actions/checkout/blob/61b9e3751b92087fd0b06925ba6dd6314e06f089/src/git-auth-helper.ts#L69-L76
-          # https://github.com/actions/checkout/blob/61b9e3751b92087fd0b06925ba6dd6314e06f089/src/git-auth-helper.ts#L252-L278
+          # Copy the Git Auth from the local config
           git config --global "http.https://github.com/.extraheader" \
             "$(git config --local --get http.https://github.com/.extraheader)"
 
