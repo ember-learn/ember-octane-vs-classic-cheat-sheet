@@ -79,7 +79,7 @@ jobs:
         if: steps.cache-dependencies.outputs.cache-hit != 'true'
 
       - name: Test
-        uses: percy/exec-action@v0.3.0
+        uses: percy/exec-action@v0.3.1
         with:
           custom-command: yarn test
         env:
