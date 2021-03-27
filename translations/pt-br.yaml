@@ -17,7 +17,9 @@ component:
       octane: Octane
     edit-translation-text: Editar tradução
   locale-menu:
-    select-your-preferred-language: Selecionar idioma
+    locale-select:
+      label: Translate the guide to
+      placeholder: Selecionar idioma
     #
     # For convenience, the translations of locale menu options
     # will be the same across all locales.
