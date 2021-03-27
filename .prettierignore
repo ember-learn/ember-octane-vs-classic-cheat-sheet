@@ -19,3 +19,6 @@
 /.node_modules.ember-try/
 /bower.json.ember-try
 /package.json.ember-try
+
+# Ignore code examples for the cheat sheet
+/snippets/
