@@ -4,19 +4,13 @@ import Service, { inject as service } from '@ember/service';
   To help with maintainenance, please list
   the supported locales in alphabetical order.
 */
-const supportedLocales = new Set([
-  'en-US',
-  'es',
-  'fr-FR',
-  'ja',
-  'pt-BR',
-]);
+const supportedLocales = new Set(['en-US', 'es', 'fr-FR', 'ja', 'pt-BR']);
 
 export default class LocaleService extends Service {
   @service intl;
 
   menuOptions = Array.from(supportedLocales)
-    .map(locale => {
+    .map((locale) => {
       return {
         label: this.intl.t(`component.locale-menu.locale-${locale}`).toString(),
         value: locale,

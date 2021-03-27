@@ -4,61 +4,46 @@ import { setupIntl } from 'ember-intl/test-support';
 import { setupRenderingTest } from 'ember-qunit';
 import { module, test } from 'qunit';
 
-module('Integration | Component | guide-section', function(hooks) {
+module('Integration | Component | guide-section', function (hooks) {
   setupRenderingTest(hooks);
   setupIntl(hooks, 'en-us', {
     '': {
-      title: 'Warning: Section title not found'
-    }
+      title: 'Warning: Section title not found',
+    },
   });
 
-
-  test('can render when no arguments are passed', async function(assert) {
+  test('can render when no arguments are passed', async function (assert) {
     await render(hbs`
       <GuideSection />
     `);
 
-    assert.dom('[data-test-field="Section Title"]')
+    assert
+      .dom('[data-test-field="Section Title"]')
       .includesText('Warning: Section title not found');
 
     assert.dom('[data-test-subsection]').exists({ count: 0 });
   });
 
-
-  test('should render', async function(assert) {
+  test('should render', async function (assert) {
     this.section = {
       id: 'actions',
       subsections: [
         {
           id: 'actions',
-          classicFiles: [
-            'classic.js',
-            'classic.hbs'
-          ],
-          octaneFiles: [
-            'octane.js',
-            'octane.hbs'
-          ]
+          classicFiles: ['classic.js', 'classic.hbs'],
+          octaneFiles: ['octane.js', 'octane.hbs'],
         },
         {
           id: 'template-arguments-default',
-          classicFiles: [
-            'classic.hbs',
-            'classic.js'
-          ],
-          octaneFiles: [
-            'octane.hbs',
-            'octane.js'
-          ]
+          classicFiles: ['classic.hbs', 'classic.js'],
+          octaneFiles: ['octane.hbs', 'octane.js'],
         },
         {
           id: 'mixins',
-          classicFiles: [
-            'classic.js'
-          ],
-          octaneDescriptionKey: 'actions.mixins.octaneDescription'
-        }
-      ]
+          classicFiles: ['classic.js'],
+          octaneDescriptionKey: 'actions.mixins.octaneDescription',
+        },
+      ],
     };
 
     await render(hbs`
@@ -67,8 +52,7 @@ module('Integration | Component | guide-section', function(hooks) {
       />
     `);
 
-    assert.dom('[data-test-field="Section Title"]')
-      .includesText('Actions');
+    assert.dom('[data-test-field="Section Title"]').includesText('Actions');
 
     assert.dom('[data-test-subsection]').exists({ count: 3 });
     assert.dom('[data-test-code-snippet]').exists({ count: 9 });
