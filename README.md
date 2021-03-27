@@ -24,6 +24,12 @@ yarn lint
 yarn test
 ```
 
+To fix linting errors, try the following command:
+
+```bash
+yarn lint:fix
+```
+
 
 ## Continuous deployment
 
