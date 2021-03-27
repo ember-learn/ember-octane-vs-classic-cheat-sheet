@@ -32,7 +32,7 @@ This is an Ember app, so the usual steps follow:
 
 ## Deploying
 
-This site is deployed to [GitHub Pages](https://pages.github.com/) automatically from the `master` branch.
+This site is deployed to [GitHub Pages](https://pages.github.com/) automatically from the `main` branch.
 
 
 ## How It's Made

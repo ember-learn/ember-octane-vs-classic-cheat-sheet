@@ -174,7 +174,7 @@ module('Integration | Component | guide-section/subsection', function(hooks) {
     `);
 
     assert.dom('[data-test-link="Edit Translation"]')
-      .hasAttribute('href', 'https://github.com/ember-learn/ember-octane-vs-classic-cheat-sheet/edit/master/translations/generating-files/generating-component/en-us.yaml')
+      .hasAttribute('href', 'https://github.com/ember-learn/ember-octane-vs-classic-cheat-sheet/edit/main/translations/generating-files/generating-component/en-us.yaml')
   });
 
   test('should render (5)', async function(assert) {
@@ -199,6 +199,6 @@ module('Integration | Component | guide-section/subsection', function(hooks) {
     `);
 
     assert.dom('[data-test-link="Edit Translation"]')
-      .hasAttribute('href', 'https://github.com/ember-learn/ember-octane-vs-classic-cheat-sheet/edit/master/translations/generating-files/generating-component/pt-br.yaml')
+      .hasAttribute('href', 'https://github.com/ember-learn/ember-octane-vs-classic-cheat-sheet/edit/main/translations/generating-files/generating-component/pt-br.yaml')
   });
 });

@@ -3,7 +3,7 @@ name: CI/CD
 on:
   push:
     branches:
-      - master
+      - main
   pull_request:
 
 env:
@@ -15,13 +15,13 @@ jobs:
   lint:
     name: Lint files and dependencies
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 3
     steps:
       - name: Check out a copy of the repo
         uses: actions/checkout@v2
 
       - name: Use Node.js ${{ env.NODE_VERSION }}
-        uses: actions/setup-node@v2-beta
+        uses: actions/setup-node@v2
         with:
           node-version: ${{ env.NODE_VERSION }}
 
@@ -56,7 +56,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Use Node.js ${{ env.NODE_VERSION }}
-        uses: actions/setup-node@v2-beta
+        uses: actions/setup-node@v2
         with:
           node-version: ${{ env.NODE_VERSION }}
 
@@ -94,7 +94,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     # Only run on pushes to main branch that aren't from the cron workflow
-    if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     steps:
       - name: Check out a copy of the repo
         uses: actions/checkout@v2
@@ -110,7 +110,7 @@ jobs:
             "$(git config --local --get http.https://github.com/.extraheader)"
 
       - name: Use Node.js ${{ env.NODE_VERSION }}
-        uses: actions/setup-node@v2-beta
+        uses: actions/setup-node@v2
         with:
           node-version: ${{ env.NODE_VERSION }}
 
