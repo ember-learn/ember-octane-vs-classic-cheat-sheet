@@ -1,20 +1,27 @@
-<label for="locale-menu">
-  {{t "component.locale-menu.locale-select.label"}}
-</label>
-
-<select
-  class="locale-menu"
-  data-test-field="Locale"
-  id="locale-menu"
-  {{on "input" this.updateLocale}}
+<ContainerQuery
+  @features={{hash
+    wide=(cq-width min=480)
+  }}
+  local-class="container"
 >
-  <option value="" disabled selected>
-   {{t "component.locale-menu.locale-select.placeholder"}}
-  </option>
+  <label for="locale-menu">
+    {{t "component.locale-menu.locale-select.label"}}
+  </label>
 
-  {{#each this.locale.menuOptions as |menuOption|}}
-    <option data-test-option value={{menuOption.value}}>
-      {{menuOption.label}}
+  <select
+    data-test-field="Locale"
+    id="locale-menu"
+    local-class="select"
+    {{on "input" this.updateLocale}}
+  >
+    <option value="" disabled selected>
+     {{t "component.locale-menu.locale-select.placeholder"}}
     </option>
-  {{/each}}
- </select>
+
+    {{#each this.locale.menuOptions as |menuOption|}}
+      <option data-test-option value={{menuOption.value}}>
+        {{menuOption.label}}
+      </option>
+    {{/each}}
+   </select>
+</ContainerQuery>
