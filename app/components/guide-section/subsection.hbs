@@ -5,35 +5,47 @@
   as |subsectionId subsectionTitle subsectionDescription|
 }}
   <section
-    data-test-subsection={{subsectionTitle}}
     aria-labelledby="{{@sectionId}}__{{subsectionId}}"
+    data-test-subsection={{subsectionTitle}}
   >
-    <h3
-      data-test-field="Subsection Title"
-      id="{{@sectionId}}__{{subsectionId}}"
-    >
-      <a href="#{{@sectionId}}__{{subsectionId}}" title={{subsectionTitle}} class="permalink">
+    <div local-class="title-container">
+      <h3
+        data-test-field="Subsection Title"
+        id="{{@sectionId}}__{{subsectionId}}"
+        local-class="title"
+      >
+        {{subsectionTitle}}
+      </h3>
+
+      <a
+        href="#{{@sectionId}}__{{subsectionId}}"
+        local-class="permalink"
+        title={{subsectionTitle}}
+      >
         {{t "component.guide-section.section"}}
       </a>
-      {{subsectionTitle}}
-      <a
-        class="edit-translation-link"
-        data-test-link="Edit Translation"
-        href="https://github.com/ember-learn/ember-octane-vs-classic-cheat-sheet/edit/main/translations/{{@sectionId}}/{{subsectionId}}/{{this.intl.locale}}.yaml"
-        rel="noopener noreferrer"
-        target="_blank"
-      >
-        {{t "component.guide-section.edit-translation-text"}}
-      </a>
-    </h3>
+    </div>
 
-    <p data-test-field="Subsection Description">
+    <p
+      data-test-field="Subsection Description"
+      local-class="description"
+    >
       {{subsectionDescription}}
     </p>
 
-    <div class="grid">
-      <div data-test-ember-classic>
-        <h4>{{t "component.guide-section.subsection.classic"}}</h4>
+    <ContainerQuery
+      @features={{hash
+        wide=(cq-width min=900)
+      }}
+      local-class="code-examples-container"
+    >
+      <div
+        data-test-ember-classic
+        local-class="ember-classic"
+      >
+        <h4 local-class="subtitle">
+          {{t "component.guide-section.subsection.classic"}}
+        </h4>
 
         {{#each @subsection.classicFiles as |file|}}
           <CodeSnippet
@@ -48,8 +60,13 @@
         {{/if}}
       </div>
 
-      <div data-test-ember-octane>
-        <h4>{{t "component.guide-section.subsection.octane"}}</h4>
+      <div
+        data-test-ember-octane
+        local-class="ember-octane"
+      >
+        <h4 local-class="subtitle">
+          {{t "component.guide-section.subsection.octane"}}
+        </h4>
 
         {{#each @subsection.octaneFiles as |file|}}
           <CodeSnippet
@@ -63,6 +80,18 @@
           </p>
         {{/if}}
       </div>
+    </ContainerQuery>
+
+    <div local-class="edit-link-container">
+      <a
+        data-test-link="Edit Translation"
+        href="https://github.com/ember-learn/ember-octane-vs-classic-cheat-sheet/edit/main/translations/{{@sectionId}}/{{subsectionId}}/{{this.intl.locale}}.yaml"
+        local-class="edit-link"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        {{t "component.guide-section.edit-translation-text"}}
+      </a>
     </div>
   </section>
 {{/let}}

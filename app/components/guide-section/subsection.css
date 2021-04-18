@@ -1,0 +1,64 @@
+/* Title */
+.title-container {
+  align-items: center;
+  border-bottom: 1px solid #E04E39;
+  display: grid;
+  grid-gap: 0 1rem;
+  grid-template-areas:
+    "permalink title";
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto;
+}
+
+.title {
+  grid-area: title;
+  word-break: break-word;
+}
+
+.permalink {
+  grid-area: permalink;
+  text-decoration: none;
+}
+
+.description {
+  margin-top: 0.5rem;
+}
+
+/* Code examples */
+.code-examples-container {
+  display: grid;
+  grid-gap: 1rem 0;
+  grid-template-areas:
+    "ember-classic"
+    "ember-octane";
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  margin-top: 1.75rem;
+}
+
+.ember-classic {
+  grid-area: ember-classic;
+  overflow-x: auto;
+  width: 100%;
+}
+
+.ember-octane {
+  grid-area: ember-octane;
+  overflow-x: auto;
+  width: 100%;
+}
+
+.code-examples-container[data-container-query-wide] {
+  grid-gap: 0 2.5rem;
+  grid-template-areas:
+    "ember-classic ember-octane";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+}
+
+/* Edit link */
+.edit-link-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1rem;
+}
