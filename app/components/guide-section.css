@@ -1,0 +1,34 @@
+.title-container {
+  align-items: center;
+  background-color: #1C304A;
+  display: grid;
+  grid-gap: 0 1rem;
+  grid-template-areas:
+    "permalink title";
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto;
+  margin-left: -2rem;
+  padding: 1rem 2rem;
+  width: fit-content;
+  width: -moz-fit-content; /* Firefox */
+}
+
+.title {
+  color: #F1F1F1;
+  grid-area: title;
+  word-break: break-word;
+}
+
+.permalink {
+  color: #C1C1C1;
+  grid-area: permalink;
+  text-decoration: none;
+}
+
+.subsection-container {
+  margin-top: 2rem;
+}
+
+.subsection-container ~ .subsection-container {
+  margin-top: 3rem;
+}

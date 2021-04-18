@@ -4,24 +4,34 @@
   as |sectionId sectionTitle|
 }}
   <section
-    data-test-section={{sectionTitle}}
     aria-labelledby={{sectionId}}
+    data-test-section={{sectionTitle}}
   >
-    <h2
-      data-test-field="Section Title"
-      id={{sectionId}}
-    >
-      <a href="#{{sectionId}}" title={{sectionTitle}} class="permalink">
+    <div local-class="title-container">
+      <h2
+        data-test-field="Section Title"
+        id={{sectionId}}
+        local-class="title"
+      >
+        {{sectionTitle}}
+      </h2>
+
+      <a
+        href="#{{sectionId}}"
+        local-class="permalink"
+        title={{sectionTitle}}
+      >
         {{t "component.guide-section.section"}}
       </a>
-      {{sectionTitle}}
-    </h2>
+    </div>
 
     {{#each @section.subsections as |subsection|}}
-      <GuideSection::Subsection
-        @sectionId={{sectionId}}
-        @subsection={{subsection}}
-      />
+      <div local-class="subsection-container">
+        <GuideSection::Subsection
+          @sectionId={{sectionId}}
+          @subsection={{subsection}}
+        />
+      </div>
     {{/each}}
   </section>
 {{/let}}
