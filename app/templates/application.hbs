@@ -1,24 +1,35 @@
 {{page-title "Ember.js Octane vs Classic Cheat Sheet"}}
 
-<header>
+<header local-class="header">
   <img
     alt={{t "layout.application.logo-alt-text"}}
-    class="header-logo"
+    local-class="logo"
     src="{{this.rootURL}}/assets/ember-octane_text-treatment.png"
   >
 
-  <LocaleMenu />
+  <div local-class="locale-menu-container">
+    <LocaleMenu />
+  </div>
 </header>
 
-<main>
-  <h1>{{t "layout.application.title"}}</h1>
+<main local-class="main">
+  <h1 local-class="title">
+    {{t "layout.application.title"}}
+  </h1>
 
-  <p class="intro">{{t "layout.application.description-1" htmlSafe=true}}</p>
-  <p class="intro">{{t "layout.application.description-2" htmlSafe=true}}</p>
+  <p>
+    {{t "layout.application.description-1" htmlSafe=true}}
+  </p>
+
+  <p>
+    {{t "layout.application.description-2" htmlSafe=true}}
+  </p>
 
   {{#each @model as |section|}}
-    <GuideSection
-      @section={{section}}
-    />
+    <div local-class="guide-section-container">
+      <GuideSection
+        @section={{section}}
+      />
+    </div>
   {{/each}}
 </main>
