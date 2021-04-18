@@ -28,21 +28,18 @@ module('Acceptance | Homepage | en-US', function (hooks) {
 
     assert
       .dom('#generating-files')
-      .hasText('§ Generating Files', 'We see the site in English.');
+      .hasText('Generating Files', 'We see the site in English.');
 
     await fillIn('[data-test-field="Locale"]', 'pt-BR');
 
     assert
       .dom('#generating-files')
-      .hasText(
-        '§ Geração de arquivos',
-        'We see the site in Portugese (Brazil).'
-      );
+      .hasText('Geração de arquivos', 'We see the site in Portugese (Brazil).');
 
     await fillIn('[data-test-field="Locale"]', 'fr-FR');
 
     assert
       .dom('#generating-files')
-      .hasText('§ Génération de fichiers', 'We see the site in French.');
+      .hasText('Génération de fichiers', 'We see the site in French.');
   });
 });
