@@ -1,0 +1,18 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.select {
+  margin: 0.5rem 0 0 0;
+  padding: 0.25rem 0.5rem;
+}
+
+.container[data-container-query-wide] {
+  align-items: center;
+  flex-direction: row;
+}
+
+.container[data-container-query-wide] .select {
+  margin: 0 0 0 0.5rem;
+}

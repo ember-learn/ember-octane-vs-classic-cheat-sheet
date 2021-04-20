@@ -22,7 +22,7 @@ module('Integration | Component | guide-section/subsection', function (hooks) {
 
     assert
       .dom('[data-test-field="Subsection Title"]')
-      .hasText('§ Warning: Subsection title not found Edit Translation');
+      .hasText('Warning: Subsection title not found');
 
     assert
       .dom('[data-test-field="Subsection Description"]')
@@ -58,9 +58,7 @@ module('Integration | Component | guide-section/subsection', function (hooks) {
 
     assert
       .dom('[data-test-field="Subsection Title"]')
-      .hasText(
-        "§ Use an option to generate a component's JavaScript Edit Translation"
-      );
+      .hasText("Use an option to generate a component's JavaScript");
 
     assert
       .dom('[data-test-field="Subsection Description"]')
@@ -107,7 +105,7 @@ module('Integration | Component | guide-section/subsection', function (hooks) {
 
     assert
       .dom('[data-test-field="Subsection Title"]')
-      .hasText('§ Data Down, Actions Up Edit Translation');
+      .hasText('Data Down, Actions Up');
 
     assert
       .dom('[data-test-field="Subsection Description"]')
@@ -141,9 +139,7 @@ module('Integration | Component | guide-section/subsection', function (hooks) {
       />
     `);
 
-    assert
-      .dom('[data-test-field="Subsection Title"]')
-      .hasText('§ Mixins Edit Translation');
+    assert.dom('[data-test-field="Subsection Title"]').hasText('Mixins');
 
     assert
       .dom('[data-test-field="Subsection Description"]')

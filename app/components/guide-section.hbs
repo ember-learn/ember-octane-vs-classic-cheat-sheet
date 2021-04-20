@@ -1,0 +1,37 @@
+{{#let
+  @section.id
+  (t (concat @section.id ".title"))
+  as |sectionId sectionTitle|
+}}
+  <section
+    aria-labelledby={{sectionId}}
+    data-test-section={{sectionTitle}}
+  >
+    <div local-class="title-container">
+      <h2
+        data-test-field="Section Title"
+        id={{sectionId}}
+        local-class="title"
+      >
+        {{sectionTitle}}
+      </h2>
+
+      <a
+        href="#{{sectionId}}"
+        local-class="permalink"
+        title={{sectionTitle}}
+      >
+        {{t "component.guide-section.section"}}
+      </a>
+    </div>
+
+    {{#each @section.subsections as |subsection|}}
+      <div local-class="subsection-container">
+        <GuideSection::Subsection
+          @sectionId={{sectionId}}
+          @subsection={{subsection}}
+        />
+      </div>
+    {{/each}}
+  </section>
+{{/let}}

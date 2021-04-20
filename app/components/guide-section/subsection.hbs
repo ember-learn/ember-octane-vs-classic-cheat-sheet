@@ -1,0 +1,97 @@
+{{#let
+  @subsection.id
+  (t (concat @sectionId "." @subsection.id ".title"))
+  (t (concat @sectionId "." @subsection.id ".description") htmlSafe=true)
+  as |subsectionId subsectionTitle subsectionDescription|
+}}
+  <section
+    aria-labelledby="{{@sectionId}}__{{subsectionId}}"
+    data-test-subsection={{subsectionTitle}}
+  >
+    <div local-class="title-container">
+      <h3
+        data-test-field="Subsection Title"
+        id="{{@sectionId}}__{{subsectionId}}"
+        local-class="title"
+      >
+        {{subsectionTitle}}
+      </h3>
+
+      <a
+        href="#{{@sectionId}}__{{subsectionId}}"
+        local-class="permalink"
+        title={{subsectionTitle}}
+      >
+        {{t "component.guide-section.section"}}
+      </a>
+    </div>
+
+    <p
+      data-test-field="Subsection Description"
+      local-class="description"
+    >
+      {{subsectionDescription}}
+    </p>
+
+    <ContainerQuery
+      @features={{hash
+        wide=(cq-width min=900)
+      }}
+      local-class="code-examples-container"
+    >
+      <div
+        data-test-ember-classic
+        local-class="ember-classic"
+      >
+        <h4 local-class="subtitle">
+          {{t "component.guide-section.subsection.classic"}}
+        </h4>
+
+        {{#each @subsection.classicFiles as |file|}}
+          <CodeSnippet
+            @fileName="{{@sectionId}}/{{subsectionId}}/{{file}}"
+          />
+        {{/each}}
+
+        {{#if @subsection.classicDescriptionKey}}
+          <p data-test-general-text>
+            {{t @subsection.classicDescriptionKey htmlSafe=true}}
+          </p>
+        {{/if}}
+      </div>
+
+      <div
+        data-test-ember-octane
+        local-class="ember-octane"
+      >
+        <h4 local-class="subtitle">
+          {{t "component.guide-section.subsection.octane"}}
+        </h4>
+
+        {{#each @subsection.octaneFiles as |file|}}
+          <CodeSnippet
+            @fileName="{{@sectionId}}/{{subsectionId}}/{{file}}"
+          />
+        {{/each}}
+
+        {{#if @subsection.octaneDescriptionKey}}
+          <p data-test-general-text>
+            {{t @subsection.octaneDescriptionKey htmlSafe=true}}
+          </p>
+        {{/if}}
+      </div>
+    </ContainerQuery>
+
+    <div local-class="edit-link-container">
+      <a
+        data-test-link="Edit Translation"
+        href="https://github.com/ember-learn/ember-octane-vs-classic-cheat-sheet/edit/main/translations/{{@sectionId}}/{{subsectionId}}/{{this.intl.locale}}.yaml"
+        local-class="edit-link"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        {{t "component.guide-section.edit-translation-text"}}
+      </a>
+    </div>
+  </section>
+{{/let}}
