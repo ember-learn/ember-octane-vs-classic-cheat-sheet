@@ -7,407 +7,569 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     
-<meta name="ember-octane-vs-classic-cheat-sheet/config/environment" content="%7B%22modulePrefix%22%3A%22ember-octane-vs-classic-cheat-sheet%22%2C%22environment%22%3A%22production%22%2C%22rootURL%22%3A%22%2Fember-octane-vs-classic-cheat-sheet%2F%22%2C%22locationType%22%3A%22hash%22%2C%22EmberENV%22%3A%7B%22FEATURES%22%3A%7B%7D%2C%22EXTEND_PROTOTYPES%22%3A%7B%22Date%22%3Afalse%7D%2C%22_APPLICATION_TEMPLATE_WRAPPER%22%3Afalse%2C%22_DEFAULT_ASYNC_OBSERVERS%22%3Atrue%2C%22_JQUERY_INTEGRATION%22%3Afalse%2C%22_TEMPLATE_ONLY_GLIMMER_COMPONENTS%22%3Atrue%7D%2C%22APP%22%3A%7B%22name%22%3A%22ember-octane-vs-classic-cheat-sheet%22%2C%22version%22%3A%221.0.0%2B44f9f632%22%7D%2C%22exportApplicationGlobal%22%3Afalse%7D" />
+<meta name="ember-octane-vs-classic-cheat-sheet/config/environment" content="%7B%22modulePrefix%22%3A%22ember-octane-vs-classic-cheat-sheet%22%2C%22environment%22%3A%22production%22%2C%22rootURL%22%3A%22%2Fember-octane-vs-classic-cheat-sheet%2F%22%2C%22locationType%22%3A%22hash%22%2C%22EmberENV%22%3A%7B%22FEATURES%22%3A%7B%7D%2C%22EXTEND_PROTOTYPES%22%3A%7B%22Date%22%3Afalse%7D%2C%22_APPLICATION_TEMPLATE_WRAPPER%22%3Afalse%2C%22_DEFAULT_ASYNC_OBSERVERS%22%3Atrue%2C%22_JQUERY_INTEGRATION%22%3Afalse%2C%22_TEMPLATE_ONLY_GLIMMER_COMPONENTS%22%3Atrue%7D%2C%22APP%22%3A%7B%22name%22%3A%22ember-octane-vs-classic-cheat-sheet%22%2C%22version%22%3A%221.0.0%2Bf023eebd%22%7D%2C%22exportApplicationGlobal%22%3Afalse%7D" />
 <!-- EMBER_CLI_FASTBOOT_TITLE --><title>Ember.js Octane vs Classic Cheat Sheet</title>
 
-    <link integrity="" rel="stylesheet" href="/ember-octane-vs-classic-cheat-sheet/assets/vendor-42b06002250938f9f22d141e65058a3e.css">
-    <link integrity="" rel="stylesheet" href="/ember-octane-vs-classic-cheat-sheet/assets/ember-octane-vs-classic-cheat-sheet-ff7712fcbdd480745ce96a09a3a49120.css">
+    <link integrity="" rel="stylesheet" href="/ember-octane-vs-classic-cheat-sheet/assets/vendor-c8b8836451f0e1d622f4cbeb3d31a068.css">
+    <link integrity="" rel="stylesheet" href="/ember-octane-vs-classic-cheat-sheet/assets/ember-octane-vs-classic-cheat-sheet-386e9924a826daab645e6c7d0ffa415b.css">
 
     
   </head>
   <body>
     <script type="x/boundary" id="fastboot-body-start"></script>
 
-<header>
-  <img alt="Ember Octane: the latest edition from Ember.js" class="header-logo" src="/ember-octane-vs-classic-cheat-sheet/assets/ember-octane_text-treatment-7038e425be34d929aef13ae1b4e70733.png">
+<header class="_header_9no6ge">
+  <img class="_logo_9no6ge" alt="Ember Octane: the latest edition from Ember.js" src="/ember-octane-vs-classic-cheat-sheet/assets/ember-octane_text-treatment-7038e425be34d929aef13ae1b4e70733.png">
 
+  <div class="_locale-menu-container_9no6ge">
+      <div id="ember4" class="ember-view container-query _container_zppc7u" data-test-container-query>
+    
   <label for="locale-menu">
-  Translate the guide to
-</label>
+    Translate the guide to
+  </label>
 
-<select class="locale-menu" id="locale-menu">
-  <option value disabled selected>
-   Select your preferred language
-  </option>
+  <select class="_select_zppc7u" id="locale-menu">
+    <option value disabled selected>
+     Select your preferred language
+    </option>
 
-    <option value="en-US">
-      English (US)
-    </option>
-    <option value="fr-FR">
-      Français
-    </option>
-    <option value="pt-BR">
-      Português (do Brasil)
-    </option>
-    <option value="es">
-      Spanish
-    </option>
-    <option value="ja">
-      日本語
-    </option>
- </select>
+      <option value="en-US">
+        English (US)
+      </option>
+      <option value="fr-FR">
+        Français
+      </option>
+      <option value="pt-BR">
+        Português (do Brasil)
+      </option>
+      <option value="es">
+        Spanish
+      </option>
+      <option value="ja">
+        日本語
+      </option>
+   </select>
+
+  </div>
+
+  </div>
 </header>
 
-<main>
-  <h1>Ember.js Octane vs Classic Cheat Sheet</h1>
+<main class="_main_9no6ge">
+  <h1 class>
+    Ember.js Octane vs Classic Cheat Sheet
+  </h1>
 
-  <p class="intro">This guide is a cheat sheet for using <a href="https://emberjs.com/editions/octane" target="_blank" rel="noopener noreferrer">Ember.js Octane</a>. It doesn't cover everything, but it should get you started! PRs welcome at <a href="https://github.com/ember-learn/ember-octane-vs-classic-cheat-sheet" target="_blank" rel="noopener noreferrer">the GitHub repository</a>.
-</p>
-  <p class="intro">For in-depth information about the upgrade paths and differences introduced in Octane, see <a href="https://guides.emberjs.com/release/upgrading/" target="_blank" rel="noopener noreferrer">The Octane Upgrading Guide</a>.
-</p>
+  <p>
+    This guide is a cheat sheet for using <a href="https://emberjs.com/editions/octane" target="_blank" rel="noopener noreferrer">Ember.js Octane</a>. It doesn't cover everything, but it should get you started! PRs welcome at <a href="https://github.com/ember-learn/ember-octane-vs-classic-cheat-sheet" target="_blank" rel="noopener noreferrer">the GitHub repository</a>.
 
-      <section aria-labelledby="generating-files">
-    <h2 id="generating-files">
-      <a href="#generating-files" title="Generating Files" class="permalink">
+  </p>
+
+  <p>
+    For in-depth information about the upgrade paths and differences introduced in Octane, see <a href="https://guides.emberjs.com/release/upgrading/" target="_blank" rel="noopener noreferrer">The Octane Upgrading Guide</a>.
+
+  </p>
+
+    <div class="_guide-section-container_9no6ge">
+        <section aria-labelledby="generating-files">
+    <div class="_title-container_9xtt8y">
+      <h2 class="_title_9xtt8y" id="generating-files">
+        Generating Files
+      </h2>
+
+      <a class="_permalink_9xtt8y" href="#generating-files" title="Generating Files">
         §
       </a>
-      Generating Files
-    </h2>
+    </div>
 
-        <section aria-labelledby="generating-files__generating-component">
-    <h3 id="generating-files__generating-component">
-      <a href="#generating-files__generating-component" title="Use an option to generate a component's JavaScript" class="permalink">
+      <div class="_subsection-container_9xtt8y">
+          <section aria-labelledby="generating-files__generating-component">
+    <div class="_title-container_11tjec">
+      <h3 class="_title_11tjec" id="generating-files__generating-component">
+        Use an option to generate a component's JavaScript
+      </h3>
+
+      <a class="_permalink_11tjec" href="#generating-files__generating-component" title="Use an option to generate a component's JavaScript">
         §
       </a>
-      Use an option to generate a component's JavaScript
-      <a class="edit-translation-link" href="https://github.com/ember-learn/ember-octane-vs-classic-cheat-sheet/edit/main/translations/generating-files/generating-component/en-us.yaml" rel="noopener noreferrer" target="_blank">
-        Edit Translation
-      </a>
-    </h3>
+    </div>
 
-    <p>
+    <p class="_description_11tjec">
       In classic Ember, <code>ember generate component</code> created three files: the template, a JavaScript file, and a test. In Octane, <code>ember generate component</code> skips creating the JavaScript file. If you want the backing JavaScript class as well, include the <code>-gc</code> option.
 
     </p>
 
-    <div class="grid">
-      <div>
-        <h4>Classic</h4>
+      <div id="ember5" class="ember-view container-query _code-examples-container_11tjec" data-test-container-query>
+    
+      <div class="_ember-classic_11tjec">
+        <h4 class>
+          Classic
+        </h4>
 
             <pre class="language-bash line-numbers"><code class="language-bash"></code></pre>
 
 
 <!---->      </div>
 
-      <div>
-        <h4>Octane</h4>
+      <div class="_ember-octane_11tjec">
+        <h4 class>
+          Octane
+        </h4>
 
             <pre class="language-bash line-numbers"><code class="language-bash"></code></pre>
 
 
 <!---->      </div>
+    
+  </div>
+
+
+    <div class="_edit-link-container_11tjec">
+      <a class href="https://github.com/ember-learn/ember-octane-vs-classic-cheat-sheet/edit/main/translations/generating-files/generating-component/en-us.yaml" rel="noopener noreferrer" target="_blank">
+        Edit Translation
+      </a>
     </div>
   </section>
 
-        <section aria-labelledby="generating-files__file-structure">
-    <h3 id="generating-files__file-structure">
-      <a href="#generating-files__file-structure" title="Component templates and JavaScript are in the same directory" class="permalink">
+      </div>
+      <div class="_subsection-container_9xtt8y">
+          <section aria-labelledby="generating-files__file-structure">
+    <div class="_title-container_11tjec">
+      <h3 class="_title_11tjec" id="generating-files__file-structure">
+        Component templates and JavaScript are in the same directory
+      </h3>
+
+      <a class="_permalink_11tjec" href="#generating-files__file-structure" title="Component templates and JavaScript are in the same directory">
         §
       </a>
-      Component templates and JavaScript are in the same directory
-      <a class="edit-translation-link" href="https://github.com/ember-learn/ember-octane-vs-classic-cheat-sheet/edit/main/translations/generating-files/file-structure/en-us.yaml" rel="noopener noreferrer" target="_blank">
-        Edit Translation
-      </a>
-    </h3>
+    </div>
 
-    <p>
+    <p class="_description_11tjec">
       The location of component templates has changed in Octane. This is known as "template co-location."
 
     </p>
 
-    <div class="grid">
-      <div>
-        <h4>Classic</h4>
+      <div id="ember6" class="ember-view container-query _code-examples-container_11tjec" data-test-container-query>
+    
+      <div class="_ember-classic_11tjec">
+        <h4 class>
+          Classic
+        </h4>
 
             <pre class="language-markup line-numbers"><code class="language-markup"></code></pre>
 
 
 <!---->      </div>
 
-      <div>
-        <h4>Octane</h4>
+      <div class="_ember-octane_11tjec">
+        <h4 class>
+          Octane
+        </h4>
 
             <pre class="language-markup line-numbers"><code class="language-markup"></code></pre>
 
 
 <!---->      </div>
+    
+  </div>
+
+
+    <div class="_edit-link-container_11tjec">
+      <a class href="https://github.com/ember-learn/ember-octane-vs-classic-cheat-sheet/edit/main/translations/generating-files/file-structure/en-us.yaml" rel="noopener noreferrer" target="_blank">
+        Edit Translation
+      </a>
     </div>
   </section>
 
+      </div>
   </section>
 
-      <section aria-labelledby="component-templates">
-    <h2 id="component-templates">
-      <a href="#component-templates" title="Component Templates" class="permalink">
+    </div>
+    <div class="_guide-section-container_9no6ge">
+        <section aria-labelledby="component-templates">
+    <div class="_title-container_9xtt8y">
+      <h2 class="_title_9xtt8y" id="component-templates">
+        Component Templates
+      </h2>
+
+      <a class="_permalink_9xtt8y" href="#component-templates" title="Component Templates">
         §
       </a>
-      Component Templates
-    </h2>
+    </div>
 
-        <section aria-labelledby="component-templates__angle-brackets">
-    <h3 id="component-templates__angle-brackets">
-      <a href="#component-templates__angle-brackets" title="Angle brackets component invocation" class="permalink">
+      <div class="_subsection-container_9xtt8y">
+          <section aria-labelledby="component-templates__angle-brackets">
+    <div class="_title-container_11tjec">
+      <h3 class="_title_11tjec" id="component-templates__angle-brackets">
+        Angle brackets component invocation
+      </h3>
+
+      <a class="_permalink_11tjec" href="#component-templates__angle-brackets" title="Angle brackets component invocation">
         §
       </a>
-      Angle brackets component invocation
-      <a class="edit-translation-link" href="https://github.com/ember-learn/ember-octane-vs-classic-cheat-sheet/edit/main/translations/component-templates/angle-brackets/en-us.yaml" rel="noopener noreferrer" target="_blank">
-        Edit Translation
-      </a>
-    </h3>
+    </div>
 
-    <p>
+    <p class="_description_11tjec">
       Angle brackets are a way to invoke components in a template file. There's no change in behavior. Learn more about <a href="https://guides.emberjs.com/release/components/" target="_blank" rel="noopener noreferrer">features</a> and <a href="https://guides.emberjs.com/release/upgrading/current-edition/#toc_octane-upgrade-strategy" target="_blank" rel="noopener noreferrer">using codemods</a> to update your existing components.
 
     </p>
 
-    <div class="grid">
-      <div>
-        <h4>Classic</h4>
+      <div id="ember7" class="ember-view container-query _code-examples-container_11tjec" data-test-container-query>
+    
+      <div class="_ember-classic_11tjec">
+        <h4 class>
+          Classic
+        </h4>
 
             <pre class="language-handlebars line-numbers"><code class="language-handlebars"></code></pre>
 
 
 <!---->      </div>
 
-      <div>
-        <h4>Octane</h4>
+      <div class="_ember-octane_11tjec">
+        <h4 class>
+          Octane
+        </h4>
 
             <pre class="language-handlebars line-numbers"><code class="language-handlebars"></code></pre>
 
 
 <!---->      </div>
+    
+  </div>
+
+
+    <div class="_edit-link-container_11tjec">
+      <a class href="https://github.com/ember-learn/ember-octane-vs-classic-cheat-sheet/edit/main/translations/component-templates/angle-brackets/en-us.yaml" rel="noopener noreferrer" target="_blank">
+        Edit Translation
+      </a>
     </div>
   </section>
 
-        <section aria-labelledby="component-templates__inline-vs-block">
-    <h3 id="component-templates__inline-vs-block">
-      <a href="#component-templates__inline-vs-block" title="Inline vs block components" class="permalink">
+      </div>
+      <div class="_subsection-container_9xtt8y">
+          <section aria-labelledby="component-templates__inline-vs-block">
+    <div class="_title-container_11tjec">
+      <h3 class="_title_11tjec" id="component-templates__inline-vs-block">
+        Inline vs block components
+      </h3>
+
+      <a class="_permalink_11tjec" href="#component-templates__inline-vs-block" title="Inline vs block components">
         §
       </a>
-      Inline vs block components
-      <a class="edit-translation-link" href="https://github.com/ember-learn/ember-octane-vs-classic-cheat-sheet/edit/main/translations/component-templates/inline-vs-block/en-us.yaml" rel="noopener noreferrer" target="_blank">
-        Edit Translation
-      </a>
-    </h3>
+    </div>
 
-    <p>
+    <p class="_description_11tjec">
       Angle brackets components can be used as either inline or block components. There's no change in behavior. <code>{{yield}}</code> looks and works the same. Learn more about <a href="https://guides.emberjs.com/release/components/block-content/" target="_blank" rel="noopener noreferrer">features</a> and <a href="https://guides.emberjs.com/release/upgrading/current-edition/" target="_blank" rel="noopener noreferrer">using codemods</a> to update your existing components.
 
     </p>
 
-    <div class="grid">
-      <div>
-        <h4>Classic</h4>
+      <div id="ember8" class="ember-view container-query _code-examples-container_11tjec" data-test-container-query>
+    
+      <div class="_ember-classic_11tjec">
+        <h4 class>
+          Classic
+        </h4>
 
             <pre class="language-handlebars line-numbers"><code class="language-handlebars"></code></pre>
 
 
 <!---->      </div>
 
-      <div>
-        <h4>Octane</h4>
+      <div class="_ember-octane_11tjec">
+        <h4 class>
+          Octane
+        </h4>
 
             <pre class="language-handlebars line-numbers"><code class="language-handlebars"></code></pre>
 
 
 <!---->      </div>
+    
+  </div>
+
+
+    <div class="_edit-link-container_11tjec">
+      <a class href="https://github.com/ember-learn/ember-octane-vs-classic-cheat-sheet/edit/main/translations/component-templates/inline-vs-block/en-us.yaml" rel="noopener noreferrer" target="_blank">
+        Edit Translation
+      </a>
     </div>
   </section>
 
-        <section aria-labelledby="component-templates__angle-brackets-nested">
-    <h3 id="component-templates__angle-brackets-nested">
-      <a href="#component-templates__angle-brackets-nested" title="Nesting components in your file structure" class="permalink">
+      </div>
+      <div class="_subsection-container_9xtt8y">
+          <section aria-labelledby="component-templates__angle-brackets-nested">
+    <div class="_title-container_11tjec">
+      <h3 class="_title_11tjec" id="component-templates__angle-brackets-nested">
+        Nesting components in your file structure
+      </h3>
+
+      <a class="_permalink_11tjec" href="#component-templates__angle-brackets-nested" title="Nesting components in your file structure">
         §
       </a>
-      Nesting components in your file structure
-      <a class="edit-translation-link" href="https://github.com/ember-learn/ember-octane-vs-classic-cheat-sheet/edit/main/translations/component-templates/angle-brackets-nested/en-us.yaml" rel="noopener noreferrer" target="_blank">
-        Edit Translation
-      </a>
-    </h3>
+    </div>
 
-    <p>
+    <p class="_description_11tjec">
       You can nest components in your file structure, and use them in a template with angle brackets invocation. There's no change in behavior.
 
     </p>
 
-    <div class="grid">
-      <div>
-        <h4>Classic</h4>
+      <div id="ember9" class="ember-view container-query _code-examples-container_11tjec" data-test-container-query>
+    
+      <div class="_ember-classic_11tjec">
+        <h4 class>
+          Classic
+        </h4>
 
             <pre class="language-handlebars line-numbers"><code class="language-handlebars"></code></pre>
 
 
 <!---->      </div>
 
-      <div>
-        <h4>Octane</h4>
+      <div class="_ember-octane_11tjec">
+        <h4 class>
+          Octane
+        </h4>
 
             <pre class="language-handlebars line-numbers"><code class="language-handlebars"></code></pre>
 
 
 <!---->      </div>
+    
+  </div>
+
+
+    <div class="_edit-link-container_11tjec">
+      <a class href="https://github.com/ember-learn/ember-octane-vs-classic-cheat-sheet/edit/main/translations/component-templates/angle-brackets-nested/en-us.yaml" rel="noopener noreferrer" target="_blank">
+        Edit Translation
+      </a>
     </div>
   </section>
 
-        <section aria-labelledby="component-templates__template-named">
-    <h3 id="component-templates__template-named">
-      <a href="#component-templates__template-named" title="Using named argument" class="permalink">
+      </div>
+      <div class="_subsection-container_9xtt8y">
+          <section aria-labelledby="component-templates__template-named">
+    <div class="_title-container_11tjec">
+      <h3 class="_title_11tjec" id="component-templates__template-named">
+        Using named argument
+      </h3>
+
+      <a class="_permalink_11tjec" href="#component-templates__template-named" title="Using named argument">
         §
       </a>
-      Using named argument
-      <a class="edit-translation-link" href="https://github.com/ember-learn/ember-octane-vs-classic-cheat-sheet/edit/main/translations/component-templates/template-named/en-us.yaml" rel="noopener noreferrer" target="_blank">
-        Edit Translation
-      </a>
-    </h3>
+    </div>
 
-    <p>
+    <p class="_description_11tjec">
       If a property was received from a parent component, refer to it with an <code>@</code>. There's no change in behavior. (<a href="https://guides.emberjs.com/release/components/component-arguments-and-html-attributes/" target="_blank" rel="noopener noreferrer">Visit the Ember Guides to learn more</a>.)
 
     </p>
 
-    <div class="grid">
-      <div>
-        <h4>Classic</h4>
+      <div id="ember10" class="ember-view container-query _code-examples-container_11tjec" data-test-container-query>
+    
+      <div class="_ember-classic_11tjec">
+        <h4 class>
+          Classic
+        </h4>
 
             <pre class="language-handlebars line-numbers"><code class="language-handlebars"></code></pre>
 
 
 <!---->      </div>
 
-      <div>
-        <h4>Octane</h4>
+      <div class="_ember-octane_11tjec">
+        <h4 class>
+          Octane
+        </h4>
 
             <pre class="language-handlebars line-numbers"><code class="language-handlebars"></code></pre>
 
 
 <!---->      </div>
+    
+  </div>
+
+
+    <div class="_edit-link-container_11tjec">
+      <a class href="https://github.com/ember-learn/ember-octane-vs-classic-cheat-sheet/edit/main/translations/component-templates/template-named/en-us.yaml" rel="noopener noreferrer" target="_blank">
+        Edit Translation
+      </a>
     </div>
   </section>
 
-        <section aria-labelledby="component-templates__template-this">
-    <h3 id="component-templates__template-this">
-      <a href="#component-templates__template-this" title="Using own properties" class="permalink">
+      </div>
+      <div class="_subsection-container_9xtt8y">
+          <section aria-labelledby="component-templates__template-this">
+    <div class="_title-container_11tjec">
+      <h3 class="_title_11tjec" id="component-templates__template-this">
+        Using own properties
+      </h3>
+
+      <a class="_permalink_11tjec" href="#component-templates__template-this" title="Using own properties">
         §
       </a>
-      Using own properties
-      <a class="edit-translation-link" href="https://github.com/ember-learn/ember-octane-vs-classic-cheat-sheet/edit/main/translations/component-templates/template-this/en-us.yaml" rel="noopener noreferrer" target="_blank">
-        Edit Translation
-      </a>
-    </h3>
+    </div>
 
-    <p>
+    <p class="_description_11tjec">
       If a property is defined in the JavaScript file for this component's template, use <code>this</code> when you refer to it. There's no change in behavior. Learn more about <a href="https://guides.emberjs.com/release/upgrading/current-edition/glimmer-components/" target="_blank" rel="noopener noreferrer">features</a> and <a href="https://guides.emberjs.com/release/upgrading/" target="_blank" rel="noopener noreferrer">using codemods</a> to update your existing components.
 
     </p>
 
-    <div class="grid">
-      <div>
-        <h4>Classic</h4>
+      <div id="ember11" class="ember-view container-query _code-examples-container_11tjec" data-test-container-query>
+    
+      <div class="_ember-classic_11tjec">
+        <h4 class>
+          Classic
+        </h4>
 
             <pre class="language-handlebars line-numbers"><code class="language-handlebars"></code></pre>
 
 
 <!---->      </div>
 
-      <div>
-        <h4>Octane</h4>
+      <div class="_ember-octane_11tjec">
+        <h4 class>
+          Octane
+        </h4>
 
             <pre class="language-handlebars line-numbers"><code class="language-handlebars"></code></pre>
 
 
 <!---->      </div>
+    
+  </div>
+
+
+    <div class="_edit-link-container_11tjec">
+      <a class href="https://github.com/ember-learn/ember-octane-vs-classic-cheat-sheet/edit/main/translations/component-templates/template-this/en-us.yaml" rel="noopener noreferrer" target="_blank">
+        Edit Translation
+      </a>
     </div>
   </section>
 
-        <section aria-labelledby="component-templates__template-arguments-named">
-    <h3 id="component-templates__template-arguments-named">
-      <a href="#component-templates__template-arguments-named" title="Passing named arguments" class="permalink">
+      </div>
+      <div class="_subsection-container_9xtt8y">
+          <section aria-labelledby="component-templates__template-arguments-named">
+    <div class="_title-container_11tjec">
+      <h3 class="_title_11tjec" id="component-templates__template-arguments-named">
+        Passing named arguments
+      </h3>
+
+      <a class="_permalink_11tjec" href="#component-templates__template-arguments-named" title="Passing named arguments">
         §
       </a>
-      Passing named arguments
-      <a class="edit-translation-link" href="https://github.com/ember-learn/ember-octane-vs-classic-cheat-sheet/edit/main/translations/component-templates/template-arguments-named/en-us.yaml" rel="noopener noreferrer" target="_blank">
-        Edit Translation
-      </a>
-    </h3>
+    </div>
 
-    <p>
+    <p class="_description_11tjec">
       When you pass an argument to a component, use an <code>@</code> symbol on the left hand side. There's no change in behavior. Learn more about <a href="https://guides.emberjs.com/release/components/component-arguments-and-html-attributes/" target="_blank" rel="noopener noreferrer">features</a> and <a href="https://guides.emberjs.com/release/upgrading/" target="_blank" rel="noopener noreferrer">using codemods</a> to update your existing components.
 
     </p>
 
-    <div class="grid">
-      <div>
-        <h4>Classic</h4>
+      <div id="ember12" class="ember-view container-query _code-examples-container_11tjec" data-test-container-query>
+    
+      <div class="_ember-classic_11tjec">
+        <h4 class>
+          Classic
+        </h4>
 
             <pre class="language-handlebars line-numbers"><code class="language-handlebars"></code></pre>
 
 
 <!---->      </div>
 
-      <div>
-        <h4>Octane</h4>
+      <div class="_ember-octane_11tjec">
+        <h4 class>
+          Octane
+        </h4>
 
             <pre class="language-handlebars line-numbers"><code class="language-handlebars"></code></pre>
 
 
 <!---->      </div>
+    
+  </div>
+
+
+    <div class="_edit-link-container_11tjec">
+      <a class href="https://github.com/ember-learn/ember-octane-vs-classic-cheat-sheet/edit/main/translations/component-templates/template-arguments-named/en-us.yaml" rel="noopener noreferrer" target="_blank">
+        Edit Translation
+      </a>
     </div>
   </section>
 
-        <section aria-labelledby="component-templates__template-arguments-this">
-    <h3 id="component-templates__template-arguments-this">
-      <a href="#component-templates__template-arguments-this" title="Passing arguments defined on &quot;this&quot; component" class="permalink">
+      </div>
+      <div class="_subsection-container_9xtt8y">
+          <section aria-labelledby="component-templates__template-arguments-this">
+    <div class="_title-container_11tjec">
+      <h3 class="_title_11tjec" id="component-templates__template-arguments-this">
+        Passing arguments defined on "this" component
+      </h3>
+
+      <a class="_permalink_11tjec" href="#component-templates__template-arguments-this" title="Passing arguments defined on &quot;this&quot; component">
         §
       </a>
-      Passing arguments defined on "this" component
-      <a class="edit-translation-link" href="https://github.com/ember-learn/ember-octane-vs-classic-cheat-sheet/edit/main/translations/component-templates/template-arguments-this/en-us.yaml" rel="noopener noreferrer" target="_blank">
-        Edit Translation
-      </a>
-    </h3>
+    </div>
 
-    <p>
+    <p class="_description_11tjec">
       If a property is coming from a template's own JavaScript file, remember to put a <code>this</code> before it and wrap it in curly braces. Learn more about <a href="https://guides.emberjs.com/release/components/component-arguments-and-html-attributes/" target="_blank" rel="noopener noreferrer">features</a> and <a href="https://guides.emberjs.com/release/upgrading/" target="_blank" rel="noopener noreferrer">using codemods</a> to update your existing components.
 
     </p>
 
-    <div class="grid">
-      <div>
-        <h4>Classic</h4>
+      <div id="ember13" class="ember-view container-query _code-examples-container_11tjec" data-test-container-query>
+    
+      <div class="_ember-classic_11tjec">
+        <h4 class>
+          Classic
+        </h4>
 
             <pre class="language-handlebars line-numbers"><code class="language-handlebars"></code></pre>
 
 
 <!---->      </div>
 
-      <div>
-        <h4>Octane</h4>
+      <div class="_ember-octane_11tjec">
+        <h4 class>
+          Octane
+        </h4>
 
             <pre class="language-handlebars line-numbers"><code class="language-handlebars"></code></pre>
 
 
 <!---->      </div>
+    
+  </div>
+
+
+    <div class="_edit-link-container_11tjec">
+      <a class href="https://github.com/ember-learn/ember-octane-vs-classic-cheat-sheet/edit/main/translations/component-templates/template-arguments-this/en-us.yaml" rel="noopener noreferrer" target="_blank">
+        Edit Translation
+      </a>
     </div>
   </section>
 
-        <section aria-labelledby="component-templates__tag-name">
-    <h3 id="component-templates__tag-name">
-      <a href="#component-templates__tag-name" title="All components are tagless" class="permalink">
+      </div>
+      <div class="_subsection-container_9xtt8y">
+          <section aria-labelledby="component-templates__tag-name">
+    <div class="_title-container_11tjec">
+      <h3 class="_title_11tjec" id="component-templates__tag-name">
+        All components are tagless
+      </h3>
+
+      <a class="_permalink_11tjec" href="#component-templates__tag-name" title="All components are tagless">
         §
       </a>
-      All components are tagless
-      <a class="edit-translation-link" href="https://github.com/ember-learn/ember-octane-vs-classic-cheat-sheet/edit/main/translations/component-templates/tag-name/en-us.yaml" rel="noopener noreferrer" target="_blank">
-        Edit Translation
-      </a>
-    </h3>
+    </div>
 
-    <p>
+    <p class="_description_11tjec">
       In Octane, components don't have a default wrapper anymore, so you don't need <code>tagName</code>! Just put the tag right in the template.
 
     </p>
 
-    <div class="grid">
-      <div>
-        <h4>Classic</h4>
+      <div id="ember14" class="ember-view container-query _code-examples-container_11tjec" data-test-container-query>
+    
+      <div class="_ember-classic_11tjec">
+        <h4 class>
+          Classic
+        </h4>
 
             <pre class="language-handlebars line-numbers"><code class="language-handlebars"></code></pre>
 
@@ -416,8 +578,10 @@
 
 <!---->      </div>
 
-      <div>
-        <h4>Octane</h4>
+      <div class="_ember-octane_11tjec">
+        <h4 class>
+          Octane
+        </h4>
 
             <pre class="language-handlebars line-numbers"><code class="language-handlebars"></code></pre>
 
@@ -425,28 +589,41 @@
 
 
 <!---->      </div>
+    
+  </div>
+
+
+    <div class="_edit-link-container_11tjec">
+      <a class href="https://github.com/ember-learn/ember-octane-vs-classic-cheat-sheet/edit/main/translations/component-templates/tag-name/en-us.yaml" rel="noopener noreferrer" target="_blank">
+        Edit Translation
+      </a>
     </div>
   </section>
 
-        <section aria-labelledby="component-templates__element-id">
-    <h3 id="component-templates__element-id">
-      <a href="#component-templates__element-id" title="Make your own elementId" class="permalink">
+      </div>
+      <div class="_subsection-container_9xtt8y">
+          <section aria-labelledby="component-templates__element-id">
+    <div class="_title-container_11tjec">
+      <h3 class="_title_11tjec" id="component-templates__element-id">
+        Make your own elementId
+      </h3>
+
+      <a class="_permalink_11tjec" href="#component-templates__element-id" title="Make your own elementId">
         §
       </a>
-      Make your own elementId
-      <a class="edit-translation-link" href="https://github.com/ember-learn/ember-octane-vs-classic-cheat-sheet/edit/main/translations/component-templates/element-id/en-us.yaml" rel="noopener noreferrer" target="_blank">
-        Edit Translation
-      </a>
-    </h3>
+    </div>
 
-    <p>
+    <p class="_description_11tjec">
       Since components are tagless, there's no <code>elementId</code>, but you can generate your own. This is especially helpful for creating accessible forms.
 
     </p>
 
-    <div class="grid">
-      <div>
-        <h4>Classic</h4>
+      <div id="ember15" class="ember-view container-query _code-examples-container_11tjec" data-test-container-query>
+    
+      <div class="_ember-classic_11tjec">
+        <h4 class>
+          Classic
+        </h4>
 
             <pre class="language-javascript line-numbers"><code class="language-javascript"></code></pre>
 
@@ -455,8 +632,10 @@
 
 <!---->      </div>
 
-      <div>
-        <h4>Octane</h4>
+      <div class="_ember-octane_11tjec">
+        <h4 class>
+          Octane
+        </h4>
 
             <pre class="language-javascript line-numbers"><code class="language-javascript"></code></pre>
 
@@ -464,108 +643,156 @@
 
 
 <!---->      </div>
+    
+  </div>
+
+
+    <div class="_edit-link-container_11tjec">
+      <a class href="https://github.com/ember-learn/ember-octane-vs-classic-cheat-sheet/edit/main/translations/component-templates/element-id/en-us.yaml" rel="noopener noreferrer" target="_blank">
+        Edit Translation
+      </a>
     </div>
   </section>
 
+      </div>
   </section>
 
-      <section aria-labelledby="component-properties">
-    <h2 id="component-properties">
-      <a href="#component-properties" title="Component Properties" class="permalink">
+    </div>
+    <div class="_guide-section-container_9no6ge">
+        <section aria-labelledby="component-properties">
+    <div class="_title-container_9xtt8y">
+      <h2 class="_title_9xtt8y" id="component-properties">
+        Component Properties
+      </h2>
+
+      <a class="_permalink_9xtt8y" href="#component-properties" title="Component Properties">
         §
       </a>
-      Component Properties
-    </h2>
+    </div>
 
-        <section aria-labelledby="component-properties__js-boilerplate">
-    <h3 id="component-properties__js-boilerplate">
-      <a href="#component-properties__js-boilerplate" title="Component JavaScript Syntax" class="permalink">
+      <div class="_subsection-container_9xtt8y">
+          <section aria-labelledby="component-properties__js-boilerplate">
+    <div class="_title-container_11tjec">
+      <h3 class="_title_11tjec" id="component-properties__js-boilerplate">
+        Component JavaScript Syntax
+      </h3>
+
+      <a class="_permalink_11tjec" href="#component-properties__js-boilerplate" title="Component JavaScript Syntax">
         §
       </a>
-      Component JavaScript Syntax
-      <a class="edit-translation-link" href="https://github.com/ember-learn/ember-octane-vs-classic-cheat-sheet/edit/main/translations/component-properties/js-boilerplate/en-us.yaml" rel="noopener noreferrer" target="_blank">
-        Edit Translation
-      </a>
-    </h3>
+    </div>
 
-    <p>
+    <p class="_description_11tjec">
       An Octane component imports from the <code>@glimmer</code> package namespace. It also uses native class syntax. Glimmer components have different API methods than classic components. If you aren't familiar with native classes, first check out the <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Classes" target="_blank" rel="noopener noreferrer">documentation on MDN</a>. Then, learn more about Glimmer components from the <a href="https://guides.emberjs.com/release/components/component-state-and-actions/" target="_blank" rel="noopener noreferrer">Ember.js Guides</a> and the <a href="https://api.emberjs.com/ember/release/modules/@glimmer%2Fcomponent" target="_blank" rel="noopener noreferrer">API Reference</a>.
 
     </p>
 
-    <div class="grid">
-      <div>
-        <h4>Classic</h4>
+      <div id="ember16" class="ember-view container-query _code-examples-container_11tjec" data-test-container-query>
+    
+      <div class="_ember-classic_11tjec">
+        <h4 class>
+          Classic
+        </h4>
 
             <pre class="language-javascript line-numbers"><code class="language-javascript"></code></pre>
 
 
 <!---->      </div>
 
-      <div>
-        <h4>Octane</h4>
+      <div class="_ember-octane_11tjec">
+        <h4 class>
+          Octane
+        </h4>
 
             <pre class="language-javascript line-numbers"><code class="language-javascript"></code></pre>
 
 
 <!---->      </div>
+    
+  </div>
+
+
+    <div class="_edit-link-container_11tjec">
+      <a class href="https://github.com/ember-learn/ember-octane-vs-classic-cheat-sheet/edit/main/translations/component-properties/js-boilerplate/en-us.yaml" rel="noopener noreferrer" target="_blank">
+        Edit Translation
+      </a>
     </div>
   </section>
 
-        <section aria-labelledby="component-properties__js-properties">
-    <h3 id="component-properties__js-properties">
-      <a href="#component-properties__js-properties" title="Declaring a property" class="permalink">
+      </div>
+      <div class="_subsection-container_9xtt8y">
+          <section aria-labelledby="component-properties__js-properties">
+    <div class="_title-container_11tjec">
+      <h3 class="_title_11tjec" id="component-properties__js-properties">
+        Declaring a property
+      </h3>
+
+      <a class="_permalink_11tjec" href="#component-properties__js-properties" title="Declaring a property">
         §
       </a>
-      Declaring a property
-      <a class="edit-translation-link" href="https://github.com/ember-learn/ember-octane-vs-classic-cheat-sheet/edit/main/translations/component-properties/js-properties/en-us.yaml" rel="noopener noreferrer" target="_blank">
-        Edit Translation
-      </a>
-    </h3>
+    </div>
 
-    <p>
+    <p class="_description_11tjec">
       Properties follow native JavaScript class syntax. No commas!
 
     </p>
 
-    <div class="grid">
-      <div>
-        <h4>Classic</h4>
+      <div id="ember17" class="ember-view container-query _code-examples-container_11tjec" data-test-container-query>
+    
+      <div class="_ember-classic_11tjec">
+        <h4 class>
+          Classic
+        </h4>
 
             <pre class="language-javascript line-numbers"><code class="language-javascript"></code></pre>
 
 
 <!---->      </div>
 
-      <div>
-        <h4>Octane</h4>
+      <div class="_ember-octane_11tjec">
+        <h4 class>
+          Octane
+        </h4>
 
             <pre class="language-javascript line-numbers"><code class="language-javascript"></code></pre>
 
 
 <!---->      </div>
+    
+  </div>
+
+
+    <div class="_edit-link-container_11tjec">
+      <a class href="https://github.com/ember-learn/ember-octane-vs-classic-cheat-sheet/edit/main/translations/component-properties/js-properties/en-us.yaml" rel="noopener noreferrer" target="_blank">
+        Edit Translation
+      </a>
     </div>
   </section>
 
-        <section aria-labelledby="component-properties__ddau">
-    <h3 id="component-properties__ddau">
-      <a href="#component-properties__ddau" title="Data Down, Actions Up" class="permalink">
+      </div>
+      <div class="_subsection-container_9xtt8y">
+          <section aria-labelledby="component-properties__ddau">
+    <div class="_title-container_11tjec">
+      <h3 class="_title_11tjec" id="component-properties__ddau">
+        Data Down, Actions Up
+      </h3>
+
+      <a class="_permalink_11tjec" href="#component-properties__ddau" title="Data Down, Actions Up">
         §
       </a>
-      Data Down, Actions Up
-      <a class="edit-translation-link" href="https://github.com/ember-learn/ember-octane-vs-classic-cheat-sheet/edit/main/translations/component-properties/ddau/en-us.yaml" rel="noopener noreferrer" target="_blank">
-        Edit Translation
-      </a>
-    </h3>
+    </div>
 
-    <p>
+    <p class="_description_11tjec">
       Octane components enforce "Data Down, Actions Up." When data is passed down to a component, the only way to change that data is to call an action that was passed in too. In another words, there is no two-way binding for component arguments.
 
     </p>
 
-    <div class="grid">
-      <div>
-        <h4>Classic</h4>
+      <div id="ember18" class="ember-view container-query _code-examples-container_11tjec" data-test-container-query>
+    
+      <div class="_ember-classic_11tjec">
+        <h4 class>
+          Classic
+        </h4>
 
             <pre class="language-javascript line-numbers"><code class="language-javascript"></code></pre>
 
@@ -578,8 +805,10 @@
 
 <!---->      </div>
 
-      <div>
-        <h4>Octane</h4>
+      <div class="_ember-octane_11tjec">
+        <h4 class>
+          Octane
+        </h4>
 
             <pre class="language-javascript line-numbers"><code class="language-javascript"></code></pre>
 
@@ -589,178 +818,256 @@
 
 
 <!---->      </div>
+    
+  </div>
+
+
+    <div class="_edit-link-container_11tjec">
+      <a class href="https://github.com/ember-learn/ember-octane-vs-classic-cheat-sheet/edit/main/translations/component-properties/ddau/en-us.yaml" rel="noopener noreferrer" target="_blank">
+        Edit Translation
+      </a>
     </div>
   </section>
 
-        <section aria-labelledby="component-properties__args">
-    <h3 id="component-properties__args">
-      <a href="#component-properties__args" title="Component Arguments" class="permalink">
+      </div>
+      <div class="_subsection-container_9xtt8y">
+          <section aria-labelledby="component-properties__args">
+    <div class="_title-container_11tjec">
+      <h3 class="_title_11tjec" id="component-properties__args">
+        Component Arguments
+      </h3>
+
+      <a class="_permalink_11tjec" href="#component-properties__args" title="Component Arguments">
         §
       </a>
-      Component Arguments
-      <a class="edit-translation-link" href="https://github.com/ember-learn/ember-octane-vs-classic-cheat-sheet/edit/main/translations/component-properties/args/en-us.yaml" rel="noopener noreferrer" target="_blank">
-        Edit Translation
-      </a>
-    </h3>
+    </div>
 
-    <p>
+    <p class="_description_11tjec">
       In Octane, arguments are set on the <code>args</code> property, <code>this.args</code>. They are <em>not</em> set on the class instance, <code>this</code>. As a result, you can distinguish internal class values from external arguments. (Visit the Ember Guides to learn more about <a href="https://guides.emberjs.com/release/upgrading/current-edition/glimmer-components/#toc_arguments" target="_blank" rel="noopener noreferrer">arguments</a>.)
 
     </p>
 
-    <div class="grid">
-      <div>
-        <h4>Classic</h4>
+      <div id="ember19" class="ember-view container-query _code-examples-container_11tjec" data-test-container-query>
+    
+      <div class="_ember-classic_11tjec">
+        <h4 class>
+          Classic
+        </h4>
 
             <pre class="language-javascript line-numbers"><code class="language-javascript"></code></pre>
 
 
 <!---->      </div>
 
-      <div>
-        <h4>Octane</h4>
+      <div class="_ember-octane_11tjec">
+        <h4 class>
+          Octane
+        </h4>
 
             <pre class="language-javascript line-numbers"><code class="language-javascript"></code></pre>
 
 
 <!---->      </div>
+    
+  </div>
+
+
+    <div class="_edit-link-container_11tjec">
+      <a class href="https://github.com/ember-learn/ember-octane-vs-classic-cheat-sheet/edit/main/translations/component-properties/args/en-us.yaml" rel="noopener noreferrer" target="_blank">
+        Edit Translation
+      </a>
     </div>
   </section>
 
-        <section aria-labelledby="component-properties__get-and-set">
-    <h3 id="component-properties__get-and-set">
-      <a href="#component-properties__get-and-set" title="No more get and set on components" class="permalink">
+      </div>
+      <div class="_subsection-container_9xtt8y">
+          <section aria-labelledby="component-properties__get-and-set">
+    <div class="_title-container_11tjec">
+      <h3 class="_title_11tjec" id="component-properties__get-and-set">
+        No more get and set on components
+      </h3>
+
+      <a class="_permalink_11tjec" href="#component-properties__get-and-set" title="No more get and set on components">
         §
       </a>
-      No more get and set on components
-      <a class="edit-translation-link" href="https://github.com/ember-learn/ember-octane-vs-classic-cheat-sheet/edit/main/translations/component-properties/get-and-set/en-us.yaml" rel="noopener noreferrer" target="_blank">
-        Edit Translation
-      </a>
-    </h3>
+    </div>
 
-    <p>
+    <p class="_description_11tjec">
       Octane components do not use <code>this.get</code> or <code>this.set</code>. Access and modify properties directly, the same as you would in a regular JavaScript class.
 
     </p>
 
-    <div class="grid">
-      <div>
-        <h4>Classic</h4>
+      <div id="ember20" class="ember-view container-query _code-examples-container_11tjec" data-test-container-query>
+    
+      <div class="_ember-classic_11tjec">
+        <h4 class>
+          Classic
+        </h4>
 
             <pre class="language-javascript line-numbers"><code class="language-javascript"></code></pre>
 
 
 <!---->      </div>
 
-      <div>
-        <h4>Octane</h4>
+      <div class="_ember-octane_11tjec">
+        <h4 class>
+          Octane
+        </h4>
 
             <pre class="language-javascript line-numbers"><code class="language-javascript"></code></pre>
 
 
 <!---->      </div>
+    
+  </div>
+
+
+    <div class="_edit-link-container_11tjec">
+      <a class href="https://github.com/ember-learn/ember-octane-vs-classic-cheat-sheet/edit/main/translations/component-properties/get-and-set/en-us.yaml" rel="noopener noreferrer" target="_blank">
+        Edit Translation
+      </a>
     </div>
   </section>
 
-        <section aria-labelledby="component-properties__tracked-vs-cp">
-    <h3 id="component-properties__tracked-vs-cp">
-      <a href="#component-properties__tracked-vs-cp" title="Use @tracked and getters instead of computed properties" class="permalink">
+      </div>
+      <div class="_subsection-container_9xtt8y">
+          <section aria-labelledby="component-properties__tracked-vs-cp">
+    <div class="_title-container_11tjec">
+      <h3 class="_title_11tjec" id="component-properties__tracked-vs-cp">
+        Use @tracked and getters instead of computed properties
+      </h3>
+
+      <a class="_permalink_11tjec" href="#component-properties__tracked-vs-cp" title="Use @tracked and getters instead of computed properties">
         §
       </a>
-      Use @tracked and getters instead of computed properties
-      <a class="edit-translation-link" href="https://github.com/ember-learn/ember-octane-vs-classic-cheat-sheet/edit/main/translations/component-properties/tracked-vs-cp/en-us.yaml" rel="noopener noreferrer" target="_blank">
-        Edit Translation
-      </a>
-    </h3>
+    </div>
 
-    <p>
+    <p class="_description_11tjec">
       Label the properties that should be tracked. Getters will be updated automatically.
 
     </p>
 
-    <div class="grid">
-      <div>
-        <h4>Classic</h4>
+      <div id="ember21" class="ember-view container-query _code-examples-container_11tjec" data-test-container-query>
+    
+      <div class="_ember-classic_11tjec">
+        <h4 class>
+          Classic
+        </h4>
 
             <pre class="language-javascript line-numbers"><code class="language-javascript"></code></pre>
 
 
 <!---->      </div>
 
-      <div>
-        <h4>Octane</h4>
+      <div class="_ember-octane_11tjec">
+        <h4 class>
+          Octane
+        </h4>
 
             <pre class="language-javascript line-numbers"><code class="language-javascript"></code></pre>
 
 
 <!---->      </div>
+    
+  </div>
+
+
+    <div class="_edit-link-container_11tjec">
+      <a class href="https://github.com/ember-learn/ember-octane-vs-classic-cheat-sheet/edit/main/translations/component-properties/tracked-vs-cp/en-us.yaml" rel="noopener noreferrer" target="_blank">
+        Edit Translation
+      </a>
     </div>
   </section>
 
-        <section aria-labelledby="component-properties__computed-decorator">
-    <h3 id="component-properties__computed-decorator">
-      <a href="#component-properties__computed-decorator" title="@computed decorator" class="permalink">
+      </div>
+      <div class="_subsection-container_9xtt8y">
+          <section aria-labelledby="component-properties__computed-decorator">
+    <div class="_title-container_11tjec">
+      <h3 class="_title_11tjec" id="component-properties__computed-decorator">
+        @computed decorator
+      </h3>
+
+      <a class="_permalink_11tjec" href="#component-properties__computed-decorator" title="@computed decorator">
         §
       </a>
-      @computed decorator
-      <a class="edit-translation-link" href="https://github.com/ember-learn/ember-octane-vs-classic-cheat-sheet/edit/main/translations/component-properties/computed-decorator/en-us.yaml" rel="noopener noreferrer" target="_blank">
-        Edit Translation
-      </a>
-    </h3>
+    </div>
 
-    <p>
+    <p class="_description_11tjec">
       In Octane, it is recommended to rewrite a computed property as tracked property. In case that isn't possible (maybe you need caching), the <code>@computed</code> decorator is available.
 
     </p>
 
-    <div class="grid">
-      <div>
-        <h4>Classic</h4>
+      <div id="ember22" class="ember-view container-query _code-examples-container_11tjec" data-test-container-query>
+    
+      <div class="_ember-classic_11tjec">
+        <h4 class>
+          Classic
+        </h4>
 
             <pre class="language-javascript line-numbers"><code class="language-javascript"></code></pre>
 
 
 <!---->      </div>
 
-      <div>
-        <h4>Octane</h4>
+      <div class="_ember-octane_11tjec">
+        <h4 class>
+          Octane
+        </h4>
 
             <pre class="language-javascript line-numbers"><code class="language-javascript"></code></pre>
 
 
 <!---->      </div>
+    
+  </div>
+
+
+    <div class="_edit-link-container_11tjec">
+      <a class href="https://github.com/ember-learn/ember-octane-vs-classic-cheat-sheet/edit/main/translations/component-properties/computed-decorator/en-us.yaml" rel="noopener noreferrer" target="_blank">
+        Edit Translation
+      </a>
     </div>
   </section>
 
+      </div>
   </section>
 
-      <section aria-labelledby="actions">
-    <h2 id="actions">
-      <a href="#actions" title="Actions" class="permalink">
+    </div>
+    <div class="_guide-section-container_9no6ge">
+        <section aria-labelledby="actions">
+    <div class="_title-container_9xtt8y">
+      <h2 class="_title_9xtt8y" id="actions">
+        Actions
+      </h2>
+
+      <a class="_permalink_9xtt8y" href="#actions" title="Actions">
         §
       </a>
-      Actions
-    </h2>
+    </div>
 
-        <section aria-labelledby="actions__actions">
-    <h3 id="actions__actions">
-      <a href="#actions__actions" title="Use @action, {{on}}, and {{fn}} instead of actions" class="permalink">
+      <div class="_subsection-container_9xtt8y">
+          <section aria-labelledby="actions__actions">
+    <div class="_title-container_11tjec">
+      <h3 class="_title_11tjec" id="actions__actions">
+        Use @action, {{on}}, and {{fn}} instead of actions
+      </h3>
+
+      <a class="_permalink_11tjec" href="#actions__actions" title="Use @action, {{on}}, and {{fn}} instead of actions">
         §
       </a>
-      Use @action, {{on}}, and {{fn}} instead of actions
-      <a class="edit-translation-link" href="https://github.com/ember-learn/ember-octane-vs-classic-cheat-sheet/edit/main/translations/actions/actions/en-us.yaml" rel="noopener noreferrer" target="_blank">
-        Edit Translation
-      </a>
-    </h3>
+    </div>
 
-    <p>
+    <p class="_description_11tjec">
       In the JavaScript class, use the <code>@action</code> decorator to mark the function that you want to call from the template. In the template, use the <code>{{on}}</code> modifier to decide when to call the function. If you need to pass an argument to the function, use <code>{{fn}}</code> helper too. (<a href="https://guides.emberjs.com/release/components/component-state-and-actions/#toc_html-modifiers-and-actions" target="_blank" rel="noopener noreferrer">Visit the Ember Guides to learn more</a>.)
 
     </p>
 
-    <div class="grid">
-      <div>
-        <h4>Classic</h4>
+      <div id="ember23" class="ember-view container-query _code-examples-container_11tjec" data-test-container-query>
+    
+      <div class="_ember-classic_11tjec">
+        <h4 class>
+          Classic
+        </h4>
 
             <pre class="language-javascript line-numbers"><code class="language-javascript"></code></pre>
 
@@ -769,8 +1076,10 @@
 
 <!---->      </div>
 
-      <div>
-        <h4>Octane</h4>
+      <div class="_ember-octane_11tjec">
+        <h4 class>
+          Octane
+        </h4>
 
             <pre class="language-javascript line-numbers"><code class="language-javascript"></code></pre>
 
@@ -778,28 +1087,41 @@
 
 
 <!---->      </div>
+    
+  </div>
+
+
+    <div class="_edit-link-container_11tjec">
+      <a class href="https://github.com/ember-learn/ember-octane-vs-classic-cheat-sheet/edit/main/translations/actions/actions/en-us.yaml" rel="noopener noreferrer" target="_blank">
+        Edit Translation
+      </a>
     </div>
   </section>
 
-        <section aria-labelledby="actions__template-arguments-default">
-    <h3 id="actions__template-arguments-default">
-      <a href="#actions__template-arguments-default" title="Setting the default value of an argument" class="permalink">
+      </div>
+      <div class="_subsection-container_9xtt8y">
+          <section aria-labelledby="actions__template-arguments-default">
+    <div class="_title-container_11tjec">
+      <h3 class="_title_11tjec" id="actions__template-arguments-default">
+        Setting the default value of an argument
+      </h3>
+
+      <a class="_permalink_11tjec" href="#actions__template-arguments-default" title="Setting the default value of an argument">
         §
       </a>
-      Setting the default value of an argument
-      <a class="edit-translation-link" href="https://github.com/ember-learn/ember-octane-vs-classic-cheat-sheet/edit/main/translations/actions/template-arguments-default/en-us.yaml" rel="noopener noreferrer" target="_blank">
-        Edit Translation
-      </a>
-    </h3>
+    </div>
 
-    <p>
+    <p class="_description_11tjec">
       Because an argument is read-only, you cannot set its default value in the consuming class. Instead, you can create a getter to wrap the argument and <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing_operator/" target="_blank" rel="noopener noreferrer">provide the default value</a>.
 
     </p>
 
-    <div class="grid">
-      <div>
-        <h4>Classic</h4>
+      <div id="ember24" class="ember-view container-query _code-examples-container_11tjec" data-test-container-query>
+    
+      <div class="_ember-classic_11tjec">
+        <h4 class>
+          Classic
+        </h4>
 
             <pre class="language-handlebars line-numbers"><code class="language-handlebars"></code></pre>
 
@@ -808,8 +1130,10 @@
 
 <!---->      </div>
 
-      <div>
-        <h4>Octane</h4>
+      <div class="_ember-octane_11tjec">
+        <h4 class>
+          Octane
+        </h4>
 
             <pre class="language-handlebars line-numbers"><code class="language-handlebars"></code></pre>
 
@@ -817,36 +1141,51 @@
 
 
 <!---->      </div>
+    
+  </div>
+
+
+    <div class="_edit-link-container_11tjec">
+      <a class href="https://github.com/ember-learn/ember-octane-vs-classic-cheat-sheet/edit/main/translations/actions/template-arguments-default/en-us.yaml" rel="noopener noreferrer" target="_blank">
+        Edit Translation
+      </a>
     </div>
   </section>
 
-        <section aria-labelledby="actions__mixins">
-    <h3 id="actions__mixins">
-      <a href="#actions__mixins" title="Mixins" class="permalink">
+      </div>
+      <div class="_subsection-container_9xtt8y">
+          <section aria-labelledby="actions__mixins">
+    <div class="_title-container_11tjec">
+      <h3 class="_title_11tjec" id="actions__mixins">
+        Mixins
+      </h3>
+
+      <a class="_permalink_11tjec" href="#actions__mixins" title="Mixins">
         §
       </a>
-      Mixins
-      <a class="edit-translation-link" href="https://github.com/ember-learn/ember-octane-vs-classic-cheat-sheet/edit/main/translations/actions/mixins/en-us.yaml" rel="noopener noreferrer" target="_blank">
-        Edit Translation
-      </a>
-    </h3>
+    </div>
 
-    <p>
+    <p class="_description_11tjec">
       You cannot use mixins on anything that uses native class syntax (e.g. components that import from <code>@glimmer/component</code>). The migration strategy depends on your use case. If your app depends on an addon that uses mixins, it may be best to continue using classic components until the addon is Octane-ready.
 
     </p>
 
-    <div class="grid">
-      <div>
-        <h4>Classic</h4>
+      <div id="ember25" class="ember-view container-query _code-examples-container_11tjec" data-test-container-query>
+    
+      <div class="_ember-classic_11tjec">
+        <h4 class>
+          Classic
+        </h4>
 
             <pre class="language-javascript line-numbers"><code class="language-javascript"></code></pre>
 
 
 <!---->      </div>
 
-      <div>
-        <h4>Octane</h4>
+      <div class="_ember-octane_11tjec">
+        <h4 class>
+          Octane
+        </h4>
 
 <!---->
           <p>
@@ -854,108 +1193,156 @@
 
           </p>
       </div>
+    
+  </div>
+
+
+    <div class="_edit-link-container_11tjec">
+      <a class href="https://github.com/ember-learn/ember-octane-vs-classic-cheat-sheet/edit/main/translations/actions/mixins/en-us.yaml" rel="noopener noreferrer" target="_blank">
+        Edit Translation
+      </a>
     </div>
   </section>
 
+      </div>
   </section>
 
-      <section aria-labelledby="component-lifecycle">
-    <h2 id="component-lifecycle">
-      <a href="#component-lifecycle" title="Component Lifecycle" class="permalink">
+    </div>
+    <div class="_guide-section-container_9no6ge">
+        <section aria-labelledby="component-lifecycle">
+    <div class="_title-container_9xtt8y">
+      <h2 class="_title_9xtt8y" id="component-lifecycle">
+        Component Lifecycle
+      </h2>
+
+      <a class="_permalink_9xtt8y" href="#component-lifecycle" title="Component Lifecycle">
         §
       </a>
-      Component Lifecycle
-    </h2>
+    </div>
 
-        <section aria-labelledby="component-lifecycle__constructors">
-    <h3 id="component-lifecycle__constructors">
-      <a href="#component-lifecycle__constructors" title="Use constructor instead of init" class="permalink">
+      <div class="_subsection-container_9xtt8y">
+          <section aria-labelledby="component-lifecycle__constructors">
+    <div class="_title-container_11tjec">
+      <h3 class="_title_11tjec" id="component-lifecycle__constructors">
+        Use constructor instead of init
+      </h3>
+
+      <a class="_permalink_11tjec" href="#component-lifecycle__constructors" title="Use constructor instead of init">
         §
       </a>
-      Use constructor instead of init
-      <a class="edit-translation-link" href="https://github.com/ember-learn/ember-octane-vs-classic-cheat-sheet/edit/main/translations/component-lifecycle/constructors/en-us.yaml" rel="noopener noreferrer" target="_blank">
-        Edit Translation
-      </a>
-    </h3>
+    </div>
 
-    <p>
+    <p class="_description_11tjec">
       <code>constructor</code> comes from native JavaScript class. You can use this hook to set up the component class, similarly to what you might have done in <code>init</code>. (Visit the Ember Guides to learn more about <a href="https://guides.emberjs.com/release/in-depth-topics/native-classes-in-depth/#toc_constructor" target="_blank" rel="noopener noreferrer">constructor</a> and <a href="https://guides.emberjs.com/release/in-depth-topics/native-classes-in-depth/#toc_constructor-in-extends" target="_blank" rel="noopener noreferrer">super</a>.)
 
     </p>
 
-    <div class="grid">
-      <div>
-        <h4>Classic</h4>
+      <div id="ember26" class="ember-view container-query _code-examples-container_11tjec" data-test-container-query>
+    
+      <div class="_ember-classic_11tjec">
+        <h4 class>
+          Classic
+        </h4>
 
             <pre class="language-javascript line-numbers"><code class="language-javascript"></code></pre>
 
 
 <!---->      </div>
 
-      <div>
-        <h4>Octane</h4>
+      <div class="_ember-octane_11tjec">
+        <h4 class>
+          Octane
+        </h4>
 
             <pre class="language-javascript line-numbers"><code class="language-javascript"></code></pre>
 
 
 <!---->      </div>
+    
+  </div>
+
+
+    <div class="_edit-link-container_11tjec">
+      <a class href="https://github.com/ember-learn/ember-octane-vs-classic-cheat-sheet/edit/main/translations/component-lifecycle/constructors/en-us.yaml" rel="noopener noreferrer" target="_blank">
+        Edit Translation
+      </a>
     </div>
   </section>
 
-        <section aria-labelledby="component-lifecycle__will-destroy">
-    <h3 id="component-lifecycle__will-destroy">
-      <a href="#component-lifecycle__will-destroy" title="Use willDestroy instead of willDestroyElement" class="permalink">
+      </div>
+      <div class="_subsection-container_9xtt8y">
+          <section aria-labelledby="component-lifecycle__will-destroy">
+    <div class="_title-container_11tjec">
+      <h3 class="_title_11tjec" id="component-lifecycle__will-destroy">
+        Use willDestroy instead of willDestroyElement
+      </h3>
+
+      <a class="_permalink_11tjec" href="#component-lifecycle__will-destroy" title="Use willDestroy instead of willDestroyElement">
         §
       </a>
-      Use willDestroy instead of willDestroyElement
-      <a class="edit-translation-link" href="https://github.com/ember-learn/ember-octane-vs-classic-cheat-sheet/edit/main/translations/component-lifecycle/will-destroy/en-us.yaml" rel="noopener noreferrer" target="_blank">
-        Edit Translation
-      </a>
-    </h3>
+    </div>
 
-    <p>
+    <p class="_description_11tjec">
       <code>willDestroy</code> is the only other lifecycle hook (besides <code>constructor</code>) that Glimmer components have. You can use this hook to tear down the component class, similarly to what you might have done in <code>willDestroyElement</code>. (Visit the Ember Guides to learn more about <a href="https://guides.emberjs.com/release/upgrading/current-edition/glimmer-components/#toc_lifecycle-and-properties" target="_blank" rel="noopener noreferrer">lifecycle of Glimmer components</a>.)
 
     </p>
 
-    <div class="grid">
-      <div>
-        <h4>Classic</h4>
+      <div id="ember27" class="ember-view container-query _code-examples-container_11tjec" data-test-container-query>
+    
+      <div class="_ember-classic_11tjec">
+        <h4 class>
+          Classic
+        </h4>
 
             <pre class="language-javascript line-numbers"><code class="language-javascript"></code></pre>
 
 
 <!---->      </div>
 
-      <div>
-        <h4>Octane</h4>
+      <div class="_ember-octane_11tjec">
+        <h4 class>
+          Octane
+        </h4>
 
             <pre class="language-javascript line-numbers"><code class="language-javascript"></code></pre>
 
 
 <!---->      </div>
+    
+  </div>
+
+
+    <div class="_edit-link-container_11tjec">
+      <a class href="https://github.com/ember-learn/ember-octane-vs-classic-cheat-sheet/edit/main/translations/component-lifecycle/will-destroy/en-us.yaml" rel="noopener noreferrer" target="_blank">
+        Edit Translation
+      </a>
     </div>
   </section>
 
-        <section aria-labelledby="component-lifecycle__render-modifiers">
-    <h3 id="component-lifecycle__render-modifiers">
-      <a href="#component-lifecycle__render-modifiers" title="Element Modifiers" class="permalink">
+      </div>
+      <div class="_subsection-container_9xtt8y">
+          <section aria-labelledby="component-lifecycle__render-modifiers">
+    <div class="_title-container_11tjec">
+      <h3 class="_title_11tjec" id="component-lifecycle__render-modifiers">
+        Element Modifiers
+      </h3>
+
+      <a class="_permalink_11tjec" href="#component-lifecycle__render-modifiers" title="Element Modifiers">
         §
       </a>
-      Element Modifiers
-      <a class="edit-translation-link" href="https://github.com/ember-learn/ember-octane-vs-classic-cheat-sheet/edit/main/translations/component-lifecycle/render-modifiers/en-us.yaml" rel="noopener noreferrer" target="_blank">
-        Edit Translation
-      </a>
-    </h3>
+    </div>
 
-    <p>
+    <p class="_description_11tjec">
       If you install <a href="https://github.com/emberjs/ember-render-modifiers" target="_blank" rel="noopener noreferrer">@ember/render-modifiers</a>, you get <code>{{did-insert}}</code> and <code>{{did-update}}</code> modifiers. You may use them to replace a classic component's lifecycle hooks <code>didInsertElement</code>, <code>didRender</code>, and <code>didUpdate</code>.
 
     </p>
 
-    <div class="grid">
-      <div>
-        <h4>Classic</h4>
+      <div id="ember28" class="ember-view container-query _code-examples-container_11tjec" data-test-container-query>
+    
+      <div class="_ember-classic_11tjec">
+        <h4 class>
+          Classic
+        </h4>
 
 <!---->
           <p>
@@ -964,35 +1351,50 @@
           </p>
       </div>
 
-      <div>
-        <h4>Octane</h4>
+      <div class="_ember-octane_11tjec">
+        <h4 class>
+          Octane
+        </h4>
 
             <pre class="language-bash line-numbers"><code class="language-bash"></code></pre>
 
 
 <!---->      </div>
+    
+  </div>
+
+
+    <div class="_edit-link-container_11tjec">
+      <a class href="https://github.com/ember-learn/ember-octane-vs-classic-cheat-sheet/edit/main/translations/component-lifecycle/render-modifiers/en-us.yaml" rel="noopener noreferrer" target="_blank">
+        Edit Translation
+      </a>
     </div>
   </section>
 
-        <section aria-labelledby="component-lifecycle__did-insert">
-    <h3 id="component-lifecycle__did-insert">
-      <a href="#component-lifecycle__did-insert" title="Use {{did-insert}} instead of didInsertElement" class="permalink">
+      </div>
+      <div class="_subsection-container_9xtt8y">
+          <section aria-labelledby="component-lifecycle__did-insert">
+    <div class="_title-container_11tjec">
+      <h3 class="_title_11tjec" id="component-lifecycle__did-insert">
+        Use {{did-insert}} instead of didInsertElement
+      </h3>
+
+      <a class="_permalink_11tjec" href="#component-lifecycle__did-insert" title="Use {{did-insert}} instead of didInsertElement">
         §
       </a>
-      Use {{did-insert}} instead of didInsertElement
-      <a class="edit-translation-link" href="https://github.com/ember-learn/ember-octane-vs-classic-cheat-sheet/edit/main/translations/component-lifecycle/did-insert/en-us.yaml" rel="noopener noreferrer" target="_blank">
-        Edit Translation
-      </a>
-    </h3>
+    </div>
 
-    <p>
+    <p class="_description_11tjec">
       If you used the <code>didInsertElement</code> hook, consider making an action. You can call the action with the <code>{{did-insert}}</code> modifier. Use the <code>@action</code> decorator to bind the correct context (<code>this</code>). (Visit the Ember Guides to learn more about <a href="https://guides.emberjs.com/release/upgrading/current-edition/glimmer-components/#toc_lifecycle-and-properties" target="_blank" rel="noopener noreferrer">lifecycle of Glimmer components</a>.)
 
     </p>
 
-    <div class="grid">
-      <div>
-        <h4>Classic</h4>
+      <div id="ember29" class="ember-view container-query _code-examples-container_11tjec" data-test-container-query>
+    
+      <div class="_ember-classic_11tjec">
+        <h4 class>
+          Classic
+        </h4>
 
             <pre class="language-handlebars line-numbers"><code class="language-handlebars"></code></pre>
 
@@ -1001,8 +1403,10 @@
 
 <!---->      </div>
 
-      <div>
-        <h4>Octane</h4>
+      <div class="_ember-octane_11tjec">
+        <h4 class>
+          Octane
+        </h4>
 
             <pre class="language-handlebars line-numbers"><code class="language-handlebars"></code></pre>
 
@@ -1010,60 +1414,90 @@
 
 
 <!---->      </div>
+    
+  </div>
+
+
+    <div class="_edit-link-container_11tjec">
+      <a class href="https://github.com/ember-learn/ember-octane-vs-classic-cheat-sheet/edit/main/translations/component-lifecycle/did-insert/en-us.yaml" rel="noopener noreferrer" target="_blank">
+        Edit Translation
+      </a>
     </div>
   </section>
 
+      </div>
   </section>
 
-      <section aria-labelledby="routes">
-    <h2 id="routes">
-      <a href="#routes" title="Routes" class="permalink">
+    </div>
+    <div class="_guide-section-container_9no6ge">
+        <section aria-labelledby="routes">
+    <div class="_title-container_9xtt8y">
+      <h2 class="_title_9xtt8y" id="routes">
+        Routes
+      </h2>
+
+      <a class="_permalink_9xtt8y" href="#routes" title="Routes">
         §
       </a>
-      Routes
-    </h2>
+    </div>
 
-        <section aria-labelledby="routes__model-access">
-    <h3 id="routes__model-access">
-      <a href="#routes__model-access" title="Accessing a route's model" class="permalink">
+      <div class="_subsection-container_9xtt8y">
+          <section aria-labelledby="routes__model-access">
+    <div class="_title-container_11tjec">
+      <h3 class="_title_11tjec" id="routes__model-access">
+        Accessing a route's model
+      </h3>
+
+      <a class="_permalink_11tjec" href="#routes__model-access" title="Accessing a route's model">
         §
       </a>
-      Accessing a route's model
-      <a class="edit-translation-link" href="https://github.com/ember-learn/ember-octane-vs-classic-cheat-sheet/edit/main/translations/routes/model-access/en-us.yaml" rel="noopener noreferrer" target="_blank">
-        Edit Translation
-      </a>
-    </h3>
+    </div>
 
-    <p>
+    <p class="_description_11tjec">
       In a route template, the <code>model</code> comes from an outside context. Use <code>@model</code> to access the result from the route's <code>model</code> hook.
 
     </p>
 
-    <div class="grid">
-      <div>
-        <h4>Classic</h4>
+      <div id="ember30" class="ember-view container-query _code-examples-container_11tjec" data-test-container-query>
+    
+      <div class="_ember-classic_11tjec">
+        <h4 class>
+          Classic
+        </h4>
 
             <pre class="language-handlebars line-numbers"><code class="language-handlebars"></code></pre>
 
 
 <!---->      </div>
 
-      <div>
-        <h4>Octane</h4>
+      <div class="_ember-octane_11tjec">
+        <h4 class>
+          Octane
+        </h4>
 
             <pre class="language-handlebars line-numbers"><code class="language-handlebars"></code></pre>
 
 
 <!---->      </div>
+    
+  </div>
+
+
+    <div class="_edit-link-container_11tjec">
+      <a class href="https://github.com/ember-learn/ember-octane-vs-classic-cheat-sheet/edit/main/translations/routes/model-access/en-us.yaml" rel="noopener noreferrer" target="_blank">
+        Edit Translation
+      </a>
     </div>
   </section>
 
+      </div>
   </section>
 
+    </div>
 </main><script type="x/boundary" id="fastboot-body-end"></script>
 
-    <script src="/ember-octane-vs-classic-cheat-sheet/assets/vendor-9e39d8e621286c90985fb11eda5f2ce2.js"></script>
-    <script src="/ember-octane-vs-classic-cheat-sheet/assets/ember-octane-vs-classic-cheat-sheet-d643716ace7d855ea0d8a44b86724653.js"></script>
+    <script src="/ember-octane-vs-classic-cheat-sheet/assets/vendor-d8c19b7e6b2d71edb906fa470d0e4ae0.js"></script>
+    <script src="/ember-octane-vs-classic-cheat-sheet/assets/ember-octane-vs-classic-cheat-sheet-8ea4a92ea1a8403cbbc2c49403362271.js"></script>
 
     
   </body>
