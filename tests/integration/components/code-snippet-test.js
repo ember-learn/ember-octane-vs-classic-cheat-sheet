@@ -1,7 +1,7 @@
 import { render } from '@ember/test-helpers';
 import { hbs } from 'ember-cli-htmlbars';
-import { setupRenderingTest } from 'ember-qunit';
 import { module, test } from 'qunit';
+import { setupRenderingTest } from 'ember-qunit';
 
 module('Integration | Component | code-snippet', function (hooks) {
   setupRenderingTest(hooks);
@@ -41,8 +41,6 @@ module('Integration | Component | code-snippet', function (hooks) {
       />
     `);
 
-    assert
-      .dom('[data-test-code-snippet]')
-      .hasText('ember generate component my-component');
+    assert.dom('[data-test-code-snippet]').hasText('ember generate component my-component');
   });
 });

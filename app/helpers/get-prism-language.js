@@ -9,9 +9,7 @@ const mapLangugage = {
 export default helper(function getPrismLanguage(params) {
   const emberCodeSnippetLanguage = params[0];
 
-  if (
-    Object.prototype.hasOwnProperty.call(mapLangugage, emberCodeSnippetLanguage)
-  ) {
+  if (Object.prototype.hasOwnProperty.call(mapLangugage, emberCodeSnippetLanguage)) {
     return mapLangugage[emberCodeSnippetLanguage];
   }
 

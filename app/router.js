@@ -1,4 +1,5 @@
 import EmberRouter from '@ember/routing/router';
+
 import config from 'ember-octane-vs-classic-cheat-sheet/config/environment';
 
 export default class Router extends EmberRouter {

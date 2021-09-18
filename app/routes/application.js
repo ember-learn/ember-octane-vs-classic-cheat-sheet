@@ -89,11 +89,7 @@ export default class ApplicationRoute extends Route {
               'classic-child.js',
               'classic-child.hbs',
             ],
-            octaneFiles: [
-              'octane-parent.js',
-              'octane-parent.hbs',
-              'octane-child.hbs',
-            ],
+            octaneFiles: ['octane-parent.js', 'octane-parent.hbs', 'octane-child.hbs'],
           },
           {
             id: 'args',
@@ -152,8 +148,7 @@ export default class ApplicationRoute extends Route {
           },
           {
             id: 'render-modifiers',
-            classicDescriptionKey:
-              'component-lifecycle.render-modifiers.classicDescription',
+            classicDescriptionKey: 'component-lifecycle.render-modifiers.classicDescription',
             octaneFiles: ['octane.shell'],
           },
           {
