@@ -2,6 +2,6 @@
 
 module.exports = {
   allowedVersions: {
-    '@ember/test-waiters': '2.4.5 || 2.4.3',
+    '@ember/test-waiters': '3.0.0 || 2.4.3',
   },
 };
