@@ -36,7 +36,7 @@
     "babel-eslint": "^10.1.0",
     "broccoli-asset-rev": "^3.0.0",
     "ember-a11y-testing": "^4.2.0",
-    "ember-auto-import": "^1.11.3",
+    "ember-auto-import": "^2.2.0",
     "ember-cli": "~3.27.0",
     "ember-cli-app-version": "^5.0.0",
     "ember-cli-babel": "^7.26.6",
@@ -76,7 +76,8 @@
     "prember": "^1.0.5",
     "prettier": "^2.4.1",
     "qunit": "^2.17.2",
-    "qunit-dom": "^2.0.0"
+    "qunit-dom": "^2.0.0",
+    "webpack": "^5.50.0"
   },
   "engines": {
     "node": "10.* || >= 12"
