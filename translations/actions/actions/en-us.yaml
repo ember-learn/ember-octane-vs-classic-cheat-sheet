@@ -1,4 +1,4 @@
-title: Use @action, '{{on}}', and '{{fn}}' instead of actions
+title: Use @action, '{{on}}', and '{{fn}}' instead of '{{action}}'
 description: >
   In the JavaScript class, use the '<code>'@action'</code>' decorator to mark the function that you want to call from the template.
   In the template, use the '<code>{{on}}</code>' modifier to decide when to call the function.
