@@ -1,4 +1,4 @@
-import Service, { inject as service } from '@ember/service';
+import Service, { service } from '@ember/service';
 
 /*
   To help with maintainenance, please list
