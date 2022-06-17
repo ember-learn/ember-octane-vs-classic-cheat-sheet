@@ -1,0 +1,4 @@
+title: '@tracked und Getters statt computed-Eigenschaften'
+description: >
+  Markieren Sie mit '<code>'@tracked'</code>' die Eigenschaften, die nachverfolgt müssen werden.
+  Die Werte der Getters werden dann automatisch aktualisiert.
