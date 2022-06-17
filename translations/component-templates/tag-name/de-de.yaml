@@ -1,0 +1,4 @@
+title: Alle Komponenten sind „tagless“
+description: >
+  Mit Octane haben die Komponenten keinen Behälter mehr, folglich brauchen Sie keinen '<code>'tagName'</code>'.
+  Schreiben Sie je nach Bedarf das Tag im Template.
