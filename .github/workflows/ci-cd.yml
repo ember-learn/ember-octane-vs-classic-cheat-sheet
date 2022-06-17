@@ -7,21 +7,21 @@ on:
   pull_request:
 
 env:
-  NODE_VERSION: 14
+  NODE_VERSION: 16
   PERCY_PARALLEL_NONCE: ${{ github.run_id }}-${{ github.run_number }}
   PERCY_PARALLEL_TOTAL: 1
 
 jobs:
   lint:
-    name: Lint files and dependencies
+    name: Lint files
     runs-on: ubuntu-latest
     timeout-minutes: 3
     steps:
       - name: Check out a copy of the repo
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Use Node.js ${{ env.NODE_VERSION }}
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
           cache: 'yarn'
           node-version: ${{ env.NODE_VERSION }}
@@ -39,10 +39,10 @@ jobs:
     timeout-minutes: 5
     steps:
       - name: Check out a copy of the repo
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Use Node.js ${{ env.NODE_VERSION }}
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
           cache: 'yarn'
           node-version: ${{ env.NODE_VERSION }}
@@ -67,11 +67,11 @@ jobs:
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     steps:
       - name: Check out a copy of the repo
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
-      - name: Set up Git user
+      - name: Set a Git user
         run: |
-          # Set up a Git user for committing
+          # Set a Git user for committing
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@users.noreply.github.com"
 
@@ -80,7 +80,7 @@ jobs:
             "$(git config --local --get http.https://github.com/.extraheader)"
 
       - name: Use Node.js ${{ env.NODE_VERSION }}
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
           cache: 'yarn'
           node-version: ${{ env.NODE_VERSION }}
@@ -89,4 +89,4 @@ jobs:
         run: yarn install --frozen-lockfile
 
       - name: Deploy
-        run: yarn deploy
+        run: yarn deploy --activate --verbose
