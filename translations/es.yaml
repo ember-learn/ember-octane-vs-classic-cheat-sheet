@@ -27,6 +27,7 @@ component:
     # To help with maintenance, please list keys in alphabetical
     # order.
     #
+    locale-de-DE: Deutsch (DE)
     locale-en-US: English (US)
     locale-es: Spanish
     locale-fr-FR: Français

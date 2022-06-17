@@ -4,7 +4,14 @@ import Service, { service } from '@ember/service';
   To help with maintainenance, please list
   the supported locales in alphabetical order.
 */
-const supportedLocales = new Set(['en-US', 'es', 'fr-FR', 'ja', 'pt-BR']);
+const supportedLocales = new Set([
+  'de-DE',
+  'en-US',
+  'es',
+  'fr-FR',
+  'ja',
+  'pt-BR',
+]);
 
 export default class LocaleService extends Service {
   @service intl;
