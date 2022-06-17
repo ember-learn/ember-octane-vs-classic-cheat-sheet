@@ -1,0 +1,5 @@
+title: Geben Sie ein Flag ein, um die JavaScript-Klasse einer Komponente zu erstellen
+description: >
+  Mit Ember Classic hat der Befehl '<code>'ember generate component'</code>' 3 Dateien angelegt: ein Template, eine JavaScript-Klasse und einen Test.
+  Verglichen damit erstellt Octane automatisch keine JavaScript-Klasse.
+  Verwenden Sie das Flag '<code>'-gc'</code>', um sie zu erstellen.
