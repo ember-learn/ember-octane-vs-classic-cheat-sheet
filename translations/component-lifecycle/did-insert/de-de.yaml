@@ -1,0 +1,6 @@
+title: "'{{did-insert}}' statt didInsertElement"
+description: >
+  Überlegen Sie sich, eine Aktion anstatt des Hooks '<code>'didInsertElement'</code>' zu haben. 
+  Mit dem Modifizierer '<code>{{did-insert}}</code>' können Sie die Aktion aufrufen.
+  Wenden Sie den Decorator '<code>'@action'</code>' an, um den richtigen Kontext aufs '<code>'this'</code>' zu setzen.
+  (Auf der Ember Guides erfahren Sie mehr über '<a href="https://guides.emberjs.com/release/upgrading/current-edition/glimmer-components/#toc_lifecycle-and-properties" target="_blank" rel="noopener noreferrer">'die Lifecycle Hooks einer Glimmer-Komponente'</a>'.)
