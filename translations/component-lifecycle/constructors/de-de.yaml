@@ -1,0 +1,5 @@
+title: constructor statt init
+description: >
+  Die '<code>'constructor'</code>' Methode gehört zur nativen JavaScript-Syntax.
+  Sie können sie verwenden, um die Klasse einer Komponente zu initialisieren, wie Sie es wohl in '<code>'init'</code>' getan haben.
+  (Auf der Ember Guides erfahren Sie mehr über '<a href="https://guides.emberjs.com/release/in-depth-topics/native-classes-in-depth/#toc_constructor" target="_blank" rel="noopener noreferrer">'die constructor Methode'</a>' und '<a href="https://guides.emberjs.com/release/in-depth-topics/native-classes-in-depth/#toc_constructor-in-extends" target="_blank" rel="noopener noreferrer">'das super'</a>'.)

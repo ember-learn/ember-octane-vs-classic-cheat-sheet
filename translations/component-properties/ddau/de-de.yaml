@@ -1,0 +1,5 @@
+title: Data Down, Actions Up
+description: >
+  Octane-Komponenten setzen „Data Down, Actions Up“ durch.
+  Daten fließen nur in eine Richtung, weswegen der Ruf eines übergebenen Callbacks (sog. Aktion) die einzige Methode ist, die Daten zu verändern.
+  Mit anderen Worten, für die Argumente einer Komponente sollte das Two-Way-Binding unmöglich bleiben.

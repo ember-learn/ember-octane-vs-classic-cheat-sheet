@@ -1,0 +1,6 @@
+title: Argumente einer Komponente
+description: >
+  Mit Octane sind die Argumente mit der Eigenschaft '<code>'args'</code>' (d. h. '<code>'this.args'</code>') verknüpft.
+  Sie sind '<em>'nicht'</em>' mit der Klassinstanz '<code>'this'</code>' verbunden.
+  Infolgedessen können Sie zwischen den inneren Werten einer Klasse und den äußeren Argumenten unterscheiden.
+  (Besuchen Sie die Ember Guides, um mehr über '<a href="https://guides.emberjs.com/release/upgrading/current-edition/glimmer-components/#toc_arguments" target="_blank" rel="noopener noreferrer">'Argumente'</a>' zu erfahren.)

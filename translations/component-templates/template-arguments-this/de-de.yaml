@@ -1,0 +1,4 @@
+title: Eigenschaften übergeben
+description: >
+  Wenn Sie einer Komponente eine Eigenschaft übergeben möchten, fügen Sie vor ihrem Namen '<code>'this'</code>' hinzu.
+  Erfahren Sie '<a href="https://guides.emberjs.com/release/components/component-arguments-and-html-attributes/" target="_blank" rel="noopener noreferrer">'die Hauptkonzepte zur Komponenten'</a>' und '<a href="https://guides.emberjs.com/release/upgrading/" target="_blank" rel="noopener noreferrer">'die Anwendung der Codemods'</a>', um Ihre bestehenden Komponenten aktualisieren zu können.

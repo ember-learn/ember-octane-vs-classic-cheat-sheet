@@ -1,0 +1,7 @@
+title: Mixins
+description: >
+  Mixins sind mit den die native JavaScript-Syntax nutzenden Dingen inkompatibel (z. B. mit den aus dem '<code>'@glimmer/component'</code>' importierten Komponenten).
+  Die Art und Weise, mit der Sie den Code umstellen, weicht von Fall zu Fall ab.
+  Falls Ihre App von einem Mixin-nutzenden Addon abhängt, wäre es vielleicht am besten, die klassische Komponenten in Ruhe zu lassen, bis das Addon für Octane bereit ist.
+octaneDescription: >
+  Schauen Sie in '<a href="https://www.pzuraq.com/do-you-need-ember-object/" target="_blank" rel="noopener noreferrer">'Do you need Ember Object?'</a>', um die Alternativen zu Mixins zu finden, z. B. Dienstfunktionen, Services, Delegates und Klasse Decorators.

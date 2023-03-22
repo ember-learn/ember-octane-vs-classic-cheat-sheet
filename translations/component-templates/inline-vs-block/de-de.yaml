@@ -1,0 +1,6 @@
+title: Inline- und Block-Komponenten
+description: >
+  Mit der Winkelklammern können Sie sowohl Inline- als auch Block-Komponenten rendern.
+  Funktionell gibt es keine Unterschiede.
+  Die Syntax '<code>{{yield}}</code>' sieht gleich aus und funktionert auch so.
+  Erfahren Sie '<a href="https://guides.emberjs.com/release/components/block-content/" target="_blank" rel="noopener noreferrer">'die Hauptkonzepte zur Komponenten'</a>' und '<a href="https://guides.emberjs.com/release/upgrading/current-edition/" target="_blank" rel="noopener noreferrer">'die Anwendung der Codemods'</a>', um Ihre bestehenden Komponenten aktualisieren zu können.

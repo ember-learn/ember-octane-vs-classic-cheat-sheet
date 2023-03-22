@@ -1,4 +1,4 @@
-title: actionsの代わりに、@action、'{{on}}'、そして'{{fn}}'を使う
+title: "'{{action}}'の代わりに、@action、'{{on}}'、そして'{{fn}}'を使う"
 description: >
   JavaScriptのクラスで、テンプレートから呼び出したい関数には'<code>'@action'</code>'デコレーターで関数をマークする必要があります。
   テンプレートでは、'<code>{{on}}</code>'修飾子を使うことでいつ関数を呼ぶかを決めることが出来ます。

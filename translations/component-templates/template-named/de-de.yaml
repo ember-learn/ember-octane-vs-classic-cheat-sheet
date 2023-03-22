@@ -1,0 +1,5 @@
+title: Argumente
+description: >
+  Nimmt die Komponente von ihrer Eltern ein Argument entgegen, fügen Sie vorm Argumentnamen '<code>'@'</code>' hinzu.
+  Funktionell gibt es keine Unterschiede.
+  ('<a href="https://guides.emberjs.com/release/components/component-arguments-and-html-attributes/" target="_blank" rel="noopener noreferrer">'Besuchen Sie die Ember Guides, um mehr zu erfahren'</a>'.)

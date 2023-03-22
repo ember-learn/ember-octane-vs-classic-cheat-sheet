@@ -9,7 +9,14 @@ module('Unit | Service | locale', function (hooks) {
 
     assert.deepEqual(
       locale.menuOptions.map(({ label }) => label),
-      ['English (US)', 'Français', 'Português (do Brasil)', 'Spanish', '日本語']
+      [
+        'Deutsch (DE)',
+        'English (US)',
+        'Français',
+        'Português (do Brasil)',
+        'Spanish',
+        '日本語',
+      ]
     );
   });
 });

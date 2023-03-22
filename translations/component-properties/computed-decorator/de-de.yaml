@@ -1,0 +1,4 @@
+title: 'Der Decorator @computed'
+description: >
+  Mit Octane wird es empfohlen, eine computed-Eigenschaft in eine tracked- zu ändern.
+  Falls Sie sie nicht neu schreiben können (vielleicht brauchen Sie den Cache), ist der Decorator '<code>'@computed'</code>' verfügbar.

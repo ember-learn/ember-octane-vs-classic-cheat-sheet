@@ -1,0 +1,5 @@
+title: willDestroy statt willDestroyElement
+description: >
+  '<code>'willDestroy'</code>' ist der einzige andere Lifecycle Hook (neben '<code>'constructor'</code>'), der für eine Glimmer-Komponenten verfügbar ist.
+  Sie können ihn verwenden, um die Klasse einer Komponente zu beenden, wie Sie es wohl in '<code>'willDestroyElement'</code>' getan haben.
+  (Auf der Ember Guides erfahren Sie mehr über '<a href="https://guides.emberjs.com/release/upgrading/current-edition/glimmer-components/#toc_lifecycle-and-properties" target="_blank" rel="noopener noreferrer">'die Lifecycle Hooks einer Glimmer-Komponente'</a>'.)

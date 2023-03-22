@@ -1,0 +1,7 @@
+title: Element-Modifizierer
+description: >
+  Nach der Installation des Pakets '<a href="https://github.com/emberjs/ember-render-modifiers" target="_blank" rel="noopener noreferrer">'@ember/render-modifiers'</a>', erhalten Sie die Modifizierer '<code>{{did-insert}}</code>' and '<code>{{did-update}}</code>'.
+  Dadurch können Sie die Lifecycle Hooks einer klassischen Komponente ersetzen, nämlich '<code>didInsertElement</code>', '<code>didRender</code>' und '<code>didUpdate</code>'.
+classicDescription: >
+  Haben Sie Apps auf Ember 2.18+? 
+  Diese Modifizierer können Sie gleich jetzt benutzen, um klassische Komponenten in eine Glimmer überzuführen.

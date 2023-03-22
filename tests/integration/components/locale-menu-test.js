@@ -19,7 +19,7 @@ module('Integration | Component | locale-menu', function (hooks) {
 
     assert
       .dom('[data-test-option]')
-      .exists({ count: 5 }, 'There are 5 non-default options.');
+      .exists({ count: 6 }, 'There are 6 options.');
   });
 
   test('allows the user to update the site locale', async function (assert) {

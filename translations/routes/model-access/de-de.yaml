@@ -1,0 +1,4 @@
+title: Das Modell einer Route lesen
+description: >
+  Was das Template einer Route anbelangt, kommt das '<code>'model'</code>' von einem äußeren Kontext her.
+  Daher verwenden Sie '<code>'@model'</code>', um den Rückgabewert vom '<code>'model'</code>'-Hook der Route zu lesen.

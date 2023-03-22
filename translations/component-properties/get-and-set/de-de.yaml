@@ -1,0 +1,4 @@
+title: Kein get und set erforderlich
+description: >
+  Octane-Komponenten brauchen kein '<code>'this.get'</code>' und '<code>'this.set'</code>'.
+  Lesen und Setzen Sie die Eigenschaften, genauso wie es bei nativen JavaScript-Klassen durchgeführt wird.

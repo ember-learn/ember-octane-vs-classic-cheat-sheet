@@ -1,0 +1,7 @@
+title: JavaScript-Syntax der Komponenten
+description: >
+  Auf den Namensraum '<code>'@glimmer'</code>' bezieht sich eine Octane-Komponente beim Import von ihrer Klasse.
+  Des Weiteren ermöglicht sie die native JavaScript-Syntax.
+  Glimmer-Komponenten haben andere API-Methoden als die klassische.
+  Wenn Sie mit den nativen Klassen nicht vertraut sind, können Sie sich sie durch '<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Classes" target="_blank" rel="noopener noreferrer">'die Dokumentation von MDN'</a>' aneignen.
+  Danach informieren Sie sich über die Glimmer-Komponenten mithilfe der '<a href="https://guides.emberjs.com/release/components/component-state-and-actions/" target="_blank" rel="noopener noreferrer">'Ember.js Guides'</a>' und der '<a href="https://api.emberjs.com/ember/release/modules/@glimmer%2Fcomponent" target="_blank" rel="noopener noreferrer">'API Dokumentation'</a>'.

@@ -1,0 +1,5 @@
+title: Eigenschaften
+description: >
+  Ist eine Eigenschaft in der JavaScript-Klasse der Komponente definiert, fügen Sie vor ihrem Namen '<code>'this'</code>' hinzu.
+  Funktionell gibt es keine Unterschiede.
+  Erfahren Sie '<a href="https://guides.emberjs.com/release/upgrading/current-edition/glimmer-components/" target="_blank" rel="noopener noreferrer">'die Hauptkonzepte zur Komponenten'</a>' und '<a href="https://guides.emberjs.com/release/upgrading/" target="_blank" rel="noopener noreferrer">'die Anwendung der Codemods'</a>', um Ihre bestehenden Komponenten aktualisieren zu können.

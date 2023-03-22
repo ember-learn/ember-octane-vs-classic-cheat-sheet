@@ -1,0 +1,4 @@
+title: Den Standardwert eines Arguments festlegen
+description: >
+  Ein Argument ist nur lesen, somit ist ihren Standardwert von der konsumierenden Klasse nicht zu setzen.
+  Sie können stattdessen einen Getter erstellen, der das Argument umgibt und '<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing_operator/" target="_blank" rel="noopener noreferrer">'den Standardwert festlegt'</a>'.

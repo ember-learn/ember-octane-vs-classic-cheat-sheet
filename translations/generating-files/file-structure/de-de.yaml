@@ -1,0 +1,4 @@
+title: Das Template und die JavaScript-Klasse einer Komponente existieren nebeneinander
+description: >
+  Mit Octane ist die Speicherstelle des Templates anders.
+  Dies bezeichnet man als „template co-location“.
