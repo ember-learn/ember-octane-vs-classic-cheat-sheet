@@ -6141,10 +6141,10 @@ ember-router-generator@^2.0.0:
     "@babel/traverse" "^7.4.5"
     recast "^0.18.1"
 
-ember-shiki@^0.1.4:
-  version "0.1.4"
-  resolved "https://registry.yarnpkg.com/ember-shiki/-/ember-shiki-0.1.4.tgz#cc5c6961da8a029c446e3db741e19a29861521e6"
-  integrity sha512-dGyqZNe6nJGxZpTG9pE/IEb/hhFQeR5CBiC9WjCSS35RqQApelRqm8H5R19Y4IfgjBaDehSqsK4DApi7H8yWiA==
+ember-shiki@^0.1.5:
+  version "0.1.5"
+  resolved "https://registry.yarnpkg.com/ember-shiki/-/ember-shiki-0.1.5.tgz#34c7347b69ff1bba8ff572d37f1c0f11e32c6471"
+  integrity sha512-yWNhlvqNkWu9xGRb9k75EswLdR6UlIwRio41+BtQ/oCpYxsQP5pyohhMaPxr/kDWnF9ub3VOf1dBq44xUb+08g==
   dependencies:
     "@embroider/addon-shim" "^1.8.6"
     ember-concurrency "^3.1.1"
