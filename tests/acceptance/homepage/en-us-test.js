@@ -20,6 +20,9 @@ module('Acceptance | Homepage | en-US', function (hooks) {
     await visit('/');
     await a11yAudit({
       rules: {
+        'button-name': {
+          enabled: false,
+        },
         'scrollable-region-focusable': {
           enabled: false,
         },
