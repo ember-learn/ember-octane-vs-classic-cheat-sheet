@@ -22,7 +22,7 @@ module.exports = function (environment) {
       // when it is created
     },
     'ember-shiki': {
-      defaultThemes: ['github-dark'],
+      defaultThemes: ['dark-plus'],
     },
   };
 
