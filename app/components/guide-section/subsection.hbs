@@ -48,9 +48,11 @@
         </h4>
 
         {{#each @subsection.classicFiles as |file|}}
-          <CodeSnippet
-            @fileName="{{@sectionId}}/{{subsectionId}}/{{file}}"
-          />
+          <div local-class="code-snippet">
+            <CodeSnippet
+              @fileName="{{@sectionId}}/{{subsectionId}}/{{file}}"
+            />
+          </div>
         {{/each}}
 
         {{#if @subsection.classicDescriptionKey}}
@@ -69,9 +71,11 @@
         </h4>
 
         {{#each @subsection.octaneFiles as |file|}}
-          <CodeSnippet
-            @fileName="{{@sectionId}}/{{subsectionId}}/{{file}}"
-          />
+          <div local-class="code-snippet">
+            <CodeSnippet
+              @fileName="{{@sectionId}}/{{subsectionId}}/{{file}}"
+            />
+          </div>
         {{/each}}
 
         {{#if @subsection.octaneDescriptionKey}}
