@@ -1,5 +1,5 @@
 /* eslint-disable no-redeclare */
-/* global ReadableStream, WritableStream, TransformStream */
+/* global ReadableStream, WritableStream, TransformStream, Headers */
 module.exports = function () {
   return {
     buildSandboxGlobals(defaultGlobals) {
