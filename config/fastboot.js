@@ -4,8 +4,7 @@ module.exports = function () {
   return {
     buildSandboxGlobals(defaultGlobals) {
       return Object.assign({}, defaultGlobals, {
-        fetch: fetch,
-        // WebAssembly: require('WebAssembly'),
+        fetch: require('node-fetch'),
         AbortController,
         ReadableStream:
           typeof ReadableStream !== 'undefined'
