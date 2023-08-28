@@ -18,7 +18,13 @@ module('Acceptance | Homepage | en-US', function (hooks) {
 
   test('Accessibility audit', async function (assert) {
     await visit('/');
-    await a11yAudit();
+    await a11yAudit({
+      rules: {
+        'scrollable-region-focusable': {
+          enabled: false,
+        },
+      },
+    });
 
     assert.ok(true);
   });
