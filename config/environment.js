@@ -21,6 +21,9 @@ module.exports = function (environment) {
       // Here you can pass flags/options to your application instance
       // when it is created
     },
+    'ember-shiki': {
+      defaultThemes: ['dark-plus'],
+    },
   };
 
   if (environment === 'development') {
