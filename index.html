@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"  lang="en-us">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,11 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     
-<meta name="ember-octane-vs-classic-cheat-sheet/config/environment" content="%7B%22modulePrefix%22%3A%22ember-octane-vs-classic-cheat-sheet%22%2C%22environment%22%3A%22production%22%2C%22rootURL%22%3A%22%2Fember-octane-vs-classic-cheat-sheet%2F%22%2C%22locationType%22%3A%22hash%22%2C%22EmberENV%22%3A%7B%22FEATURES%22%3A%7B%7D%2C%22EXTEND_PROTOTYPES%22%3A%7B%22Date%22%3Afalse%7D%2C%22_APPLICATION_TEMPLATE_WRAPPER%22%3Afalse%2C%22_DEFAULT_ASYNC_OBSERVERS%22%3Atrue%2C%22_JQUERY_INTEGRATION%22%3Afalse%2C%22_TEMPLATE_ONLY_GLIMMER_COMPONENTS%22%3Atrue%7D%2C%22APP%22%3A%7B%22name%22%3A%22ember-octane-vs-classic-cheat-sheet%22%2C%22version%22%3A%221.0.0%2B3613b79b%22%7D%2C%22exportApplicationGlobal%22%3Afalse%7D" />
+<meta name="ember-octane-vs-classic-cheat-sheet/config/environment" content="%7B%22modulePrefix%22%3A%22ember-octane-vs-classic-cheat-sheet%22%2C%22environment%22%3A%22production%22%2C%22rootURL%22%3A%22%2Fember-octane-vs-classic-cheat-sheet%2F%22%2C%22locationType%22%3A%22hash%22%2C%22EmberENV%22%3A%7B%22FEATURES%22%3A%7B%7D%2C%22EXTEND_PROTOTYPES%22%3A%7B%22Date%22%3Afalse%7D%2C%22_APPLICATION_TEMPLATE_WRAPPER%22%3Afalse%2C%22_DEFAULT_ASYNC_OBSERVERS%22%3Atrue%2C%22_JQUERY_INTEGRATION%22%3Afalse%2C%22_TEMPLATE_ONLY_GLIMMER_COMPONENTS%22%3Atrue%7D%2C%22APP%22%3A%7B%22name%22%3A%22ember-octane-vs-classic-cheat-sheet%22%2C%22version%22%3A%221.0.0%2B56620ecc%22%7D%2C%22ember-shiki%22%3A%7B%22defaultThemes%22%3A%5B%22dark-plus%22%5D%7D%2C%22exportApplicationGlobal%22%3Afalse%7D" />
 <!-- EMBER_CLI_FASTBOOT_TITLE --><title>Ember.js Octane vs Classic Cheat Sheet</title>
 
-    <link integrity="" rel="stylesheet" href="/ember-octane-vs-classic-cheat-sheet/assets/vendor-c8b8836451f0e1d622f4cbeb3d31a068.css">
-    <link integrity="" rel="stylesheet" href="/ember-octane-vs-classic-cheat-sheet/assets/ember-octane-vs-classic-cheat-sheet-386e9924a826daab645e6c7d0ffa415b.css">
+    <link integrity="" rel="stylesheet" href="/ember-octane-vs-classic-cheat-sheet/assets/vendor-d41d8cd98f00b204e9800998ecf8427e.css">
+<link rel="stylesheet" href="/ember-octane-vs-classic-cheat-sheet/assets/chunk.143.cfcee0045fb057e5df0a.css"/>
+    <link integrity="" rel="stylesheet" href="/ember-octane-vs-classic-cheat-sheet/assets/ember-octane-vs-classic-cheat-sheet-ab3d49924b5220a4950ba9ff89748c64.css">
 
     
   </head>
@@ -22,7 +23,7 @@
   <img class="_logo_9no6ge" alt="Ember Octane: the latest edition from Ember.js" src="/ember-octane-vs-classic-cheat-sheet/assets/ember-octane_text-treatment-7038e425be34d929aef13ae1b4e70733.png">
 
   <div class="_locale-menu-container_9no6ge">
-      <div id="ember4" class="ember-view container-query _container_zppc7u" data-test-container-query>
+      <div id="ember4" class="ember-view container-query _container_zppc7u">
     
   <label for="locale-menu">
     Translate the guide to
@@ -102,15 +103,25 @@
 
     </p>
 
-      <div id="ember5" class="ember-view container-query _code-examples-container_11tjec" data-test-container-query>
+      <div id="ember5" class="ember-view container-query _code-examples-container_11tjec">
     
       <div class="_ember-classic_11tjec">
         <h4 class>
           Classic
         </h4>
 
-            <pre class="language-bash line-numbers"><code class="language-bash"></code></pre>
+          <div class="_code-snippet_11tjec">
+              <div class="shiki-code-block" style>
+<!---->  <div class="shiki-code-block__code
+      line-numbers">
+    <div>
+        <pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #DCDCAA">ember</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">generate</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">component</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">my-component</span></span></code></pre>
+    </div>
+      <button class="copy-button " aria-label="copy" type="button"></button>
+  </div>
+</div>
 
+          </div>
 
 <!---->      </div>
 
@@ -119,8 +130,25 @@
           Octane
         </h4>
 
-            <pre class="language-bash line-numbers"><code class="language-bash"></code></pre>
+          <div class="_code-snippet_11tjec">
+              <div class="shiki-code-block" style>
+<!---->  <div class="shiki-code-block__code
+      line-numbers">
+    <div>
+        <pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #6A9955"># -gc stands for glimmer component</span></span>
+<span class="line"><span style="color: #DCDCAA">ember</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">generate</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">component</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">my-component</span><span style="color: #D4D4D4"> </span><span style="color: #569CD6">-gc</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #6A9955"># -cc stands for classic component</span></span>
+<span class="line"><span style="color: #DCDCAA">ember</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">generate</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">component</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">my-component</span><span style="color: #D4D4D4"> </span><span style="color: #569CD6">-cc</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #6A9955"># See the full set of options with this:</span></span>
+<span class="line"><span style="color: #DCDCAA">ember</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">generate</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">component</span><span style="color: #D4D4D4"> </span><span style="color: #569CD6">--help</span></span></code></pre>
+    </div>
+      <button class="copy-button " aria-label="copy" type="button"></button>
+  </div>
+</div>
 
+          </div>
 
 <!---->      </div>
     
@@ -152,15 +180,30 @@
 
     </p>
 
-      <div id="ember6" class="ember-view container-query _code-examples-container_11tjec" data-test-container-query>
+      <div id="ember6" class="ember-view container-query _code-examples-container_11tjec">
     
       <div class="_ember-classic_11tjec">
         <h4 class>
           Classic
         </h4>
 
-            <pre class="language-markup line-numbers"><code class="language-markup"></code></pre>
+          <div class="_code-snippet_11tjec">
+              <div class="shiki-code-block" style>
+<!---->  <div class="shiki-code-block__code
+      line-numbers">
+    <div>
+        <pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #D4D4D4">app/</span></span>
+<span class="line"><span style="color: #D4D4D4">  components/</span></span>
+<span class="line"><span style="color: #D4D4D4">    my-component.js</span></span>
+<span class="line"><span style="color: #D4D4D4">  templates/</span></span>
+<span class="line"><span style="color: #D4D4D4">    components/</span></span>
+<span class="line"><span style="color: #D4D4D4">      my-component.hbs</span></span></code></pre>
+    </div>
+      <button class="copy-button " aria-label="copy" type="button"></button>
+  </div>
+</div>
 
+          </div>
 
 <!---->      </div>
 
@@ -169,8 +212,21 @@
           Octane
         </h4>
 
-            <pre class="language-markup line-numbers"><code class="language-markup"></code></pre>
+          <div class="_code-snippet_11tjec">
+              <div class="shiki-code-block" style>
+<!---->  <div class="shiki-code-block__code
+      line-numbers">
+    <div>
+        <pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #D4D4D4">app/</span></span>
+<span class="line"><span style="color: #D4D4D4">  components/</span></span>
+<span class="line"><span style="color: #D4D4D4">    my-component.hbs</span></span>
+<span class="line"><span style="color: #D4D4D4">    my-component.js</span></span></code></pre>
+    </div>
+      <button class="copy-button " aria-label="copy" type="button"></button>
+  </div>
+</div>
 
+          </div>
 
 <!---->      </div>
     
@@ -217,15 +273,25 @@
 
     </p>
 
-      <div id="ember7" class="ember-view container-query _code-examples-container_11tjec" data-test-container-query>
+      <div id="ember7" class="ember-view container-query _code-examples-container_11tjec">
     
       <div class="_ember-classic_11tjec">
         <h4 class>
           Classic
         </h4>
 
-            <pre class="language-handlebars line-numbers"><code class="language-handlebars"></code></pre>
+          <div class="_code-snippet_11tjec">
+              <div class="shiki-code-block" style>
+<!---->  <div class="shiki-code-block__code
+      line-numbers">
+    <div>
+        <pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #DCDCAA">{{</span><span style="color: #9CDCFE">my-component</span><span style="color: #DCDCAA">}}</span></span></code></pre>
+    </div>
+      <button class="copy-button " aria-label="copy" type="button"></button>
+  </div>
+</div>
 
+          </div>
 
 <!---->      </div>
 
@@ -234,8 +300,18 @@
           Octane
         </h4>
 
-            <pre class="language-handlebars line-numbers"><code class="language-handlebars"></code></pre>
+          <div class="_code-snippet_11tjec">
+              <div class="shiki-code-block" style>
+<!---->  <div class="shiki-code-block__code
+      line-numbers">
+    <div>
+        <pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #808080">&lt;</span><span style="color: #569CD6">MyComponent</span><span style="color: #D4D4D4"> /</span><span style="color: #808080">&gt;</span></span></code></pre>
+    </div>
+      <button class="copy-button " aria-label="copy" type="button"></button>
+  </div>
+</div>
 
+          </div>
 
 <!---->      </div>
     
@@ -267,15 +343,31 @@
 
     </p>
 
-      <div id="ember8" class="ember-view container-query _code-examples-container_11tjec" data-test-container-query>
+      <div id="ember8" class="ember-view container-query _code-examples-container_11tjec">
     
       <div class="_ember-classic_11tjec">
         <h4 class>
           Classic
         </h4>
 
-            <pre class="language-handlebars line-numbers"><code class="language-handlebars"></code></pre>
+          <div class="_code-snippet_11tjec">
+              <div class="shiki-code-block" style>
+<!---->  <div class="shiki-code-block__code
+      line-numbers">
+    <div>
+        <pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #6A9955">{{!-- inline --}}</span></span>
+<span class="line"><span style="color: #DCDCAA">{{</span><span style="color: #9CDCFE">my-component</span><span style="color: #DCDCAA">}}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #6A9955">{{!-- block --}}</span></span>
+<span class="line"><span style="color: #DCDCAA">{{</span><span style="color: #C586C0">#my-component</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">as</span><span style="color: #D4D4D4"> |</span><span style="color: #9CDCFE">text</span><span style="color: #D4D4D4">|</span><span style="color: #DCDCAA">}}</span></span>
+<span class="line"><span style="color: #D4D4D4">  some markup or </span><span style="color: #DCDCAA">{{</span><span style="color: #9CDCFE">text</span><span style="color: #DCDCAA">}}</span></span>
+<span class="line"><span style="color: #DCDCAA">{{</span><span style="color: #C586C0">/my-component</span><span style="color: #DCDCAA">}}</span></span></code></pre>
+    </div>
+      <button class="copy-button " aria-label="copy" type="button"></button>
+  </div>
+</div>
 
+          </div>
 
 <!---->      </div>
 
@@ -284,8 +376,24 @@
           Octane
         </h4>
 
-            <pre class="language-handlebars line-numbers"><code class="language-handlebars"></code></pre>
+          <div class="_code-snippet_11tjec">
+              <div class="shiki-code-block" style>
+<!---->  <div class="shiki-code-block__code
+      line-numbers">
+    <div>
+        <pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #6A9955">{{!-- inline --}}</span></span>
+<span class="line"><span style="color: #808080">&lt;</span><span style="color: #569CD6">MyComponent</span><span style="color: #D4D4D4"> /</span><span style="color: #808080">&gt;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #6A9955">{{!-- block --}}</span></span>
+<span class="line"><span style="color: #808080">&lt;</span><span style="color: #569CD6">MyComponent</span><span style="color: #D4D4D4"> as |text|</span><span style="color: #808080">&gt;</span></span>
+<span class="line"><span style="color: #D4D4D4">  some markup or </span><span style="color: #DCDCAA">{{</span><span style="color: #9CDCFE">text</span><span style="color: #DCDCAA">}}</span></span>
+<span class="line"><span style="color: #808080">&lt;/</span><span style="color: #569CD6">MyComponent</span><span style="color: #808080">&gt;</span></span></code></pre>
+    </div>
+      <button class="copy-button " aria-label="copy" type="button"></button>
+  </div>
+</div>
 
+          </div>
 
 <!---->      </div>
     
@@ -317,15 +425,25 @@
 
     </p>
 
-      <div id="ember9" class="ember-view container-query _code-examples-container_11tjec" data-test-container-query>
+      <div id="ember9" class="ember-view container-query _code-examples-container_11tjec">
     
       <div class="_ember-classic_11tjec">
         <h4 class>
           Classic
         </h4>
 
-            <pre class="language-handlebars line-numbers"><code class="language-handlebars"></code></pre>
+          <div class="_code-snippet_11tjec">
+              <div class="shiki-code-block" style>
+<!---->  <div class="shiki-code-block__code
+      line-numbers">
+    <div>
+        <pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #DCDCAA">{{</span><span style="color: #9CDCFE">ui-files/my-component</span><span style="color: #DCDCAA">}}</span></span></code></pre>
+    </div>
+      <button class="copy-button " aria-label="copy" type="button"></button>
+  </div>
+</div>
 
+          </div>
 
 <!---->      </div>
 
@@ -334,8 +452,18 @@
           Octane
         </h4>
 
-            <pre class="language-handlebars line-numbers"><code class="language-handlebars"></code></pre>
+          <div class="_code-snippet_11tjec">
+              <div class="shiki-code-block" style>
+<!---->  <div class="shiki-code-block__code
+      line-numbers">
+    <div>
+        <pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #808080">&lt;</span><span style="color: #569CD6">UiFiles::MyComponent</span><span style="color: #D4D4D4"> /</span><span style="color: #808080">&gt;</span></span></code></pre>
+    </div>
+      <button class="copy-button " aria-label="copy" type="button"></button>
+  </div>
+</div>
 
+          </div>
 
 <!---->      </div>
     
@@ -367,15 +495,25 @@
 
     </p>
 
-      <div id="ember10" class="ember-view container-query _code-examples-container_11tjec" data-test-container-query>
+      <div id="ember10" class="ember-view container-query _code-examples-container_11tjec">
     
       <div class="_ember-classic_11tjec">
         <h4 class>
           Classic
         </h4>
 
-            <pre class="language-handlebars line-numbers"><code class="language-handlebars"></code></pre>
+          <div class="_code-snippet_11tjec">
+              <div class="shiki-code-block" style>
+<!---->  <div class="shiki-code-block__code
+      line-numbers">
+    <div>
+        <pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #DCDCAA">{{</span><span style="color: #9CDCFE">answer</span><span style="color: #DCDCAA">}}</span><span style="color: #D4D4D4"> is the answer.</span></span></code></pre>
+    </div>
+      <button class="copy-button " aria-label="copy" type="button"></button>
+  </div>
+</div>
 
+          </div>
 
 <!---->      </div>
 
@@ -384,8 +522,18 @@
           Octane
         </h4>
 
-            <pre class="language-handlebars line-numbers"><code class="language-handlebars"></code></pre>
+          <div class="_code-snippet_11tjec">
+              <div class="shiki-code-block" style>
+<!---->  <div class="shiki-code-block__code
+      line-numbers">
+    <div>
+        <pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #DCDCAA">{{</span><span style="color: #9CDCFE">@answer</span><span style="color: #DCDCAA">}}</span><span style="color: #D4D4D4"> is the answer.</span></span></code></pre>
+    </div>
+      <button class="copy-button " aria-label="copy" type="button"></button>
+  </div>
+</div>
 
+          </div>
 
 <!---->      </div>
     
@@ -417,15 +565,25 @@
 
     </p>
 
-      <div id="ember11" class="ember-view container-query _code-examples-container_11tjec" data-test-container-query>
+      <div id="ember11" class="ember-view container-query _code-examples-container_11tjec">
     
       <div class="_ember-classic_11tjec">
         <h4 class>
           Classic
         </h4>
 
-            <pre class="language-handlebars line-numbers"><code class="language-handlebars"></code></pre>
+          <div class="_code-snippet_11tjec">
+              <div class="shiki-code-block" style>
+<!---->  <div class="shiki-code-block__code
+      line-numbers">
+    <div>
+        <pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #DCDCAA">{{</span><span style="color: #9CDCFE">answer</span><span style="color: #DCDCAA">}}</span><span style="color: #D4D4D4"> is the answer.</span></span></code></pre>
+    </div>
+      <button class="copy-button " aria-label="copy" type="button"></button>
+  </div>
+</div>
 
+          </div>
 
 <!---->      </div>
 
@@ -434,8 +592,18 @@
           Octane
         </h4>
 
-            <pre class="language-handlebars line-numbers"><code class="language-handlebars"></code></pre>
+          <div class="_code-snippet_11tjec">
+              <div class="shiki-code-block" style>
+<!---->  <div class="shiki-code-block__code
+      line-numbers">
+    <div>
+        <pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #DCDCAA">{{</span><span style="color: #9CDCFE">this.answer</span><span style="color: #DCDCAA">}}</span><span style="color: #D4D4D4"> is the answer.</span></span></code></pre>
+    </div>
+      <button class="copy-button " aria-label="copy" type="button"></button>
+  </div>
+</div>
 
+          </div>
 
 <!---->      </div>
     
@@ -467,15 +635,25 @@
 
     </p>
 
-      <div id="ember12" class="ember-view container-query _code-examples-container_11tjec" data-test-container-query>
+      <div id="ember12" class="ember-view container-query _code-examples-container_11tjec">
     
       <div class="_ember-classic_11tjec">
         <h4 class>
           Classic
         </h4>
 
-            <pre class="language-handlebars line-numbers"><code class="language-handlebars"></code></pre>
+          <div class="_code-snippet_11tjec">
+              <div class="shiki-code-block" style>
+<!---->  <div class="shiki-code-block__code
+      line-numbers">
+    <div>
+        <pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #DCDCAA">{{</span><span style="color: #9CDCFE">my-component</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">answer=answer</span><span style="color: #DCDCAA">}}</span></span></code></pre>
+    </div>
+      <button class="copy-button " aria-label="copy" type="button"></button>
+  </div>
+</div>
 
+          </div>
 
 <!---->      </div>
 
@@ -484,8 +662,18 @@
           Octane
         </h4>
 
-            <pre class="language-handlebars line-numbers"><code class="language-handlebars"></code></pre>
+          <div class="_code-snippet_11tjec">
+              <div class="shiki-code-block" style>
+<!---->  <div class="shiki-code-block__code
+      line-numbers">
+    <div>
+        <pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #808080">&lt;</span><span style="color: #569CD6">MyComponent</span><span style="color: #D4D4D4"> @</span><span style="color: #9CDCFE">answer=</span><span style="color: #DCDCAA">{{</span><span style="color: #9CDCFE">@answer</span><span style="color: #DCDCAA">}}</span><span style="color: #D4D4D4"> /</span><span style="color: #808080">&gt;</span></span></code></pre>
+    </div>
+      <button class="copy-button " aria-label="copy" type="button"></button>
+  </div>
+</div>
 
+          </div>
 
 <!---->      </div>
     
@@ -517,15 +705,25 @@
 
     </p>
 
-      <div id="ember13" class="ember-view container-query _code-examples-container_11tjec" data-test-container-query>
+      <div id="ember13" class="ember-view container-query _code-examples-container_11tjec">
     
       <div class="_ember-classic_11tjec">
         <h4 class>
           Classic
         </h4>
 
-            <pre class="language-handlebars line-numbers"><code class="language-handlebars"></code></pre>
+          <div class="_code-snippet_11tjec">
+              <div class="shiki-code-block" style>
+<!---->  <div class="shiki-code-block__code
+      line-numbers">
+    <div>
+        <pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #DCDCAA">{{</span><span style="color: #9CDCFE">my-component</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">answer=answer</span><span style="color: #DCDCAA">}}</span></span></code></pre>
+    </div>
+      <button class="copy-button " aria-label="copy" type="button"></button>
+  </div>
+</div>
 
+          </div>
 
 <!---->      </div>
 
@@ -534,8 +732,18 @@
           Octane
         </h4>
 
-            <pre class="language-handlebars line-numbers"><code class="language-handlebars"></code></pre>
+          <div class="_code-snippet_11tjec">
+              <div class="shiki-code-block" style>
+<!---->  <div class="shiki-code-block__code
+      line-numbers">
+    <div>
+        <pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #808080">&lt;</span><span style="color: #569CD6">MyComponent</span><span style="color: #D4D4D4"> @</span><span style="color: #9CDCFE">answer=</span><span style="color: #DCDCAA">{{</span><span style="color: #9CDCFE">this.answer</span><span style="color: #DCDCAA">}}</span><span style="color: #D4D4D4"> /</span><span style="color: #808080">&gt;</span></span></code></pre>
+    </div>
+      <button class="copy-button " aria-label="copy" type="button"></button>
+  </div>
+</div>
 
+          </div>
 
 <!---->      </div>
     
@@ -567,17 +775,46 @@
 
     </p>
 
-      <div id="ember14" class="ember-view container-query _code-examples-container_11tjec" data-test-container-query>
+      <div id="ember14" class="ember-view container-query _code-examples-container_11tjec">
     
       <div class="_ember-classic_11tjec">
         <h4 class>
           Classic
         </h4>
 
-            <pre class="language-handlebars line-numbers"><code class="language-handlebars"></code></pre>
+          <div class="_code-snippet_11tjec">
+              <div class="shiki-code-block" style>
+<!---->  <div class="shiki-code-block__code
+      line-numbers">
+    <div>
+        <pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #6A9955">{{!-- parent-component.hbs --}}</span></span>
+<span class="line"><span style="color: #DCDCAA">{{</span><span style="color: #9CDCFE">child-component</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">tagName=</span><span style="color: #CE9178">&quot;ul&quot;</span><span style="color: #DCDCAA">}}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #6A9955">{{!-- child-component.hbs --}}</span></span>
+<span class="line"><span style="color: #808080">&lt;</span><span style="color: #569CD6">li</span><span style="color: #808080">&gt;</span><span style="color: #D4D4D4">item</span><span style="color: #808080">&lt;/</span><span style="color: #569CD6">li</span><span style="color: #808080">&gt;</span></span>
+<span class="line"><span style="color: #808080">&lt;</span><span style="color: #569CD6">li</span><span style="color: #808080">&gt;</span><span style="color: #D4D4D4">item</span><span style="color: #808080">&lt;/</span><span style="color: #569CD6">li</span><span style="color: #808080">&gt;</span></span></code></pre>
+    </div>
+      <button class="copy-button " aria-label="copy" type="button"></button>
+  </div>
+</div>
 
-            <pre class="language-html line-numbers"><code class="language-html"></code></pre>
+          </div>
+          <div class="_code-snippet_11tjec">
+              <div class="shiki-code-block" style>
+<!---->  <div class="shiki-code-block__code
+      line-numbers">
+    <div>
+        <pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #6A9955">&lt;!-- rendered output --&gt;</span></span>
+<span class="line"><span style="color: #808080">&lt;</span><span style="color: #569CD6">ul</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">id</span><span style="color: #D4D4D4">=</span><span style="color: #CE9178">&quot;ember209&quot;</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">class</span><span style="color: #D4D4D4">=</span><span style="color: #CE9178">&quot;ember-view&quot;</span><span style="color: #808080">&gt;</span></span>
+<span class="line"><span style="color: #D4D4D4">  </span><span style="color: #808080">&lt;</span><span style="color: #569CD6">li</span><span style="color: #808080">&gt;</span><span style="color: #D4D4D4">item</span><span style="color: #808080">&lt;/</span><span style="color: #569CD6">li</span><span style="color: #808080">&gt;</span></span>
+<span class="line"><span style="color: #D4D4D4">  </span><span style="color: #808080">&lt;</span><span style="color: #569CD6">li</span><span style="color: #808080">&gt;</span><span style="color: #D4D4D4">item</span><span style="color: #808080">&lt;/</span><span style="color: #569CD6">li</span><span style="color: #808080">&gt;</span></span>
+<span class="line"><span style="color: #808080">&lt;/</span><span style="color: #569CD6">ul</span><span style="color: #808080">&gt;</span></span></code></pre>
+    </div>
+      <button class="copy-button " aria-label="copy" type="button"></button>
+  </div>
+</div>
 
+          </div>
 
 <!---->      </div>
 
@@ -586,10 +823,41 @@
           Octane
         </h4>
 
-            <pre class="language-handlebars line-numbers"><code class="language-handlebars"></code></pre>
+          <div class="_code-snippet_11tjec">
+              <div class="shiki-code-block" style>
+<!---->  <div class="shiki-code-block__code
+      line-numbers">
+    <div>
+        <pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #6A9955">{{!-- parent-component.hbs --}}</span></span>
+<span class="line"><span style="color: #808080">&lt;</span><span style="color: #569CD6">ul</span><span style="color: #808080">&gt;</span></span>
+<span class="line"><span style="color: #D4D4D4">  </span><span style="color: #808080">&lt;</span><span style="color: #569CD6">ChildComponent</span><span style="color: #D4D4D4"> /</span><span style="color: #808080">&gt;</span></span>
+<span class="line"><span style="color: #808080">&lt;/</span><span style="color: #569CD6">ul</span><span style="color: #808080">&gt;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #6A9955">{{!-- child-component.hbs --}}</span></span>
+<span class="line"><span style="color: #808080">&lt;</span><span style="color: #569CD6">li</span><span style="color: #808080">&gt;</span><span style="color: #D4D4D4">item</span><span style="color: #808080">&lt;/</span><span style="color: #569CD6">li</span><span style="color: #808080">&gt;</span></span>
+<span class="line"><span style="color: #808080">&lt;</span><span style="color: #569CD6">li</span><span style="color: #808080">&gt;</span><span style="color: #D4D4D4">item</span><span style="color: #808080">&lt;/</span><span style="color: #569CD6">li</span><span style="color: #808080">&gt;</span></span></code></pre>
+    </div>
+      <button class="copy-button " aria-label="copy" type="button"></button>
+  </div>
+</div>
 
-            <pre class="language-html line-numbers"><code class="language-html"></code></pre>
+          </div>
+          <div class="_code-snippet_11tjec">
+              <div class="shiki-code-block" style>
+<!---->  <div class="shiki-code-block__code
+      line-numbers">
+    <div>
+        <pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #6A9955">&lt;!-- rendered output --&gt;</span></span>
+<span class="line"><span style="color: #808080">&lt;</span><span style="color: #569CD6">ul</span><span style="color: #808080">&gt;</span></span>
+<span class="line"><span style="color: #D4D4D4">  </span><span style="color: #808080">&lt;</span><span style="color: #569CD6">li</span><span style="color: #808080">&gt;</span><span style="color: #D4D4D4">item</span><span style="color: #808080">&lt;/</span><span style="color: #569CD6">li</span><span style="color: #808080">&gt;</span></span>
+<span class="line"><span style="color: #D4D4D4">  </span><span style="color: #808080">&lt;</span><span style="color: #569CD6">li</span><span style="color: #808080">&gt;</span><span style="color: #D4D4D4">item</span><span style="color: #808080">&lt;/</span><span style="color: #569CD6">li</span><span style="color: #808080">&gt;</span></span>
+<span class="line"><span style="color: #808080">&lt;/</span><span style="color: #569CD6">ul</span><span style="color: #808080">&gt;</span></span></code></pre>
+    </div>
+      <button class="copy-button " aria-label="copy" type="button"></button>
+  </div>
+</div>
 
+          </div>
 
 <!---->      </div>
     
@@ -621,17 +889,50 @@
 
     </p>
 
-      <div id="ember15" class="ember-view container-query _code-examples-container_11tjec" data-test-container-query>
+      <div id="ember15" class="ember-view container-query _code-examples-container_11tjec">
     
       <div class="_ember-classic_11tjec">
         <h4 class>
           Classic
         </h4>
 
-            <pre class="language-javascript line-numbers"><code class="language-javascript"></code></pre>
+          <div class="_code-snippet_11tjec">
+              <div class="shiki-code-block" style>
+<!---->  <div class="shiki-code-block__code
+      line-numbers">
+    <div>
+        <pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #C586C0">import</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">Component</span><span style="color: #D4D4D4"> </span><span style="color: #C586C0">from</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&#39;@ember/component&#39;</span><span style="color: #D4D4D4">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #C586C0">export</span><span style="color: #D4D4D4"> </span><span style="color: #C586C0">default</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">Component</span><span style="color: #D4D4D4">.</span><span style="color: #DCDCAA">extend</span><span style="color: #D4D4D4">({</span></span>
+<span class="line"><span style="color: #D4D4D4">  </span><span style="color: #DCDCAA">didInsertElement</span><span style="color: #D4D4D4">() {</span></span>
+<span class="line"><span style="color: #D4D4D4">    </span><span style="color: #9CDCFE">console</span><span style="color: #D4D4D4">.</span><span style="color: #DCDCAA">log</span><span style="color: #D4D4D4">(</span><span style="color: #569CD6">this</span><span style="color: #D4D4D4">.</span><span style="color: #9CDCFE">elementId</span><span style="color: #D4D4D4">);</span></span>
+<span class="line"><span style="color: #D4D4D4">  }</span></span>
+<span class="line"><span style="color: #D4D4D4">});</span></span></code></pre>
+    </div>
+      <button class="copy-button " aria-label="copy" type="button"></button>
+  </div>
+</div>
 
-            <pre class="language-handlebars line-numbers"><code class="language-handlebars"></code></pre>
+          </div>
+          <div class="_code-snippet_11tjec">
+              <div class="shiki-code-block" style>
+<!---->  <div class="shiki-code-block__code
+      line-numbers">
+    <div>
+        <pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #808080">&lt;</span><span style="color: #569CD6">div</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">class=</span><span style="color: #CE9178">&quot;form-group&quot;</span><span style="color: #808080">&gt;</span></span>
+<span class="line"><span style="color: #D4D4D4">  </span><span style="color: #808080">&lt;</span><span style="color: #569CD6">label</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">for=</span><span style="color: #CE9178">&quot;textInput-</span><span style="color: #DCDCAA">{{</span><span style="color: #9CDCFE">elementId</span><span style="color: #DCDCAA">}}</span><span style="color: #CE9178">&quot;</span><span style="color: #808080">&gt;</span><span style="color: #DCDCAA">{{</span><span style="color: #9CDCFE">inputLabelText</span><span style="color: #DCDCAA">}}</span><span style="color: #808080">&lt;/</span><span style="color: #569CD6">label</span><span style="color: #808080">&gt;</span></span>
+<span class="line"><span style="color: #D4D4D4">  </span><span style="color: #808080">&lt;</span><span style="color: #569CD6">input</span><span style="color: #D4D4D4"> </span></span>
+<span class="line"><span style="color: #D4D4D4">    </span><span style="color: #9CDCFE">id</span><span style="color: #D4D4D4">=</span><span style="color: #CE9178">&quot;textInput-</span><span style="color: #DCDCAA">{{</span><span style="color: #9CDCFE">elementId</span><span style="color: #DCDCAA">}}</span><span style="color: #CE9178">&quot;</span></span>
+<span class="line"><span style="color: #D4D4D4">    </span><span style="color: #9CDCFE">name=</span><span style="color: #DCDCAA">{{</span><span style="color: #9CDCFE">inputName</span><span style="color: #DCDCAA">}}</span><span style="color: #D4D4D4"> </span></span>
+<span class="line"><span style="color: #D4D4D4">    </span><span style="color: #9CDCFE">type=</span><span style="color: #CE9178">&quot;text&quot;</span><span style="color: #D4D4D4"> </span></span>
+<span class="line"><span style="color: #D4D4D4"> </span><span style="color: #808080"> /&gt;</span></span>
+<span class="line"><span style="color: #808080">&lt;/</span><span style="color: #569CD6">div</span><span style="color: #808080">&gt;</span></span></code></pre>
+    </div>
+      <button class="copy-button " aria-label="copy" type="button"></button>
+  </div>
+</div>
 
+          </div>
 
 <!---->      </div>
 
@@ -640,10 +941,42 @@
           Octane
         </h4>
 
-            <pre class="language-javascript line-numbers"><code class="language-javascript"></code></pre>
+          <div class="_code-snippet_11tjec">
+              <div class="shiki-code-block" style>
+<!---->  <div class="shiki-code-block__code
+      line-numbers">
+    <div>
+        <pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #C586C0">import</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">Component</span><span style="color: #D4D4D4"> </span><span style="color: #C586C0">from</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&#39;@glimmer/component&#39;</span><span style="color: #D4D4D4">;</span></span>
+<span class="line"><span style="color: #C586C0">import</span><span style="color: #D4D4D4"> { </span><span style="color: #9CDCFE">guidFor</span><span style="color: #D4D4D4"> } </span><span style="color: #C586C0">from</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&#39;@ember/object/internals&#39;</span><span style="color: #D4D4D4">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #C586C0">export</span><span style="color: #D4D4D4"> </span><span style="color: #C586C0">default</span><span style="color: #D4D4D4"> </span><span style="color: #569CD6">class</span><span style="color: #D4D4D4"> </span><span style="color: #4EC9B0">InputTextComponent</span><span style="color: #D4D4D4"> </span><span style="color: #569CD6">extends</span><span style="color: #D4D4D4"> </span><span style="color: #4EC9B0">Component</span><span style="color: #D4D4D4"> {</span></span>
+<span class="line"><span style="color: #D4D4D4">  </span><span style="color: #9CDCFE">inputId</span><span style="color: #D4D4D4"> = </span><span style="color: #CE9178">&#39;textInput-&#39;</span><span style="color: #D4D4D4"> + </span><span style="color: #DCDCAA">guidFor</span><span style="color: #D4D4D4">(</span><span style="color: #569CD6">this</span><span style="color: #D4D4D4">); </span></span>
+<span class="line"><span style="color: #D4D4D4">}</span></span></code></pre>
+    </div>
+      <button class="copy-button " aria-label="copy" type="button"></button>
+  </div>
+</div>
 
-            <pre class="language-handlebars line-numbers"><code class="language-handlebars"></code></pre>
+          </div>
+          <div class="_code-snippet_11tjec">
+              <div class="shiki-code-block" style>
+<!---->  <div class="shiki-code-block__code
+      line-numbers">
+    <div>
+        <pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #808080">&lt;</span><span style="color: #569CD6">div</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">class=</span><span style="color: #CE9178">&quot;form-group&quot;</span><span style="color: #808080">&gt;</span></span>
+<span class="line"><span style="color: #D4D4D4">  </span><span style="color: #808080">&lt;</span><span style="color: #569CD6">label</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">for=</span><span style="color: #DCDCAA">{{</span><span style="color: #9CDCFE">this.inputId</span><span style="color: #DCDCAA">}}</span><span style="color: #808080">&gt;</span><span style="color: #DCDCAA">{{</span><span style="color: #9CDCFE">@inputLabelText</span><span style="color: #DCDCAA">}}</span><span style="color: #808080">&lt;/</span><span style="color: #569CD6">label</span><span style="color: #808080">&gt;</span></span>
+<span class="line"><span style="color: #D4D4D4">  </span><span style="color: #808080">&lt;</span><span style="color: #569CD6">input</span><span style="color: #D4D4D4"> </span></span>
+<span class="line"><span style="color: #D4D4D4">    </span><span style="color: #9CDCFE">id</span><span style="color: #D4D4D4">=</span><span style="color: #DCDCAA">{{</span><span style="color: #9CDCFE">this.inputId</span><span style="color: #DCDCAA">}}</span><span style="color: #D4D4D4"> </span></span>
+<span class="line"><span style="color: #D4D4D4">    </span><span style="color: #9CDCFE">name=</span><span style="color: #DCDCAA">{{</span><span style="color: #9CDCFE">@inputName</span><span style="color: #DCDCAA">}}</span><span style="color: #D4D4D4"> </span></span>
+<span class="line"><span style="color: #D4D4D4">    </span><span style="color: #9CDCFE">type=</span><span style="color: #CE9178">&quot;text&quot;</span><span style="color: #D4D4D4"> </span></span>
+<span class="line"><span style="color: #D4D4D4"> </span><span style="color: #808080"> /&gt;</span></span>
+<span class="line"><span style="color: #808080">&lt;/</span><span style="color: #569CD6">div</span><span style="color: #808080">&gt;</span></span></code></pre>
+    </div>
+      <button class="copy-button " aria-label="copy" type="button"></button>
+  </div>
+</div>
 
+          </div>
 
 <!---->      </div>
     
@@ -690,15 +1023,31 @@
 
     </p>
 
-      <div id="ember16" class="ember-view container-query _code-examples-container_11tjec" data-test-container-query>
+      <div id="ember16" class="ember-view container-query _code-examples-container_11tjec">
     
       <div class="_ember-classic_11tjec">
         <h4 class>
           Classic
         </h4>
 
-            <pre class="language-javascript line-numbers"><code class="language-javascript"></code></pre>
+          <div class="_code-snippet_11tjec">
+              <div class="shiki-code-block" style>
+<!---->  <div class="shiki-code-block__code
+      line-numbers">
+    <div>
+        <pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #C586C0">import</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">Component</span><span style="color: #D4D4D4"> </span><span style="color: #C586C0">from</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&#39;@ember/component&#39;</span><span style="color: #D4D4D4">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #C586C0">export</span><span style="color: #D4D4D4"> </span><span style="color: #C586C0">default</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">Component</span><span style="color: #D4D4D4">.</span><span style="color: #DCDCAA">extend</span><span style="color: #D4D4D4">({</span></span>
+<span class="line"><span style="color: #D4D4D4">  </span><span style="color: #DCDCAA">init</span><span style="color: #D4D4D4">() {</span></span>
+<span class="line"><span style="color: #D4D4D4">    </span><span style="color: #569CD6">this</span><span style="color: #D4D4D4">.</span><span style="color: #DCDCAA">_super</span><span style="color: #D4D4D4">(...</span><span style="color: #569CD6">arguments</span><span style="color: #D4D4D4">);</span></span>
+<span class="line"><span style="color: #D4D4D4">  }</span></span>
+<span class="line"><span style="color: #D4D4D4">});</span></span></code></pre>
+    </div>
+      <button class="copy-button " aria-label="copy" type="button"></button>
+  </div>
+</div>
 
+          </div>
 
 <!---->      </div>
 
@@ -707,8 +1056,24 @@
           Octane
         </h4>
 
-            <pre class="language-javascript line-numbers"><code class="language-javascript"></code></pre>
+          <div class="_code-snippet_11tjec">
+              <div class="shiki-code-block" style>
+<!---->  <div class="shiki-code-block__code
+      line-numbers">
+    <div>
+        <pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #C586C0">import</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">Component</span><span style="color: #D4D4D4"> </span><span style="color: #C586C0">from</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&#39;@glimmer/component&#39;</span><span style="color: #D4D4D4">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #C586C0">export</span><span style="color: #D4D4D4"> </span><span style="color: #C586C0">default</span><span style="color: #D4D4D4"> </span><span style="color: #569CD6">class</span><span style="color: #D4D4D4"> </span><span style="color: #4EC9B0">MyComponent</span><span style="color: #D4D4D4"> </span><span style="color: #569CD6">extends</span><span style="color: #D4D4D4"> </span><span style="color: #4EC9B0">Component</span><span style="color: #D4D4D4"> {</span></span>
+<span class="line"><span style="color: #D4D4D4">  </span><span style="color: #569CD6">constructor</span><span style="color: #D4D4D4">() {</span></span>
+<span class="line"><span style="color: #D4D4D4">    </span><span style="color: #569CD6">super</span><span style="color: #D4D4D4">(...</span><span style="color: #569CD6">arguments</span><span style="color: #D4D4D4">);</span></span>
+<span class="line"><span style="color: #D4D4D4">  }</span></span>
+<span class="line"><span style="color: #D4D4D4">}</span></span></code></pre>
+    </div>
+      <button class="copy-button " aria-label="copy" type="button"></button>
+  </div>
+</div>
 
+          </div>
 
 <!---->      </div>
     
@@ -740,15 +1105,30 @@
 
     </p>
 
-      <div id="ember17" class="ember-view container-query _code-examples-container_11tjec" data-test-container-query>
+      <div id="ember17" class="ember-view container-query _code-examples-container_11tjec">
     
       <div class="_ember-classic_11tjec">
         <h4 class>
           Classic
         </h4>
 
-            <pre class="language-javascript line-numbers"><code class="language-javascript"></code></pre>
+          <div class="_code-snippet_11tjec">
+              <div class="shiki-code-block" style>
+<!---->  <div class="shiki-code-block__code
+      line-numbers">
+    <div>
+        <pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #C586C0">import</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">Component</span><span style="color: #D4D4D4"> </span><span style="color: #C586C0">from</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&#39;@ember/component&#39;</span><span style="color: #D4D4D4">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #C586C0">export</span><span style="color: #D4D4D4"> </span><span style="color: #C586C0">default</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">Component</span><span style="color: #D4D4D4">.</span><span style="color: #DCDCAA">extend</span><span style="color: #D4D4D4">({</span></span>
+<span class="line"><span style="color: #D4D4D4">  </span><span style="color: #9CDCFE">min:</span><span style="color: #D4D4D4"> </span><span style="color: #B5CEA8">0</span><span style="color: #D4D4D4">,</span></span>
+<span class="line"><span style="color: #D4D4D4">  </span><span style="color: #9CDCFE">max:</span><span style="color: #D4D4D4"> </span><span style="color: #B5CEA8">100</span></span>
+<span class="line"><span style="color: #D4D4D4">});</span></span></code></pre>
+    </div>
+      <button class="copy-button " aria-label="copy" type="button"></button>
+  </div>
+</div>
 
+          </div>
 
 <!---->      </div>
 
@@ -757,8 +1137,23 @@
           Octane
         </h4>
 
-            <pre class="language-javascript line-numbers"><code class="language-javascript"></code></pre>
+          <div class="_code-snippet_11tjec">
+              <div class="shiki-code-block" style>
+<!---->  <div class="shiki-code-block__code
+      line-numbers">
+    <div>
+        <pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #C586C0">import</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">Component</span><span style="color: #D4D4D4"> </span><span style="color: #C586C0">from</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&#39;@glimmer/component&#39;</span><span style="color: #D4D4D4">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #C586C0">export</span><span style="color: #D4D4D4"> </span><span style="color: #C586C0">default</span><span style="color: #D4D4D4"> </span><span style="color: #569CD6">class</span><span style="color: #D4D4D4"> </span><span style="color: #4EC9B0">MyComponent</span><span style="color: #D4D4D4"> </span><span style="color: #569CD6">extends</span><span style="color: #D4D4D4"> </span><span style="color: #4EC9B0">Component</span><span style="color: #D4D4D4"> {</span></span>
+<span class="line"><span style="color: #D4D4D4">  </span><span style="color: #9CDCFE">min</span><span style="color: #D4D4D4"> = </span><span style="color: #B5CEA8">0</span><span style="color: #D4D4D4">;</span></span>
+<span class="line"><span style="color: #D4D4D4">  </span><span style="color: #9CDCFE">max</span><span style="color: #D4D4D4"> = </span><span style="color: #B5CEA8">100</span><span style="color: #D4D4D4">;</span></span>
+<span class="line"><span style="color: #D4D4D4">}</span></span></code></pre>
+    </div>
+      <button class="copy-button " aria-label="copy" type="button"></button>
+  </div>
+</div>
 
+          </div>
 
 <!---->      </div>
     
@@ -790,21 +1185,80 @@
 
     </p>
 
-      <div id="ember18" class="ember-view container-query _code-examples-container_11tjec" data-test-container-query>
+      <div id="ember18" class="ember-view container-query _code-examples-container_11tjec">
     
       <div class="_ember-classic_11tjec">
         <h4 class>
           Classic
         </h4>
 
-            <pre class="language-javascript line-numbers"><code class="language-javascript"></code></pre>
+          <div class="_code-snippet_11tjec">
+              <div class="shiki-code-block" style>
+<!---->  <div class="shiki-code-block__code
+      line-numbers">
+    <div>
+        <pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #6A9955">// parent-component.js</span></span>
+<span class="line"><span style="color: #C586C0">import</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">Component</span><span style="color: #D4D4D4"> </span><span style="color: #C586C0">from</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&#39;@ember/component&#39;</span><span style="color: #D4D4D4">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #C586C0">export</span><span style="color: #D4D4D4"> </span><span style="color: #C586C0">default</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">Component</span><span style="color: #D4D4D4">.</span><span style="color: #DCDCAA">extend</span><span style="color: #D4D4D4">({</span></span>
+<span class="line"><span style="color: #D4D4D4">  </span><span style="color: #9CDCFE">count:</span><span style="color: #D4D4D4"> </span><span style="color: #B5CEA8">0</span></span>
+<span class="line"><span style="color: #D4D4D4">});</span></span></code></pre>
+    </div>
+      <button class="copy-button " aria-label="copy" type="button"></button>
+  </div>
+</div>
 
-            <pre class="language-handlebars line-numbers"><code class="language-handlebars"></code></pre>
+          </div>
+          <div class="_code-snippet_11tjec">
+              <div class="shiki-code-block" style>
+<!---->  <div class="shiki-code-block__code
+      line-numbers">
+    <div>
+        <pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #6A9955">{{!-- parent-component.hbs --}}</span></span>
+<span class="line"><span style="color: #DCDCAA">{{</span><span style="color: #9CDCFE">child-component</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">count=count</span><span style="color: #DCDCAA">}}</span></span>
+<span class="line"><span style="color: #D4D4D4">Count: </span><span style="color: #DCDCAA">{{</span><span style="color: #9CDCFE">this.count</span><span style="color: #DCDCAA">}}</span></span></code></pre>
+    </div>
+      <button class="copy-button " aria-label="copy" type="button"></button>
+  </div>
+</div>
 
-            <pre class="language-javascript line-numbers"><code class="language-javascript"></code></pre>
+          </div>
+          <div class="_code-snippet_11tjec">
+              <div class="shiki-code-block" style>
+<!---->  <div class="shiki-code-block__code
+      line-numbers">
+    <div>
+        <pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #6A9955">// child-component.js</span></span>
+<span class="line"><span style="color: #C586C0">import</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">Component</span><span style="color: #D4D4D4"> </span><span style="color: #C586C0">from</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&#39;@ember/component&#39;</span><span style="color: #D4D4D4">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #C586C0">export</span><span style="color: #D4D4D4"> </span><span style="color: #C586C0">default</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">Component</span><span style="color: #D4D4D4">.</span><span style="color: #DCDCAA">extend</span><span style="color: #D4D4D4">({</span></span>
+<span class="line"><span style="color: #D4D4D4">  </span><span style="color: #9CDCFE">actions:</span><span style="color: #D4D4D4"> {</span></span>
+<span class="line"><span style="color: #D4D4D4">    </span><span style="color: #DCDCAA">plusOne</span><span style="color: #D4D4D4">() {</span></span>
+<span class="line"><span style="color: #D4D4D4">      </span><span style="color: #569CD6">this</span><span style="color: #D4D4D4">.</span><span style="color: #DCDCAA">set</span><span style="color: #D4D4D4">(</span><span style="color: #CE9178">&#39;count&#39;</span><span style="color: #D4D4D4">, </span><span style="color: #569CD6">this</span><span style="color: #D4D4D4">.</span><span style="color: #DCDCAA">get</span><span style="color: #D4D4D4">(</span><span style="color: #CE9178">&#39;count&#39;</span><span style="color: #D4D4D4">) + </span><span style="color: #B5CEA8">1</span><span style="color: #D4D4D4">);</span></span>
+<span class="line"><span style="color: #D4D4D4">    }</span></span>
+<span class="line"><span style="color: #D4D4D4">  }</span></span>
+<span class="line"><span style="color: #D4D4D4">});</span></span></code></pre>
+    </div>
+      <button class="copy-button " aria-label="copy" type="button"></button>
+  </div>
+</div>
 
-            <pre class="language-handlebars line-numbers"><code class="language-handlebars"></code></pre>
+          </div>
+          <div class="_code-snippet_11tjec">
+              <div class="shiki-code-block" style>
+<!---->  <div class="shiki-code-block__code
+      line-numbers">
+    <div>
+        <pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #6A9955">{{!-- child-component.hbs --}}</span></span>
+<span class="line"><span style="color: #808080">&lt;</span><span style="color: #569CD6">button</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">type=</span><span style="color: #CE9178">&quot;button&quot;</span><span style="color: #D4D4D4"> </span><span style="color: #DCDCAA">{{</span><span style="color: #9CDCFE">action</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&quot;plusOne&quot;</span><span style="color: #DCDCAA">}}</span><span style="color: #808080">&gt;</span></span>
+<span class="line"><span style="color: #D4D4D4">  Click Me</span></span>
+<span class="line"><span style="color: #808080">&lt;/</span><span style="color: #569CD6">button</span><span style="color: #808080">&gt;</span></span></code></pre>
+    </div>
+      <button class="copy-button " aria-label="copy" type="button"></button>
+  </div>
+</div>
 
+          </div>
 
 <!---->      </div>
 
@@ -813,12 +1267,58 @@
           Octane
         </h4>
 
-            <pre class="language-javascript line-numbers"><code class="language-javascript"></code></pre>
+          <div class="_code-snippet_11tjec">
+              <div class="shiki-code-block" style>
+<!---->  <div class="shiki-code-block__code
+      line-numbers">
+    <div>
+        <pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #6A9955">// parent-component.js</span></span>
+<span class="line"><span style="color: #C586C0">import</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">Component</span><span style="color: #D4D4D4"> </span><span style="color: #C586C0">from</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&#39;@glimmer/component&#39;</span><span style="color: #D4D4D4">;</span></span>
+<span class="line"><span style="color: #C586C0">import</span><span style="color: #D4D4D4"> { </span><span style="color: #9CDCFE">tracked</span><span style="color: #D4D4D4"> } </span><span style="color: #C586C0">from</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&#39;@glimmer/tracking&#39;</span><span style="color: #D4D4D4">;</span></span>
+<span class="line"><span style="color: #C586C0">import</span><span style="color: #D4D4D4"> { </span><span style="color: #9CDCFE">action</span><span style="color: #D4D4D4"> } </span><span style="color: #C586C0">from</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&#39;@ember/object&#39;</span><span style="color: #D4D4D4">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #C586C0">export</span><span style="color: #D4D4D4"> </span><span style="color: #C586C0">default</span><span style="color: #D4D4D4"> </span><span style="color: #569CD6">class</span><span style="color: #D4D4D4"> </span><span style="color: #4EC9B0">ParentComponent</span><span style="color: #D4D4D4"> </span><span style="color: #569CD6">extends</span><span style="color: #D4D4D4"> </span><span style="color: #4EC9B0">Component</span><span style="color: #D4D4D4"> {</span></span>
+<span class="line"><span style="color: #D4D4D4">  @</span><span style="color: #9CDCFE">tracked</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">count</span><span style="color: #D4D4D4"> = </span><span style="color: #B5CEA8">0</span><span style="color: #D4D4D4">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #D4D4D4">  @</span><span style="color: #9CDCFE">action</span><span style="color: #D4D4D4"> </span><span style="color: #DCDCAA">plusOne</span><span style="color: #D4D4D4">() {</span></span>
+<span class="line"><span style="color: #D4D4D4">    </span><span style="color: #569CD6">this</span><span style="color: #D4D4D4">.</span><span style="color: #9CDCFE">count</span><span style="color: #D4D4D4">++;</span></span>
+<span class="line"><span style="color: #D4D4D4">  }</span></span>
+<span class="line"><span style="color: #D4D4D4">}</span></span></code></pre>
+    </div>
+      <button class="copy-button " aria-label="copy" type="button"></button>
+  </div>
+</div>
 
-            <pre class="language-handlebars line-numbers"><code class="language-handlebars"></code></pre>
+          </div>
+          <div class="_code-snippet_11tjec">
+              <div class="shiki-code-block" style>
+<!---->  <div class="shiki-code-block__code
+      line-numbers">
+    <div>
+        <pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #6A9955">{{!-- parent-component.hbs --}}</span></span>
+<span class="line"><span style="color: #808080">&lt;</span><span style="color: #569CD6">ChildComponent</span><span style="color: #D4D4D4"> @</span><span style="color: #9CDCFE">plusOne=</span><span style="color: #DCDCAA">{{</span><span style="color: #9CDCFE">this.plusOne</span><span style="color: #DCDCAA">}}</span><span style="color: #D4D4D4"> /</span><span style="color: #808080">&gt;</span></span>
+<span class="line"><span style="color: #D4D4D4">Count: </span><span style="color: #DCDCAA">{{</span><span style="color: #9CDCFE">this.count</span><span style="color: #DCDCAA">}}</span></span></code></pre>
+    </div>
+      <button class="copy-button " aria-label="copy" type="button"></button>
+  </div>
+</div>
 
-            <pre class="language-handlebars line-numbers"><code class="language-handlebars"></code></pre>
+          </div>
+          <div class="_code-snippet_11tjec">
+              <div class="shiki-code-block" style>
+<!---->  <div class="shiki-code-block__code
+      line-numbers">
+    <div>
+        <pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #6A9955">{{!-- child-component.hbs --}}</span></span>
+<span class="line"><span style="color: #808080">&lt;</span><span style="color: #569CD6">button</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">type=</span><span style="color: #CE9178">&quot;button&quot;</span><span style="color: #D4D4D4"> </span><span style="color: #DCDCAA">{{</span><span style="color: #9CDCFE">on</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&quot;click&quot;</span><span style="color: #D4D4D4"> @</span><span style="color: #9CDCFE">plusOne</span><span style="color: #DCDCAA">}}</span><span style="color: #808080">&gt;</span></span>
+<span class="line"><span style="color: #D4D4D4">  Click Me</span></span>
+<span class="line"><span style="color: #808080">&lt;/</span><span style="color: #569CD6">button</span><span style="color: #808080">&gt;</span></span></code></pre>
+    </div>
+      <button class="copy-button " aria-label="copy" type="button"></button>
+  </div>
+</div>
 
+          </div>
 
 <!---->      </div>
     
@@ -850,15 +1350,42 @@
 
     </p>
 
-      <div id="ember19" class="ember-view container-query _code-examples-container_11tjec" data-test-container-query>
+      <div id="ember19" class="ember-view container-query _code-examples-container_11tjec">
     
       <div class="_ember-classic_11tjec">
         <h4 class>
           Classic
         </h4>
 
-            <pre class="language-javascript line-numbers"><code class="language-javascript"></code></pre>
+          <div class="_code-snippet_11tjec">
+              <div class="shiki-code-block" style>
+<!---->  <div class="shiki-code-block__code
+      line-numbers">
+    <div>
+        <pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #C586C0">import</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">Component</span><span style="color: #D4D4D4"> </span><span style="color: #C586C0">from</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&#39;@ember/component&#39;</span><span style="color: #D4D4D4">;</span></span>
+<span class="line"><span style="color: #C586C0">import</span><span style="color: #D4D4D4"> { </span><span style="color: #9CDCFE">computed</span><span style="color: #D4D4D4"> } </span><span style="color: #C586C0">from</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&#39;@ember/object&#39;</span><span style="color: #D4D4D4">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #C586C0">export</span><span style="color: #D4D4D4"> </span><span style="color: #C586C0">default</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">Component</span><span style="color: #D4D4D4">.</span><span style="color: #DCDCAA">extend</span><span style="color: #D4D4D4">({</span></span>
+<span class="line"><span style="color: #D4D4D4">  </span><span style="color: #9CDCFE">prefix:</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&#39;ISO&#39;</span><span style="color: #D4D4D4">,</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #D4D4D4">  </span><span style="color: #9CDCFE">displayName:</span><span style="color: #D4D4D4"> </span><span style="color: #DCDCAA">computed</span><span style="color: #D4D4D4">(</span><span style="color: #CE9178">&#39;prefix,isoStandardNumber&#39;</span><span style="color: #D4D4D4">, </span><span style="color: #569CD6">function</span><span style="color: #D4D4D4">() {</span></span>
+<span class="line"><span style="color: #D4D4D4">    </span><span style="color: #6A9955">/*</span></span>
+<span class="line"><span style="color: #6A9955">      There are two issues with this code:</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #6A9955">      1. `prefix` may or may not be overriden from outside</span></span>
+<span class="line"><span style="color: #6A9955">      2. We can&#39;t tell if `isoStandardNumber` is a property or an argument</span></span>
+<span class="line"><span style="color: #6A9955">    */</span></span>
+<span class="line"><span style="color: #D4D4D4">    </span><span style="color: #C586C0">return</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">`</span><span style="color: #569CD6">${</span><span style="color: #569CD6">this</span><span style="color: #D4D4D4">.</span><span style="color: #9CDCFE">prefix</span><span style="color: #569CD6">}</span><span style="color: #CE9178"> </span><span style="color: #569CD6">${</span><span style="color: #569CD6">this</span><span style="color: #D4D4D4">.</span><span style="color: #9CDCFE">isoStandardNumber</span><span style="color: #569CD6">}</span><span style="color: #CE9178">`</span><span style="color: #D4D4D4">;</span></span>
+<span class="line"><span style="color: #D4D4D4">  }),</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #D4D4D4">  </span><span style="color: #6A9955">/* Rest of the code omitted */</span></span>
+<span class="line"><span style="color: #D4D4D4">});</span></span></code></pre>
+    </div>
+      <button class="copy-button " aria-label="copy" type="button"></button>
+  </div>
+</div>
 
+          </div>
 
 <!---->      </div>
 
@@ -867,8 +1394,28 @@
           Octane
         </h4>
 
-            <pre class="language-javascript line-numbers"><code class="language-javascript"></code></pre>
+          <div class="_code-snippet_11tjec">
+              <div class="shiki-code-block" style>
+<!---->  <div class="shiki-code-block__code
+      line-numbers">
+    <div>
+        <pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #C586C0">import</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">Component</span><span style="color: #D4D4D4"> </span><span style="color: #C586C0">from</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&#39;@glimmer/component&#39;</span><span style="color: #D4D4D4">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #C586C0">export</span><span style="color: #D4D4D4"> </span><span style="color: #C586C0">default</span><span style="color: #D4D4D4"> </span><span style="color: #569CD6">class</span><span style="color: #D4D4D4"> </span><span style="color: #4EC9B0">MyComponent</span><span style="color: #D4D4D4"> </span><span style="color: #569CD6">extends</span><span style="color: #D4D4D4"> </span><span style="color: #4EC9B0">Component</span><span style="color: #D4D4D4"> {</span></span>
+<span class="line"><span style="color: #D4D4D4">  </span><span style="color: #9CDCFE">prefix</span><span style="color: #D4D4D4"> = </span><span style="color: #CE9178">&#39;ISO&#39;</span><span style="color: #D4D4D4">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #D4D4D4">  </span><span style="color: #569CD6">get</span><span style="color: #D4D4D4"> </span><span style="color: #DCDCAA">displayName</span><span style="color: #D4D4D4">() {</span></span>
+<span class="line"><span style="color: #D4D4D4">    </span><span style="color: #C586C0">return</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">`</span><span style="color: #569CD6">${</span><span style="color: #569CD6">this</span><span style="color: #D4D4D4">.</span><span style="color: #9CDCFE">prefix</span><span style="color: #569CD6">}</span><span style="color: #CE9178"> </span><span style="color: #569CD6">${</span><span style="color: #569CD6">this</span><span style="color: #D4D4D4">.</span><span style="color: #9CDCFE">args</span><span style="color: #D4D4D4">.</span><span style="color: #9CDCFE">isoStandardNumber</span><span style="color: #569CD6">}</span><span style="color: #CE9178">`</span><span style="color: #D4D4D4">;</span></span>
+<span class="line"><span style="color: #D4D4D4">  }</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #D4D4D4">  </span><span style="color: #6A9955">/* Rest of the code omitted */</span></span>
+<span class="line"><span style="color: #D4D4D4">}</span></span></code></pre>
+    </div>
+      <button class="copy-button " aria-label="copy" type="button"></button>
+  </div>
+</div>
 
+          </div>
 
 <!---->      </div>
     
@@ -900,15 +1447,35 @@
 
     </p>
 
-      <div id="ember20" class="ember-view container-query _code-examples-container_11tjec" data-test-container-query>
+      <div id="ember20" class="ember-view container-query _code-examples-container_11tjec">
     
       <div class="_ember-classic_11tjec">
         <h4 class>
           Classic
         </h4>
 
-            <pre class="language-javascript line-numbers"><code class="language-javascript"></code></pre>
+          <div class="_code-snippet_11tjec">
+              <div class="shiki-code-block" style>
+<!---->  <div class="shiki-code-block__code
+      line-numbers">
+    <div>
+        <pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #C586C0">import</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">Component</span><span style="color: #D4D4D4"> </span><span style="color: #C586C0">from</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&#39;@ember/component&#39;</span><span style="color: #D4D4D4">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #C586C0">export</span><span style="color: #D4D4D4"> </span><span style="color: #C586C0">default</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">Component</span><span style="color: #D4D4D4">.</span><span style="color: #DCDCAA">extend</span><span style="color: #D4D4D4">({</span></span>
+<span class="line"><span style="color: #D4D4D4">  </span><span style="color: #9CDCFE">count:</span><span style="color: #D4D4D4"> </span><span style="color: #B5CEA8">0</span><span style="color: #D4D4D4">,</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #D4D4D4">  </span><span style="color: #9CDCFE">actions:</span><span style="color: #D4D4D4"> {</span></span>
+<span class="line"><span style="color: #D4D4D4">    </span><span style="color: #DCDCAA">minusOne</span><span style="color: #D4D4D4">() {</span></span>
+<span class="line"><span style="color: #D4D4D4">      </span><span style="color: #569CD6">this</span><span style="color: #D4D4D4">.</span><span style="color: #DCDCAA">set</span><span style="color: #D4D4D4">(</span><span style="color: #CE9178">&#39;count&#39;</span><span style="color: #D4D4D4">, </span><span style="color: #569CD6">this</span><span style="color: #D4D4D4">.</span><span style="color: #DCDCAA">get</span><span style="color: #D4D4D4">(</span><span style="color: #CE9178">&#39;count&#39;</span><span style="color: #D4D4D4">) - </span><span style="color: #B5CEA8">1</span><span style="color: #D4D4D4">);</span></span>
+<span class="line"><span style="color: #D4D4D4">    }</span></span>
+<span class="line"><span style="color: #D4D4D4">  }</span></span>
+<span class="line"><span style="color: #D4D4D4">});</span></span></code></pre>
+    </div>
+      <button class="copy-button " aria-label="copy" type="button"></button>
+  </div>
+</div>
 
+          </div>
 
 <!---->      </div>
 
@@ -917,8 +1484,28 @@
           Octane
         </h4>
 
-            <pre class="language-javascript line-numbers"><code class="language-javascript"></code></pre>
+          <div class="_code-snippet_11tjec">
+              <div class="shiki-code-block" style>
+<!---->  <div class="shiki-code-block__code
+      line-numbers">
+    <div>
+        <pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #C586C0">import</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">Component</span><span style="color: #D4D4D4"> </span><span style="color: #C586C0">from</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&#39;@glimmer/component&#39;</span><span style="color: #D4D4D4">;</span></span>
+<span class="line"><span style="color: #C586C0">import</span><span style="color: #D4D4D4"> { </span><span style="color: #9CDCFE">tracked</span><span style="color: #D4D4D4"> } </span><span style="color: #C586C0">from</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&#39;@glimmer/tracking&#39;</span><span style="color: #D4D4D4">;</span></span>
+<span class="line"><span style="color: #C586C0">import</span><span style="color: #D4D4D4"> { </span><span style="color: #9CDCFE">action</span><span style="color: #D4D4D4"> } </span><span style="color: #C586C0">from</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&#39;@ember/object&#39;</span><span style="color: #D4D4D4">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #C586C0">export</span><span style="color: #D4D4D4"> </span><span style="color: #C586C0">default</span><span style="color: #D4D4D4"> </span><span style="color: #569CD6">class</span><span style="color: #D4D4D4"> </span><span style="color: #4EC9B0">MyComponent</span><span style="color: #D4D4D4"> </span><span style="color: #569CD6">extends</span><span style="color: #D4D4D4"> </span><span style="color: #4EC9B0">Component</span><span style="color: #D4D4D4"> {</span></span>
+<span class="line"><span style="color: #D4D4D4">  @</span><span style="color: #9CDCFE">tracked</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">count</span><span style="color: #D4D4D4"> = </span><span style="color: #B5CEA8">0</span><span style="color: #D4D4D4">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #D4D4D4">  @</span><span style="color: #9CDCFE">action</span><span style="color: #D4D4D4"> </span><span style="color: #DCDCAA">minusOne</span><span style="color: #D4D4D4">() {</span></span>
+<span class="line"><span style="color: #D4D4D4">    </span><span style="color: #569CD6">this</span><span style="color: #D4D4D4">.</span><span style="color: #9CDCFE">count</span><span style="color: #D4D4D4"> = </span><span style="color: #569CD6">this</span><span style="color: #D4D4D4">.</span><span style="color: #9CDCFE">count</span><span style="color: #D4D4D4"> - </span><span style="color: #B5CEA8">1</span><span style="color: #D4D4D4">;</span></span>
+<span class="line"><span style="color: #D4D4D4">  }</span></span>
+<span class="line"><span style="color: #D4D4D4">}</span></span></code></pre>
+    </div>
+      <button class="copy-button " aria-label="copy" type="button"></button>
+  </div>
+</div>
 
+          </div>
 
 <!---->      </div>
     
@@ -950,15 +1537,34 @@
 
     </p>
 
-      <div id="ember21" class="ember-view container-query _code-examples-container_11tjec" data-test-container-query>
+      <div id="ember21" class="ember-view container-query _code-examples-container_11tjec">
     
       <div class="_ember-classic_11tjec">
         <h4 class>
           Classic
         </h4>
 
-            <pre class="language-javascript line-numbers"><code class="language-javascript"></code></pre>
+          <div class="_code-snippet_11tjec">
+              <div class="shiki-code-block" style>
+<!---->  <div class="shiki-code-block__code
+      line-numbers">
+    <div>
+        <pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #C586C0">import</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">Component</span><span style="color: #D4D4D4"> </span><span style="color: #C586C0">from</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&#39;@ember/component&#39;</span><span style="color: #D4D4D4">;</span></span>
+<span class="line"><span style="color: #C586C0">import</span><span style="color: #D4D4D4"> { </span><span style="color: #9CDCFE">computed</span><span style="color: #D4D4D4"> } </span><span style="color: #C586C0">from</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&#39;@ember/object&#39;</span><span style="color: #D4D4D4">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #C586C0">export</span><span style="color: #D4D4D4"> </span><span style="color: #C586C0">default</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">Component</span><span style="color: #D4D4D4">.</span><span style="color: #DCDCAA">extend</span><span style="color: #D4D4D4">({</span></span>
+<span class="line"><span style="color: #D4D4D4">  </span><span style="color: #9CDCFE">index:</span><span style="color: #D4D4D4"> </span><span style="color: #B5CEA8">0</span><span style="color: #D4D4D4">,</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #D4D4D4">  </span><span style="color: #9CDCFE">nextIndex:</span><span style="color: #D4D4D4"> </span><span style="color: #DCDCAA">computed</span><span style="color: #D4D4D4">(</span><span style="color: #CE9178">&#39;index&#39;</span><span style="color: #D4D4D4">, </span><span style="color: #569CD6">function</span><span style="color: #D4D4D4">() {</span></span>
+<span class="line"><span style="color: #D4D4D4">    </span><span style="color: #C586C0">return</span><span style="color: #D4D4D4"> </span><span style="color: #569CD6">this</span><span style="color: #D4D4D4">.</span><span style="color: #9CDCFE">index</span><span style="color: #D4D4D4"> + </span><span style="color: #B5CEA8">1</span><span style="color: #D4D4D4">;</span></span>
+<span class="line"><span style="color: #D4D4D4">  })</span></span>
+<span class="line"><span style="color: #D4D4D4">});</span></span></code></pre>
+    </div>
+      <button class="copy-button " aria-label="copy" type="button"></button>
+  </div>
+</div>
 
+          </div>
 
 <!---->      </div>
 
@@ -967,8 +1573,27 @@
           Octane
         </h4>
 
-            <pre class="language-javascript line-numbers"><code class="language-javascript"></code></pre>
+          <div class="_code-snippet_11tjec">
+              <div class="shiki-code-block" style>
+<!---->  <div class="shiki-code-block__code
+      line-numbers">
+    <div>
+        <pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #C586C0">import</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">Component</span><span style="color: #D4D4D4"> </span><span style="color: #C586C0">from</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&#39;@glimmer/component&#39;</span><span style="color: #D4D4D4">;</span></span>
+<span class="line"><span style="color: #C586C0">import</span><span style="color: #D4D4D4"> { </span><span style="color: #9CDCFE">tracked</span><span style="color: #D4D4D4"> } </span><span style="color: #C586C0">from</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&#39;@glimmer/tracking&#39;</span><span style="color: #D4D4D4">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #C586C0">export</span><span style="color: #D4D4D4"> </span><span style="color: #C586C0">default</span><span style="color: #D4D4D4"> </span><span style="color: #569CD6">class</span><span style="color: #D4D4D4"> </span><span style="color: #4EC9B0">MyComponent</span><span style="color: #D4D4D4"> </span><span style="color: #569CD6">extends</span><span style="color: #D4D4D4"> </span><span style="color: #4EC9B0">Component</span><span style="color: #D4D4D4"> {</span></span>
+<span class="line"><span style="color: #D4D4D4">  @</span><span style="color: #9CDCFE">tracked</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">index</span><span style="color: #D4D4D4"> = </span><span style="color: #B5CEA8">0</span><span style="color: #D4D4D4">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #D4D4D4">  </span><span style="color: #569CD6">get</span><span style="color: #D4D4D4"> </span><span style="color: #DCDCAA">nextIndex</span><span style="color: #D4D4D4">() {</span></span>
+<span class="line"><span style="color: #D4D4D4">    </span><span style="color: #C586C0">return</span><span style="color: #D4D4D4"> </span><span style="color: #569CD6">this</span><span style="color: #D4D4D4">.</span><span style="color: #9CDCFE">index</span><span style="color: #D4D4D4"> + </span><span style="color: #B5CEA8">1</span><span style="color: #D4D4D4">;</span></span>
+<span class="line"><span style="color: #D4D4D4">  }</span></span>
+<span class="line"><span style="color: #D4D4D4">}</span></span></code></pre>
+    </div>
+      <button class="copy-button " aria-label="copy" type="button"></button>
+  </div>
+</div>
 
+          </div>
 
 <!---->      </div>
     
@@ -1000,15 +1625,34 @@
 
     </p>
 
-      <div id="ember22" class="ember-view container-query _code-examples-container_11tjec" data-test-container-query>
+      <div id="ember22" class="ember-view container-query _code-examples-container_11tjec">
     
       <div class="_ember-classic_11tjec">
         <h4 class>
           Classic
         </h4>
 
-            <pre class="language-javascript line-numbers"><code class="language-javascript"></code></pre>
+          <div class="_code-snippet_11tjec">
+              <div class="shiki-code-block" style>
+<!---->  <div class="shiki-code-block__code
+      line-numbers">
+    <div>
+        <pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #C586C0">import</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">Component</span><span style="color: #D4D4D4"> </span><span style="color: #C586C0">from</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&#39;@ember/component&#39;</span><span style="color: #D4D4D4">;</span></span>
+<span class="line"><span style="color: #C586C0">import</span><span style="color: #D4D4D4"> { </span><span style="color: #9CDCFE">computed</span><span style="color: #D4D4D4"> } </span><span style="color: #C586C0">from</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&#39;@ember/object&#39;</span><span style="color: #D4D4D4">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #C586C0">export</span><span style="color: #D4D4D4"> </span><span style="color: #C586C0">default</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">Component</span><span style="color: #D4D4D4">.</span><span style="color: #DCDCAA">extend</span><span style="color: #D4D4D4">({</span></span>
+<span class="line"><span style="color: #D4D4D4">  </span><span style="color: #9CDCFE">index:</span><span style="color: #D4D4D4"> </span><span style="color: #B5CEA8">0</span><span style="color: #D4D4D4">,</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #D4D4D4">  </span><span style="color: #9CDCFE">nextIndex:</span><span style="color: #D4D4D4"> </span><span style="color: #DCDCAA">computed</span><span style="color: #D4D4D4">(</span><span style="color: #CE9178">&#39;index&#39;</span><span style="color: #D4D4D4">, </span><span style="color: #569CD6">function</span><span style="color: #D4D4D4">() {</span></span>
+<span class="line"><span style="color: #D4D4D4">    </span><span style="color: #C586C0">return</span><span style="color: #D4D4D4"> </span><span style="color: #569CD6">this</span><span style="color: #D4D4D4">.</span><span style="color: #9CDCFE">index</span><span style="color: #D4D4D4"> + </span><span style="color: #B5CEA8">1</span><span style="color: #D4D4D4">;</span></span>
+<span class="line"><span style="color: #D4D4D4">  })</span></span>
+<span class="line"><span style="color: #D4D4D4">});</span></span></code></pre>
+    </div>
+      <button class="copy-button " aria-label="copy" type="button"></button>
+  </div>
+</div>
 
+          </div>
 
 <!---->      </div>
 
@@ -1017,8 +1661,28 @@
           Octane
         </h4>
 
-            <pre class="language-javascript line-numbers"><code class="language-javascript"></code></pre>
+          <div class="_code-snippet_11tjec">
+              <div class="shiki-code-block" style>
+<!---->  <div class="shiki-code-block__code
+      line-numbers">
+    <div>
+        <pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #C586C0">import</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">Component</span><span style="color: #D4D4D4"> </span><span style="color: #C586C0">from</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&#39;@glimmer/component&#39;</span><span style="color: #D4D4D4">;</span></span>
+<span class="line"><span style="color: #C586C0">import</span><span style="color: #D4D4D4"> { </span><span style="color: #9CDCFE">computed</span><span style="color: #D4D4D4"> } </span><span style="color: #C586C0">from</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&#39;@ember/object&#39;</span><span style="color: #D4D4D4">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #C586C0">export</span><span style="color: #D4D4D4"> </span><span style="color: #C586C0">default</span><span style="color: #D4D4D4"> </span><span style="color: #569CD6">class</span><span style="color: #D4D4D4"> </span><span style="color: #4EC9B0">MyComponent</span><span style="color: #D4D4D4"> </span><span style="color: #569CD6">extends</span><span style="color: #D4D4D4"> </span><span style="color: #4EC9B0">Component</span><span style="color: #D4D4D4"> {</span></span>
+<span class="line"><span style="color: #D4D4D4">  </span><span style="color: #9CDCFE">index</span><span style="color: #D4D4D4"> = </span><span style="color: #B5CEA8">0</span><span style="color: #D4D4D4">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #D4D4D4">  @</span><span style="color: #DCDCAA">computed</span><span style="color: #D4D4D4">(</span><span style="color: #CE9178">&#39;index&#39;</span><span style="color: #D4D4D4">)</span></span>
+<span class="line"><span style="color: #D4D4D4">  </span><span style="color: #569CD6">get</span><span style="color: #D4D4D4"> </span><span style="color: #DCDCAA">nextIndex</span><span style="color: #D4D4D4">() {</span></span>
+<span class="line"><span style="color: #D4D4D4">    </span><span style="color: #C586C0">return</span><span style="color: #D4D4D4"> </span><span style="color: #569CD6">this</span><span style="color: #D4D4D4">.</span><span style="color: #9CDCFE">index</span><span style="color: #D4D4D4"> + </span><span style="color: #B5CEA8">1</span><span style="color: #D4D4D4">;</span></span>
+<span class="line"><span style="color: #D4D4D4">  }</span></span>
+<span class="line"><span style="color: #D4D4D4">}</span></span></code></pre>
+    </div>
+      <button class="copy-button " aria-label="copy" type="button"></button>
+  </div>
+</div>
 
+          </div>
 
 <!---->      </div>
     
@@ -1065,17 +1729,61 @@
 
     </p>
 
-      <div id="ember23" class="ember-view container-query _code-examples-container_11tjec" data-test-container-query>
+      <div id="ember23" class="ember-view container-query _code-examples-container_11tjec">
     
       <div class="_ember-classic_11tjec">
         <h4 class>
           Classic
         </h4>
 
-            <pre class="language-javascript line-numbers"><code class="language-javascript"></code></pre>
+          <div class="_code-snippet_11tjec">
+              <div class="shiki-code-block" style>
+<!---->  <div class="shiki-code-block__code
+      line-numbers">
+    <div>
+        <pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #C586C0">import</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">Component</span><span style="color: #D4D4D4"> </span><span style="color: #C586C0">from</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&#39;@ember/component&#39;</span><span style="color: #D4D4D4">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #C586C0">export</span><span style="color: #D4D4D4"> </span><span style="color: #C586C0">default</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">Component</span><span style="color: #D4D4D4">.</span><span style="color: #DCDCAA">extend</span><span style="color: #D4D4D4">({</span></span>
+<span class="line"><span style="color: #D4D4D4">  </span><span style="color: #9CDCFE">actions:</span><span style="color: #D4D4D4"> {</span></span>
+<span class="line"><span style="color: #D4D4D4">    </span><span style="color: #DCDCAA">sayHello</span><span style="color: #D4D4D4">() {</span></span>
+<span class="line"><span style="color: #D4D4D4">      </span><span style="color: #9CDCFE">console</span><span style="color: #D4D4D4">.</span><span style="color: #DCDCAA">log</span><span style="color: #D4D4D4">(</span><span style="color: #CE9178">&#39;Hello, world!&#39;</span><span style="color: #D4D4D4">);</span></span>
+<span class="line"><span style="color: #D4D4D4">    },</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #D4D4D4">    </span><span style="color: #DCDCAA">saySomethingElse</span><span style="color: #D4D4D4">(</span><span style="color: #9CDCFE">message</span><span style="color: #D4D4D4">) {</span></span>
+<span class="line"><span style="color: #D4D4D4">      </span><span style="color: #9CDCFE">console</span><span style="color: #D4D4D4">.</span><span style="color: #DCDCAA">log</span><span style="color: #D4D4D4">(</span><span style="color: #9CDCFE">message</span><span style="color: #D4D4D4">)</span></span>
+<span class="line"><span style="color: #D4D4D4">    }</span></span>
+<span class="line"><span style="color: #D4D4D4">  }</span></span>
+<span class="line"><span style="color: #D4D4D4">});</span></span></code></pre>
+    </div>
+      <button class="copy-button " aria-label="copy" type="button"></button>
+  </div>
+</div>
 
-            <pre class="language-handlebars line-numbers"><code class="language-handlebars"></code></pre>
+          </div>
+          <div class="_code-snippet_11tjec">
+              <div class="shiki-code-block" style>
+<!---->  <div class="shiki-code-block__code
+      line-numbers">
+    <div>
+        <pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #808080">&lt;</span><span style="color: #569CD6">button</span></span>
+<span class="line"><span style="color: #D4D4D4">  </span><span style="color: #9CDCFE">type=</span><span style="color: #CE9178">&quot;button&quot;</span></span>
+<span class="line"><span style="color: #D4D4D4">  </span><span style="color: #9CDCFE">onclick=</span><span style="color: #DCDCAA">{{</span><span style="color: #9CDCFE">action</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&quot;sayHello&quot;</span><span style="color: #DCDCAA">}}</span></span>
+<span class="line"><span style="color: #808080">&gt;</span></span>
+<span class="line"><span style="color: #D4D4D4">  Say hello!</span></span>
+<span class="line"><span style="color: #808080">&lt;/</span><span style="color: #569CD6">button</span><span style="color: #808080">&gt;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #808080">&lt;</span><span style="color: #569CD6">button</span></span>
+<span class="line"><span style="color: #D4D4D4">  </span><span style="color: #9CDCFE">type=</span><span style="color: #CE9178">&quot;button&quot;</span></span>
+<span class="line"><span style="color: #D4D4D4">  </span><span style="color: #9CDCFE">onclick=</span><span style="color: #DCDCAA">{{</span><span style="color: #9CDCFE">action</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&quot;saySomethingElse&quot;</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&quot;Cheese!&quot;</span><span style="color: #DCDCAA">}}</span></span>
+<span class="line"><span style="color: #808080">&gt;</span></span>
+<span class="line"><span style="color: #D4D4D4">  Say cheese!</span></span>
+<span class="line"><span style="color: #808080">&lt;/</span><span style="color: #569CD6">button</span><span style="color: #808080">&gt;</span></span></code></pre>
+    </div>
+      <button class="copy-button " aria-label="copy" type="button"></button>
+  </div>
+</div>
 
+          </div>
 
 <!---->      </div>
 
@@ -1084,10 +1792,53 @@
           Octane
         </h4>
 
-            <pre class="language-javascript line-numbers"><code class="language-javascript"></code></pre>
+          <div class="_code-snippet_11tjec">
+              <div class="shiki-code-block" style>
+<!---->  <div class="shiki-code-block__code
+      line-numbers">
+    <div>
+        <pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #C586C0">import</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">Component</span><span style="color: #D4D4D4"> </span><span style="color: #C586C0">from</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&#39;@glimmer/component&#39;</span><span style="color: #D4D4D4">;</span></span>
+<span class="line"><span style="color: #C586C0">import</span><span style="color: #D4D4D4"> { </span><span style="color: #9CDCFE">action</span><span style="color: #D4D4D4"> } </span><span style="color: #C586C0">from</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&#39;@ember/object&#39;</span><span style="color: #D4D4D4">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #C586C0">export</span><span style="color: #D4D4D4"> </span><span style="color: #C586C0">default</span><span style="color: #D4D4D4"> </span><span style="color: #569CD6">class</span><span style="color: #D4D4D4"> </span><span style="color: #4EC9B0">MyComponent</span><span style="color: #D4D4D4"> </span><span style="color: #569CD6">extends</span><span style="color: #D4D4D4"> </span><span style="color: #4EC9B0">Component</span><span style="color: #D4D4D4"> {</span></span>
+<span class="line"><span style="color: #D4D4D4">  @</span><span style="color: #9CDCFE">action</span><span style="color: #D4D4D4"> </span><span style="color: #DCDCAA">sayHello</span><span style="color: #D4D4D4">() {</span></span>
+<span class="line"><span style="color: #D4D4D4">    </span><span style="color: #9CDCFE">console</span><span style="color: #D4D4D4">.</span><span style="color: #DCDCAA">log</span><span style="color: #D4D4D4">(</span><span style="color: #CE9178">&#39;Hello, world!&#39;</span><span style="color: #D4D4D4">);</span></span>
+<span class="line"><span style="color: #D4D4D4">  }</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #D4D4D4">  @</span><span style="color: #9CDCFE">action</span><span style="color: #D4D4D4"> </span><span style="color: #DCDCAA">saySomethingElse</span><span style="color: #D4D4D4">(</span><span style="color: #9CDCFE">message</span><span style="color: #D4D4D4">) {</span></span>
+<span class="line"><span style="color: #D4D4D4">    </span><span style="color: #9CDCFE">console</span><span style="color: #D4D4D4">.</span><span style="color: #DCDCAA">log</span><span style="color: #D4D4D4">(</span><span style="color: #9CDCFE">message</span><span style="color: #D4D4D4">);</span></span>
+<span class="line"><span style="color: #D4D4D4">  }</span></span>
+<span class="line"><span style="color: #D4D4D4">}</span></span></code></pre>
+    </div>
+      <button class="copy-button " aria-label="copy" type="button"></button>
+  </div>
+</div>
 
-            <pre class="language-handlebars line-numbers"><code class="language-handlebars"></code></pre>
+          </div>
+          <div class="_code-snippet_11tjec">
+              <div class="shiki-code-block" style>
+<!---->  <div class="shiki-code-block__code
+      line-numbers">
+    <div>
+        <pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #808080">&lt;</span><span style="color: #569CD6">button</span></span>
+<span class="line"><span style="color: #D4D4D4">  </span><span style="color: #9CDCFE">type=</span><span style="color: #CE9178">&quot;button&quot;</span></span>
+<span class="line"><span style="color: #D4D4D4">  </span><span style="color: #DCDCAA">{{</span><span style="color: #9CDCFE">on</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&quot;click&quot;</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">this.sayHello</span><span style="color: #DCDCAA">}}</span></span>
+<span class="line"><span style="color: #808080">&gt;</span></span>
+<span class="line"><span style="color: #D4D4D4">  Say hello!</span></span>
+<span class="line"><span style="color: #808080">&lt;/</span><span style="color: #569CD6">button</span><span style="color: #808080">&gt;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #808080">&lt;</span><span style="color: #569CD6">button</span></span>
+<span class="line"><span style="color: #D4D4D4">  </span><span style="color: #9CDCFE">type=</span><span style="color: #CE9178">&quot;button&quot;</span></span>
+<span class="line"><span style="color: #D4D4D4">  </span><span style="color: #DCDCAA">{{</span><span style="color: #9CDCFE">on</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&quot;click&quot;</span><span style="color: #D4D4D4"> (</span><span style="color: #9CDCFE">fn</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">this.saySomethingElse</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&quot;Cheese!&quot;</span><span style="color: #D4D4D4">)</span><span style="color: #DCDCAA">}}</span></span>
+<span class="line"><span style="color: #808080">&gt;</span></span>
+<span class="line"><span style="color: #D4D4D4">  Say cheese!</span></span>
+<span class="line"><span style="color: #808080">&lt;/</span><span style="color: #569CD6">button</span><span style="color: #808080">&gt;</span></span></code></pre>
+    </div>
+      <button class="copy-button " aria-label="copy" type="button"></button>
+  </div>
+</div>
 
+          </div>
 
 <!---->      </div>
     
@@ -1119,17 +1870,43 @@
 
     </p>
 
-      <div id="ember24" class="ember-view container-query _code-examples-container_11tjec" data-test-container-query>
+      <div id="ember24" class="ember-view container-query _code-examples-container_11tjec">
     
       <div class="_ember-classic_11tjec">
         <h4 class>
           Classic
         </h4>
 
-            <pre class="language-handlebars line-numbers"><code class="language-handlebars"></code></pre>
+          <div class="_code-snippet_11tjec">
+              <div class="shiki-code-block" style>
+<!---->  <div class="shiki-code-block__code
+      line-numbers">
+    <div>
+        <pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #6A9955">{{!-- parent-component.hbs --}}</span></span>
+<span class="line"><span style="color: #DCDCAA">{{</span><span style="color: #9CDCFE">child-component</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">answer=answer</span><span style="color: #DCDCAA">}}</span></span></code></pre>
+    </div>
+      <button class="copy-button " aria-label="copy" type="button"></button>
+  </div>
+</div>
 
-            <pre class="language-javascript line-numbers"><code class="language-javascript"></code></pre>
+          </div>
+          <div class="_code-snippet_11tjec">
+              <div class="shiki-code-block" style>
+<!---->  <div class="shiki-code-block__code
+      line-numbers">
+    <div>
+        <pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #6A9955">// child-component.js</span></span>
+<span class="line"><span style="color: #C586C0">import</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">Component</span><span style="color: #D4D4D4"> </span><span style="color: #C586C0">from</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&#39;@ember/component&#39;</span><span style="color: #D4D4D4">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #C586C0">export</span><span style="color: #D4D4D4"> </span><span style="color: #C586C0">default</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">Component</span><span style="color: #D4D4D4">.</span><span style="color: #DCDCAA">extend</span><span style="color: #D4D4D4">({</span></span>
+<span class="line"><span style="color: #D4D4D4">  </span><span style="color: #9CDCFE">answer:</span><span style="color: #D4D4D4"> </span><span style="color: #B5CEA8">42</span></span>
+<span class="line"><span style="color: #D4D4D4">});</span></span></code></pre>
+    </div>
+      <button class="copy-button " aria-label="copy" type="button"></button>
+  </div>
+</div>
 
+          </div>
 
 <!---->      </div>
 
@@ -1138,10 +1915,38 @@
           Octane
         </h4>
 
-            <pre class="language-handlebars line-numbers"><code class="language-handlebars"></code></pre>
+          <div class="_code-snippet_11tjec">
+              <div class="shiki-code-block" style>
+<!---->  <div class="shiki-code-block__code
+      line-numbers">
+    <div>
+        <pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #6A9955">{{!-- parent-component.hbs --}}</span></span>
+<span class="line"><span style="color: #808080">&lt;</span><span style="color: #569CD6">ChildComponent</span><span style="color: #D4D4D4"> @</span><span style="color: #9CDCFE">answer=</span><span style="color: #DCDCAA">{{</span><span style="color: #9CDCFE">this.answer</span><span style="color: #DCDCAA">}}</span><span style="color: #D4D4D4"> /</span><span style="color: #808080">&gt;</span></span></code></pre>
+    </div>
+      <button class="copy-button " aria-label="copy" type="button"></button>
+  </div>
+</div>
 
-            <pre class="language-javascript line-numbers"><code class="language-javascript"></code></pre>
+          </div>
+          <div class="_code-snippet_11tjec">
+              <div class="shiki-code-block" style>
+<!---->  <div class="shiki-code-block__code
+      line-numbers">
+    <div>
+        <pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #6A9955">// child-component.js</span></span>
+<span class="line"><span style="color: #C586C0">import</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">Component</span><span style="color: #D4D4D4"> </span><span style="color: #C586C0">from</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&#39;@glimmer/component&#39;</span><span style="color: #D4D4D4">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #C586C0">export</span><span style="color: #D4D4D4"> </span><span style="color: #C586C0">default</span><span style="color: #D4D4D4"> </span><span style="color: #569CD6">class</span><span style="color: #D4D4D4"> </span><span style="color: #4EC9B0">ChildComponent</span><span style="color: #D4D4D4"> </span><span style="color: #569CD6">extends</span><span style="color: #D4D4D4"> </span><span style="color: #4EC9B0">Component</span><span style="color: #D4D4D4"> {</span></span>
+<span class="line"><span style="color: #D4D4D4">  </span><span style="color: #569CD6">get</span><span style="color: #D4D4D4"> </span><span style="color: #DCDCAA">answer</span><span style="color: #D4D4D4">() {</span></span>
+<span class="line"><span style="color: #D4D4D4">    </span><span style="color: #C586C0">return</span><span style="color: #D4D4D4"> </span><span style="color: #569CD6">this</span><span style="color: #D4D4D4">.</span><span style="color: #9CDCFE">args</span><span style="color: #D4D4D4">.</span><span style="color: #9CDCFE">answer</span><span style="color: #D4D4D4"> ?? </span><span style="color: #B5CEA8">42</span><span style="color: #D4D4D4">;</span></span>
+<span class="line"><span style="color: #D4D4D4">  }</span></span>
+<span class="line"><span style="color: #D4D4D4">}</span></span></code></pre>
+    </div>
+      <button class="copy-button " aria-label="copy" type="button"></button>
+  </div>
+</div>
 
+          </div>
 
 <!---->      </div>
     
@@ -1173,15 +1978,30 @@
 
     </p>
 
-      <div id="ember25" class="ember-view container-query _code-examples-container_11tjec" data-test-container-query>
+      <div id="ember25" class="ember-view container-query _code-examples-container_11tjec">
     
       <div class="_ember-classic_11tjec">
         <h4 class>
           Classic
         </h4>
 
-            <pre class="language-javascript line-numbers"><code class="language-javascript"></code></pre>
+          <div class="_code-snippet_11tjec">
+              <div class="shiki-code-block" style>
+<!---->  <div class="shiki-code-block__code
+      line-numbers">
+    <div>
+        <pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #C586C0">import</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">Component</span><span style="color: #D4D4D4"> </span><span style="color: #C586C0">from</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&#39;@ember/component&#39;</span><span style="color: #D4D4D4">;</span></span>
+<span class="line"><span style="color: #C586C0">import</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">SomeMixin</span><span style="color: #D4D4D4"> </span><span style="color: #C586C0">from</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&#39;some-addon&#39;</span><span style="color: #D4D4D4">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #C586C0">export</span><span style="color: #D4D4D4"> </span><span style="color: #C586C0">default</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">Component</span><span style="color: #D4D4D4">.</span><span style="color: #DCDCAA">extend</span><span style="color: #D4D4D4">(</span><span style="color: #9CDCFE">SomeMixin</span><span style="color: #D4D4D4">, {</span></span>
+<span class="line"><span style="color: #D4D4D4">  </span><span style="color: #6A9955">// ...</span></span>
+<span class="line"><span style="color: #D4D4D4">});</span></span></code></pre>
+    </div>
+      <button class="copy-button " aria-label="copy" type="button"></button>
+  </div>
+</div>
 
+          </div>
 
 <!---->      </div>
 
@@ -1240,15 +2060,32 @@
 
     </p>
 
-      <div id="ember26" class="ember-view container-query _code-examples-container_11tjec" data-test-container-query>
+      <div id="ember26" class="ember-view container-query _code-examples-container_11tjec">
     
       <div class="_ember-classic_11tjec">
         <h4 class>
           Classic
         </h4>
 
-            <pre class="language-javascript line-numbers"><code class="language-javascript"></code></pre>
+          <div class="_code-snippet_11tjec">
+              <div class="shiki-code-block" style>
+<!---->  <div class="shiki-code-block__code
+      line-numbers">
+    <div>
+        <pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #C586C0">import</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">Component</span><span style="color: #D4D4D4"> </span><span style="color: #C586C0">from</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&#39;@ember/component&#39;</span><span style="color: #D4D4D4">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #C586C0">export</span><span style="color: #D4D4D4"> </span><span style="color: #C586C0">default</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">Component</span><span style="color: #D4D4D4">.</span><span style="color: #DCDCAA">extend</span><span style="color: #D4D4D4">({</span></span>
+<span class="line"><span style="color: #D4D4D4">  </span><span style="color: #DCDCAA">init</span><span style="color: #D4D4D4">() {</span></span>
+<span class="line"><span style="color: #D4D4D4">    </span><span style="color: #569CD6">this</span><span style="color: #D4D4D4">.</span><span style="color: #DCDCAA">_super</span><span style="color: #D4D4D4">(...</span><span style="color: #569CD6">arguments</span><span style="color: #D4D4D4">);</span></span>
+<span class="line"><span style="color: #D4D4D4">    </span><span style="color: #569CD6">this</span><span style="color: #D4D4D4">.</span><span style="color: #DCDCAA">set</span><span style="color: #D4D4D4">(</span><span style="color: #CE9178">&#39;answer&#39;</span><span style="color: #D4D4D4">, </span><span style="color: #B5CEA8">42</span><span style="color: #D4D4D4">);</span></span>
+<span class="line"><span style="color: #D4D4D4">  }</span></span>
+<span class="line"><span style="color: #D4D4D4">});</span></span></code></pre>
+    </div>
+      <button class="copy-button " aria-label="copy" type="button"></button>
+  </div>
+</div>
 
+          </div>
 
 <!---->      </div>
 
@@ -1257,8 +2094,25 @@
           Octane
         </h4>
 
-            <pre class="language-javascript line-numbers"><code class="language-javascript"></code></pre>
+          <div class="_code-snippet_11tjec">
+              <div class="shiki-code-block" style>
+<!---->  <div class="shiki-code-block__code
+      line-numbers">
+    <div>
+        <pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #C586C0">import</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">Component</span><span style="color: #D4D4D4"> </span><span style="color: #C586C0">from</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&#39;@glimmer/component&#39;</span><span style="color: #D4D4D4">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #C586C0">export</span><span style="color: #D4D4D4"> </span><span style="color: #C586C0">default</span><span style="color: #D4D4D4"> </span><span style="color: #569CD6">class</span><span style="color: #D4D4D4"> </span><span style="color: #4EC9B0">MyComponent</span><span style="color: #D4D4D4"> </span><span style="color: #569CD6">extends</span><span style="color: #D4D4D4"> </span><span style="color: #4EC9B0">Component</span><span style="color: #D4D4D4"> {</span></span>
+<span class="line"><span style="color: #D4D4D4">  </span><span style="color: #569CD6">constructor</span><span style="color: #D4D4D4">(</span><span style="color: #9CDCFE">owner</span><span style="color: #D4D4D4">, </span><span style="color: #9CDCFE">args</span><span style="color: #D4D4D4">) {</span></span>
+<span class="line"><span style="color: #D4D4D4">    </span><span style="color: #569CD6">super</span><span style="color: #D4D4D4">(</span><span style="color: #9CDCFE">owner</span><span style="color: #D4D4D4">, </span><span style="color: #9CDCFE">args</span><span style="color: #D4D4D4">);</span></span>
+<span class="line"><span style="color: #D4D4D4">    </span><span style="color: #569CD6">this</span><span style="color: #D4D4D4">.</span><span style="color: #9CDCFE">answer</span><span style="color: #D4D4D4"> = </span><span style="color: #B5CEA8">42</span><span style="color: #D4D4D4">;</span></span>
+<span class="line"><span style="color: #D4D4D4">  }</span></span>
+<span class="line"><span style="color: #D4D4D4">}</span></span></code></pre>
+    </div>
+      <button class="copy-button " aria-label="copy" type="button"></button>
+  </div>
+</div>
 
+          </div>
 
 <!---->      </div>
     
@@ -1290,15 +2144,31 @@
 
     </p>
 
-      <div id="ember27" class="ember-view container-query _code-examples-container_11tjec" data-test-container-query>
+      <div id="ember27" class="ember-view container-query _code-examples-container_11tjec">
     
       <div class="_ember-classic_11tjec">
         <h4 class>
           Classic
         </h4>
 
-            <pre class="language-javascript line-numbers"><code class="language-javascript"></code></pre>
+          <div class="_code-snippet_11tjec">
+              <div class="shiki-code-block" style>
+<!---->  <div class="shiki-code-block__code
+      line-numbers">
+    <div>
+        <pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #C586C0">import</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">Component</span><span style="color: #D4D4D4"> </span><span style="color: #C586C0">from</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&#39;@ember/component&#39;</span><span style="color: #D4D4D4">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #C586C0">export</span><span style="color: #D4D4D4"> </span><span style="color: #C586C0">default</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">Component</span><span style="color: #D4D4D4">.</span><span style="color: #DCDCAA">extend</span><span style="color: #D4D4D4">({</span></span>
+<span class="line"><span style="color: #D4D4D4">  </span><span style="color: #DCDCAA">willDestroyElement</span><span style="color: #D4D4D4">() {</span></span>
+<span class="line"><span style="color: #D4D4D4">    </span><span style="color: #6A9955">// Remove event listener</span></span>
+<span class="line"><span style="color: #D4D4D4">  }</span></span>
+<span class="line"><span style="color: #D4D4D4">});</span></span></code></pre>
+    </div>
+      <button class="copy-button " aria-label="copy" type="button"></button>
+  </div>
+</div>
 
+          </div>
 
 <!---->      </div>
 
@@ -1307,8 +2177,24 @@
           Octane
         </h4>
 
-            <pre class="language-javascript line-numbers"><code class="language-javascript"></code></pre>
+          <div class="_code-snippet_11tjec">
+              <div class="shiki-code-block" style>
+<!---->  <div class="shiki-code-block__code
+      line-numbers">
+    <div>
+        <pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #C586C0">import</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">Component</span><span style="color: #D4D4D4"> </span><span style="color: #C586C0">from</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&#39;@glimmer/component&#39;</span><span style="color: #D4D4D4">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #C586C0">export</span><span style="color: #D4D4D4"> </span><span style="color: #C586C0">default</span><span style="color: #D4D4D4"> </span><span style="color: #569CD6">class</span><span style="color: #D4D4D4"> </span><span style="color: #4EC9B0">MyComponent</span><span style="color: #D4D4D4"> </span><span style="color: #569CD6">extends</span><span style="color: #D4D4D4"> </span><span style="color: #4EC9B0">Component</span><span style="color: #D4D4D4"> {</span></span>
+<span class="line"><span style="color: #D4D4D4">  </span><span style="color: #DCDCAA">willDestroy</span><span style="color: #D4D4D4">() {</span></span>
+<span class="line"><span style="color: #D4D4D4">    </span><span style="color: #6A9955">// Remove event listener</span></span>
+<span class="line"><span style="color: #D4D4D4">  }</span></span>
+<span class="line"><span style="color: #D4D4D4">}</span></span></code></pre>
+    </div>
+      <button class="copy-button " aria-label="copy" type="button"></button>
+  </div>
+</div>
 
+          </div>
 
 <!---->      </div>
     
@@ -1340,7 +2226,7 @@
 
     </p>
 
-      <div id="ember28" class="ember-view container-query _code-examples-container_11tjec" data-test-container-query>
+      <div id="ember28" class="ember-view container-query _code-examples-container_11tjec">
     
       <div class="_ember-classic_11tjec">
         <h4 class>
@@ -1359,8 +2245,18 @@
           Octane
         </h4>
 
-            <pre class="language-bash line-numbers"><code class="language-bash"></code></pre>
+          <div class="_code-snippet_11tjec">
+              <div class="shiki-code-block" style>
+<!---->  <div class="shiki-code-block__code
+      line-numbers">
+    <div>
+        <pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #DCDCAA">ember</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">install</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">@ember/render-modifiers</span></span></code></pre>
+    </div>
+      <button class="copy-button " aria-label="copy" type="button"></button>
+  </div>
+</div>
 
+          </div>
 
 <!---->      </div>
     
@@ -1392,17 +2288,43 @@
 
     </p>
 
-      <div id="ember29" class="ember-view container-query _code-examples-container_11tjec" data-test-container-query>
+      <div id="ember29" class="ember-view container-query _code-examples-container_11tjec">
     
       <div class="_ember-classic_11tjec">
         <h4 class>
           Classic
         </h4>
 
-            <pre class="language-handlebars line-numbers"><code class="language-handlebars"></code></pre>
+          <div class="_code-snippet_11tjec">
+              <div class="shiki-code-block" style>
+<!---->  <div class="shiki-code-block__code
+      line-numbers">
+    <div>
+        <pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #808080">&lt;</span><span style="color: #569CD6">canvas</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">id</span><span style="color: #D4D4D4">=</span><span style="color: #CE9178">&quot;my-canvas&quot;</span><span style="color: #808080">&gt;&lt;/</span><span style="color: #569CD6">canvas</span><span style="color: #808080">&gt;</span></span></code></pre>
+    </div>
+      <button class="copy-button " aria-label="copy" type="button"></button>
+  </div>
+</div>
 
-            <pre class="language-javascript line-numbers"><code class="language-javascript"></code></pre>
+          </div>
+          <div class="_code-snippet_11tjec">
+              <div class="shiki-code-block" style>
+<!---->  <div class="shiki-code-block__code
+      line-numbers">
+    <div>
+        <pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #C586C0">import</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">Component</span><span style="color: #D4D4D4"> </span><span style="color: #C586C0">from</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&#39;@ember/component&#39;</span><span style="color: #D4D4D4">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #C586C0">export</span><span style="color: #D4D4D4"> </span><span style="color: #C586C0">default</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">Component</span><span style="color: #D4D4D4">.</span><span style="color: #DCDCAA">extend</span><span style="color: #D4D4D4">({</span></span>
+<span class="line"><span style="color: #D4D4D4">  </span><span style="color: #DCDCAA">didInsertElement</span><span style="color: #D4D4D4">() {</span></span>
+<span class="line"><span style="color: #D4D4D4">    </span><span style="color: #6A9955">// Find the canvas element by id. Then, create a graph.</span></span>
+<span class="line"><span style="color: #D4D4D4">  }</span></span>
+<span class="line"><span style="color: #D4D4D4">});</span></span></code></pre>
+    </div>
+      <button class="copy-button " aria-label="copy" type="button"></button>
+  </div>
+</div>
 
+          </div>
 
 <!---->      </div>
 
@@ -1411,10 +2333,37 @@
           Octane
         </h4>
 
-            <pre class="language-handlebars line-numbers"><code class="language-handlebars"></code></pre>
+          <div class="_code-snippet_11tjec">
+              <div class="shiki-code-block" style>
+<!---->  <div class="shiki-code-block__code
+      line-numbers">
+    <div>
+        <pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #808080">&lt;</span><span style="color: #569CD6">canvas</span><span style="color: #D4D4D4"> </span><span style="color: #DCDCAA">{{</span><span style="color: #9CDCFE">did-insert</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">this.createGraph</span><span style="color: #DCDCAA">}}</span><span style="color: #808080">&gt;&lt;/</span><span style="color: #569CD6">canvas</span><span style="color: #808080">&gt;</span></span></code></pre>
+    </div>
+      <button class="copy-button " aria-label="copy" type="button"></button>
+  </div>
+</div>
 
-            <pre class="language-javascript line-numbers"><code class="language-javascript"></code></pre>
+          </div>
+          <div class="_code-snippet_11tjec">
+              <div class="shiki-code-block" style>
+<!---->  <div class="shiki-code-block__code
+      line-numbers">
+    <div>
+        <pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #C586C0">import</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">Component</span><span style="color: #D4D4D4"> </span><span style="color: #C586C0">from</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&#39;@glimmer/component&#39;</span><span style="color: #D4D4D4">;</span></span>
+<span class="line"><span style="color: #C586C0">import</span><span style="color: #D4D4D4"> { </span><span style="color: #9CDCFE">action</span><span style="color: #D4D4D4"> } </span><span style="color: #C586C0">from</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&#39;@ember/object&#39;</span><span style="color: #D4D4D4">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #C586C0">export</span><span style="color: #D4D4D4"> </span><span style="color: #C586C0">default</span><span style="color: #D4D4D4"> </span><span style="color: #569CD6">class</span><span style="color: #D4D4D4"> </span><span style="color: #4EC9B0">MyComponent</span><span style="color: #D4D4D4"> </span><span style="color: #569CD6">extends</span><span style="color: #D4D4D4"> </span><span style="color: #4EC9B0">Component</span><span style="color: #D4D4D4"> {</span></span>
+<span class="line"><span style="color: #D4D4D4">  @</span><span style="color: #9CDCFE">action</span><span style="color: #D4D4D4"> </span><span style="color: #DCDCAA">createGraph</span><span style="color: #D4D4D4">(</span><span style="color: #9CDCFE">element</span><span style="color: #D4D4D4">) {</span></span>
+<span class="line"><span style="color: #D4D4D4">    </span><span style="color: #6A9955">// You have the canvas element. Now make the graph!</span></span>
+<span class="line"><span style="color: #D4D4D4">  }</span></span>
+<span class="line"><span style="color: #D4D4D4">}</span></span></code></pre>
+    </div>
+      <button class="copy-button " aria-label="copy" type="button"></button>
+  </div>
+</div>
 
+          </div>
 
 <!---->      </div>
     
@@ -1461,15 +2410,25 @@
 
     </p>
 
-      <div id="ember30" class="ember-view container-query _code-examples-container_11tjec" data-test-container-query>
+      <div id="ember30" class="ember-view container-query _code-examples-container_11tjec">
     
       <div class="_ember-classic_11tjec">
         <h4 class>
           Classic
         </h4>
 
-            <pre class="language-handlebars line-numbers"><code class="language-handlebars"></code></pre>
+          <div class="_code-snippet_11tjec">
+              <div class="shiki-code-block" style>
+<!---->  <div class="shiki-code-block__code
+      line-numbers">
+    <div>
+        <pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #D4D4D4">First name: </span><span style="color: #DCDCAA">{{</span><span style="color: #9CDCFE">model.firstName</span><span style="color: #DCDCAA">}}</span></span></code></pre>
+    </div>
+      <button class="copy-button " aria-label="copy" type="button"></button>
+  </div>
+</div>
 
+          </div>
 
 <!---->      </div>
 
@@ -1478,8 +2437,18 @@
           Octane
         </h4>
 
-            <pre class="language-handlebars line-numbers"><code class="language-handlebars"></code></pre>
+          <div class="_code-snippet_11tjec">
+              <div class="shiki-code-block" style>
+<!---->  <div class="shiki-code-block__code
+      line-numbers">
+    <div>
+        <pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #D4D4D4">First name: </span><span style="color: #DCDCAA">{{</span><span style="color: #9CDCFE">@model.firstName</span><span style="color: #DCDCAA">}}</span></span></code></pre>
+    </div>
+      <button class="copy-button " aria-label="copy" type="button"></button>
+  </div>
+</div>
 
+          </div>
 
 <!---->      </div>
     
@@ -1499,10 +2468,10 @@
     </div>
 </main><script type="x/boundary" id="fastboot-body-end"></script>
 
-    <script src="/ember-octane-vs-classic-cheat-sheet/assets/vendor-f9a6d1a63cc7a53f2d0ed75e6e5cfa51.js"></script>
-<script src="/ember-octane-vs-classic-cheat-sheet/assets/chunk.419.22920d4c26304c8523db.js"></script>
-<script src="/ember-octane-vs-classic-cheat-sheet/assets/chunk.143.842618f72eac64c0256e.js"></script>
-    <script src="/ember-octane-vs-classic-cheat-sheet/assets/ember-octane-vs-classic-cheat-sheet-cfc65d9645b56916bcb8a2101e199e2c.js"></script>
+    <script src="/ember-octane-vs-classic-cheat-sheet/assets/vendor-5a1f8d272dccf587049de8afada0a74f.js"></script>
+<script src="/ember-octane-vs-classic-cheat-sheet/assets/chunk.207.ad8ade59e4f57b25f323.js"></script>
+<script src="/ember-octane-vs-classic-cheat-sheet/assets/chunk.143.cfcee0045fb057e5df0a.js"></script>
+    <script src="/ember-octane-vs-classic-cheat-sheet/assets/ember-octane-vs-classic-cheat-sheet-89baf09b6d0e4e0d012606322a4eeacd.js"></script>
 
     
   </body>

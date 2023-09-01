@@ -2,7 +2,7 @@ define("~fastboot/app-factory",["ember-octane-vs-classic-cheat-sheet/app","ember
 Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0
 e.default={"title-container":"_title-container_9xtt8y",title:"_title_9xtt8y",permalink:"_permalink_9xtt8y","subsection-container":"_subsection-container_9xtt8y"}})),define("ember-octane-vs-classic-cheat-sheet/components/guide-section/subsection.css",["exports"],(function(e){"use strict"
 Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0
-e.default={"title-container":"_title-container_11tjec",title:"_title_11tjec",permalink:"_permalink_11tjec",description:"_description_11tjec","code-examples-container":"_code-examples-container_11tjec","ember-classic":"_ember-classic_11tjec","ember-octane":"_ember-octane_11tjec","edit-link-container":"_edit-link-container_11tjec"}})),define("ember-octane-vs-classic-cheat-sheet/components/locale-menu.css",["exports"],(function(e){"use strict"
+e.default={"title-container":"_title-container_11tjec",title:"_title_11tjec",permalink:"_permalink_11tjec",description:"_description_11tjec","code-examples-container":"_code-examples-container_11tjec","ember-classic":"_ember-classic_11tjec","ember-octane":"_ember-octane_11tjec","edit-link-container":"_edit-link-container_11tjec","code-snippet":"_code-snippet_11tjec"}})),define("ember-octane-vs-classic-cheat-sheet/components/locale-menu.css",["exports"],(function(e){"use strict"
 Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0
 e.default={container:"_container_zppc7u",select:"_select_zppc7u"}})),define("ember-octane-vs-classic-cheat-sheet/initializers/ajax",["exports","ember"],(function(e,t){"use strict"
 Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0
