@@ -20,14 +20,14 @@ We use [GitHub Actions](.github/workflows/ci-cd.yml) to lint and test the app wh
 Run the following commands to lint and test from local machine:
 
 ```bash
-yarn lint
-yarn test
+npm run lint
+npm test
 ```
 
 To fix linting errors, try the following command:
 
 ```bash
-yarn lint:fix
+npm run lint:fix
 ```
 
 
@@ -38,7 +38,7 @@ We use [GitHub Actions](.github/workflows/ci-cd.yml) to deploy the app to `gh-pa
 If you are a repo maintainer, you can run the following command to deploy from local machine:
 
 ```bash
-yarn deploy
+npm run deploy
 ```
 
 

@@ -21,7 +21,7 @@ This is an Ember app, so the usual steps follow:
     ```
 1. Install packages.
     ```bash
-    yarn
+    npm install
     ```
 1. Run the app.
     ```bash
